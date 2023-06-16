@@ -1,0 +1,118 @@
+html{
+    background-color: dimgray;
+    scroll-behavior: smooth;
+}
+body{
+    
+    background: linear-gradient(45deg, black, dimgray);
+    border-radius: 15px 50px;
+    
+}
+#ashaun-text{
+    min-height: 400px;
+    color: floralwhite;
+
+}
+div{
+    padding: 20px;
+    border-radius: solid floralwhite 5px;
+    border-radius: 15px 50px;
+    border: orange solid 5px;
+}
+img{
+    padding: 20px;
+    float: left;
+    border-radius: 15px 50px;
+    border: floralwhite solid 5px;
+    max-width: 300px;
+    min-width: 300px;
+    margin: 20px;
+}
+.redborder{
+    padding: 20px;
+    float: left;
+    border-radius: 15px 50px;
+    border: black solid 5px;
+    max-width: 300px;
+    min-width: 300px;
+    margin: 20px;
+}
+#plants{
+    min-height: 400px;
+    background-color: floralwhite;
+
+}
+#succulents{
+    min-height: 400px;
+    color: floralwhite;
+}
+#trees{
+    min-height: 400px;
+    background-color: floralwhite;
+}
+#shrubs{
+    min-height: 400px;
+    color: floralwhite;
+}
+#contact{
+    min-height: 400px;
+    background-color:floralwhite;
+}
+.dropbutton{
+    background-color: floralwhite;
+    color: black;
+    padding: 16px;
+    border: none;
+    font-size: 16px;
+    position: fixed;
+    border-radius: 15px 50px;
+}
+.dropdown{
+    position: relitive;
+    display: inline-block;
+    position: relative;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: floralwhite;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 1.0);
+    z-index: 1;
+
+}
+.dropdown-content a{
+    color: floralwhite;
+    padding: 12px 16px;
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: dimgrey;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown:hover .dropbutton {
+    background-color: floralwhite;
+}
+/* moves div to the right*/
+.container {
+    position: fixed;
+    left: 350px;
+    padding: 0;
+    margin: 0;
+    background-color: #ff00ff;
+}
+
+.left-element {
+    background: green;
+    display: inline-block;
+    float: left;
+}
+
+.right-element {
+    background: red;
+    display: inline-block;
+    float: left;
+}
