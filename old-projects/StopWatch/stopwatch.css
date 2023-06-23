@@ -1,0 +1,26 @@
+html {
+  background-repeat: repeat;
+  background-size: cover;
+}
+body {
+  background-image: url('https://media.wired.com/photos/5ba3f5bfa8af293117556041/master/w_1024%2Cc_limit/SyncronizedClocks-166311698-(1).jpg');
+}
+h1 {
+  text-align: center;
+  font-size: 80px;
+  text-shadow: black, 20px, solid;
+  color: white;
+}
+button {
+
+}
+#stopwatch {
+  text-align: center;
+  color: grey;
+  font-size: 100px;
+  background-color: #492701;
+}
+#buttons {
+  text-align: center;
+  height: 200px;
+}

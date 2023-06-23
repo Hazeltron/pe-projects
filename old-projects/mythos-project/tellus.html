@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test site</title>
+  <!--stylesheet for bootstrap-->
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="tellus-style.css"></link>
+  <!--script for icons-->
+<script src="https://kit.fontawesome.com/da2cb7e753.js" crossorigin="anonymous"></script>
+<!--stylesheet for fonts-->
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/celtica" type="text/css"/>
+<link rel="stylesheet" href="../styles/home.css"></link>
+<link rel="stylesheet" href="../styles/about.css"></link>
+<link rel="stylesheet" href="../styles/tellus.css"></link>
+<script scr="../java.js"></script>
+<meta charset="UTF-8">
+</head>
+<body>
+  <nav style="overflow-x:auto;">
+    <table id="nav-table">
+      <tbody>
+        <thead>
+          <tr>
+            <th><a href="home.html"><button>Home</button></a></th>
+              <th><a href="about.html"><button>About</button></a></th>
+                <th><a href="tellus.html"><button>Survey</button></a></th>
+                <th><a href=""><button>History</button></a></th>
+                  <th><a href=""><button>Store</button></a></th>
+                <form action="">
+                  <th><input class="form-control-sm" type="search" value="search" placeholder="search"></th>
+                </form>
+                  <form action="">
+                  <th><input class="form-control-sm"  type="text" placeholder="Username"></th>
+                  <th><input class="form-control-sm" type="password" placeholder="Password"></th>
+                  <th><input class="form-control-sm" id="submit-button" type="submit" value="submit"></th>
+                </form>
+                </tr>
+              </thead>
+            </tbody>
+          </table>
+        </nav>
+<div class="container">
+<div  id="old-ones">
+  <h1>Starry Wisdom</h1>
+</div>
+  <hr>
+  <!--need better picture-->
+  <div class="monster">
+<img src="https://vignette.wikia.nocookie.net/villains/images/c/cd/The_Church_of_Starry_Wisdom_Sigil.jpg/revision/latest?cb=20160423233453" style="margin-left:10%;" height="250px" alt="Starry Wisdom Sigil">
+</div>
+  <hr>
+  <h2>Tell us about yourself</h2>
+  <form action="#" class="form-group">
+    <p>We would love to know every single detail about you and your life. Please,  tell us everything.</p>
+    <hr>
+    <div id="names">
+      <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="First Name">
+          <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Last Name">
+          </div>
+          <div>
+              <label for="email">Email adress:</label>
+                <input type="email" id="email" name="email" value="email">
+                  <label for="phone">Phone number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            </div>
+    <hr>
+    <div>
+          <label for="pic">Please upload a picture of yourself:</label>
+            <input type="file" id="pic" name="user-picture" value="upload">
+    </div>
+    <hr>
+    <div>
+      <label for="male" for="female" for="other">What do you identify as?</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                  <label for="other">Other</label><br>
+                    <label for="explain">If you selected other, please explain:</label><br>
+                      <textarea id="explain" name="explain" rows="1" cols="25" value="explain">
+                      </textarea>
+    </div>
+    <div>
+      <label>Ethnicity:</label><br>
+        <input id="black" type="checkbox" name="ethnicity" value="ethnicity">
+          <label for="black">Black</label>
+            <input id="white" type="checkbox" name="ethnicity" value="ethnicity">
+              <label for="white">White</label>
+                <input id="hisp" type="checkbox" name="ethnicity" value="ethnicity">
+                  <label for="hisp">Hispanic</label>
+                    <input id="asian" type="checkbox" name="ethnicity" value="ethnicity">
+                      <label for="asian">Asian</label>
+                        <input id="other2" type="checkbox" name="ethnicity" value="ethnicity">
+      <label for="other2">Other</label>
+    <hr>
+      <label for="fav-color">What's your favorite color?</label>
+        <input type="color" id="fav-color"name="favorite-color" value="favorite color">
+      </div>
+    <div>
+      <label for="soal-range">How much do you value your soal?</label>
+      <br>
+        <input type="range" name="soal-range" id="soal-range">
+      </div>
+        <div>
+          <label for="invest-1">Tell us about you:</label><br>
+            <textarea id="invest-1" type="text" name="explain-yourself" rows="3" cols="40" value="text"></textarea>
+            <br>
+              <label for="">What's the worst thing that's ever happened to you?</label>
+              <br>
+                <textarea id="worst" type="text" name="worst" rows="4" cols="50" value="text"></textarea>
+  </div>
+  <div>
+    <input draggable="auto">
+</div>
+    <div>
+      <input type="submit" id="submit" name="submit" value="submit" onclick="hello()">
+      <br>
+        <label id="small-text" for="check">By clicking the checkbox you confirm that
+          <br>the cult of Starry Wisdom can use your information for any reason.</label>
+          <input  type="checkbox" id="check" name="checkbox" value="checkbox">
+        </div>
+  </form>
+<hr>
+<footer class="footer-grid">
+  <div>
+    <h6>Contact</h6>
+  </div>
+  <footer class="footer-grid">
+    <div>
+      <h6>Contact</h6>
+    </div>
+    <div>
+      <h6>More links</h6>
+    </div>
+    <div>
+      <h6>Location</h6>
+    </div>
+    <div>
+      <h6>Founder</h6>
+    </div>
+  </footer>
+  </div>
+  <br>
+  <br>
+  <br>
+  </div>
+  </body>
+  </html>

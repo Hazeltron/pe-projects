@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Modal</title>
+  <script type="text/javascript" src="Modal_Project.js"></script>
+  <link rel="stylesheet" href="Modal_Project.css">
+</head>
+<body>
+
+  <h1>Modal Project</h1>
+  <br><br>
+  <hr>
+  <button id="modal" type="button" name="modal" onclick="openingModal()">Click for Modal</button>
+
+<br><br>
+  <div id="mymodal" hidden>
+    <div id="title">
+      <span id="xbutton" onclick="closeModal();">&times;</span>
+      <h3>title</h3>
+    </div>
+    <br>
+    <div id="divpara">
+      <p id="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div id="footer">
+      <button id="close" type="button" onclick="closeModal();">Close</button>
+    </div>
+  </div>
+
+
+</body>
+</html>

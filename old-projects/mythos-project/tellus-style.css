@@ -1,0 +1,174 @@
+html {
+  background: url(https://vignette.wikia.nocookie.net/lovecraft/images/3/35/Screenshot_20171020-125436.jpg/revision/latest?cb=20171020175543) no-repeat center fixed;
+  background-position: right bottom, left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav {
+  width: auto;
+  height: auto;
+  padding: 0px;
+  padding-right: 200px;
+  padding-left: 0px;
+  border: 5px solid white;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'CelticaBold' monospace;
+  display: block;
+  position: sticky;
+  top: 0px;
+  order:1
+}
+/*nav inputs*/
+th input {
+  margin: 0px;
+  padding: 0px 0px 0px 0px;
+  border: 0px;
+}
+button {
+  border: none;
+  color: rgb(125, 165, 102);
+  padding: 10px 40px;
+  background-color: rgba(7, 7, 7, 0.89);
+  font-size: 12px;
+  font-family:'CelticaBold';
+  margin: 4px 2px;
+  cursor: crosshair;
+}
+body {
+  background-color: rgba(22, 16, 12, 0.7);
+  display: block;
+  border-radius: 25px;
+  margin: 10px 30px 10px 30px;
+}
+h1 {
+  border: 1px none white;
+  padding: 20px 5px 20px 10px;
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 1px 2px white;
+  font-family: 'CelticaBold';
+  font-weight: bold;
+  font-style: normal;
+  color: black;
+  background-color: black;
+  background-image: url(https://vignette.wikia.nocookie.net/lovecraft/images/3/35/Screenshot_20171020-125436.jpg/revision/latest?cb=20171020175543) no-repeat center fixed;;
+  background-position: right bottom, left top;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-image: linear-gradient(to bottom left, white, rgb(125, 165, 102));
+}
+h2 {
+  color: rgb(220, 110, 50);
+}
+hr {
+  background-color: white;
+}
+h5 {
+  color: white;
+  text-align: left;
+  margin-left: 10px;
+}
+h6 {
+  color: white;
+}
+p {
+  color: white;
+}
+p::first-letter {
+  font-size: 20px;
+  color: rgb(220, 110, 50);
+  font-family: 'CelticaBold';
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th:hover {
+  background-color: rgb(220, 110, 50);
+}
+th {
+  height: 20px;
+}
+table, th, tr {
+  border: 1px solid rgb(125, 165, 102);
+  padding: 15px;
+  text-align: justify right;
+  background-color: black;
+  color: white;
+}
+  form label::first-letter {
+    font-size: 20px;
+    color: rgb(220, 110, 50);
+    font-family: 'CelticaBold'
+  }
+  label {
+    color: white;
+  }
+  form{
+    background-color: rgba(125, 165, 102, .8);
+    padding: 10px 10px;
+    border-radius: 25px;
+    transition: background-color 3s;
+  }
+form input{
+  background-color: black;
+  color: white;
+}
+textarea {
+  background-color: black;
+  opacity: .9;
+  color: white;
+  display: block;
+}
+/*links in paragraphs*/
+p a:link {
+  color: rgb(125, 165, 102);
+}
+p a:visited {
+  color: rgb(220, 110, 50);
+}
+p a:hover {
+  color: white;
+}
+/*copy&past colors*/
+::selection {
+  color: rgb(125, 165, 102);
+  background-color: black;
+}
+.old-ones {
+  text-align: justify;
+  background-color: rgb(30, 123, 30);
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+#small-text {
+  font-size: 5px;
+}
+#soal-range {
+  background-color: rgb(220, 110, 50);
+}
+#monster {
+  display: grid;
+  grid-template-columns: 1fr;
+  box-shadow: 10px 10px 5px grey;
+}
+/*nav submit*/
+#submit-button {
+  border-radius: 10px;
+}
+#para-one {
+  text-align: justify;
+  color: white;
+  background-color: rgba(6, 13, 2, 0.5);
+  border-radius: 25px;
+}
+#nav-table {
+  border: 1px solid rgb(125, 165, 102);
+  border-spacing: 20px;
+  border-collapse: collapse;
+  overflow: hidden;
+}

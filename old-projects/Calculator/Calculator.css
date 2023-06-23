@@ -1,0 +1,38 @@
+*{
+  font-family: monospace;
+}
+body{
+  background-color: #222222;
+}
+
+h1 {
+  color: black;
+  background-color: white;
+  border: solid #e91e63;
+  border-radius: 5px;
+  text-align: center;
+  text-shadow: solid black;
+}
+button, select, input {
+  border-radius: 5px;
+  padding: 5px;
+  outline: 0;
+}
+button {
+  transition: background-color 250ms linear,
+  color 250ms linear,
+  border 250ms linear;
+}
+button:hover{
+  background-color: #e91e63;
+  color: white;
+  border: 2px white;
+}
+#answer {
+  color: white;
+  font-size: 11em;
+  border: 1px solid white;
+  background-color: #e91e63;
+  text-align: center;
+  border-radius: 5px;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test site</title>
+  <!--stylesheet for bootstrap-->
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="home.css"></link>
+  <link rel="stylesheet" href="about.css"></link>
+  <!--script for icons-->
+<script src="https://kit.fontawesome.com/da2cb7e753.js" crossorigin="anonymous"></script>
+  <!--script for icons-->
+<script src="https://kit.fontawesome.com/da2cb7e753.js" crossorigin="anonymous"></script>
+<!--stylesheet for fonts-->
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/celtica" type="text/css"/>
+
+<link rel="stylesheet" href="../styles/about.css"></link>
+
+
+</head>
+<body>
+  <nav style="overflow-x:auto;">
+    <table id="nav-table">
+      <tbody>
+        <thead>
+          <tr>
+            <th><a href="home.html"><button>Home</button></a></th>
+              <th><a href="about.html"><button>About</button></a></th>
+                <th><a href=""><button>Books</button></a></th>
+                <th><a href=""><button>History</button></a></th>
+                  <th><a href=""><button>Store</button></a></th>
+                <form action="">
+                  <th><input type="search" value="search" placeholder="search"></th>
+                </form>
+                  <form action="">
+                  <th><input type="text" placeholder="Username"></th>
+                  <th><input type="password" placeholder="Password"></th>
+                  <th><input type="submit" value="submit"></th>
+                </form>
+                </tr>
+              </thead>
+            </tbody>
+          </table>
+        </nav>
+<div id="old-ones">
+  <h1>Church of The Old Ones</h1>
+</div>
+<hr>
+
+<!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="https://pnakoticatlas.s3.amazonaws.com/cache/51/0a/510a9b0b9eba9bb1f8b01418c04b7cc3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="https://static.wikia.nocookie.net/the-mockingbirds-song/images/9/93/Churchofstarrywisdom.jpg/revision/latest/scale-to-width-down/1000?cb=20190723171338" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="https://starrywisdomcult.files.wordpress.com/2011/11/swc-about2.jpg?w=300&h=225" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="https://i.pinimg.com/564x/7a/e8/df/7ae8dfff9024cffe3ec3cf9074245161.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="https://images.newscientist.com/wp-content/uploads/2008/06/dn14098-1_600.jpg?width=778" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="https://3.bp.blogspot.com/-ycApmk1NpwI/WzYXmtm9XZI/AAAAAAAABzw/-DhV9cnD84cQqOoODqHERoocFS2-5X0wACLcBGAs/s1600/Screen%2BShot%2B2018-06-29%2Bat%2B8.44.31.png" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://pnakoticatlas.s3.amazonaws.com/cache/51/0a/510a9b0b9eba9bb1f8b01418c04b7cc3.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://static.wikia.nocookie.net/the-mockingbirds-song/images/9/93/Churchofstarrywisdom.jpg/revision/latest/scale-to-width-down/1000?cb=20190723171338" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://starrywisdomcult.files.wordpress.com/2011/11/swc-about2.jpg?w=300&h=225" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.pinimg.com/564x/7a/e8/df/7ae8dfff9024cffe3ec3cf9074245161.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://images.newscientist.com/wp-content/uploads/2008/06/dn14098-1_600.jpg?width=778" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://3.bp.blogspot.com/-ycApmk1NpwI/WzYXmtm9XZI/AAAAAAAABzw/-DhV9cnD84cQqOoODqHERoocFS2-5X0wACLcBGAs/s1600/Screen%2BShot%2B2018-06-29%2Bat%2B8.44.31.png" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+<i class="fab fa-facebook-square"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-twitter"></i>
+
+<p>Cras euismod sollicitudin molestie. Sed laoreet dui tellus, vel euismod neque placerat ac. Pellentesque leo mi, cursus et facilisis ac, efficitur porttitor ipsum. Ut sed ipsum elit. Maecenas quis sapien est. In quis urna quis mi sollicitudin dapibus. Maecenas ante elit, bibendum vel augue et, mattis congue est.
+Donec pulvinar purus ac auctor volutpat. Duis vel nisl sapien. Nulla vel varius nisi, in dapibus metus. Nulla sagittis elit lectus, non commodo dolor gravida in. Donec id ligula sodales, pulvinar libero nec, viverra odio. Vivamus faucibus ac lacus nec suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque nisl nibh, consectetur a finibus vel, ultricies porttitor massa. Pellentesque commodo nunc eu lacus pharetra accumsan. Etiam nec orci finibus, tincidunt dui vitae, maximus risus. Curabitur gravida, mauris in consectetur blandit, tellus risus vehicula eros, a rhoncus nibh tellus vel dui.
+Curabitur mollis sem eros, in hendrerit nunc maximus a. Praesent et mattis magna, quis mattis elit. Pellentesque eget nulla dolor. Proin ut euismod risus. Nam tempor venenatis augue, sed porta eros varius porta. Fusce posuere egestas orci, eget fringilla augue lacinia sed. Vivamus vel dolor ornare elit pretium ullamcorper. Ut rutrum nisl vestibulum, lacinia leo quis, fermentum sapien. Aliquam tristique enim et auctor gravida. Suspendisse vitae turpis fringilla, facilisis quam vel, finibus nisl. Maecenas nec molestie erat. Aenean vel vehicula urna.
+Morbi sed ligula imperdiet, tincidunt urna quis, rhoncus est.
+</p>
+
+
+<br>
+<br>
+<br>
+<!--script to link to javascript-->
+<script type="text/javascript" src="about.js"></script>
+</body>
+</html>

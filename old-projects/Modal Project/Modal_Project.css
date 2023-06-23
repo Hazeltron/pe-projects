@@ -1,0 +1,12 @@
+#mymodal {
+  border-radius: 5px;
+  border: 4px block black;
+  transform:
+}
+
+#xbutton {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
