@@ -2,6 +2,7 @@
 <html lang="en">
 
 <?php include("new-head.php") ?>
+
 <body>
 
     <nav>
