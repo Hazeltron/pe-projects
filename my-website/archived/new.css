@@ -1,0 +1,190 @@
+@input ('meyers-reset.css');
+
+/*end of reset*/
+
+html{
+background-color: #B5E2FA;
+
+}
+
+body{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #F9F7F3;
+
+}
+
+nav{
+    padding: 20px;
+    background-color: #F7A072;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: #F9F7F3 solid 2px;
+    padding: 10px;
+    background-color: #EDDEA4;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+nav a:hover{
+    background-color: #B5E2FA;
+    border: #0FA3B1 2px solid;
+    border-radius: 30px;
+}
+
+nav a:active{
+    background-color: #0FA3B1;
+    color: #F9F7F3;
+    border: #F9F7F3;
+    border-radius: 30px;
+}
+
+h1{
+    font-size: 5vw;
+    text-align: center;
+    padding: 20px 20px;
+    letter-spacing: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2{
+    font-size: 3em;
+    padding: 20px;
+    letter-spacing: normal;
+    line-height: 1.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    letter-spacing: normal;
+    line-height: 1.5em;
+    padding-left: 20px;
+    padding top: 20px;
+    max-width: 75ch;
+}
+
+picture{
+    display: block;
+    max-width: 400px;
+    padding: 20px;
+}
+
+img{
+display: block;
+width: 100%;
+height:auto;
+}
+
+ul{
+    padding: 20px;
+}
+
+li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    letter-spacing: normal;
+    line-height: 1.5em;
+    padding-left: 20px;
+    padding top: 20px;
+    max-width: 75ch;
+}
+
+iframe{
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    min-height: 400px;
+    align-content: center;
+}
+
+.logo{
+    display: inline-block;
+}
+
+.logo img{
+    display: inline-block;
+    border-radius: 100px;
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+}
+
+.landing{
+    background-image: url("https://img.freepik.com/free-vector/geometric-   groovy-pattern_23-2148856653.jpg?w=2000");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    padding-top: 20px;
+    background-position: center;
+}
+
+.page-title{
+    background-color: black;
+    color:#F9F7F3;
+    margin-right: 25%;
+    margin-left: 25%;
+    opacity: .8;
+    border-radius: 30px;
+}
+
+.page-title p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    letter-spacing: normal;
+    line-height: 1.5em;
+    padding: 0 20px 20px 20px;
+    max-width: 75ch;
+}
+
+.about-box{
+    background-color: #0FA3B1;
+    min-height: fit-content;
+    padding: 40px 20px 40px 50px;
+}
+
+.about-content{
+    background-color: #F9F7F3;
+    max-width: 70%;
+    padding: 20px 20px 20px 20px;
+    border-radius: 30px;
+}
+
+.video-box{
+    background-color: #EDDEA4;
+    min-height: fit-content;
+    padding: 40px 20px 40px 50px;
+}
+
+.video-content{
+    background-color: #F9F7F3;
+    max-width: 70%;
+    padding: 20px 20px 20px 20px;
+    border-radius: 30px;
+}
+
+.contact-box{
+    background-color: #F7A072;
+    min-height: fit-content;
+    padding: 40px 20px 40px 50px;
+}
+
+.contact-content{
+    background-color: #F9F7F3;
+    max-width: 70%;
+    padding: 20px 20px 20px 20px;
+    border-radius: 30px;
+}
+
+
+
+
+
