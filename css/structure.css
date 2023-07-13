@@ -10,11 +10,12 @@ main {
 	flex-grow: 1;
 }
 
-nav{
+nav {
 	position: sticky;
 	top: 0;
-	opacity: .9;
 	z-index: 20;
+	opacity: .9;
+	
 }
 
 .inner-column {
@@ -24,3 +25,46 @@ nav{
 	padding: 10px;
 	border: black solid 3px;
 }
+
+picture {
+    display: block;
+    max-width: 300px;
+    padding: 20px;
+    filter: drop-shadow(7px 5px 3px dimgray);
+}
+
+img {
+	display: block;
+	width: 100%;
+	height:auto;
+}
+
+footer {
+	background-color: var(--orange);
+}
+
+
+nav li {
+	display: inline-block;
+	color: black;
+}
+
+nav a {
+	text-decoration: none;
+	color: black;
+}
+
+
+
+footer li {
+	display: inline-block;
+	padding-left: 20px;
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+footer a {
+	text-decoration: none;
+	color: black;
+}
+

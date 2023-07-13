@@ -1,8 +1,18 @@
-@import "meyers-reset.css";
-@import "setup.css";
-@import "structure.css";
 
-body{
-	background-color: indianred;
+body {
+	background-color: white;
 }
+
+nav {
+	background-color: white;
+}
+main {
+	background-color: white;
+}
+
+footer{
+	background-color: white;
+}
+
+
 

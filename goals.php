@@ -1,23 +1,19 @@
-
-<? php include('goals-head.php'); 
+<?php 
+include 'header.php';
+include 'nav.php'; 
 ?>
+            
 
-    <body>
-        
-        <nav> 
-            <a href="">Goals</a>
-            <a href="">Five Year</a>
-            <a href="">TL:DR</a>
-            <a href="">End of Course</a>
-            <a href="">End of Week</a>
-        </nav>
+<section>
+    <div class="inner-column">
+        <h1>Goals</h1>
+    </div>
+</section>
 
-        <header>
-            <h1>Paul's Goals</h1>
-        </header>
 
-        <main>
+<?php include 'footer.php'; ?>
 
+<!--
         <secton>    
         <h2 class="h2-tan">5 year</h2>
         <p>Honestly, I want to be sitting on a beach in Malaysia in five years.</p>
@@ -77,7 +73,4 @@
             <h2 class="h2-tan">End of the Week</h2>
             <p>By the end of the week, I would like to have all of the catchup work finished and be on track for next week. I want to understand all the concepts we’ve covered and feel confident in talking about them.</p>
         </section>
-    </main>
-
-    <footer></footer>
-    </body>
+    -->

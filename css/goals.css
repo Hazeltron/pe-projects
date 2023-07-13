@@ -1,62 +1,24 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+@import "meyers-reset.css";
+@import "setup.css";
+@import "structure.css";
 
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
-/* end of reset*/
-html{
+html {
     background-color: #B5E2FA;
     padding: 30px;
     }
-body{
+
+body {
     background-color: antiquewhite;
     margin: 30px;
     margin-right: auto;
     margin-left: auto;
 }
-nav{
+
+nav {
     padding:20px;
 }
+
 nav a {
     text-decoration: none;
     font-size: 1.5vw;
@@ -65,7 +27,8 @@ nav a {
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding-right: 20px;
 }
-h1{
+
+h1 {
     color: whitesmoke;
     min-height: 100px;
     text-align: center;
@@ -75,14 +38,16 @@ h1{
     background-color: orange;
     padding-top: 20px;
 }
-h2{
+
+h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 20px;
     font-size: 2vw;
     font-weight: 100;
     color: dimgray;
 }
-h3{
+
+h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 20px;
     font-weight: 100;
@@ -90,7 +55,8 @@ h3{
     font-size: 1.5vw;
 
 }
-p{
+
+p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
     color:grey;
@@ -100,43 +66,48 @@ p{
     max-width: 80ch;
 }
 
-p+p{
+p+p {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-li{
+li {
     color: grey;
     font-size: 16px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 30px;
     padding-top: 30px;
-    padding-bottom: 30px;
-   
+    padding-bottom: 30px; 
 }
-.list{
+
+.list {
     margin-left: auto;
     margin-right: auto;
     background-color: orange;
     text-align: center;
 }
-.list li{
+
+.list li {
     color: whitesmoke;
 }
-.list h3{
+
+.list h3 {
     background-color: lightblue;
     color: dimgray;
 }
 
-.endofmonth{
+.endofmonth {
     background-color: orange;
 }
-.endofmonth p{
+
+.endofmonth p {
     color: whitesmoke;
 }
+
 .endofmonth h2{
     background-color: lightblue;
 }
+
 .h2-tan{
     background-color: dimgray;
     color: whitesmoke;

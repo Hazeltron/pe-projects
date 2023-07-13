@@ -1,4 +1,6 @@
-
+@import "meyers-reset.css";
+@import "setup.css";
+@import "structure.css";
 
 /*site structure*/
 
@@ -8,44 +10,7 @@
 
 
 
-nav li{
-	display: inline-block;
-	color: black;
-}
 
-nav a{
-	text-decoration: none;
-	color: black;
-}
-
-footer{
-	background-color: var(--orange);
-}
-
-footer li{
-	display: inline-block;
-	padding-left: 20px;
-	text-decoration: none;
-	color: whitesmoke;
-}
-
-footer a{
-	text-decoration: none;
-	color: black;
-}
-
-picture{
-    display: block;
-    max-width: 300px;
-    padding: 20px;
-    filter: drop-shadow(7px 5px 3px dimgray);
-}
-
-img{
-	display: block;
-	width: 100%;
-	height:auto;
-}
 
 
 /*specific rules*/

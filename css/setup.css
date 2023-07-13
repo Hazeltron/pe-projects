@@ -1,4 +1,4 @@
-/*custom*/
+
 :root{
 	--tiny-padding: 10px;
 	--loud-orange: #ef7820;
@@ -11,5 +11,4 @@
 
 *{
 	box-sizing: border-box;
-	/*border: solid 3px black;*/
 }
