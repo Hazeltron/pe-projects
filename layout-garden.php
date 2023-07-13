@@ -1,4 +1,8 @@
-<?php include 'header.php'; ?>
+<?php 
+include 'nav.php';
+include 'header.php'; 
+?>
+
 			
 
 <section>
