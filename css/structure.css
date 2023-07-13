@@ -10,6 +10,13 @@ main {
 	flex-grow: 1;
 }
 
+nav{
+	position: sticky;
+	top: 0;
+	opacity: .9;
+	z-index: 20;
+}
+
 .inner-column {
 	max-width: 900px;
 	margin-right: auto;

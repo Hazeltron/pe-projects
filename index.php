@@ -1,4 +1,4 @@
-<?php include 'site-header.php'; ?>
+<?php include 'header.php'; ?>
 			
 
 <section>
@@ -8,4 +8,4 @@
 </section>
 
 
-<?php include 'site-footer.php'; ?>
+<?php include 'footer.php'; ?>

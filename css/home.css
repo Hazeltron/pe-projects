@@ -1,41 +1,12 @@
-/*reset*/
-@import 'meyers-reset.css';
-@import 
-
-/*custom*/
-:root{
-	--tiny-padding: 10px;
-	--loud-orange: #ef7820;
-	--orange: #f1a826;
-	--paper: #faeab4;
-	--teal: #7dc0a7;
-	--loud-voice: oswald;
-	--quiet-voice: esteban;
-}
-
-*{
-	box-sizing: border-box;
-	/*border: solid 3px black;*/
-}
 
 
 /*site structure*/
-body{
-	background-color: var(--paper);
-}
 
 
 
 
-nav{
-	position: sticky;
-	top: 0;
-	opacity: .9;
-	z-index: 20;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: var(--orange);
-}
+
+
 
 nav li{
 	display: inline-block;
