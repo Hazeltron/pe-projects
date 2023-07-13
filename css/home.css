@@ -1,5 +1,6 @@
 /*reset*/
 @import 'meyers-reset.css';
+@import 
 
 /*custom*/
 :root{
@@ -23,15 +24,7 @@ body{
 	background-color: var(--paper);
 }
 
-.inner-column{
-	margin-right: auto;
-	margin-left: auto;
-	background-color: var(--paper);
-	max-width: 1200px;
-	height: auto;
-	background-color: whitesmoke;
-	filter: drop-shadow(7px 5px 3px dimgray);
-}
+
 
 
 nav{

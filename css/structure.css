@@ -1,0 +1,19 @@
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main {
+	border: black 3px solid;
+	flex-grow: 1;
+}
+
+.inner-column {
+	max-width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+	border: black solid 3px;
+}

@@ -1,0 +1,10 @@
+@import "meyers-reset.css";
+@import "setup.css";
+@import "structure.css";
+
+body{
+	background-color: indianred;
+}
+header{
+	background-color: white;
+}
