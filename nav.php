@@ -24,6 +24,10 @@
 				<a href="#">Projects</a>
 			</li>
 
+			<li>
+				<a href="php-fun.php">Php</a>
+			</li>
+
 		</ul>
 
 	</div>

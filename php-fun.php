@@ -76,6 +76,7 @@
 	echo "<h1>" . "If/Else Statments" . "</h1>";
 
 	$vehicle = "car";
+	$broken = false;
 	$partGo = $broken;
 	$partElectric = "battery";
 	$partStop = $broken;
@@ -85,7 +86,7 @@
 	$lowPrice = "$100";
 	$medPrice = "$400";
 	$highPrie = "$1000";
-	$broken = false; 
+	 
 	$brokenBreaks = "<img src='https://assets.dnainfo.com/generated/chicago_photo/2015/02/brakes-1423427690.jpg/larger.jpg'";
 
 	if($vehicle = true){
@@ -132,11 +133,39 @@
 		echo "<p>Your paint job sucks. We can fix it for " . $highPrice . "</p>";
 	}
 
+	?>
 
 
-	 
+
+	<h1>Arrays and Objects</h1>
+
+	<?php
+
+	$food = ["mexican food", "coffee,", "ice-cream", "pizza", "hot-pockets",];
+
+	$monsters = ["vampire", "zombie", "Cujo", "aliens",];
+
+	$cat = [
+		"name" => "Cinder",
+		"weight" => "10lb", 
+		"color" => "black",
+	];
 
 	?>
+
+	<p>One day, my cat <?=$cat["name"]?> and I were walking down the street. He's a <?=$cat["color"]?> cat that weighs <?=$cat["weight"]?> and he loves to eat. It was his birthday, so we decided to go and get some <?=$food[2]?> when all of a sudden, a <?=$monsters[1]?> popped out of the store.</p>
+
+	<p>We ran away and decided to go get some <?=$food[0]?>. The resturaunt seemed abandoned and it was playing creepy music. That's when I realized there was a <?=$monsters[0]?> behind the counter. <em>A mexican vampire? How weird. I guess vampires could be any ethnicity. It is 2023 after all.</em> I thought before running out of the store.</p>
+
+	<p>Again, we decided we would try something else and go get some <?=$food[3]?>. People were running out of the <?=$food[3]?> shop, screaming and tripping over themselves. That's when I realized <?=$monsters[2]?> was inside attacking people. That's no place for <?=$cat["name"]?> so we ran away again.</p>
+
+	<p>This quest for birthday food was getting exausting. We settled on just getting <?=$food[1]?> and calling it a day. The <?$food[1]?> shop had a strange green glow to it. There were little green men serving the drinks. They seemed to be studying the people after they took their first sip and gossiping in the corner. That's because they were clearly <?=$monsters[3]?>!</p>
+
+	<p><?=$cat["name"]?> and I said screw it and went home and ate <?=$food[4]?> instead.</p>
+
+
+
+
 
 	
 

@@ -6,9 +6,148 @@ include 'nav.php';
 
 <section>
     <div class="inner-column">
-        <h1>Resume</h1>
+        <div class="landing-image">
+
+            <section class="trans-message">
+
+
+                <h1>Resume</h1>
+                <p>A list of all the things I've done in life.</p>
+
+
+            </section>
+     
     </div>
 </section>
+
+
+<section class="educ-contact">
+    <div class="inner-column">
+        <div class="educ-contact-container">
+
+            <section class="education">
+
+
+                <h2>Education</h2>
+
+                <p>Colorado State University<br>
+                Fort Collins, CO<br>
+                Bachelor of Arts (B.A.) Mass Communication and Journalism (Jun 2016)</p>
+
+
+            </section>
+        
+            <section class="contact">
+        
+
+                <h2>Contact</h2>
+
+                <ul>
+                    <li>
+                        <a herf="paulhazelton.work@gmail.com">paulhazelton.work@gmail.com</a>
+                    </li>
+                    <li>(719)337-0666</li>
+                    <li>Colorado Springs, Co. 80903</li>
+                </ul>
+
+
+            </section>
+                
+        </div>
+    </div>
+</section>
+
+
+
+<section class="additional">
+    <div class="inner-column">
+        <section class="add">
+
+
+            <h2>Additional</h2>
+
+            <p>Programming<br>(HTML/CSS/PHP/JavaScript)</p>
+
+            <h2>Certifications</h2>
+
+            <p>TESOL Cert. IV (10429NAT)</p>
+
+
+        </section>
+    </div>
+</section>
+
+
+
+<section class="experience">
+    <div class="inner-column">
+
+
+        <h2>Experience</h2>
+
+
+        <section class="experience-container">
+
+            <div class="experience-date">
+
+
+                <h3>Apr 2018 - Present</h3>
+
+
+            </div>
+
+
+            <div class="jobs">
+
+
+                <h3>K-12 ENGLISH TEACHER</h3>
+
+                <p>Apollo English, Hanoi, Vietnam</p>
+
+                <p>Tasked with teaching, lesson planning, placement testing and performing demos for K-12 students. Capable of coordinating expectations between students, parents, administrators and other teachers to deliver lessons effectively. Responsible for carrying out the role of Head teacher while his boss was stuck in the Philippines due to COVID. During this time, enrollment at the school grew by nearly 50 percent.</p>
+
+
+            </div>
+
+        </section>
+    </div>
+</section>
+
+
+
+
+
+
+<section class="experience">
+    <div class="inner-column">
+        
+        <section class="experience-container">
+
+            <div class="experience-date">
+
+
+            <h3>Mar 2016 - Jul 2018</h3>
+
+
+            </div>
+
+
+            <div class="jobs">
+
+
+                <h3>MANAGER</h3>
+
+                <p>Cheba Hut, Fort Collins, CO</p>
+
+                <p>Worked his way from server to manager. As a manager, was entrusted to keep the business running efficiently, assist co-workers with questions and business issues. Responsible for managing the daily operations of the restaurant and staff while complying with all health and safety regulations.</p>
+
+
+            </div>
+
+        </section>
+    </div>
+</section>
+
 
 
 <?php include 'footer.php'; ?>

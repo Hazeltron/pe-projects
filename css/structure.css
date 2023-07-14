@@ -1,3 +1,4 @@
+@import "meyers-reset.css";
 
 body {
 	display: flex;
@@ -8,6 +9,7 @@ body {
 main {
 	border: black 3px solid;
 	flex-grow: 1;
+	background-color: var(--paper);
 }
 
 nav {
@@ -15,6 +17,7 @@ nav {
 	top: 0;
 	z-index: 20;
 	opacity: .9;
+	background-color: var(--orange);
 	
 }
 
@@ -23,14 +26,14 @@ nav {
 	margin-right: auto;
 	margin-left: auto;
 	padding: 10px;
-	border: black solid 3px;
+	/*border: black solid 3px;*/
 }
 
 picture {
     display: block;
     max-width: 300px;
     padding: 20px;
-    filter: drop-shadow(7px 5px 3px dimgray);
+    filter: drop-shadow(10px 10px 6px grey);
 }
 
 img {

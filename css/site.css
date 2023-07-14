@@ -14,5 +14,157 @@ footer{
 	background-color: white;
 }
 
+.landing-image{
+    background-image: url('https://img.freepik.com/free-vector/retro-stripes-colorful-distorted-backdrop_1217-4224.jpg?w=1380&t=st=1688960781~exp=1688961381~hmac=1ce4cea99dd3db3b0f6bf2d4350afd9c29ebe304f8d126a386f2d7f1bc0a9b5f');
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    padding-top: 20px;
+    
+}
+
+.trans-message{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 800px;
+	min-height: 200px;
+	margin-top: 100px;
+	z-index: 10;
+	border-radius: 30px;
+	opacity: .9;
+	background-color: black;
+	color: whitesmoke;	
+}
+
+.trans-message p{
+	text-align: center;
+}
+
+.me-img{
+	display: none;
+}
+
+.affinity-card img{
+	max-width: 400px;
+}
+
+.goals-content ul{
+	list-style-type: circle;
+	list-style-position: inside;
+}
+
+.goals-content li{
+	padding: 20px;
+}
+
+/*blog specific*/
+.blog-card picture{
+    max-width: 400px;
+
+}
+.blog-card p{
+    max-width: 300px;
+}
+.blog-card{
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* goal specific */
+
+.list li {
+	line-height: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* resume specific */
+
+
+
+
+
+
+
+.ref-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.refs{
+    border-bottom: lightblue  3px solid;
+}
+
+
+/*screen size*/
+
+@media (min-width:600px){
+	.about-container{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		gap: 10px;
+	}
+
+	.affinity-showcase{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		flex-wrap: wrap;
+		text-align: center;
+	}
+
+	.blog-cards-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 20;
+    }
+
+    .blog-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blog-card p{
+    	max-width: 25ch;
+    }
+
+    .blog-card picture {
+    	max-width: 200px;
+
+    }
+
+    .educ-contact-container{
+	    display: flex;
+	    flex-direction: row;
+	    justify-content:flex-start;
+	    gap: 20px;
+	}
+
+	.experience-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: lightblue 3px solid;
+    gap: 20px;
+	}
+
+}
+
+@media (min-width:900px){
+	.me-img{
+		display: block;
+	}
+
+}
 
 
