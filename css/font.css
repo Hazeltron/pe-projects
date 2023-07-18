@@ -3,11 +3,10 @@ h1{
     font-family: var(--loud-voice);
     font-size: 3rem;
     font-weight: bold;
+    line-height: 1.5em;
+    letter-spacing: normal;
     text-align: center;
     padding: 20px 20px;
-    
-    
-    font-weight: bold;
 }
 
 h2{

@@ -77,11 +77,43 @@
 </style>
 
 
+
 <?php
 include "header.php";
 include "nav.php";
 
+function monsterGenerator($name, $age, $favoriteFood) {
+	$monster = [
+		"name" => $name, 
+		"age" => $age, 
+		"favoriteFood" => $favoriteFood,
+	];
+	return $monster;
 
+}
+
+$freddy = monsterGenerator ("Freddy", 12, "dreams");
+$dracula = monsterGenerator ("Drak", 4000, "blood");
+$jason = monsterGenerator ("Jason", 45, "hard candy");
+$leather = monsterGenerator ("Leather Face", 25, "steak");
+$chucky = monsterGenerator ("Chucky", 10, "plastic");
+
+$monsters = [$freddy, $dracula, $jason, $leather, $chucky,];
+?>
+
+<?php foreach ($monsters as $monster){ ?>
+	<section class="monster-cards">
+		<section class="monster-card">
+			<h1 class="title"><?=$monster["name"]?></h1>
+			<p><?=$monster["age"]?></p>
+			<p><?=$monster["favoriteFood"]?></p>
+		</section>
+	</section>
+<?php } ?>
+
+
+
+<?php
 $freddy =[
 	"picture" => "<img src= 'https://peprojects.dev/images/portrait.jpg'",
 	"id" => "freddy",
@@ -139,6 +171,8 @@ $monsters = [$freddy, $dracula, $jason, $leather, $chucky,];
 echo "<section class='monster-cards'>";
 
 foreach ($monsters as $monster){
+
+
 	echo "<div class='monster-card'>"; 
 
 	echo "<div class='monster-content'>";
@@ -154,6 +188,8 @@ foreach ($monsters as $monster){
 	echo "<div class='button'><p><a href='#'>Adopt!</a></p></div>";
 
 	echo "</div>";
+
+	
 }
 
 echo "</section>";
