@@ -163,6 +163,15 @@
 
 	<p><?=$cat["name"]?> and I said screw it and went home and ate <?=$food[4]?> instead.</p>
 
+	<form action="">
+		<p>Enter name:</p>
+		<label for="">Name</label>
+		<input type="text">
+		<button type="submit" name="submitted">Submit</button>
+	</form>
+
+	<form action=""></form>
+
 
 
 
