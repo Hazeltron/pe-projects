@@ -200,7 +200,113 @@ Colors.
 
 
 
+
 ##Max--General:
+
+###Could you find them? Was it difficult? Easy? Was it at user/projects/e4p?
+
+Yes. I think it could be easier to find the link on the projects page, but it's fine. 
+
+###How is the index page? Is it clear what the page is for a first-time visitor? Are the links clear?
+
+Yes. It's a business card site. I don't think anyone would be confused. 
+
+###Does it match the rest of the site?
+
+The text styling is different. The heading and footer are gone. It's a page with links, so not really. 
+
+##Retirement calculator
+
+###How is the storytelling? Is it clear what the forms are supposed to do?
+
+Not much storytelling. It's got a header, the inputs and the outputs, but I feel like I would be able to guess what it is. 
+
+###Are the inputs and buttons legible? Do they have labels?
+
+Yes. 
+
+###Does the form work with the expected input?
+
+Works great!
+
+###Can you break it by putting in other values like 0 and empty?
+
+Nope. 
+
+###Do things jump around when you interact with them?
+
+Not really. The transition from the links page to the form does a bit.   
+
+###Is the outcome clear?
+
+Yes.
+
+###Do the form styles match across all forms?
+
+Actually, yes. Nice. 
+
+###Is it a pleasure to use?
+
+Yeah, it works fine. 
+
+###What could be improved?
+
+I think the forms could have a little more styling and a bit more storytelling. 
+
+##Area of a Room
+
+###How is the storytelling? Is it clear what the forms are supposed to do?
+
+Not much storytelling. It's got a header, the inputs and the outputs, but I feel like I would be able to guess what it is. 
+
+###Are the inputs and buttons legible? Do they have labels?
+
+Yes. 
+
+###Does the form work with the expected input?
+
+It's pretty bare-bones, but it does the job!
+
+###Can you break it by putting in other values like 0 and empty?
+
+Nope. 
+
+###Do things jump around when you interact with them?
+
+Not really. The transition from the links page to the form does a bit. Same as the last form.   
+
+###Is the outcome clear?
+
+Yes. He even translates it into meters.
+
+###Do the form styles match across all forms?
+
+Actually, yes. Nice. 
+
+###Is it a pleasure to use?
+
+Yeah, it works fine. 
+
+###What could be improved?
+
+I think the forms could have a little more styling and a bit more storytelling. Particularly with this one. Also, the inputs should be spaced a little more. They're too close together. 
+
+
+##Hunter--General:
+
+###Could you find them? Was it difficult? Easy? Was it at user/projects/e4p?
+
+It wasn't overwhelmingly easy to find where the projects were. There are links everywhere. But the projects didn't go anywhere. 
+
+###How is the index page? Is it clear what the page is for a first-time visitor? Are the links clear?
+
+I'd say it's clear but there isn't much happening. The links are all over the page, so it makes it hard to tell what you're looking at. 
+
+###Does it match the rest of the site?
+
+There's only one page. 
+
+
 
 
 
