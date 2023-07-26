@@ -292,38 +292,117 @@ Yeah, it works fine.
 I think the forms could have a little more styling and a bit more storytelling. Particularly with this one. Also, the inputs should be spaced a little more. They're too close together. 
 
 
-##Hunter--General:
+## Hunter--General:
 
-###Could you find them? Was it difficult? Easy? Was it at user/projects/e4p?
+### Could you find them? Was it difficult? Easy? Was it at user/projects/e4p?
 
 It wasn't overwhelmingly easy to find where the projects were. There are links everywhere. But the projects didn't go anywhere. 
 
-###How is the index page? Is it clear what the page is for a first-time visitor? Are the links clear?
+### How is the index page? Is it clear what the page is for a first-time visitor? Are the links clear?
 
 I'd say it's clear but there isn't much happening. The links are all over the page, so it makes it hard to tell what you're looking at. 
 
-###Does it match the rest of the site?
+### Does it match the rest of the site?
 
 There's only one page. 
 
 
 
 
-##Craig--General:
+## Craig--General:
 
-###Could you find them? Was it difficult? Easy? Was it at user/projects/e4p?
+### Could you find them? Was it difficult? Easy? Was it at user/projects/e4p?
 
 There is a link to it at the very bottom of the page. It's not easy to find. You have to click on three links to get there, not the most intuitive. 
 
-###How is the index page? Is it clear what the page is for a first-time visitor? Are the links clear?
+### How is the index page? Is it clear what the page is for a first-time visitor? Are the links clear?
 
 The index page is starting to look professional. But, the header is broken. The icons are too big and this list near the bottom has small text that needs more space. The links aren't easy to find. 
 
 I think someone could look at it and say this person is learning to program. This is their site.  
 
-###Does it match the rest of the site?
+### Does it match the rest of the site?
 
-Kinda. The other pages are under construction so it's haad to tell. 
+Kinda. The other pages are under construction so it's hard to tell.
+
+
+## Pizza Party
+
+### How is the storytelling? Is it clear what the forms are supposed to do?
+
+For thee most part, yes. It could have a little description after the h1 to make it clearer. 
+
+### Are the inputs and buttons legible? Do they have labels?
+
+Yes. 
+
+### Does the form work with the expected input?
+
+It does a good job. 
+
+### Can you break it by putting in other values like 0 and empty?
+
+I wouldn't say break but allows you to enter zero for the number of guests. 
+
+### Do things jump around when you interact with them?
+
+Not really. The transition from the links page to the form does a bit.    
+
+### Is the outcome clear?
+
+Yes. I don't like the change in font size and the green and red colors.
+
+### Do the form styles match across all forms?
+
+No.
+
+### Is it a pleasure to use?
+
+Yeah, it works fine. 
+
+### What could be improved?
+
+The colors and font size are off-putting. It could use some more storytelling. 
+
+## Character counter
+
+### How is the storytelling? Is it clear what the forms are supposed to do?
+
+Not really, but you can tell what it's for. 
+
+### Are the inputs and buttons legible? Do they have labels?
+
+Yes. The textarea has no max-width so you can just make it as big or as small as you want, which I guess doesn't matter. But I feel like it should. 
+
+### Does the form work with the expected input?
+
+It does a good job. It also spits out the phrase, which is nice since it deletes it in the input box once you submit it. 
+
+### Can you break it by putting in other values like 0 and empty?
+
+I wasn't able to. It lets you enter numbers though. It also counts spaces. 
+
+### Do things jump around when you interact with them?
+
+Not really.    
+
+### Is the outcome clear?
+
+Yes. I don't like the change in font styles/families that are going on here though. 
+
+### Do the form styles match across all forms?
+
+No.
+
+### Is it a pleasure to use?
+
+Yeah, it works fine. It was styled well and matches his homepage. 
+
+### What could be improved?
+
+Don't mix fonts so much. The first letter of the string could be capitalized by default. The textarea needs to be constrained. It could use some more storytelling. 
+
+
 
 
 
