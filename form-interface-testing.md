@@ -95,4 +95,112 @@ Yeah, it works fine.
 Rounding.
 
 
+##Joseph--General:
+
+###Could you find them? Was it difficult? Easy? Was it at user/projects/e4p?
+
+It's on the homepage, so that's good. It's easy enough. 
+
+It was not in e4p. It was in php-practice. It's on the index page. 
+
+###How is the index page? Is it clear what the page is for a first-time visitor? Are the links clear?
+
+Yes, it's literally his index page but it's labeled well and it's clear. You have to dig a little to find what you want but it's not horrible. I will say, the red headers with the blue links clash. 
+
+###Does it match the rest of the site?
+
+Like 10% of the time.
+
+Joseph's site is kinda all over the place with styling, which makes sense because they're all different projects/pages. 
+
+##Self Checkout
+
+###How is the storytelling? Is it clear what the forms are supposed to do?
+
+Yes. It's very personal and funny. I get what it's supposed to do. 
+
+###Are the inputs and buttons legible? Do they have labels?
+
+The inputs are too long. Using red text on yellow should land you in prison. Same with the h1 blue text. The labels need more space, it's too condensed. It gives me anxiety. The input fields should be white or something other than the background color. 
+
+###Does the form work with the expected input?
+
+Yes, for the most part. it takes negative numbers. 
+
+###Can you break it by putting in other values like 0 and empty?
+
+See above.
+
+###Do things jump around when you interact with them?
+
+Yes, because everything is a separate project.  
+
+###Is the outcome clear?
+
+Yes, unless you use negative numbers. 
+
+###Do the form styles match across all forms?
+
+No.
+
+###Is it a pleasure to use?
+
+Yeah, it works fine. I hate the yellow background.
+
+###What could be improved?
+
+The biggest thing is the styling. Too many colors that don't work with each other. These colors are like people caught in a love triangle... if that makes any sense. They hate each other. 
+
+
+##Printing Quotes: 
+
+###How is the storytelling? Is it clear what the forms are supposed to do?
+
+It's okay. People that are coming here have no idea that PHP won't do this for them by default, but it is clear what's going to happen. 
+
+"Press for marks" is confusing. What does that mean? Just put enter, or something simple. 
+
+###Are the inputs and buttons legible? Do they have labels?
+
+Yes.
+
+###Does the form work with the expected input?
+
+Yes. But, it's awkwardly formatted. If you're going to echo the string that says everything at the end then you don't need to repeat the question and the input before it.
+
+I think I also did this. 
+
+###Can you break it by putting in other values like 0 and empty?
+
+Mostly good. I can enter zero and it will print it, that's it. It's technically a string, so that makes sense. 
+
+###Do things jump around when you interact with them?
+
+Not on this specific page, no. Like I said, going from index to here, it jumps.
+
+###Is the outcome clear?
+
+Yes. Again, no need to repeat the output twice. 
+
+###Do the form styles match across all forms?
+
+See above.
+
+###Is it a pleasure to use?
+
+No. The background is salmon, then we have blue and purple text. I don't mean to be overly critical here, but that drives me insane.  
+
+Those colors are enemies. 
+
+###What could be improved?
+
+Colors.
+
+
+
+
+
+
+
+
 
