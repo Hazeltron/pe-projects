@@ -95,6 +95,8 @@ Yeah, it works fine.
 Rounding.
 
 
+
+
 ##Joseph--General:
 
 ###Could you find them? Was it difficult? Easy? Was it at user/projects/e4p?
@@ -195,6 +197,11 @@ Those colors are enemies.
 ###What could be improved?
 
 Colors.
+
+
+
+##Max--General:
+
 
 
 
