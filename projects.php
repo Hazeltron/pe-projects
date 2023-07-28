@@ -51,7 +51,11 @@
 		 <?php if ($page == 'project one') { ?>
 
 		 	<h1>Project One</h1>
-		 	<p>This is my first project!</p>
+		 	<picture>
+		 		<img src="https://m.media-amazon.com/images/I/71V0QQRO9fL.jpg" alt="">
+		 	</picture>
+		 	<p>This is my first project. It's a calculator that tells you how many drinks each guest at a party can have.</p>
+		 	<a href="?page=details-project-one">Learn more!</a>
 
 		 <?php } ?>
 
@@ -59,6 +63,40 @@
 
 		 	<h1>Project Two</h1>
 		 	<p>This is my second project!</p>
+
+		 <?php } ?>
+
+		 <?php if($page == 'details-project-one'){ ?>
+
+		 	<section>
+
+		 		<div class="inner-column">
+
+				 	<h1>Caalculator</h1>
+				 	<picture>
+				 		<img src="#" alt="#">
+				 	</picture>
+
+		 		</div>
+		 	</section>
+
+		 	<section>
+		 		<div class="inner-column">
+
+				 	<h2>languages used</h2>
+				 	<ul>
+				 		<li>PHP</li>
+				 		<li>HTML</li>
+				 		<li>CSS</li>
+				 	</ul>
+
+				 	<h2>Case Study</h2>
+				 	<p>This was eally the first thing I ever made with PHP. It's not the greatest but....</p>
+
+		 		</div>
+		 	</section>
+
+
 
 		 <?php } ?>
 
