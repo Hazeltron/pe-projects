@@ -21,7 +21,7 @@
 			</li>
 
 			<li>
-				<a href="#">Projects</a>
+				<a href="projects.php">Projects</a>
 			</li>
 
 			<li>
