@@ -91,6 +91,30 @@ footer{
     border-bottom: lightblue  3px solid;
 }
 
+/* project specific */
+
+.field {
+	display: flex;
+	flex-direction: column;
+}
+
+input{
+	max-width: 400px;
+	margin-top: 10px;
+	height: 30px;
+}
+
+textarea {
+	max-width: 400px;
+	min-height: 200px;
+	margin-top: 10px;
+}
+
+button{
+	margin-top: 20px;
+	padding: 10px;
+}
+
 
 /*screen size*/
 

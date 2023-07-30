@@ -57,6 +57,20 @@ nav a {
 	color: black;
 }
 
+form {
+	padding: 20px;
+}
+
+.field + .field {
+	margin-top: 20px;
+
+}
+
+textarea {
+	max-width: 400px;
+	min-height: 200px;
+}
+
 
 
 footer li {
