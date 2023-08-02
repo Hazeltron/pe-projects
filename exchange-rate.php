@@ -63,7 +63,8 @@
 	 <form method="post">
 
 	 	<h1>Exchange rate calculator</h1>
-	 	<p>This will tell you what euros mean in terms of dollars. That is to say, it'll show you the conversion of a given euro amount rounded up to the next penny--in dollars.</p>
+	 	<p>This will tell you what dollars mean in terms of euros. That is to say, it'll show you the conversion of a given dollar amount rounded up to the next... euro-penny. <br>
+	 	Does that make sense???</p>
 
 	 	<div class="field">
 	 		<pre><?php print_r($_POST) ?></pre>
