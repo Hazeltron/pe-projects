@@ -67,7 +67,7 @@
 	 	Does that make sense???</p>
 
 	 	<div class="field">
-	 		<pre><?php print_r($_POST) ?></pre>
+	 		<pre><?php print_r($_POST)?></pre>
 	 		
 	 		<label>How many dollars do you have?</label>
 	 		<input type="number" name="dollars" min="0" value="<?=$dollars?>">
@@ -79,7 +79,7 @@
 
 	 	</div>
 
-	 	<?php echo $formatedEuros; ?>
+	 	<?php echo "<h2> <span>&#8364;</span>$formatedEuros</h2>"; ?>
 
 	 </form>
 </div>
