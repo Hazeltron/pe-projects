@@ -1,20 +1,19 @@
 <?php
-
+include "header.php";
 include ("project-data.php");
 
 ?>
 
 <?php 
 
+$thisProject = null;
+
 foreach ($projectData as $project) {
-	echo $project["name"];
+	if ($project["id"] == $_GET["id"]) {
+	$thisProject = $_GET["id"];
+	}
 }
 
-if ( isset($_GET["id"]) ) {
-	echo "yay"; 
-} else{
-	echo "not working.";
-} 
 
 
 ?>

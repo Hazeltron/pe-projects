@@ -98,10 +98,10 @@ footer{
 	flex-direction: column;
 }
 
-input{
+input {
 	max-width: 400px;
 	margin-top: 10px;
-	height: 30px;
+	height:  30px;
 }
 
 textarea {
@@ -110,9 +110,13 @@ textarea {
 	margin-top: 10px;
 }
 
-button{
+button {
 	margin-top: 20px;
 	padding: 10px;
+}
+
+a.active {
+	background-color: teal;
 }
 
 

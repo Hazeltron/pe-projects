@@ -21,9 +21,19 @@
 	<div class="inner-column">
 		<nav>
 			<ul>
-				<li><a href="?page=home">Summary</a></li>
-				<li><a href="?page=projects list">Project List</a></li>
-				<li><a href="?page=create">Add</a></li>
+
+				<li>
+					<a href="?page=home" class="<?php if ($page == "home"){ echo 'active';} ?>">Summary</a>
+				</li>
+
+				<li>
+					<a href="?page=projects list" class="<?php if ($page == 'projects list'){ echo "active";} ?>">Project List</a>
+				</li>
+
+				<li>
+					<a href="?page=create" class="<?php if ($page == "create"){ echo 'active';} ?>">Add</a>
+				</li>
+
 			</ul>
 		</nav>
 	</div>
