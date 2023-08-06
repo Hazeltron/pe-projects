@@ -43,6 +43,15 @@
 			</section>
 
 
+			<section class='welcome' id='welcome'>
+			<inner-column>
+
+				<?php include('modules/graphic-diptych-background-img/template.php'); ?>
+
+			</inner-column>
+			</section>
+
+
 			<section class='latest' id='latest'>
 			<inner-column>
 
