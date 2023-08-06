@@ -10,11 +10,11 @@
 			</li>
 
 			<li>
-				<a href='#'>Some page</a>
+				<a href='#'>HOME</a>
 			</li>
 
 			<li>
-				<a href='#'>Some other page</a>
+				<a href='#'>ROOMS</a>
 			</li>
 		</ul>
 	</nav>
@@ -22,7 +22,7 @@
 	<nav class='user-menu'>
 		<ul>
 			<li>
-				<a class='button' href='#'>Sign in</a>
+				<a class='button' href='#'>BOOK</a>
 			</li>
 		</ul>
 	</nav>

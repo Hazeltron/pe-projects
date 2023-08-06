@@ -17,11 +17,15 @@ graphic-diptych{
 		background-repeat: no-repeat;
 		background-position: top;
 		background-size: 600px;
-
 	}
+
 graphic-diptych{
 		min-height: 50vh;
 	}
+
+graphic-diptych{
+	color: white;
+}
 
 @media (min-width:  700px) {
 	graphic-diptych {

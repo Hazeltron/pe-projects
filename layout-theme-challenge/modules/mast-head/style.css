@@ -22,14 +22,28 @@ mast-head nav .home {
 	padding: 10px 0;
 }
 
-mast-head{
-	background-color: transparent;
+mast-head .button{
+	background-color: var(--color);
 }
 
-mast-head{
-	position: fixed;
+header{
+	position: sticky;
 	top: 0;
+	background-color: white;
+	opacity: .9;
+	z-index: 5;
 }
+
+.site-menu a{
+	border-bottom: dimgrey solid 1px;
+}
+
+.site-menu a:hover {
+	border-bottom: var(--color) solid 1px;
+	
+}
+
+
 
 
 mast-head nav a:not(.home) {
