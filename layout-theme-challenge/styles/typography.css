@@ -24,8 +24,8 @@
 
 .calm-voice, p, li {
 	font-family: var(--secondary-font);
-	font-size: 1.3rem;
-	line-height: 1.6;
+	font-size: 1.2rem;
+	line-height: 1.4;
 	max-width: 75ch;
 
 }
