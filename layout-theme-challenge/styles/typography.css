@@ -24,9 +24,10 @@
 
 .calm-voice, p, li {
 	font-family: var(--secondary-font);
-	font-size: 1rem;
+	font-size: 1.3rem;
 	line-height: 1.6;
 	max-width: 75ch;
+
 }
 
 :is(.calm-voice, p, li) em {

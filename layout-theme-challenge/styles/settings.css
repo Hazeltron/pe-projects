@@ -4,7 +4,7 @@ html {
 
 	--neutral-stuffs: gray;
 
-	--color: #f043c2;
+	--color: #98e5e4;
 	--highlight: #aadee9;
 
 	--primary-font: 'Raleway', serif;
@@ -22,9 +22,9 @@ html {
 	--tight: 800px;
 }
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
 	html {
 		--paper: #231a1a;
 		--ink: #ffffe2;
 	}
-}
+}*/
