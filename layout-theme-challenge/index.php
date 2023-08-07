@@ -10,12 +10,14 @@
 		<meta property='og:image' content='Can you research emulate a website for a specific niche industry?'>
 
 		<link rel='stylesheet' href='styles/site.css'>
+		
+		<link href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Raleway:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
 	</head>
 
 
 	<body>
 
-		<header id="top">
+		<header class="sticky-nav" id="top">
 		<inner-column>
 			
 			<?php include('modules/mast-head/template.php'); ?>
@@ -25,6 +27,7 @@
 
 
 		<main id="page-content">
+
 			<section class='welcome' id='welcome'>
 			<inner-column>
 
@@ -43,10 +46,10 @@
 			</section>
 
 
-			<section class='welcome' id='welcome'>
+			<section class='background-img' id='background-img'>
 			<inner-column>
 
-				<?php include('modules/graphic-diptych-background-img/template.php'); ?>
+				<?php include('modules/graphic-diptych/template.php'); ?>
 
 			</inner-column>
 			</section>
@@ -71,7 +74,7 @@
 		</main>
 
 
-		<footer>
+		<footer class="bottom">
 		<inner-column>
 			
 			<?php include('modules/site-map/template.php'); ?>

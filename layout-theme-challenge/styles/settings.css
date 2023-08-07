@@ -7,6 +7,9 @@ html {
 	--color: #f043c2;
 	--highlight: #aadee9;
 
+	--primary-font: 'Raleway', serif;
+	--secondary-font: 'Average Sans', sans-serif;
+
 	--shadow: rgba(0, 0, 0, 0.8);
 
 	--corners: 10px; /* or whatevers */
@@ -15,6 +18,7 @@ html {
 	--ink: var(--black);
 
 	--standard: 1900px;
+	--midway: 1200px;
 	--tight: 800px;
 }
 

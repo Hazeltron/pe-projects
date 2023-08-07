@@ -22,23 +22,19 @@ mast-head nav .home {
 	padding: 10px 0;
 }
 
-mast-head .button{
-	background-color: var(--color);
-}
-
-header{
+.sticky-nav{
 	position: sticky;
 	top: 0;
 	background-color: white;
 	opacity: .9;
-	z-index: 5;
+	z-index: 20;
 }
 
-.site-menu a{
+.site-menu a:not(.home){
 	border-bottom: dimgrey solid 1px;
 }
 
-.site-menu a:hover {
+.site-menu a:not(.home):hover {
 	border-bottom: var(--color) solid 1px;
 	
 }

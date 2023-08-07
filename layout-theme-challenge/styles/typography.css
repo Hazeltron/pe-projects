@@ -1,7 +1,7 @@
 /* could we pull in @fonts here? */
 
 .loud-voice	{
-	font-family: sans-serif;
+	font-family: var(--primary-font);
 	font-size: clamp(36px, 5vw, 60px);
 }
 @media (min-width: 600px) {
@@ -11,20 +11,22 @@
 }
 
 .attention-voice	{
-	font-family: sans-serif;
+	font-family: var(--primary-font);
 	font-size: 30px;
+	font-weight: 400;
 }
 
 .strong-voice	{
-	font-family: sans-serif;
+	font-family: var(--primary-font);
 	font-weight: 700;
 	font-size:  1rem;
 }
 
 .calm-voice, p, li {
-	font-family: sans-serif;
+	font-family: var(--secondary-font);
 	font-size: 1rem;
-	line-height: 1.4;
+	line-height: 1.6;
+	max-width: 75ch;
 }
 
 :is(.calm-voice, p, li) em {

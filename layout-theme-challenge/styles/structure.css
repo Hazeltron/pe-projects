@@ -17,7 +17,15 @@ inner-column {
 	margin-left: auto;
 }
 
-.welcome inner-column {
+.latest inner-column{
+	width: 96%;
+	padding: 20px;
+	max-width: var(--midway); /* could be a variable in settings */
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.welcome .background-img inner-column {
 	width: 100%;
 	max-width: var(--standard); /* could be a variable in settings */
 	margin-right: auto;

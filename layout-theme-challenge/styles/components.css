@@ -12,4 +12,9 @@
 	min-width: 120px;
 	text-align: center;
 	border: solid black 1px;
+	background-color: white;
+}
+
+.button:hover{
+	background-color: var(--color);
 }

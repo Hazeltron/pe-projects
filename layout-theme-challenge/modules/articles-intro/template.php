@@ -3,9 +3,9 @@
 
 <articles-intro>
 	<header>
-		<h2 class='attention-voice'>Heading for this section here</h2>
+		<h2 class='attention-voice'>Experiences</h2>
 
-		<p>A short introduction explaining why these articles are here to help you understand if you want to read them.</p>
+		<p>At sandals anything is possible. We offer unforgettible experiencs. Wether you want to snorkle our breathtaking reefs, fish the open seas, or you just want to enjoy the sun--It can be found here.</p>
 	</header>
 
 	<article-grid>
