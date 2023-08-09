@@ -2,10 +2,14 @@
 include "header.php";
 include "project-data.php";
 
+
+$projectData = file_get_contents('projects.json');
+var_dump($projectData);
+
 $enter = null;
 $projectName = "";
 $update = null;
-$languages = "";
+$lang = "";
 $function = "";
 $validate = "";
 
@@ -52,9 +56,9 @@ if ( isset($_POST['enter']) ) {
 	
 
 	if ( isset($_POST['language']) ){
-		$languages = $_POST['language'];
+		$lang = $_POST['language'];
 
-		if (strlen($languages) > 0){
+		if (strlen($lang) > 0){
 			$hasLang = true;
 		} else {
 			$langError = "Please add a language.";
@@ -77,6 +81,20 @@ if ( isset($_POST['enter']) ) {
 	} else{
 		$validate = "Form unfinished.";
 	}
+
+	$newProject = array(
+		"name" => $projectName,
+		"date" => $update,
+		"languages" => $lang,
+		"funtion" => $function,
+
+	);
+
+	var_dump($newProject);
+
+	$projectsJson = json_encode($newProject);
+
+	file_put_contents("projects.json", $projectsJson);
 
 } 
 
@@ -119,7 +137,7 @@ if ( isset($_POST['enter']) ) {
 			<div class="field">
 
 				<label>Languages Used</label>
-				<input type="text" name="language" value="<?=$languages?>">
+				<input type="text" name="language" value="<?=$lang?>">
 				<?php if($langError){?>
 					<p><?=$langError?></p>
 				<?php }?>
@@ -130,7 +148,7 @@ if ( isset($_POST['enter']) ) {
 			<div class="field">
 
 				<label>Function of Project</label>
-				<textarea name="function" id="" cols="30" rows="10" value="<?=$function?>"></textarea>
+				<textarea name="function" type="text"id="" cols="30" rows="10" placeholder="<?=$function?>"></textarea>
 				<?php if($functionError){?>
 					<p><?=$functionError?></p>
 				<?php }?>
@@ -150,7 +168,7 @@ if ( isset($_POST['enter']) ) {
 			<h3><?=$projectName?></h3>
 			<p><?=$validate?></p>
 			<p><?=$update?></p>
-			<p><?=$languages?></p>
+			<p><?=$lang?></p>
 			<p><?=$function?></p>
 
 
@@ -159,6 +177,8 @@ if ( isset($_POST['enter']) ) {
 		
 	</div>
 </section>
+
+($i=1; $i<100; $i++){}
 
 
 
