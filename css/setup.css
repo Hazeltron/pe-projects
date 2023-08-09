@@ -1,14 +1,34 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+} /* https://www.paulirish.com/2012/box-sizing-border-box-ftw */
 
-:root{
-	--tiny-padding: 10px;
-	--loud-orange: #ef7820;
-	--orange: #f1a826;
-	--paper: #faeab4;
-	--teal: #7dc0a7;
-	--loud-voice: oswald;
-	--quiet-voice: esteban;
+a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
 }
 
-*{
-	box-sizing: border-box;
+p a {
+	display: inline;
+	color: blue;
+	text-decoration: underline;
+}
+
+picture {
+	display: block;
+	overflow: hidden;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+svg {
+  display: block;
+  width: 100%;
 }

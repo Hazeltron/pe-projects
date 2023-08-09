@@ -4,12 +4,13 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+/*	background-color: var(--paper);*/
+/*	background-image: linear-gradient(to left, rgba(12,24,38,1), rgba(255,255,255,0));*/
 }
 
 main {
-	border: black 3px solid;
+/*	border: black 3px solid;*/
 	flex-grow: 1;
-	background-color: var(--paper);
 }
 
 nav {
@@ -17,7 +18,7 @@ nav {
 	top: 0;
 	z-index: 20;
 	opacity: .9;
-	background-color: var(--orange);
+	background-color: var(--highlight);
 	
 }
 
@@ -43,7 +44,7 @@ img {
 }
 
 footer {
-	background-color: var(--orange);
+	background-color: var(--highlight);
 }
 
 
