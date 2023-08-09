@@ -21,7 +21,9 @@ include 'nav.php';
 
 			<div class="about-container">
 
-				<picture class="me-img"><img src="https://paulhazelton.files.wordpress.com/2015/04/dsc_0269.jpg?w=436&h=290" alt=""></picture>
+				<picture class="me-img">
+					<img src="https://paulhazelton.files.wordpress.com/2015/04/dsc_0269.jpg?w=436&h=290" alt="">
+				</picture>
 
 			<section class="about-content">
 				<h2>About</h2>
@@ -32,12 +34,8 @@ include 'nav.php';
 			<section class="contact-content">
 				<h2>Contact</h2>
 				<ul>
-					<li>Cell:
-						<br>
-					(719)337-0666</li>
-					<li>Email: 
-						<br>
-					paulhazelton.work@gmail.com</li>
+					<li>Cell:(719)337-0666</li>
+					<li>Email: paulhazelton.work@gmail.com</li>
 				</ul>
 			</section>
 		</div>
@@ -57,32 +55,41 @@ include 'nav.php';
 			<section class="affinity-showcase">
 						
 				<div class="affinity-card">
+
 					<picture>
 						<img src="assets/great-sand.png" alt="">
 					</picture>
+
 					<p>description of work</p>
+
 				</div>
 
 
 				<div class="affinity-card">
+
 					<picture>
 						<img src="assets/vertigo.png" alt="">
 					</picture>
 					<p>description of work</p>
+
 				</div>
 
 				<div class="affinity-card">
+
 					<picture>
 						<img src="assets/biz-card-5.png" alt="">
 					</picture>
 					<p>description of work</p>
+
 				</div>
 
 				<div class="affintiy-card">
+
 					<picture>
 						<img src="assets/journey.png" alt="">
 					</picture>
 					<p>description of work</p>
+
 				</div>
 						
 						
@@ -90,25 +97,7 @@ include 'nav.php';
 		</div>
 	</section>
 
-	<section class="goals">
-
-		<div class="inner-column">
-
-			<section class="goals-content">
-				<h2>Goals</h2>
-				<ul>
-					<li>I want to make money</li>
-					<li>Work remotely</li>
-					<li>Live on a beach in Malasia</li>
-					<li>Own land in the rockies</li>
-					<li>Be respected as a designer and programer</li>
-					<li>Actually know what I'm doing</li>
-					<li>Freedom to create beautiful stuff</li>
-				</ul>
-			
-			</section>
-		</div>
-	</section>
+	
 
 
 <?php include 'footer.php'; ?>
