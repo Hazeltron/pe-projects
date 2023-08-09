@@ -1,0 +1,8 @@
+html{
+	--ink: #ffffff;
+	--paper: #0c1826;
+	--highlight: #f1c615;
+
+	--primary-font: 'Roboto', serif;
+	--secondary-font: 'Libre Baskerville', sans-serif;
+}
