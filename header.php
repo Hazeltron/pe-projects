@@ -12,7 +12,7 @@
 		<title>Paul Hazelton</title>
 		
 
-		<link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Esteban|Oswald:300" >
+		<link rel="stylesheet" href="css/settings.css">
 
 		<link rel="stylesheet" href="css/site.css">
 
@@ -20,7 +20,11 @@
 
 		<link rel="stylesheet" href="css/structure.css">
 
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
 		<link rel="stylesheet" href="css/font.css">
+
+
 
 	</head>
 
