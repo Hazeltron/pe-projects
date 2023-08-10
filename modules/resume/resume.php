@@ -35,6 +35,7 @@
 <?php 
 // include 'header.php';
 include '../../nav.php'; 
+include ("../../data-php/blog-xp-data.php")
 ?>
             
 
@@ -59,7 +60,7 @@ include '../../nav.php';
     <div class="inner-column">
 
         <?php include("educ-contact-list/template.php") ?>
-        
+
     </div>
 </section>
 
@@ -67,19 +68,9 @@ include '../../nav.php';
 
 <section class="additional">
     <div class="inner-column">
-        <section class="add">
 
+        <?php include("additional/template.php"); ?>
 
-            <h2>Additional</h2>
-
-            <p>Programming<br>(HTML/CSS/PHP/JavaScript)</p>
-
-            <h2>Certifications</h2>
-
-            <p>TESOL Cert. IV (10429NAT)</p>
-
-
-        </section>
     </div>
 </section>
 
@@ -88,170 +79,16 @@ include '../../nav.php';
 <section class="experience">
     <div class="inner-column">
 
-
-        <h2>Experience</h2>
-
-
-        <section class="experience-container">
-
-            <div class="experience-date">
-
-
-                <h3>Apr 2018 - Present</h3>
-
-
-            </div>
-
-
-            <div class="jobs">
-
-
-                <h3>K-12 ENGLISH TEACHER</h3>
-
-                <p>Apollo English, Hanoi, Vietnam</p>
-
-                <p>Tasked with teaching, lesson planning, placement testing and performing demos for K-12 students. Capable of coordinating expectations between students, parents, administrators and other teachers to deliver lessons effectively. Responsible for carrying out the role of Head teacher while his boss was stuck in the Philippines due to COVID. During this time, enrollment at the school grew by nearly 50 percent.</p>
-
-
-            </div>
-
-        </section>
-    </div>
-</section>
-
-
-
-
-
-
-<section class="experience">
-    <div class="inner-column">
+        <?php include("experience/template.php") ?>
         
-        <section class="experience-container">
-
-            <div class="experience-date">
-
-
-            <h3>Mar 2016 - Jul 2018</h3>
-
-
-            </div>
-
-
-            <div class="jobs">
-
-
-                <h3>MANAGER</h3>
-
-                <p>Cheba Hut, Fort Collins, CO</p>
-
-                <p>Worked his way from server to manager. As a manager, was entrusted to keep the business running efficiently, assist co-workers with questions and business issues. Responsible for managing the daily operations of the restaurant and staff while complying with all health and safety regulations.</p>
-
-
-            </div>
-
-        </section>
     </div>
 </section>
 
 
 
-<?php include 'footer.php'; ?>
+<?php include '../../footer.php'; ?>
 <!--
-    <body>
-    
-        <header>
-            <h1>Paul Hazelton</h1>
-        </header>
 
-        <section class="contact">
-            <header><h2>Contact</h2></header>
-            <ul>
-                <a herf="paulhazelton.work@gmail.com"></a><li>paulhazelton.work@gmail.com</li></a>
-                <li>(719)337-0666</li>
-                <li>Colorado Springs, Co. 80903</li>
-            </ul>
-            </section>
-
-            <section class="container">
-            <div class="education">
-                <h2>Education</h2>
-                <p>Colorado State University<br>
-                Fort Collins, CO<br>
-                Bachelor of Arts (B.A.) Mass Communication and Journalism (Jun 2016)</p>
-            </div>
-
-            <div class="add">
-                <header><h2>Additional</h3></header>
-                <p>Programming<br>(HTML/CSS/JavaScript)</p>
-            </div>
-
-            <div  class="cert">
-                <header>
-                    <h2>Certifications</h2>
-                    <p>TESOL Cert. IV (10429NAT)</p>
-                </header>
-            </div>
-        </section>
-
-        <header>
-            <h2>Experience</h2>
-        </header>
-
-        <section class="experience-container">
-           
-
-            <div class="experience-date">
-            <header><h4>Apr 2018 - Present</h4></header>
-            </div>
-            <div class="experience">
-            <header>
-                <h4>K-12 ENGLISH TEACHER</h4>
-            </header>
-            <p>Apollo English, Hanoi, Vietnam</p>
-            <p>Tasked with teaching, lesson planning, placement testing and performing demos for K-12 students. Capable of coordinating expectations between students, parents, administrators and other teachers to deliver lessons effectively. Responsible for carrying out the role of Head teacher while his boss was stuck in the Philippines due to COVID. During this time, enrollment at the school grew by nearly 50 percent.</p>
-            </div>
-            </section>
-
-            <section class="experience-container">
-            <div class="experience-date">
-                <header><h4>Mar 2016 - Jul 2018</h4></header>
-                </div>
-            <div class="experience">
-            <header>
-                <h4>MANAGER</h4>
-            </header>
-            <p>Cheba Hut, Fort Collins, CO</p>
-            <p>Worked his way from server to manager. As a manager, was entrusted to keep the business running efficiently, assist co-workers with questions and business issues. Responsible for managing the daily operations of the restaurant and staff while complying with all health and safety regulations.</p>
-            </div>
-            </section>
-
-            <section class="experience-container">
-            <div class="experience-date">
-                <header><h4>Apr 2009 - Sep 2014</h4></header>
-            </div>
-            <div class="experience">
-            <header>
-                <h4>BAR/BANQUET STAFF</h4>
-            </header>
-                <p>Patty Jewett Golf Course Bar and Grill, Colorado Springs, CO</p>
-                <p>Rose quickly and consistently over the years in responsibilities by maintaining excellent customer service and sensitivity to golf culture and norms. Worked diligently and effectively to handle crunch times at high-traffic golf courses while managing the expectations of patrons. As part of his duties working in banquets, was responsible for setting up events including weddings and tournaments.</p>
-            </div>
-            </section>
-            
-            <section class="experience-container">
-            <div class="experience-date">
-                <header><h4>June 2022 - Present</h4></header>
-            </div>
-
-            <div class="experience">
-            <header>
-                <h4>MAIN EXPO/SERVER</h4>
-            </header>
-            <p>Jax Fish House and Oyster Bar, Colorado Springs, CO</p>
-            <p>Was required to have intimate knowledge of the menu, drinks and wine. Had a deep understanding of the steps of service and how to treat guests at an upscale restaurant. As a server and expo, was able to juggle fast-paced and intricate tasks while remaining level-headed. On expo, he was required to catch mistakes and manage kitchen and wait staff while organizing orders and ensuring speedy ticket times.</p>
-            </div>
-        </section>
 
         <header>
             <h2>References</h2>

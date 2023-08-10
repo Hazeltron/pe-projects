@@ -1,0 +1,19 @@
+
+
+    .experience-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        border-bottom: lightblue 3px solid;
+        gap: 20px;
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+
+
