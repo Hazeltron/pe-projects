@@ -1,42 +1,15 @@
+@import "modules.css";
 
 body {
 	background-color: white;
 }
 
 
-.landing-image{
-    background-image: url('https://img.freepik.com/free-vector/retro-stripes-colorful-distorted-backdrop_1217-4224.jpg?w=1380&t=st=1688960781~exp=1688961381~hmac=1ce4cea99dd3db3b0f6bf2d4350afd9c29ebe304f8d126a386f2d7f1bc0a9b5f');
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 400px;
-    padding-top: 20px;
-    
-}
 
-.trans-message{
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 800px;
-	min-height: 200px;
-	margin-top: 100px;
-	z-index: 10;
-	border-radius: 30px;
-	opacity: .9;
-	background-color: black;
-	color: whitesmoke;	
-}
 
-.trans-message p{
-	text-align: center;
-}
 
-.me-img{
-	display: none;
-}
 
-.affinity-card img{
-	max-width: 400px;
-}
+
 
 .goals-content ul{
 	list-style-type: circle;
@@ -120,15 +93,7 @@ a.active {
 		gap: 10px;
 	}
 
-	.affinity-showcase{
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		gap: 10px;
-		flex-wrap: wrap;
-		text-align: center;
-	}
+	
 
 	.blog-cards-container{
         display: flex;
@@ -172,11 +137,6 @@ a.active {
 
 }
 
-@media (min-width:900px){
-	.me-img{
-		display: block;
-	}
 
-}
 
 
