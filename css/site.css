@@ -108,20 +108,7 @@ a.active {
 
     }
 
-    .educ-contact-container{
-	    display: flex;
-	    flex-direction: row;
-	    justify-content:flex-start;
-	    gap: 20px;
-	}
-
-	.experience-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    border-bottom: lightblue 3px solid;
-    gap: 20px;
-	}
+	
 
 }
 
