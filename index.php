@@ -6,14 +6,14 @@ include ('nav.php');
 
 <section>
 	<div class="inner-column">
-		<?php include("modules/hero/template.php"); ?>
+		<?php include("modules/home/hero/template.php"); ?>
 	</div>
 </section>
 
 <section class="about">
 		<div class="inner-column">
 
-			<?php include("modules/about/template.php"); ?>
+			<?php include("modules/home/about/template.php"); ?>
 		</div>
 
 	</section>
@@ -24,11 +24,11 @@ include ('nav.php');
 
 		<div class="inner-column">
 
-			<?php include("modules/affinity/template.php"); ?>
+			<?php include("modules/home/affinity/template.php"); ?>
 		</div>
 	</section>
 
 	
 
 
-<?php include 'modules/footer/template.php'; ?>
+<?php include 'modules/home/footer/template.php'; ?>
