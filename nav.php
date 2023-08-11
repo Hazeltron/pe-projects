@@ -9,24 +9,21 @@
 			</li>
 
 			<li>
-				<a href="blog.php">Blog</a>
+				<a href="modules/blog/blog.php">Blog</a>
 			</li>
 
 			<li>
-				<a href="resume.php">Resume</a>
+				<a href="modules/resume/resume.php">Resume</a>
 			</li>
 
 			<li>
-				<a href="goals.php">Goals</a>
+				<a href="modules/goals/goals.php">Goals</a>
 			</li>
 
 			<li>
-				<a href="projects.php">Projects</a>
+				<a href="modules/projects/projects.php">Projects</a>
 			</li>
-
-			<li>
-				<a href="php-fun.php">Php</a>
-			</li>
+			
 
 		</ul>
 
