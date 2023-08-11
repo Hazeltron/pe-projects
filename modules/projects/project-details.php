@@ -41,7 +41,7 @@ foreach($projectData as $data){
 				<img src="https://m.media-amazon.com/images/I/71V0QQRO9fL.jpg" alt="">
 			</picture>
 
-		<h2>Case Study</h2>
+		<h2>Case Study hi</h2>
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, vero vitae. In esse debitis distinctio accusantium quisquam, odit molestias, sequi?</p>
 
