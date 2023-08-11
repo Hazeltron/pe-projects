@@ -4,33 +4,6 @@ body {
 	background-color: white;
 }
 
-
-
-
-
-
-
-
-.goals-content ul{
-	list-style-type: circle;
-	list-style-position: inside;
-}
-
-.goals-content li{
-	padding: 20px;
-}
-
-/*blog specific*/
-
-
-/* goal specific */
-
-.list li {
-	line-height: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
 /* resume specific */
 
 .ref-container{
@@ -67,7 +40,7 @@ button {
 }
 
 a.active {
-	background-color: teal;
+	background-color: white;
 }
 
 
