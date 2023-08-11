@@ -1,0 +1,26 @@
+[
+	{
+		"heading":"end of week",
+		"goals":[
+			"goal one",
+			"goal two",
+			"goal three"
+		]
+	},
+	{
+		"heading":"end of month",
+		"goals":[
+			"goal one",
+			"goal two",
+			"goal three"
+		]
+	},
+	{
+		"heading":"end of month",
+		"goals":[
+			"goal one",
+			"goal two",
+			"goal three"
+		]
+	}
+]

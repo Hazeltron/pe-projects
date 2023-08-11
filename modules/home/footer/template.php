@@ -1,5 +1,4 @@
-
-</main>
+		</main>
 
 		<footer>
 			<div class="inner-column">
