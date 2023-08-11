@@ -12,21 +12,18 @@
 		<title>Paul Hazelton</title>
 		
 		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-		
-		<link rel="stylesheet" href="css/settings.css">
-
-		<link rel="stylesheet" href="css/site.css">
 
 		<link rel="stylesheet" href="css/setup.css">
 
+		<link rel="stylesheet" href="css/font.css">
+		
+		<link rel="stylesheet" href="css/settings.css">
+
 		<link rel="stylesheet" href="css/structure.css">
 
+		<link rel="stylesheet" href="css/site.css">
+
 		<link rel="stylesheet" href="css/modules.css">
-
-		
-
-		<link rel="stylesheet" href="css/font.css">
-
 
 
 	</head>

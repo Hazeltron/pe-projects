@@ -1,6 +1,14 @@
 <?php 
-include ('header.php');
-include ('nav.php'); 
+	// function showErrors(){
+	// 	ini_set('display_errors', 1);
+	// 	ini_set('displayy_startup_errors', 1);
+	// 	error_reporting(E_ALL);
+	// }
+	// showErrors();
+
+	
+	include ('header.php');
+	include ('nav.php'); 
 ?>
 			
 
@@ -31,4 +39,4 @@ include ('nav.php');
 	
 
 
-<?php include 'modules/home/footer/template.php'; ?>
+<?php include ('footer.php'); ?>
