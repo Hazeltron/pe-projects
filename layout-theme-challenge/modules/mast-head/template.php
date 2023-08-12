@@ -10,11 +10,11 @@
 			</li>
 
 			<li>
-				<a href='#'>HOME</a>
+				<a href='#'>home</a>
 			</li>
 
 			<li>
-				<a href='#'>ROOMS</a>
+				<a href='#'>rooms</a>
 			</li>
 		</ul>
 	</nav>

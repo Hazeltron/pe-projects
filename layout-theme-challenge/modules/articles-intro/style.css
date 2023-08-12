@@ -13,8 +13,9 @@ articles-intro header {
 	align-items: center;
 }
 
-articles-intro h2{
-	margin-bottom: 40px;
+articles-intro p{
+	margin-bottom: 10vh;
+	color: dimgray;
 }
 
 

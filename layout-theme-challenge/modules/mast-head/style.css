@@ -1,12 +1,16 @@
 
 mast-head {
 	display: block;
-	/*border: 4px solid blue;*/
+/*	border: 4px solid blue;*/
+}
+.sticky-nav inner-column{
+	max-width: 1400px;
 }
 
 mast-head .logo {
-	max-width: 180px;
+	max-width: 120px;
 }
+
 
 mast-head .logo * {
 	fill: var(--ink);
@@ -19,23 +23,22 @@ mast-head nav ul {
 }
 
 mast-head nav .home {
-	padding: 10px 0;
+	padding: 9px 0;
 }
 
 .sticky-nav{
 	position: sticky;
 	top: 0;
 	background-color: white;
-	opacity: .9;
 	z-index: 20;
+	filter: drop-shadow(1px 0px 4px dimgray);
 }
 
-.site-menu a:not(.home){
-	border-bottom: dimgrey solid 1px;
-}
+
 
 .site-menu a:not(.home):hover {
-	border-bottom: var(--color) solid 1px;
+	color: var(--highlight);
+
 	
 }
 
@@ -43,7 +46,8 @@ mast-head nav .home {
 
 
 mast-head nav a:not(.home) {
-	padding: .5em 1em;
+	padding: .1em 1em;
+	text-transform: capitalize;
 }
 
 @media (min-width:  600px) {
