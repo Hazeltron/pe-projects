@@ -1,46 +1,14 @@
-<!doctype html>
-<html>
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="It's been a weird day.">
-        <meta name="keywords" content="HTML, CSS, JavaScript">
-        <meta name="author" content="Paul Hazelton">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <title>Paul Hazelton</title>
-
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-
-        <link rel="stylesheet" href="../../css/settings.css">
-
-        <link rel="stylesheet" href="../../css/site.css">
-
-        <link rel="stylesheet" href="../../css/setup.css">
-
-        <link rel="stylesheet" href="../../css/structure.css">
-
-        <link rel="stylesheet" href="../../css/modules.css">
-
-
-        <link rel="stylesheet" href="../../css/font.css">
-
-
-
-    </head>
-
-    <body>
 
 <?php 
-// include '../../header.php';
-include '../../nav.php'; 
+include 'header.php';
+include 'nav.php'; 
 ?>
             
 
 <section class="landing">
     <div class="inner-column">
 
-        <?php include("hero/template.php"); ?>
+        <?php include("modules/blog/hero/template.php"); ?>
         
     </div>
 </section>
@@ -58,10 +26,10 @@ include '../../nav.php';
 
 <section class="blog">
     <div class="inner-column">
-        <?php include("blog-cards/template.php"); ?>
+        <?php include("modules/blog/blog-cards/template.php"); ?>
     </div>
 </section>
 
 
-<?php include '../../footer.php'; 
+<?php include 'footer.php'; 
 ?>
