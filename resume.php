@@ -33,9 +33,9 @@
 
 
 <?php 
-// include 'header.php';
-include '../../nav.php'; 
-include ("../../data-php/blog-xp-data.php")
+include 'header.php';
+include 'nav.php'; 
+include ("data-php/blog-xp-data.php")
 ?>
             
 
@@ -59,7 +59,7 @@ include ("../../data-php/blog-xp-data.php")
 <section class="educ-contact">
     <div class="inner-column">
 
-        <?php include("educ-contact-list/template.php") ?>
+        <?php include("modules/resume/educ-contact-list/template.php") ?>
 
     </div>
 </section>
@@ -69,7 +69,7 @@ include ("../../data-php/blog-xp-data.php")
 <section class="additional">
     <div class="inner-column">
 
-        <?php include("additional/template.php"); ?>
+        <?php include("modules/resume/additional/template.php"); ?>
 
     </div>
 </section>
@@ -79,14 +79,14 @@ include ("../../data-php/blog-xp-data.php")
 <section class="experience">
     <div class="inner-column">
 
-        <?php include("experience/template.php") ?>
+        <?php include("modules/resume/experience/template.php") ?>
         
     </div>
 </section>
 
 
 
-<?php include '../../footer.php'; ?>
+<?php include 'footer.php'; ?>
 <!--
 
 

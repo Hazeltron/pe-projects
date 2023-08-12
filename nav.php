@@ -9,19 +9,19 @@
 			</li>
 
 			<li>
-				<a href="modules/blog/blog.php">Blog</a>
+				<a href="blog.php">Blog</a>
 			</li>
 
 			<li>
-				<a href="modules/resume/resume.php">Resume</a>
+				<a href="resume.php">Resume</a>
 			</li>
 
 			<li>
-				<a href="modules/goals/goals.php">Goals</a>
+				<a href="goals.php">Goals</a>
 			</li>
 
 			<li>
-				<a href="modules/projects/projects.php">Projects</a>
+				<a href="modulles/projects/projects.php">Projects</a>
 			</li>
 			
 
