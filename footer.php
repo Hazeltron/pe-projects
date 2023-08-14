@@ -1,5 +1,5 @@
-
-</main>
+	<!-- page ends here -->
+		</main>
 
 		<footer>
 			<div class="inner-column">
