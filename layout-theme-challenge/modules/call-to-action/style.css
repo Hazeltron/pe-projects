@@ -20,7 +20,27 @@ call-to-action .button {
 	color: dimgray;
 }
 
+.get-involved call-to-action{
+	background-color: #95e5e3;
 
+}
+
+.get-involved call-to-action p{
+	color: dimgray;
+}
+
+.get-involved call-to-action a.button{
+	background-color: white;
+	color: black;
+}
+
+.get-involved call-to-action a.button:hover{
+	background-color: #95e5e3;
+}
+
+.get-involved {
+	background-color: #95e5e3;
+}
 
 
 

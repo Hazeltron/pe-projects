@@ -5,6 +5,7 @@ mast-head {
 }
 .sticky-nav inner-column{
 	max-width: 1400px;
+	
 }
 
 mast-head .logo {
@@ -34,7 +35,9 @@ mast-head nav .home {
 	filter: drop-shadow(1px 0px 4px dimgray);
 }
 
-
+.site-menu mast-head a:not(.home){
+	border-bottom: solid black 1px;
+}
 
 .site-menu a:not(.home):hover {
 	color: var(--highlight);

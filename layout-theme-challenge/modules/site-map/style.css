@@ -1,13 +1,21 @@
-
+.bottom{
+	background-color: #002646;
+	color: white;
+}
 site-map {
 	display: block;
-	/*border: 4px solid green;*/
-
+/*	border: 4px solid green;*/
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
 	grid-gap: 20px;
 
-	padding: 20vh 0 20vh;
+	padding: 10vh 0 10vh;
+}
+.site-menu{
+/*	border: white solid 3px;*/
+}
+.x-menu{
+/*	border: red solid 3px;*/
 }
 
 site-map .logo {
@@ -15,15 +23,31 @@ site-map .logo {
 	margin-bottom: 20px;
 }
 
+
 site-map .logo * {
-	fill: var(--ink);
+	fill: white;
 }
 
 site-map h3 {
 	margin-bottom: 20px;
 }
 
-
-.bottom{
-	min-height: 50vh;
+.bottom .logo{
+	fill: white;
 }
+
+@media (min-width: 850px){
+	site-map{
+		grid-template-columns: repeat(4, 1fr); 
+		grid-gap: 20px;
+	}
+
+}
+
+@media (min-width: 1100px){
+
+
+}
+
+
+

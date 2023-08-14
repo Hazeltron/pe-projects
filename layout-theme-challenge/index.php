@@ -67,7 +67,12 @@
 			<section class='get-involved' id='get-involved'>
 			<inner-column>
 
-				<?php include('modules/call-to-action/template.php'); ?>
+				
+				<?php 
+				$heading = "Sign up for our exclusive packages.";
+				$paragraph = "Becoming a member of Sandals exclusive loyalty group will ensure lower prices and upgrades for packages and events. After your eventual death, your children will be grandfathered in. Then they can join the Illumanati like you.";
+				include('modules/call-to-action/template.php'); 
+				?>
 
 			</inner-column>
 			</section>

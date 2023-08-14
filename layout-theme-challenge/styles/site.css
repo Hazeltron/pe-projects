@@ -35,15 +35,20 @@ body {
 
 section:is(.sign-up, .get-involved) inner-column {
 	max-width: var(--tight);
+	padding: 20px;
 }
 
 section.get-involved {
-	background-color: var(--highlight);
+	background-color: #95e5e3;
 }
 
 section.get-involved .button {
 	background-color: var(--ink);
 	color: var(--paper);
+}
+
+.bottom inner-column{
+	padding: 20px;
 }
 
 @media (prefers-color-scheme: dark) {

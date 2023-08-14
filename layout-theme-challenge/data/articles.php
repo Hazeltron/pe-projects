@@ -3,12 +3,12 @@
 $articles = [
 	[
 		"heading" => "Scuba Diving",
-		"description" => "Come check out the coral reefs and fish and things.",
+		"description" => "Come check out the coral reefs and fish and things. Lorem ipsum dolor sit amet.",
 		"thumbnail" => "scuba.png",
 	],
 	[
 		"heading" => "Surfing",
-		"description" => "Here's a little info to help you understand if this is a thing you want to know about.",
+		"description" => "Come surf with us. It would be a lot of fun. Our instructors are world class.",
 		"thumbnail" => "surf.png",
 	],
 	[

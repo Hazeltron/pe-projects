@@ -4,17 +4,17 @@ articles-intro {
 	/*border: 4px solid purple;*/
 	padding: 15vh 0;
 	position: static;
-
 }
 
 articles-intro header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-bottom: 15vh;
 }
 
 articles-intro p{
-	margin-bottom: 10vh;
+	
 	color: dimgray;
 }
 
@@ -29,3 +29,25 @@ article-grid ul {
 	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 	grid-gap: 60px 20px;
 }
+
+/*.article-list article{
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+
+.article-list text-content{
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+
+article text-content a {
+	display: block;
+	margin-top: unset;
+	align-self: end;
+}
+
+article a{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}*/
