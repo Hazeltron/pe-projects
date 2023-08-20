@@ -1,30 +1,20 @@
 
-<?php
+<?php include ("data-php/affinity-data.php"); ?>
 
-include ("data-php/affinity-data.php");
+<ul class="affinity-showcase">
 
-?>
+	<?php foreach ($graphics as $graphic) { ?>
 
-<h2>Affinity Work</h2>
-	<p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Officiis sed ex saepe dignissimos provident! Error ratione laudantium dolorem enim consectetur quod minima distinctio, deleniti illo eos impedit cupiditate sed doloremque veritatis laboriosam quas id totam facere dicta iste et fugiat.</p>
+	<li class="affinity-card">
 
-	<ul class="affinity-showcase">
+		<h3><?=$graphic["name"];?></h3>
 
-		<?php 
-		
+		<picture>
+			<img src="<?=$graphic["image"];?>"alt="#">
+		</picture>
 
-		foreach ($graphics as $graphic) { ?>
+		<p><?=$graphic["description"];?></p>
 
-			<li class="affinity-card">
-
-			<h3><?=$graphic["name"];?></h3>
-
-			<picture>
-				<img src="<?=$graphic["image"];?>"alt="#">
-			</picture>
-
-			<p><?=$graphic["description"];?></p>
-
-		</li>
-		<?php } ?>
-	</ul>
+	</li>
+	<?php } ?>
+</ul>

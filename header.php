@@ -1,6 +1,6 @@
 <!doctype html>
 <?php include("functions.php"); ?>
-<html>
+<html lang="en">
 
 	<head>
 		<meta charset="UTF-8">
@@ -66,7 +66,3 @@
 		<main>
 
 			<!-- page starts here -->
-		
-
-
-			<!-- page content -->
