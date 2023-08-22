@@ -15,13 +15,13 @@
 
 		<link rel="stylesheet" href="css/setup.css">
 
-		<link rel="stylesheet" href="css/font.css">
-
 		<link rel="stylesheet" href="css/settings.css">
 
 		<link rel="stylesheet" href="css/structure.css">
 
 		<link rel="stylesheet" href="css/site.css">
+
+		<link rel="stylesheet" href="css/font.css">
 
 		<link rel="stylesheet" href="css/modules.css">
 
@@ -52,7 +52,7 @@
 						</li>
 
 						<li>
-							<a href="modulles/projects/projects.php">Projects</a>
+							<a href="projects.php">Projects</a>
 						</li>
 						
 
