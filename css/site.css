@@ -4,6 +4,30 @@ body {
 	background-color: white;
 }
 
+ h3 + p{
+	margin-top: 20px;
+}
+
+h2 + p{
+	margin-top: 20px;
+}
+
+/*Home specific*/
+@media(max-width:900px){
+	.me-img{
+		display: none;
+	}
+
+}
+/*Goals specific*/
+
+.list li {
+	line-height: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
 /* resume specific */
 
 .ref-container{

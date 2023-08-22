@@ -1,4 +1,4 @@
-.loud-voice{
+.loud-voice {
     font-family: var(--primary-font);
     font-size: 3rem;
     line-height: 1.5em;
@@ -7,7 +7,7 @@
 
 }
 
-.attention-voice{
+.attention-voice {
     font-family: var(--primary-font);
     font-size: 2rem;
     font-weight: 400;
@@ -15,18 +15,20 @@
 }
 
 
-.strong-voice{
+.strong-voice {
     font-family: var(--primary-font);
     font-size: 1.5rem;
     line-height: 1.5em;
     font-weight: 300;
 }
 
-.calm-voice, p{
+.calm-voice, p, li, a {
     font-family: var(--secondary-font);
     font-size: 1rem;
-    line-height: 2em;
+    line-height: 1.5em;
     max-width: 75ch;
     font-weight: 300;
 }
+
+
 

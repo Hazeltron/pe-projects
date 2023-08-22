@@ -1,3 +1,4 @@
+@import "font.css";
 @import "meyers-reset.css";
 
 body {
@@ -49,6 +50,7 @@ img {
 nav li {
 	display: inline-block;
 	color: black;
+	margin-left: 20px;
 }
 
 nav a {
