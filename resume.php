@@ -1,41 +1,7 @@
-<!doctype html>
-<html>
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="It's been a weird day.">
-        <meta name="keywords" content="HTML, CSS, JavaScript">
-        <meta name="author" content="Paul Hazelton">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <title>Paul Hazelton</title>
-
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-
-        <link rel="stylesheet" href="../../css/settings.css">
-
-        <link rel="stylesheet" href="../../css/site.css">
-
-        <link rel="stylesheet" href="../../css/setup.css">
-
-        <link rel="stylesheet" href="../../css/structure.css">
-
-        <link rel="stylesheet" href="../../css/modules.css">
-
-
-        <link rel="stylesheet" href="../../css/font.css">
-
-
-
-    </head>
-
-    <body>
-
 
 <?php 
 include 'header.php';
-include 'nav.php'; 
-include ("data-php/blog-xp-data.php")
+include ("data-php/blog-xp-data.php");
 ?>
             
 
@@ -46,7 +12,7 @@ include ("data-php/blog-xp-data.php")
             <section class="trans-message">
 
 
-                <h1>Resume</h1>
+                <h1 class="loud-voice">Resume</h1>
                 <p>A list of all the things I've done in life.</p>
 
 
@@ -59,7 +25,7 @@ include ("data-php/blog-xp-data.php")
 <section class="educ-contact">
     <div class="inner-column">
 
-        <?php include("modules/resume/educ-contact-list/template.php") ?>
+        <?php include("modules/resume/educ-contact-list/template.php"); ?>
 
     </div>
 </section>
@@ -79,7 +45,7 @@ include ("data-php/blog-xp-data.php")
 <section class="experience">
     <div class="inner-column">
 
-        <?php include("modules/resume/experience/template.php") ?>
+        <?php include("modules/resume/experience/template.php"); ?>
         
     </div>
 </section>
