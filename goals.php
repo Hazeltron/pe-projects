@@ -92,21 +92,21 @@ var_dump($goalsSections);
         <h2>Anyway, TL;DR :</h2>
 
         <ul>
-            <li>I want to be great at my job and be known for it.</li>
-            <li>I’d like to love what I do.</li>
-            <li>I want to have some stocks/investments and financial literacy. </li>
-            <li>I want a muscle car and maybe a restaurant.</li>
-            <li>Beach house in Malaysia.</li>
-            <li>Cabin in the Rockies.</li>
-            <li>Cool partner.</li>
-            <li>Good healthcare.</li>
-            <li>Retirement security.</li>
-            <li>More than 100k a year.</li>
-            <li>Have a community.</li>
-            <li>Be happy.</li>
-            <li>Have a nice view.</li>
-            <li>Good coffee.</li>
-            <li>Travel.</li>
+            <li></li>
+            <li></li>
+            <li> </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
         </ul>
         
     </div>
@@ -118,17 +118,17 @@ var_dump($goalsSections);
 
         <h2>End of the course</h2>
 
-        <p>By the end of the course I would like to be able to be handed a project, look at it and say “Bet. I can do this.” and ask a few follow-up questions and start working. I want that confidence and the skills to back it up.</p>
+        <p></p>
 
-        <p>I want to be set up with a portfolio of work that will impress employers and some experience under my belt. I also want to understand what I’m doing, not just googling “how do I…”</p>
+        <p></p>
 
-        <p>A little of that is fine but I better not be looking up “how to JavaScript?”</p>
+        <p></p>
 
-        <p>Landing a job or high-paying jig is also paramount.</p>
+        <p></p>
 
-        <p>What don’t I want to happen?</p>
+        <p></p>
 
-        <p>I don’t want to come out of this with one skill. I’d like to be an asset and understand design and code.</p>
+        <p></p>
 
     </div>
 </section>
