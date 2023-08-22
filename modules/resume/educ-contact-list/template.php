@@ -2,7 +2,7 @@
 
     <li class="education">
 
-        <h2>Education</h2>
+        <h2 class="attention-voice">Education</h2>
 
         <p>Colorado State University<br>
         Fort Collins, CO<br>
@@ -13,7 +13,7 @@
 
     <li class="contact">
 
-        <h2>Contact</h2>
+        <h2 class="attention-voice">Contact</h2>
 
         
         <a herf="paulhazelton.work@gmail.com">paulhazelton.work@gmail.com</a>

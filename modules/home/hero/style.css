@@ -20,6 +20,9 @@
 	opacity: .9;
 	background-color: black;
 	color: whitesmoke;	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .trans-message p{

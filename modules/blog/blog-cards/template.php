@@ -15,7 +15,7 @@
  //    $name = $somethingElse['name'];
  //    echo $name;
  // }
-    include("../../data-php/blog-cards-data.php");
+    include("data-php/blog-cards-data.php");
 
     foreach($blogCards as $card){ ?>
 
@@ -26,7 +26,7 @@
             <img src="<?=$card['image'];?>" alt="">
         </picture>
 
-        <h2><?=$card['title'];?></h2>
+        <h2 class="strong-voice"><?=$card['title'];?></h2>
         <p><?=$card['description'];?></p>
 
 

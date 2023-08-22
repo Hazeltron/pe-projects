@@ -7,7 +7,7 @@
 
 	<li class="affinity-card">
 
-		<h3><?=$graphic["name"];?></h3>
+		<h3 class="strong-voice"><?=$graphic["name"];?></h3>
 
 		<picture>
 			<img src="<?=$graphic["image"];?>"alt="#">
