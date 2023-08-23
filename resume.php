@@ -5,21 +5,7 @@ include ("data-php/blog-xp-data.php");
 ?>
             
 
-<section>
-    <div class="inner-column">
-        <div class="landing-image">
 
-            <section class="trans-message">
-
-
-                <h1 class="loud-voice">Resume</h1>
-                <p>A list of all the things I've done in life.</p>
-
-
-            </section>
-        </div> 
-    </div>
-</section>
 
 
 <section class="educ-contact">
