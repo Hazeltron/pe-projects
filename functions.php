@@ -5,4 +5,8 @@
 // 	error_reporting(E_ALL);
 // }
 	
-// showErrors(); 
+// showErrors(); 1
+
+// function getfile($path){
+// 	return dirname(__FILE__) . '/' . $path;
+// }

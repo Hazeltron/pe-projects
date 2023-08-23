@@ -1,3 +1,5 @@
+<?php include('config.php'); ?>
+
 <!doctype html>
 
 <html lang="en">
@@ -8,7 +10,7 @@
 		<meta name="keywords" content="HTML, CSS, JavaScript">
 		<meta name="author" content="Paul Hazelton">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<base href="http://localhost:8888/">
+		<base href="<?=BASE_URL?>">
 
 		<title>Paul Hazelton</title>
 
