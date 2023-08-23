@@ -1,5 +1,4 @@
-@import "font.css";
-@import "meyers-reset.css";
+
 
 body {
 	display: flex;
@@ -24,7 +23,7 @@ nav {
 }
 
 .inner-column {
-	max-width: 900px;
+	max-width: 1000px;
 	margin-right: auto;
 	margin-left: auto;
 	padding: 10px;
@@ -35,7 +34,6 @@ picture {
     display: block;
     max-width: 300px;
     padding: 20px;
-    filter: drop-shadow(10px 10px 6px grey);
 }
 
 img {
