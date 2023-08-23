@@ -1,4 +1,7 @@
-<?php include('config.php'); ?>
+<?php 
+	include('config.php'); 
+	include('functions.php');
+?>
 
 <!doctype html>
 
@@ -35,7 +38,7 @@
 
 					<ul>
 						<li>
-							<a href="index.php">Home</a>
+							<a href="">Home</a>
 						</li>
 
 						<li>
