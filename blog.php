@@ -2,22 +2,14 @@
 <?php 
 include 'header.php';
 ?>
-            
-
-<section class="landing">
-    <div class="inner-column">
-
-        <?php include("modules/blog/hero/template.php"); ?>
-        
-    </div>
-</section>
 
 
 <section class="blog-text">
     <div class="inner-column">
 
-        <h2 class="attention-voice">Substack Blog</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse rem dolore laudantium inventore illo obcaecati explicabo hic nobis cum ducimus at ad doloribus illum itaque accusamus quibusdam tempore, dolor architecto labore veniam numquam quo iure. Dolore rem incidunt aspernatur, eligendi?</p>
+        <h2 class="loud-voice">Substack Blog</h2>
+        <p>I like to write. Sometimes it's funny, sometimes it's professional but it's always entertaining.</p>
+        <p>I try to find interesting topics. Sometimes that means it's something I've learned, or a case study. Sometimes it's just what I'm thinking about. Check my blog out and see for yourself.</p>
 
     </div>
 </section>
