@@ -4,6 +4,7 @@
 @import "setup.css";
 @import "structure.css";
 @import "font.css";
+@import "pages.css";
 
 body {
 	background-color: #101825;
@@ -18,61 +19,23 @@ h2 + p{
 	margin-top: 20px;
 }
 
+/*home specific*/
 .about-container{
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 }
 
-/*Home specific*/
 @media(max-width:900px){
 	.me-img{
 		display: none;
 	}
 
 }
-
-/*Goals specific*/
-
-.list li {
-	line-height: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-
-/* resume specific */
-
-    .experience-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        
-        gap: 20px;
-    }
-    .title {
-        display: flex;
-        flex-direction: column;
-    }
     
-    .experience h3{
-        color: var(--highlight);
-        margin-top: 20px;
-    }
 
-.ref-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-.refs{
-    border-bottom: #d4b644  3px solid;
-}
+/* field specific */
 
-/* project specific */
-.projects-summary, .project-list, .project-detail, .project-form{
-	height: 90vh;
-}
 .field {
 	display: flex;
 	flex-direction: column;
@@ -95,51 +58,8 @@ button {
 	padding: 10px;
 }
 
-a.active {
-	background-color: white;
-}
 
 
-/*screen size*/
-
-@media (min-width:600px){
-	/*.about-container{
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-start;
-		gap: 10px;
-	}*/
-
-	
-
-	.blog-cards-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        gap: 20;
-    }
-
-    .blog-card{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .blog-card p{
-    	max-width: 25ch;
-    }
-
-    .blog-card picture {
-    	max-width: 200px;
-
-    }
-
-	
-
-}
 
 
 
