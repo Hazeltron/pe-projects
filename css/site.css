@@ -1,7 +1,13 @@
+@import "meyers-reset.css";
 @import "modules.css";
+@import "settings.css";
+@import "setup.css";
+@import "structure.css";
+@import "font.css";
 
 body {
-	background-color: white;
+	background-color: #101825;
+	color: whitesmoke;
 }
 
  h3 + p{
@@ -12,6 +18,12 @@ h2 + p{
 	margin-top: 20px;
 }
 
+.about-container{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+}
+
 /*Home specific*/
 @media(max-width:900px){
 	.me-img{
@@ -19,6 +31,7 @@ h2 + p{
 	}
 
 }
+
 /*Goals specific*/
 
 .list li {
@@ -40,7 +53,9 @@ h2 + p{
 }
 
 /* project specific */
-
+.projects-summary, .project-list, .project-detail, .project-form{
+	height: 90vh;
+}
 .field {
 	display: flex;
 	flex-direction: column;
@@ -71,12 +86,12 @@ a.active {
 /*screen size*/
 
 @media (min-width:600px){
-	.about-container{
+	/*.about-container{
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
 		gap: 10px;
-	}
+	}*/
 
 	
 
