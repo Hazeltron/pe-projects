@@ -1,4 +1,4 @@
-<h2>Experience</h2>
+<h2 class="attention-voice">Experience</h2>
 
         <ul>
 
@@ -24,9 +24,9 @@
             <li class="title">
 
 
-                <h3 class="strong-voice"><?=$fact["title"]?></h3>
+                <h3 class="attention-voice"><?=$fact["title"]?></h3>
 
-                <p><?=$fact["location"]?></p>
+                <p class="strong-voice"><?=$fact["location"]?></p>
 
                 <p><?=$fact["description"]?></p>
 
