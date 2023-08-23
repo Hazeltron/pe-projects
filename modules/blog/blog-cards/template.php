@@ -21,13 +21,14 @@
 
     <li class="blog-card">
        
-        
+        <a href="<?=$card['link'];?>" >
         <picture>
             <img src="<?=$card['image'];?>" alt="">
         </picture>
 
         <h2 class="strong-voice"><?=$card['title'];?></h2>
         <p><?=$card['description'];?></p>
+        </a>
 
 
     </li>
