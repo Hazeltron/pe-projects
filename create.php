@@ -106,7 +106,7 @@ if ( isset($_POST['enter']) ) {
 
  ?>
 
- <section>
+ <section class="project-form">
  	<div class="inner-column">
 
 		<h1>Add a Project!</h1>
