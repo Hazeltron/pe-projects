@@ -1,5 +1,5 @@
 
-<?php include('../../header.php');?>
+<?php include('../../header.php'); ?>
 
 
 <section class="blog-text">
@@ -15,9 +15,9 @@
 
 <section class="blog">
     <div class="inner-column">
-        <?php include("../../modules/blog-cards/template.php"); ?>
+        <?php include(getFile("modules/blog-cards/template.php")); ?>
     </div>
 </section>
 
 
-<?php include '../../footer.php';?>
+<?php include(getFile("footer.php"));?>
