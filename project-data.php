@@ -2,30 +2,32 @@
 
 $projectData = [
 
+
+
 [
 	"id" => 0,
-	"name" => "Calculator",
-	"updated" => "Jul 28, 2023",
-	"languages" => "HTML, CSS, PHP",
-	"function" => "Computes drinks per guest.",
+	"name" => "Graphics",
+	"updated" => "On going",
+	"languages" => "None",
+	"function" => "Graphic design projects.",
 
 ],
 
 [
 	"id" => 1,
-	"name" => "project 2",
+	"name" => "Forms",
 	"updated" => "Jul 28, 2023",
 	"languages" => "HTML, CSS, PHP",
-	"function" => "Computes drinks per guest.",
+	"function" => "Forms that I've made.",
 
 ],
 
 [
 	"id" => 2,
-	"name" => "project 3",
+	"name" => "Websites",
 	"updated" => "Jul 28, 2023",
 	"languages" => "HTML, CSS, PHP",
-	"function" => "Computes drinks per guest.",
+	"function" => "A collection of websites I've made thoughout the course.",
 
 ],
 
