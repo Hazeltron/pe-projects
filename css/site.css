@@ -43,13 +43,30 @@ h2 + p{
 
 /* resume specific */
 
+    .experience-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        
+        gap: 20px;
+    }
+    .title {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .experience h3{
+        color: var(--highlight);
+        margin-top: 20px;
+    }
+
 .ref-container{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 .refs{
-    border-bottom: lightblue  3px solid;
+    border-bottom: #d4b644  3px solid;
 }
 
 /* project specific */

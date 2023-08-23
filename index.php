@@ -47,7 +47,7 @@
 		<h2 class="attention-voice">Affinity Work</h2>
 		<p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Officiis sed ex saepe dignissimos provident! Error ratione laudantium dolorem enim consectetur quod minima distinctio, deleniti illo eos impedit cupiditate sed doloremque veritatis laboriosam quas id totam facere dicta iste et fugiat.</p>
 
-		<?php include("modules/home/affinity/template.php"); ?>
+		<?php include("modules/affinity/template.php"); ?>
 
 	</div>
 </section>

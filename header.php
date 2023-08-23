@@ -1,5 +1,5 @@
 <!doctype html>
-<?php include("functions.php"); ?>
+
 <html lang="en">
 
 	<head>
@@ -8,6 +8,7 @@
 		<meta name="keywords" content="HTML, CSS, JavaScript">
 		<meta name="author" content="Paul Hazelton">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<base href="http://localhost:8888/">
 
 		<title>Paul Hazelton</title>
 
@@ -27,24 +28,31 @@
 				<div class="inner-column">
 
 					<ul>
+						<li class="strong-voice">Paul Hazelton</li>
+					</ul>
+
+					<ul>
 						<li>
 							<a href="index.php">Home</a>
 						</li>
 
 						<li>
-							<a href="blog.php">Blog</a>
+							<a href="pages/blog">Blog</a>
 						</li>
 
 						<li>
-							<a href="resume.php">Resume</a>
+							<a href="pages/resume">Resume</a>
 						</li>
 
 						<li>
-							<a href="goals.php">Goals</a>
+							<a href="pages/goals">Goals</a>
 						</li>
 
 						<li>
-							<a href="projects.php">Projects</a>
+							<a href="pages/projects">Projects</a>
+						</li>
+						<li>
+							<a href="pages/layout-garden">Layout Garden</a>
 						</li>
 						
 
