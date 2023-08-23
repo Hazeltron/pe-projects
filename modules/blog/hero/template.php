@@ -1,8 +1,8 @@
 <div class="landing-image">
         
             <section class="trans-message">
-                <h1>Blog</h1>
-                <p>I was told I need a blog. Most blogs are cheery and uplifting. That's just not me though. This blog will be a list of complaints and mostly negitive thoughts. Sorry.</p>
+                <h1 class="loud-voice">Blog</h1>
+                <p>Feel free to explore my blog and consider subscribing while you're there.</p>
             </section>
 
         </div>
