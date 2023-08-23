@@ -49,5 +49,20 @@
 			"What don’t I want to happen?",
 			"I don’t want to come out of this with one skill. I’d like to be an asset and understand design and code."
 		]
+	},
+	{
+		"heading":"End of Month",
+		"goals":[
+			"By the end of the month, I would like to feel confident with PHP, structuring a website, and quicker with key shortcuts. I’d also like to be caught up in the course.",
+			"I want my personal webpages to stand out, be consistent and be visually appealing."
+			
+		]
+	},
+	{
+		"heading":"End of the Week",
+		"goals":[
+			"By the end of the week, I would like to have all of the catchup work finished and be on track for next week. I want to understand all the concepts we’ve covered and feel confident in talking about them."
+
+		]
 	}
 ]
