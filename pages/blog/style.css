@@ -1,0 +1,29 @@
+@media (min-width:600px) {
+
+	
+
+	.blog-cards-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 20;
+    }
+
+    .blog-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blog-card p {
+    	max-width: 25ch;
+    }
+
+    .blog-card picture {
+    	max-width: 200px;
+
+    }
+}
