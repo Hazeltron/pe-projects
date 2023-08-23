@@ -32,7 +32,7 @@
 		</picture>
 		<p>This is an attempt to emulate a luxory resort on a beach... Like Sandals.</p>
 		<p>Full disclosure: I was given a layout and wasn't allowed to change any of the HTML. I was meant to only edit this with CSS. It was a "Theme Challenge."</p>
-		<a href="https://peprojects.dev/alpha-7/paul/layout-theme-challenge/index.php">View the project</a>
+		<a href="layout-theme-challenge">View the project</a>
 
 	</div>
 </section>
