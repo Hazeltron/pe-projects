@@ -7,6 +7,6 @@
 	
 // showErrors(); 1
 
-// function getfile($path){
-// 	return dirname(__FILE__) . '/' . $path;
-// }
+function getFile($path){
+	return dirname(__FILE__) . '/' . $path;
+}
