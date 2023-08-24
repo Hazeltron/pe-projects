@@ -19,6 +19,10 @@ h2 + p{
 	margin-top: 20px;
 }
 
+section + section{
+	margin-top: 20px;
+}
+
 /*home specific*/
 .about-container{
 		display: flex;
