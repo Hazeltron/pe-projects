@@ -7,8 +7,6 @@
 	.field{
 		display: flex;
 		flex-direction: column;
-		margin-right: 20px;
-		margin-left: 20px;
 		margin-top: 20px ;
 	}
 
