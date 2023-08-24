@@ -79,6 +79,20 @@
 		
 	</div>
 </section>
+
+
+<section>
+	<div class="inner-column">
+
+		<h3 class="strong-voice">Monster Adoption Agency</h3>
+		<picture>
+			<img src="" alt="">
+		</picture>
+		<p>This was a project with PHP that was my introduction to using data to generate content.</p>
+		<a href="php-practice/monsters.php">View the project</a>
+		
+	</div>
+</section>
 		
 
 <section>
@@ -119,20 +133,23 @@
 		
 	</div>
 </section>
-		
 
 <section>
 	<div class="inner-column">
 
-		<h3 class="strong-voice">Monster Adoption Agency</h3>
+		<h3 class="strong-voice">Drinks to Guest Calculator</h3>
 		<picture>
 			<img src="" alt="">
 		</picture>
-		<p>This was a project with PHP that was my introduction to using data to generate content.</p>
-		<a href="php-practice/monsters.php">View the project</a>
+		<p>I had this idea for a calculator that would take an input of guests and how many drinks a bar or hotel had on hand. Then it would quickly do some math and teell you how many drinks each of those guests could have.</p>
+		<p>Not much of a use case here, but it was more about practice.</p>
+		<a href="php-forms/drink-form.php">View the project</a>
 		
 	</div>
 </section>
+		
+
+
 
 
 
