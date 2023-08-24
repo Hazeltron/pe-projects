@@ -1,25 +1,27 @@
-.experience-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        
-        gap: 20px;
-    }
-    .title {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .experience h3{
-        color: var(--highlight);
-        margin-top: 20px;
-    }
 
-.ref-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    
+.experience h3{
+    color: var(--highlight);
+    margin-top: 20px;
 }
-.refs{
+
+.xp-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    border-bottom: white 3px solid;
+}
+
+.add {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+
+}
+
+
+.refs {
     border-bottom: #d4b644  3px solid;
 }

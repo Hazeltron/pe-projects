@@ -47,15 +47,23 @@ include '../../header.php';
 
         <section class="add">
 
-            <h2 class="attention-voice">Additional</h2>
+            <div>
 
-            <p>Programming<br>(HTML/CSS/PHP/JavaScript)</p>
+                <h2 class="attention-voice">Additional</h2>
+                <p>Programming<br>(HTML/CSS/PHP/JavaScript)</p>
 
-            <h2 class="attention-voice">Certifications</h2>
+            </div>
+            
+            <div>
 
-            <p>TESOL Cert. IV (10429NAT)</p>
+                <h2 class="attention-voice">Certifications</h2>
+                <p>TESOL Cert. IV (10429NAT)</p>
+                
+            </div>
+            
 
         </section>
+
     </div>
 </section>
 
@@ -66,42 +74,43 @@ include '../../header.php';
 
        <h2 class="attention-voice">Experience</h2>
 
-        <ul>
-
             <?php 
                 include("../../data-php/resume-xp-data.php");
                 
                 foreach($facts as $fact){?>
 
+            <ul class="xp-container">
 
-            <li class="experience-container">
 
-                <div class="experience-date">
-
+            <li>
+              
 
                 <h3 class="strong-voice"><?=$fact["date"]?></h3>
-
-            </div>
 
 
             </li>
 
 
-            <li class="title">
+            <li>
 
 
                 <h3 class="attention-voice"><?=$fact["title"]?></h3>
 
-                <p class="strong-voice"><?=$fact["location"]?></p>
-
-                <p><?=$fact["description"]?></p>
-
-
             </li>
+
+            </ul>
+
+            <p class="strong-voice"><?=$fact["location"]?></p>
+
+            <p><?=$fact["description"]?></p>
 
             <?php } ?>
 
-        </ul>
+            
+
+        
+
+        
     
         
     </div>
