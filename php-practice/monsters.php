@@ -79,8 +79,8 @@
 
 
 <?php
-include "header.php";
-include "nav.php";
+include "../header.php";
+
 
 function monsterGenerator($name, $age, $favoriteFood) {
 	$monster = [
@@ -101,15 +101,7 @@ $chucky = monsterGenerator ("Chucky", 10, "plastic");
 $monsters = [$freddy, $dracula, $jason, $leather, $chucky,];
 ?>
 
-<?php foreach ($monsters as $monster){ ?>
-	<section class="monster-cards">
-		<section class="monster-card">
-			<h1 class="title"><?=$monster["name"]?></h1>
-			<p><?=$monster["age"]?></p>
-			<p><?=$monster["favoriteFood"]?></p>
-		</section>
-	</section>
-<?php } ?>
+
 
 
 
@@ -198,6 +190,6 @@ echo "</section>";
 
 
 
-include "footer.php";
+include "../footer.php";
 
 ?>

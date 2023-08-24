@@ -1,5 +1,5 @@
 <?php 
-	include "header.php";
+	include "../header.php";
 ?>
 
 <style>
@@ -30,9 +30,6 @@
 
 
 <?php
-	
-	
-
 //part 1 -- init variables
 	$rate = 0.91;
 	$dollars = 10;
@@ -62,7 +59,7 @@
 
 	 <form method="post">
 
-	 	<h1>Exchange rate calculator</h1>
+	 	<h1 class="loud-voice">Exchange rate calculator</h1>
 	 	<p>This will tell you what dollars mean in terms of euros. That is to say, it'll show you the conversion of a given dollar amount rounded up to the next... euro-penny. <br>
 	 	Does that make sense???</p>
 
@@ -79,7 +76,7 @@
 
 	 	</div>
 
-	 	<?php echo "<h2> <span>&#8364;</span>$formatedEuros</h2>"; ?>
+	 	<?php echo "<h2 class='strong-voice'> <span>&#8364;</span>$formatedEuros</h2>"; ?>
 
 	 </form>
 </div>

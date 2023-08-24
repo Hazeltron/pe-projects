@@ -1,0 +1,219 @@
+html {
+  background: url(https://vignette.wikia.nocookie.net/lovecraft/images/3/35/Screenshot_20171020-125436.jpg/revision/latest?cb=20171020175543) no-repeat center fixed;
+  background-position: right bottom, left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav {
+  width: auto;
+  height: auto;
+  padding: 0px;
+  padding-right: 200px;
+  padding-left: 0px;
+  border: 5px solid white;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'CelticaBold' monospace;
+  display: block;
+  position: sticky;
+  top: 0px;
+  order:1
+}
+/*nav inputs*/
+th input {
+  margin: 0px;
+  padding: 0px 0px 0px 0px;
+  border: 0px;
+}
+button {
+  border: none;
+  color: rgb(125, 165, 102);
+  padding: 10px 40px;
+  background-color: rgba(7, 7, 7, 0.89);
+  font-size: 12px;
+  font-family:'CelticaBold';
+  margin: 4px 2px;
+  cursor: crosshair;
+}
+body {
+  background-color: rgba(22, 16, 12, 0.7);
+  display: block;
+  border-radius: 25px;
+  margin: 10px 30px 10px 30px;
+}
+h1 {
+  border: 1px none white;
+  padding: 20px 5px 20px 10px;
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 1px 2px white;
+  font-family: 'CelticaBold';
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: ;
+  color: black;
+  background-color: black;
+  background-image: url(https://vignette.wikia.nocookie.net/lovecraft/images/3/35/Screenshot_20171020-125436.jpg/revision/latest?cb=20171020175543) no-repeat center fixed;;
+  background-position: right bottom, left top;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-image: linear-gradient(to bottom left, rgb(11, 92, 85), rgb(125, 165, 102));
+}
+hr {
+  background-color: white;
+}
+h5 {
+  color: white;
+  text-align: left;
+  margin-left: 10px;
+}
+h6 {
+  color: white;
+}
+p {
+  color: white;
+}
+p::first-letter {
+  font-size: 20px;
+  color: rgb(220, 110, 50);
+  font-family: 'CelticaBold';
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th:hover {
+  background-color: rgb(220, 110, 50);
+}
+th {
+  height: 20px;
+}
+table, th, tr {
+  border:  1px solid rgb(125, 165, 102);
+  padding: 15px;
+  text-align: justify right;
+  background-color: black;
+  color: white;
+}
+ 1px solid rgb(125, 165, 102)
+/*links in paragraphs*/
+p a:link {
+  color: rgb(125, 165, 102);
+}
+p a:visited {
+  color: rgb(220, 110, 50);
+}
+p a:hover {
+  color: white;
+}
+  ul {
+    color: rgb(220, 110, 50);
+    list-style-type: upper-roman;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin-left: 5px;
+    font-size: 100%;
+    font-family: 'CelticaBold';
+  }
+  .form-control-sm {
+    background-color: white;
+  }
+  /*copy&past colors*/
+  ::selection {
+    color: rgb(125, 165, 102);
+    background-color: black;
+  }
+  title {
+    background-color: rgb(220, 110, 50);
+  }
+
+  /* start of gallery css */
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
