@@ -38,7 +38,7 @@ $projectSections = json_decode($json, true);
 		<h3 class="strong-voice"><?=$section['heading']?></h3>
 
 		<picture>
-			<img src="<?='../assets/' . $section['image']?>" alt="#">
+			<img src="<?='../../assets/' . $section['image']?>" alt="#">
 		</picture>
 
 <?php foreach($section['description'] as $para){ ?> 
