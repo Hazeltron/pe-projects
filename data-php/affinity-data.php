@@ -3,25 +3,25 @@
 <?php
 $graphics = [
 	[
-	"image" => "../assets/great-sand.png",
+	"image" => "/great-sand.png",
 	"name" => "Great Sand",
 	"description"=>"This is an affinity thing",
 	],
 
 	[
-	"image"=>"../assets/vertigo.png",
+	"image"=>"/vertigo.png",
 	"name"=>"Vertigo",
 	"description"=>"This is an affinity thing",
 	],
 
 	[
-	"image"=>"../assets/biz-card-5.png",
+	"image"=>"/biz-card-5.png",
 	"name"=>"Buisness Card",
 	"description"=>"This is an affinity thing",
 	],
 
 	[
-	"image"=>"../assets/journey.png",
+	"image"=>"/journey.png",
 	"name"=>"Journey",
 	"description"=>"This is an affinity thing",
 	],

@@ -10,7 +10,7 @@
 		<h3 class="strong-voice"><?=$graphic["name"];?></h3>
 
 		<picture>
-			<img src="<?=$graphic["image"];?>"alt="#">
+			<img src="<?='assets/' . $graphic["image"];?>"alt="#">
 		</picture>
 
 		<p><?=$graphic["description"];?></p>

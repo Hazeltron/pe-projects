@@ -12,6 +12,15 @@ include '../../header.php';
 	</div>
 </section>
 
+
+<section class="cards">
+	<div class="inner-column">
+
+		<?php include(getFile('modules/layout-cards/template.php')); ?>
+		
+	</div>
+</section>
+
 <?php include(getFile('modules/layout-cards/template.php')); ?>
 
 

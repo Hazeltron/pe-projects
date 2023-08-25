@@ -1,5 +1,4 @@
-<section>
-	<div class="inner-column">
+
 
 
 <article-grid>
@@ -34,5 +33,3 @@
 </ul>
 	</article-grid>
 
-	</div>
-</section>
