@@ -1,7 +1,7 @@
 [
 	{
 		"heading":"Cult Site",
-		"image":"../assets/cult-site.png",
+		"image":"cult-site.png",
 		"link":"mythos-project",
 		"description":[
 			"This is the first website I ever made.",
@@ -11,7 +11,7 @@
 	},
 	{
 		"heading":"Cakes by Gregory",
-		"image":"../assets/cake.png",
+		"image":"cake.png",
 		"link":"cake",
 		"description":[
 			"This project was foor an imaginary client named Gregory. He's a bit weird",
@@ -21,7 +21,7 @@
 	},
 	{
 		"heading":"Super Responsive Layout",
-		"image":"../assets/responsive-layout.png",
+		"image":"responsive-layout.png",
 		"link":"super-responsive-layout",
 		"description":[
 			"This was another responsive layout project.",
@@ -31,7 +31,7 @@
 	},
 	{
 		"heading":"Beach Resort",
-		"image":"../assets/resort.png",
+		"image":"resort.png",
 		"link":"layout-theme-challenge",
 		"description":[
 			"This is an attempt to emulate a luxory beach resort.",
@@ -41,7 +41,7 @@
 	},
 	{
 		"heading":"Dollars to Euros Converter",
-		"image":"../assets/money-calc.png",
+		"image":"money-calc.png",
 		"link":"php-forms/exchange-rate.php",
 		"description":[
 			"This form is meant to take dollars and convert them to Euros.",
@@ -53,7 +53,7 @@
 	},
 	{
 		"heading":"Drinks to Guest Calculator",
-		"image":"../assets/drink-calc.png",
+		"image":"drink-calc.png",
 		"link":"php-forms/drink-form.php",
 		"description":[
 			"I had this idea for a calculator that would take an input of guests and how many drinks a bar or hotel had on hand. Then it would quickly do some math and teell you how many drinks each of those guests could have.",
