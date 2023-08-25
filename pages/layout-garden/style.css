@@ -1,4 +1,43 @@
 
+cta-inner{
+	display: block;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: white;
+	padding: 20px;
+	height: 30vh;
+	border-radius: 30px;
+}
+
+text-area {
+	display: block;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+cta-inner h2{
+	color: indianred;
+}
+cta-inner p{
+	margin-top: 10px;
+}
+cta-inner a {
+	margin-top: 20px;
+	border: solid 1px black;
+	border-radius: 30px;
+	padding: 10px;
+}
+
+cta-inner a:hover {
+	background-color: indianred;
+	color: white;
+	border: solid 1px white;
+}
+
+
 
 
 
