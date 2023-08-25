@@ -1,0 +1,66 @@
+[
+	{
+		"heading":"Cult Site",
+		"image":"../assets/cult-site.png",
+		"link":"mythos-project",
+		"description":[
+			"This is the first website I ever made.",
+			"I was teaching myself in Asia over the pandemic, spending hours a day without any real idea as to what I was doing. With that in mind I think it was fairly sucessful. I plan to come back to this someday."
+		] 
+		
+	},
+	{
+		"heading":"Cakes by Gregory",
+		"image":"../assets/cake.png",
+		"link":"cake",
+		"description":[
+			"This project was foor an imaginary client named Gregory. He's a bit weird",
+			"He only makes white cakes and wanted to break into the New York soocialite scene. I did my best to deliver a simple site that might attract his clientel."
+		] 
+		
+	},
+	{
+		"heading":"Super Responsive Layout",
+		"image":"../assets/responsive-layout.png",
+		"link":"super-responsive-layout",
+		"description":[
+			"This was another responsive layout project.",
+			"I was handed a bit of html and a bit of CSS and told to make it look like an image we were provided. It might not look like much but it was a lot for me back then."
+		] 
+		
+	},
+	{
+		"heading":"Beach Resort",
+		"image":"../assets/resort.png",
+		"link":"layout-theme-challenge",
+		"description":[
+			"This is an attempt to emulate a luxory beach resort.",
+			"I was given a layout and wasn't allowed to change any of the HTML. I was meant to only edit this with CSS. It was a 'Theme Challenge.'"
+		] 
+		
+	},
+	{
+		"heading":"Dollars to Euros Converter",
+		"image":"../assets/money-calc.png",
+		"link":"php-forms/exchange-rate.php",
+		"description":[
+			"This form is meant to take dollars and convert them to Euros.",
+			"It's helpful if you're traveling. Try it out."
+
+
+		] 
+		
+	},
+	{
+		"heading":"Drinks to Guest Calculator",
+		"image":"../assets/drink-calc.png",
+		"link":"php-forms/drink-form.php",
+		"description":[
+			"I had this idea for a calculator that would take an input of guests and how many drinks a bar or hotel had on hand. Then it would quickly do some math and teell you how many drinks each of those guests could have.",
+			"Not much of a use case here, but it was more about practice."
+
+
+		] 
+		
+	}
+]
