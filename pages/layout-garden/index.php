@@ -1,5 +1,6 @@
 <?php 
 include '../../header.php';
+
 ?>
 			
 
@@ -10,6 +11,8 @@ include '../../header.php';
 		
 	</div>
 </section>
+
+<?php include(getFile('modules/layout-cards/template.php')); ?>
 
 
 <?php include '../../footer.php'; ?>

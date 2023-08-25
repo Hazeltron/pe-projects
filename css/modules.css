@@ -1,3 +1,4 @@
 
-@import "../modules/home/affinity/style.css";
-@import "../modules/blog/blog-cards/style.css";
+@import "../modules/affinity/style.css";
+@import "../modules/blog-cards/style.css";
+@import "../modules/layout-cards/style.css";
