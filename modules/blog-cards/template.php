@@ -23,10 +23,10 @@
        
         <a href="<?=$card['link'];?>" >
         <picture>
-            <img src="<?='assets/' . $card['image'];?>" alt="">
+            <img src="assets/<?=$card['image']?>" alt="">
         </picture>
 
-        <h2 class="strong-voice"><?=$card['title'];?></h2>
+        <h2 class="strong-voice"><?=$card['title']?></h2>
         <p><?=$card['description'];?></p>
         </a>
 
