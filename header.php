@@ -27,7 +27,7 @@
 	</head>
 
 	<body>
-		<header>
+		<header class="sticky-nav">
 
 			<nav>
 				<div class="inner-column">
