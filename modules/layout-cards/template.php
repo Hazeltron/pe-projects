@@ -33,3 +33,5 @@
 </ul>
 	</article-grid>
 
+<?php unset($heading); ?>
+
