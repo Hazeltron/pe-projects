@@ -4,9 +4,8 @@ starbucks-cta {
 }
 
 starbucks-cta .coffee {
-
 	flex: 50%;
-
+	padding: 0px;
 }
 
 starbucks-cta text-content {
@@ -31,15 +30,14 @@ starbucks-cta p {
 }
 
 starbucks-cta h2 {
-	
 	text-align: center;
+	font-size: 1rem;
 }
 
 starbucks-cta .button {
 	margin-top: 30px;
 	border: solid white 1px;
 	border-radius: 30px;
-	
 	padding: 5px 10px 5px 10px;
 	text-align: center;
 }
@@ -49,8 +47,14 @@ starbucks-cta .button:hover {
 }
 
 
-
 @media (min-width:600px) {
+	starbucks-cta {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+}
+@media (min-width:750px) {
 	starbucks-cta {
 		display: flex;
 		flex-direction: row;
@@ -58,7 +62,7 @@ starbucks-cta .button:hover {
 }
 
 .starbucks starbucks-cta{
-	background-color: #7c3e41;
+	background-color: #6d2931;
 }
 
 .starbucks .inner-column{
@@ -66,7 +70,33 @@ starbucks-cta .button:hover {
 }
 
 @media (min-width:600px) {
-	.starbucks.flip starbucks-cta {
+	.starbucks.iced starbucks-cta {
 		flex-direction: row-reverse;
 	}
 }
+
+.starbucks.flip img {
+	content: url("../../assets/starbucks-2.png");
+}
+
+
+.starbucks.flip starbucks-cta {
+	background-color: #a4505c;
+}
+
+
+.starbucks.pumpkin img {
+	content: url("../../assets/starbucks-3.png");
+}
+
+.starbucks.pumpkin starbucks-cta {
+	background-color: #cba259;
+}
+
+.starbucks.pumpkin .button:hover {
+	background-color: #c39341;
+}
+
+
+
+
