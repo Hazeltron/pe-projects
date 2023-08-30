@@ -1,1 +1,91 @@
-style.css
+
+
+text-area {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+background-color: white;
+}
+
+
+hydro-flask-mod text-area p {
+	font-family: helvetica;
+	font-size: 14px;
+	font-weight: 100;
+	width: 29ch;
+
+}
+hydro-flask-grid{
+	background-color: white;
+}
+
+	.bottles img {
+		aspect-ratio: 1/1;
+		
+	}
+
+.bottle-1, .bottle-2, .bottle-3, .bottle-4 {
+	
+/*	border: solid black 1px;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+	
+
+hydro-flask-grid {
+		display: block;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(100px, 1fr));
+	/*	row height */
+		grid-auto-rows: 300px;
+	}
+
+@media(min-width: 591px){
+	.bottles{
+		object-fit: fill;
+		
+	}
+
+	hydro-flask-grid {
+		grid-auto-rows: 470px;
+
+	}
+}	
+
+@media(min-width: 900px){
+
+	hydro-flask-mod {
+		display: flex;
+		flex-direction: row-reverse;
+		background-color: white;
+	}
+
+	hydro-flask-grid {
+		grid-auto-rows: 300px;
+		padding: 5px;
+	}
+
+	text-area{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+
+	.girl {
+		object-fit: cover;
+		max-height: 530px;
+		min-height: 530px;
+	}
+
+	.bottles img {
+		aspect-ratio: 1/1;
+		
+	}
+
+
+}
