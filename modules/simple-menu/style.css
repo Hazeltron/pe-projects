@@ -1,0 +1,77 @@
+simple-menu-contain {
+	display: block;
+	background-color: #f2f1e4;
+	padding: 10px;
+	overflow: hidden;
+	color: black;
+}
+
+simple-menu-contain .press {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: black solid 1px;
+}
+
+simple-menu-contain .press h2 {
+	margin-bottom: 30px;
+}
+
+simple-menu-contain .title {
+	font-family: var(--primary-font);
+	font-weight: 600;
+	font-size: 2rem;
+}
+
+simple-menu-contain .name {
+	font-family: var(--primary-font);
+	font-weight: 100;
+	font-size: 1rem;
+}
+
+simple-menu-contain .year {
+	font-family: var(--primary-font);
+	font-weight: 600;
+	font-size: 1.1rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+simple-menu-contain .date {
+	padding:0 36vw 0 0;
+	border-bottom: black solid 1px;
+	transition: all .3s ease;
+}
+
+simple-menu-contain .date {
+	font-family: var(--primary-font);
+	font-weight: 600;
+	font-size: 1.3rem;
+}
+
+simple-menu-contain .date:hover {
+	background-color: black;
+	color: white;
+}
+
+@media(min-width: 600px) {
+	simple-menu-contain .press{
+		border-bottom: black solid 1px;
+	}
+
+	simple-menu-contain .years{
+		display: flex;
+		flex-direction: row;
+		gap: 25%;
+	}
+
+	simple-menu-contain .year{
+		border-top: none;
+		margin-top: 10px;
+	}
+
+	simple-menu-contain .date{
+		padding:0 100vw 0 0;
+	}
+}

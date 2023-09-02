@@ -1,11 +1,12 @@
 
 
-text-area {
+hydro-flask-mod text-area {
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: flex-start;
 background-color: white;
+color: black;
 }
 
 
@@ -18,6 +19,7 @@ hydro-flask-mod text-area p {
 }
 hydro-flask-grid{
 	background-color: white;
+	color: black;
 }
 
 	.bottles img {
@@ -44,6 +46,13 @@ hydro-flask-grid {
 		grid-auto-rows: 300px;
 	}
 
+hydro-flask-grid a {
+		font-family: var(--primary-font);
+		font-size: 1.7rem;
+		font-weight: 700;
+		
+}
+
 @media(min-width: 591px){
 	.bottles{
 		object-fit: fill;
@@ -54,7 +63,9 @@ hydro-flask-grid {
 		grid-auto-rows: 470px;
 
 	}
-}	
+
+}
+	
 
 @media(min-width: 900px){
 
@@ -69,7 +80,7 @@ hydro-flask-grid {
 		padding: 5px;
 	}
 
-	text-area{
+	hydro-flask-mod text-area{
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
