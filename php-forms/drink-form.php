@@ -2,7 +2,7 @@
 
 
 <style>
-	.feild{
+	.feild {
 		display: flex;
 		flex-direction: column;
 	}
@@ -11,18 +11,18 @@
 		margin-top: 20px;
 	}
 
-	form{
+	form {
 		display: block;
 		max-width: 400px;
 		padding: 10px;
 	}
 
-	input{
+	input {
 		margin-top: 10px;
 		max-width: 300px;
 	}
 
-	button[type=submit]{
+	button[type=submit] {
 		margin-top: 10px;
 		max-width: 200px;
 	}
@@ -30,6 +30,7 @@
 	h1{
 		margin-top: 40px;
 	}
+
 </style>
 
 <?php 

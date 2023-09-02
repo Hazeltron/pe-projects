@@ -8,15 +8,15 @@
 		margin-top: 20px ;
 	}
 
-	.field, label{
+	.field, label {
 		margin-top: 10px;
 	}
-	input{
+	input {
 		max-width: 200px;
 		margin-top: 10px;
 	}
 
-	button{
+	button {
 		max-width: 100px;
 		margin-top: 20px;
 		background-color: greenyellow;

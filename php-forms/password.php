@@ -29,33 +29,37 @@
 
 <?php 
 
-$userName = null;
+$username = null;
 $password = null;
-$putUsername = null;
+$users = [];
 
 
-if(isset($_POST['sign-submit']) ){
-	if(isset($_POST['sign-username'], $_POST['sign-password'] ) ){
-		$putUsername = $_POST['sign-username'];
-		$putPassword = $_POST['sign-password'];
+// if it's submitted, 
+if (isset($_POST['submit']) ) {
+	if (!empty($_POST['username'] && $_POST['password']) ) {
 
-		$userInput = [
-			[
-			"username" => $putUsername,
-			"password" => $putPassword,
-			],
+		$username = $_POST['username'];
+		$password = $_POST['password'];
+
+		$newUser = [
+			"username" => $username,
+			"password" => $password,
 		];
-	
-		var_dump($userInput);
 
-		$loginDetails = json_encode($userInput);
-
-		file_put_contents('../data-php/password.json', $loginDetails);
-		
-	}else{
-		echo "no";
+		if (file_exists('../data-php/password.json')) {
+			$json = file_get_contents('../data-php/password.json');
+			$users = json_decode($json, true);
+			var_dump($users);
+		}
+		array_push($users, $newUser);
+		$json = json_encode($users);
+		file_put_contents('../data-php/password.json',$json);
 	}
-} 
+}
+
+
+$username = "";
+$password = "";
 
 ?>
 
@@ -69,17 +73,17 @@ if(isset($_POST['sign-submit']) ){
 			<div class="field">
 
 				<label>Username</label>
-				<input type="text" name="sign-username" minlength="4" required value="<?=$userName?>">
+				<input type="text" name="username" minlength="4" required value="<?=$username?>">
 
 				<label>Password</label>
-				<input type="password" name="sign-password" minlength="8" required id="myInput" value="<?=$password?>">
+				<input type="password" name="password" minlength="8" required id="myInput" value="<?=$password?>">
 
 				<div class="show-pass">
 					<label>Show password</label>
 				<input type="checkbox" onclick="myFunction()">
 				</div>
 
-				<button class="button" name="sign-submit" type="submit">Enter</button>
+				<button class="button" name="submit" type="submit">Enter</button>
 
 			</div>
 
@@ -88,7 +92,7 @@ if(isset($_POST['sign-submit']) ){
 	</div>
 </section>
 
-<?php unset($userName, $password); ?> 
+
 
 
 <script>
@@ -106,25 +110,47 @@ if(isset($_POST['sign-submit']) ){
 
 <?php 
 
-$json = file_get_contents('../data-php/password.json');
-$userData = json_decode($json, true);
+$loginName = "";
+$loginPassword = "";
+// try to login 
+if (isset($_POST['log-submit']) ) {
+	// check filled out form
+	if ($_POST['log-username'] && $_POST['log-password']) {
+		// check if user exists
+		if (!file_exists("../data-php/password.json") ) {
+			echo "no";
+		} else {
+			$loginName = $_POST['log-username'];
+			$loginPassword = $_POST['log-password'];
 
+			$json = file_get_contents("../data-php/password.json");
+			$usersData = json_decode($json, true);
+			//check every user to see if theres a match
+			foreach($usersData as $user) {
+				if($loginName === $user['username'] && $loginPassword === $user['password']) {
+					// show their username and confirm their passwords are correct
+					echo "login successful";
 
-$userName = null;
-$password = null;
-
-foreach($userData as $data){
-	if(isset($_POST['submit']) ){
-		$userName = $_POST['username'];
-		$password = $_POST['password'];
+				} else {
+					// if not warn them
+					echo "try again";
+				}
+			}
+		}
+		
+		
 	}
+
 }
+
+
+
 ?>
 
 
 <section class="password-form">
 	<div class="inner-column">
-
+		<?php var_dump($_POST) ?>
 		<form method="POST">
 
 			<h1 class="loud-voice">Login</h1>
@@ -132,26 +158,27 @@ foreach($userData as $data){
 			<div class="field">
 
 				<label>Username</label>
-				<input type="text" name="username" minlength="4" value="<?=$userName?>">
+				<input type="text" name="log-username" minlength="4" value="<?=$loginName?>">
 
 				<label>Password</label>
-				<input type="password" name="password" id="myInputtwo" value="<?=$password?>">
+				<input type="password" name="log-password" id="myInputtwo" value="<?=$loginPassword?>">
 
 				<div class="show-pass">
 					<label>Show password</label>
 				<input type="checkbox" onclick="seeIt()">
 				</div>
 
-				<button class="button" name="submit" type="submit">Enter</button>
+				<button class="button" name="log-submit" type="submit">Enter</button>
 				
 			</div>
 
-			<?php
-	if($userName === $data['username'] && $password === $data['password']){
-		echo "<p>You have successfully logged in!</p>";
-	} else {
-		echo "<p>Your username or password is incorrect.</p>";
-	}
+<?php
+
+	// if($loginName === $data['username'] && $loginPassword === $data['password']){
+	// 	echo "<p>You have successfully logged in!</p>";
+	// } else {
+	// 	echo "<p>Your username or password is incorrect.</p>";
+	// }
 	
 ?>
 
