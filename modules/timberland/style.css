@@ -85,15 +85,20 @@ timberland-container .stairs img {
 		left: 20px;
 		bottom: 10px;
 		color: white;
+		
+	}
+
+	image-grid text-content h2 {
 		width: 30ch;
 	}
+
 	image-grid p{
 		font-family: var(--primary-font);
 		font-size: .9rem;
 		font-weight: 500;
+		width: 100ch;
 
 	}
-
 }
 
 
