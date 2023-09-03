@@ -21,7 +21,6 @@ include '../../header.php';
 	</div>
 </section>
 
-
 <section class="starbucks pumpkin">
 	<div class="inner-column">
 
