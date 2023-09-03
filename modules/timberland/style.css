@@ -1,0 +1,99 @@
+.timberland {
+	background-color: white;
+}
+
+
+timberland-container text-content{
+	color: black;
+}
+
+timberland-container ul { 
+	display: block;
+	display: grid;
+	gap: 10px;
+	grid-template-areas:    
+		"girl	girl	moody"
+		"girl	girl	boots"
+		"girl	girl	legs"
+		"text	text	text"
+	;
+}
+
+timberland-container li:nth-of-type(1) { 
+
+	grid-area: girl;
+	
+
+}
+
+timberland-container li:nth-of-type(2) {
+	grid-area: moody;
+}
+
+timberland-container li:nth-of-type(3) {
+	grid-area: boots;
+}
+
+timberland-container li:nth-of-type(4) {
+	grid-area: legs;
+}
+timberland-container li:nth-of-type(5) {
+	grid-area: stairs;
+}
+timberland-container text-content {
+	grid-area: text;
+}
+
+timberland-container img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+timberland-container .stairs img {
+	display: none;
+}
+
+
+
+
+
+@media (min-width:700px) {
+	timberland-container ul { 
+	display: block;
+	display: grid;
+	gap: 10px;
+	grid-template-areas:    
+		"girl	girl	moody	stairs"
+		"girl	girl	boots	stairs"
+		"girl	girl	legs	stairs"
+		"text	.	.	."
+	;
+	}
+
+	timberland-container .stairs img {
+	display: block;
+	}
+
+	.walking-girl {
+	position: relative;
+}
+
+	timberland-container image-grid text-content {
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+		z-index: 10;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
