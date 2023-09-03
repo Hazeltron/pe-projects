@@ -1,4 +1,4 @@
-.article-card text-content {
+.cards text-content {
 	color: black;
 	background-color: rgba(255,255, 255, .8);
 	display: flex;
@@ -38,7 +38,7 @@
 }
 
 
-.article-card {
+.cards .article-card {
 	position: relative;
 	background-color:transparent;
 	padding: 5rem 0;
@@ -46,7 +46,7 @@
 	min-height: 500px;
 }
 
-.article-card picture {
+.cards picture {
 	border-radius: 0.5rem;
 	position: absolute;
 	top: 0%;

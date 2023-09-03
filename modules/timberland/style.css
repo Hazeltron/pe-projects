@@ -67,7 +67,8 @@ timberland-container .stairs img {
 		"girl	girl	moody	stairs"
 		"girl	girl	boots	stairs"
 		"girl	girl	legs	stairs"
-		"text	.	.	."
+
+		
 	;
 	}
 
@@ -75,15 +76,22 @@ timberland-container .stairs img {
 	display: block;
 	}
 
-	.walking-girl {
+	image-grid {
 	position: relative;
-}
+	}
 
-	timberland-container image-grid text-content {
+	image-grid text-content {
 		position: absolute;
-		right: 10px;
+		left: 20px;
 		bottom: 10px;
-		z-index: 10;
+		color: white;
+		width: 30ch;
+	}
+	image-grid p{
+		font-family: var(--primary-font);
+		font-size: .9rem;
+		font-weight: 500;
+
 	}
 
 }
