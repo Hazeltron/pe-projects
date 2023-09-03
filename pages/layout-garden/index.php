@@ -13,6 +13,13 @@ include '../../header.php';
 </section>
 
 
+<section class="cards">
+	<div class="inner-column">
+
+		<?php include(getFile('modules/layout-cards/template.php')); ?>
+		
+	</div>
+</section>
 
 
 <section class="starbucks pumpkin">
@@ -65,21 +72,17 @@ include '../../header.php';
 	</div>
 </section>
 
-<section class="cards">
+<section class="timberland">
 	<div class="inner-column">
 
-		<?php include(getFile('modules/layout-cards/template.php')); ?>
+		<?php include(getFile('modules/timberland/template.php')); ?>
 		
 	</div>
 </section>
 
-<section class="cards">
-	<div class="inner-column">
 
-		<?php include(getFile('modules/paps/template.php')); ?>
-		
-	</div>
-</section>
+
+
 
 
 <?php include '../../footer.php'; ?>
