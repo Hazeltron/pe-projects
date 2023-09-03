@@ -1,10 +1,10 @@
 @import "meyers-reset.css";
-@import "modules.css";
 @import "settings.css";
 @import "setup.css";
 @import "structure.css";
 @import "font.css";
 @import "pages.css";
+@import "modules.css";
 
 body {
 	background-color: #393D3F;
