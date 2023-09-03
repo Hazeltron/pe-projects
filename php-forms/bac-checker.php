@@ -4,6 +4,7 @@
 
 
 <style>
+
 	bal-container {
 		display: block;
 	}
@@ -12,6 +13,7 @@
 		display: flex;
 		flex-direction: column;
 	}
+
 </style>
 
 
@@ -70,7 +72,6 @@ $LIQALC = 14;
 				$DUI = "<p> Your blood alcohol level is $bac.  You're very close to death and should probably go to the hospital.</p>";
 				echo $DUI;
 			}
-
 
 
 		}

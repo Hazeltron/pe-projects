@@ -27,7 +27,7 @@
 		max-width: 200px;
 	}
 
-	h1{
+	h1 {
 		margin-top: 40px;
 	}
 
@@ -51,6 +51,7 @@
 
 		$total = floatval($drinks) / floatval($guests);
 		$numDrinks = round($total, 0);
+		
 	}
 
 	
