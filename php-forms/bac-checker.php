@@ -75,6 +75,8 @@ $LIQALC = 14;
 
 
 		}
+	} else {
+		echo "<p>Form not competed</p>";
 	}
  ?>
 
