@@ -31,7 +31,7 @@
 
 
 	<text-content>
-		<h2 class="attention-voice">BE YOURSELF. BE FEARLESS.</h2>
+		<h2 class="attention-voice">BE YOURSELF. <br> BE FEARLESS.</h2>
 		<p>TAKE ON THE SEASON IN BOLD, VERSATILE LOOKS</p>
 		<a href="">SHOP NOW</a>
 	</text-content>

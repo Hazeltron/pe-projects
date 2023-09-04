@@ -58,7 +58,7 @@ timberland-container .stairs img {
 
 
 
-@media (min-width:700px) {
+@media (min-width:900px) {
 	timberland-container ul { 
 	display: block;
 	display: grid;
@@ -67,8 +67,7 @@ timberland-container .stairs img {
 		"girl	girl	moody	stairs"
 		"girl	girl	boots	stairs"
 		"girl	girl	legs	stairs"
-
-		
+		"text	.	.	."
 	;
 	}
 
@@ -89,7 +88,7 @@ timberland-container .stairs img {
 	}
 
 	image-grid text-content h2 {
-		width: 30ch;
+		width: 25ch;
 	}
 
 	image-grid p{
