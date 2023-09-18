@@ -1,6 +1,7 @@
 @import "meyers-reset.css";
 @import "settings.css";
 @import "setup.css";
+@import "components.css";
 @import "structure.css";
 @import "font.css";
 @import "pages.css";
