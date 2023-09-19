@@ -1,3 +1,5 @@
+console.clear();
+
 //person goes to form
 //ask them for their age 
 //ask their state
@@ -7,359 +9,359 @@
 //Then look at all states ages and test their age against those
 //tell them which states they can't drive in
 
-var drivingAge = [
+var drivingPlaces = [
   {
-    "state": "Alabama",
+    "name": "Alabama",
     "agePermit": 15,
     "ageRestricted": 16,
     "ageLicense": 17,
     "ageRental": 20
   },
   {
-    "state": "Alaska",
+    "name": "Alaska",
     "agePermit": 14,
     "ageRestricted": 16,
     "ageLicense": 16.5,
     "ageRental": 21
   },
   {
-    "state": "Arizona",
+    "name": "Arizona",
     "agePermit": 15.5,
     "ageRestricted": 16,
     "ageLicense": 16.5,
     "ageRental": 20
   },
   {
-    "state": "Arkansas",
+    "name": "Arkansas",
     "agePermit": 14,
     "ageRestricted": 16,
     "ageLicense": 18,
     "ageRental": 20
   },
   {
-    "state": "California",
+    "name": "California",
     "agePermit": 15.5,
     "ageRestricted": 16,
     "ageLicense": 17,
     "ageRental": 20
   },
   {
-    "state": "Colorado",
+    "name": "Colorado",
     "agePermit": 15,
     "ageRestricted": 16,
     "ageLicense": 17,
     "ageRental": 20
   },
   {
-    "state": "Connecticut",
+    "name": "Connecticut",
     "agePermit": 16,
     "ageRestricted": 16.3,
     "ageLicense": 18,
     "ageRental": 20
   },
   {
-    "state": "Delaware",
+    "name": "Delaware",
     "agePermit": 16,
     "ageRestricted": 16.5,
     "ageLicense": 17,
     "ageRental": 21
   },
   {
-    "state": "District of Columbia",
+    "name": "District of Columbia",
     "agePermit": 16,
     "ageRestricted": 16.5,
     "ageLicense": 18,
     "ageRental": 21
   },
   {
-    "state": "Florida",
+    "name": "Florida",
     "agePermit": 15,
     "ageRestricted": 16.5,
     "ageLicense": 18,
     "ageRental": 20
   },
   {
-    "state": "Georgia",
+    "name": "Georgia",
     "agePermit": 15,
     "ageRestricted": 16,
     "ageLicense": 18,
     "ageRental": 20
   },
   {
-    "state": "Hawaii",
+    "name": "Hawaii",
     "agePermit": 15.5,
     "ageRestricted": 16,
     "ageLicense": 17,
     "ageRental": 20
   },
   {
-    "state": "Idaho",
+    "name": "Idaho",
     "agePermit": 14.5,
     "ageRestricted": 15,
     "ageLicense": 16,
     "ageRental": 20
   },
   {
-    "state": "Illinois",
+    "name": "Illinois",
     "agePermit": 15,
     "ageRestricted": 16,
     "ageLicense": 18,
     "ageRental": 21
   },
   {
-    "state": "Indiana",
+    "name": "Indiana",
     "agePermit": 15,
     "ageRestricted": 16.3,
     "ageLicense": 18,
     "ageRental": 20
   },
   {
-    "state": "Iowa",
+    "name": "Iowa",
     "agePermit": 14,
     "ageRestricted": 16,
     "ageLicense": 17,
     "ageRental": 20
   },
   {
-    "state": "Kansas",
+    "name": "Kansas",
     "agePermit": 14,
     "ageRestricted": 16,
     "ageLicense": 16.5,
     "ageRental": 20
   },
   {
-    "state": "Kentucky",
+    "name": "Kentucky",
     "agePermit": 16,
     "ageRestricted": 16.5,
     "ageLicense": 17,
     "ageRental": 20
   },
   {
-    "state": "Louisiana",
+    "name": "Louisiana",
     "agePermit": 15,
     "ageRestricted": 16,
     "ageLicense": 17,
     "ageRental": 20
   },
   {
-    "state": "Maine",
+    "name": "Maine",
     "agePermit": 15,
     "ageRestricted": 16,
     "ageLicense": 16.8,
     "ageRental": 20
   },
   {
-    "state": "Maryland",
+    "name": "Maryland",
     "agePermit": 15.8,
     "ageRestricted": 16.5,
     "ageLicense": 18,
     "ageRental": 20
   },
   {
-    "state": "Massachusetts",
+    "name": "Massachusetts",
     "agePermit": 16,
     "ageRestricted": 16.5,
     "ageLicense": 18,
     "ageRental": 20
   },
   {
-    "state": "Michigan",
+    "name": "Michigan",
     "agePermit": 14.8,
     "ageRestricted": 16,
     "ageLicense": 17,
     "ageRental": 20
   },
   {
-    "state": "Minnesota",
+    "name": "Minnesota",
     "agePermit": 15,
     "ageRestricted": 16,
     "ageLicense": 16.5,
     "ageRental": 21
   },
   {
-    "state": "Mississippi",
+    "name": "Mississippi",
     "agePermit": 15,
     "ageRestricted": 16,
     "ageLicense": 16.5,
     "ageRental": 20
   },
   {
-    "state": "Missouri",
+    "name": "Missouri",
     "agePermit": 15,
     "ageRestricted": 16,
     "ageLicense": 17.9,
     "ageRental": 20
   },
   {
-    "state": "Montana",
+    "name": "Montana",
     "agePermit": 14.5,
     "ageRestricted": 15,
     "ageLicense": 16,
     "ageRental": 21
   },
   {
-    "state": "Nebraska",
+    "name": "Nebraska",
     "agePermit": 15,
     "ageRestricted": 16,
     "ageLicense": 17,
     "ageRental": 20
   },
   {
-    "state": "Nevada",
+    "name": "Nevada",
     "agePermit": 15.5,
     "ageRestricted": 16,
     "ageLicense": 16.5,
     "ageRental": 20
   },
   {
-    "state": "New Hampshire",
+    "name": "New Hampshire",
     "agePermit": 15.5,
     "ageRestricted": 16,
     "ageLicense": 16.5,
     "ageRental": 20
   },
   {
-    "state": "New Jersey",
+    "name": "New Jersey",
     "agePermit": 16,
     "ageRestricted": 17,
     "ageLicense": 18,
     "ageRental": 20
   },
   {
-    "state": "New Mexico",
+    "name": "New Mexico",
     "agePermit": 15,
     "ageRestricted": 15.5,
     "ageLicense": 16.5,
     "ageRental": 20
   },
   {
-    "state": "New York",
+    "name": "New York",
     "agePermit": 16,
     "ageRestricted": 16.5,
     "ageLicense": 17,
     "ageRental": 20
   },
   {
-    "state": "North Carolina",
+    "name": "North Carolina",
     "agePermit": 15,
     "ageRestricted": 16,
     "ageLicense": 16.5,
     "ageRental": 20
   },
   {
-    "state": "North Dakota",
+    "name": "North Dakota",
     "agePermit": 14,
     "ageRestricted": 16,
     "ageLicense": 16,
     "ageRental": 21
   },
   {
-    "state": "Ohio",
+    "name": "Ohio",
     "agePermit": 15.5,
     "ageRestricted": 16,
     "ageLicense": 18,
     "ageRental": 20
   },
   {
-    "state": "Oklahoma",
+    "name": "Oklahoma",
     "agePermit": 15.5,
     "ageRestricted": 16,
     "ageLicense": 16.5,
     "ageRental": 20
   },
   {
-    "state": "Oregon",
+    "name": "Oregon",
     "agePermit": 15,
     "ageRestricted": 16,
     "ageLicense": 17,
     "ageRental": 20
   },
   {
-    "state": "Pennsylvania",
+    "name": "Pennsylvania",
     "agePermit": 16,
     "ageRestricted": 16.5,
     "ageLicense": 17,
     "ageRental": 20
   },
   {
-    "state": "Rhode Island",
+    "name": "Rhode Island",
     "agePermit": 16,
     "ageRestricted": 16.5,
     "ageLicense": 17.5,
     "ageRental": 20
   },
   {
-    "state": "South Carolina",
+    "name": "South Carolina",
     "agePermit": 15,
     "ageRestricted": 15.5,
     "ageLicense": 16.5,
     "ageRental": 20
   },
   {
-    "state": "South Dakota",
+    "name": "South Dakota",
     "agePermit": 14,
     "ageRestricted": 14.5,
     "ageLicense": 16,
     "ageRental": 21
   },
   {
-    "state": "Tennessee",
+    "name": "Tennessee",
     "agePermit": 15,
     "ageRestricted": 16,
     "ageLicense": 17,
     "ageRental": 20
   },
   {
-    "state": "Texas",
+    "name": "Texas",
     "agePermit": 15,
     "ageRestricted": 16,
     "ageLicense": 18,
     "ageRental": 20
   },
   {
-    "state": "Utah",
+    "name": "Utah",
     "agePermit": 15,
     "ageRestricted": 16,
     "ageLicense": 17,
     "ageRental": 20
   },
   {
-    "state": "Vermont",
+    "name": "Vermont",
     "agePermit": 15,
     "ageRestricted": 16,
     "ageLicense": 16.5,
     "ageRental": 20
   },
   {
-    "state": "Virginia",
+    "name": "Virginia",
     "agePermit": 15.5,
     "ageRestricted": 16.3,
     "ageLicense": 18,
     "ageRental": 20
   },
   {
-    "state": "Washington",
+    "name": "Washington",
     "agePermit": 15,
     "ageRestricted": 16,
     "ageLicense": 18,
     "ageRental": 20
   },
   {
-    "state": "West Virginia",
+    "name": "West Virginia",
     "agePermit": 15,
     "ageRestricted": 16,
     "ageLicense": 17,
     "ageRental": 20
   },
   {
-    "state": "Wisconsin",
+    "name": "Wisconsin",
     "agePermit": 15.5,
     "ageRestricted": 16,
     "ageLicense": 16.8,
     "ageRental": 20
   },
   {
-    "state": "Wyoming",
+    "name": "Wyoming",
     "agePermit": 15,
     "ageRestricted": 16,
     "ageLicense": 16.5,
@@ -372,30 +374,51 @@ const output = form.querySelector('output');
 const ageInput = document.querySelector('#age');
 const stateInput = document.querySelector('select')
 
-function loop(drivingArray){
-	drivingArray.forEach(function (state){
 
-	})
+function renderOption(state){
+	return `<option value="${state.name}">${state.name}</option>`;
+}
+
+function renderOptions(states){
+	var template = ``;
+	states.forEach(function(state){
+		template += renderOption(state);
+	});
+	return template;
+}
+
+function renderSelect(states){
+	stateInput.innerHTML = renderOptions(states);
+	
+
+}
+
+function getStateByName(name){
+	return drivingPlaces.find(function(state){
+		return state.name == name;
+	});
+}
+
+renderSelect(drivingPlaces);
+
+
+function handleDrivingCalc(){
+	if(ageInput.value && stateInput.value){
+		var age = Number(ageInput.value);
+		var state = getStateByName(stateInput.value);
+		console.log(age);
+		console.log("s", state);
+		
+		if(age >= state.ageLicense){
+			return output.innerHTML = `<p>You're old enough to drive in ${state.name}</p>`;
+		} else {
+			return output.innerHTML = `<p>You're too young to drive in ${state.name}</p>`;
+		}
+	}
+
 }
 
 form.addEventListener('submit', function(event){
 	event.preventDefault();
-	if(ageInput.value && stateInput.value){
-		var age = Number(ageInput.value);
-		var state = stateInput.value;
-		console.log(age);
-		console.log(state);
-
-		drivingAge.forEach(function(place){
-			if(place.state == state){
-				var selectedState = place.state;
-				console.log(selectedState);
-				if(place.ageLicense <= age){
-					output.innerHTML = `<p>You're old enough to drive in ${selectedState}</p>`;
-				} else {
-					output.innerHTML = `<p>You're too young to drive in ${selectedState}</p>`;
-				}
-			}
-		});
-	}
+	handleDrivingCalc();
 });

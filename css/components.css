@@ -30,14 +30,21 @@ form field{
 	gap: 10px;
 }
 form input {
-	min-width: 170px;
+	max-width: 200px;
 
 }
 
-form button{
-	max-width: 150px;
+form select{
+	max-width:150px;
+	padding: 10px;
 }
+
+form button {
+	max-width: 100px;
+}
+
 
 output {
 	display: block;
 }
+
