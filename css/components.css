@@ -33,6 +33,9 @@ form input {
 	max-width: 200px;
 
 }
+form .radio{
+	max-width: 20px;
+}
 
 form select{
 	max-width:150px;
