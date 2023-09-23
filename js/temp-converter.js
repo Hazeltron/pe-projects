@@ -33,8 +33,6 @@ form.addEventListener('submit', function(event){
 		console.log(celsius);
 		output.innerHTML = `<p>${temp} degrees fahrenheit is ${celsius} in celsius.</p>`
 
-	} else {
-		
 	}
 
 	if(tempType == "fahrenheit"){
