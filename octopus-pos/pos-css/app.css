@@ -1,0 +1,25 @@
+
+header {
+	padding: 10px;
+	border-bottom: 1px solid gray;
+}
+
+main {
+	padding: 10px;
+	border: 2px dashed red;
+	min-height: 200px;
+}
+
+form.sign-in {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	max-width: 200px;
+}
+
+form.tables {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
+	max-width: 400px;
+	
+}
