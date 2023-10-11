@@ -101,13 +101,45 @@ document.addEventListener('click', function(click){
 
 document.addEventListener('click', function(click){
 	click.preventDefault();
-	if(click.target.matches('[data-table]')){
+	if (click.target.matches ('[data-table]') ) {
 			const selectedTable = click.target.dataset.table;
 			console.log(selectedTable);
 			const menu = buildMenu(selectedTable);
 			loadPage(menu);
 	}
 });
+
+
+//add entrees with prices
+
+class Entrees {
+	constructor(food, price){
+		this.mains = [];
+		this.mainId = 0;
+		this.mainItem = food;
+		this.price = price;
+	}
+}
+
+class ItemList {
+	constructor(){
+		this.id = 0;
+		this.items = [];
+		}
+
+	add(content) {
+		item = new ITEMS(this.id++, content);
+		this.items[...items, content];
+		console.log(items);
+	}
+}
+
+
+const entrees = new Entrees();
+const ItemList = new ItemList();
+entrees("pizza", 32);
+ItemList.add(entrees);
+
 
 /* NEXT STEPS? */
 
