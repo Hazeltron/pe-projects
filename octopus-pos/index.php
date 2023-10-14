@@ -7,19 +7,27 @@
     <link rel="stylesheet" href="pos-css/app.css" >
   </head>
   <body>
+    
     <header>
         <p>Octopus</p> 
-        <nav>
-            <button data-screen="login">login</button> 
-            <button data-screen="map">map</button>
-            <button data-screen="menu">menu</button>
-        </nav>
+        <inner-column>
+          <nav>
+              <button data-screen="login">login</button> 
+              <button data-screen="map">map</button>
+              <button data-screen="menu">menu</button>
+          </nav>
+
+        </inner-column>
+       
     </header>
 
 
     <main>
-        
-        <!-- stuff -->
+      <inner-column>
+        <section class="screen">
+
+        </section>
+      </inner-column>
     </main>
 
     

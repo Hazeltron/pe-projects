@@ -1,6 +1,6 @@
 console.clear();
 const appName = "Octopus"; // string
-const outlet = document.querySelector('main');
+const outlet = document.querySelector('section');
 let password = "";
 const myPassword = "1111";
 
@@ -41,26 +41,93 @@ const mapTemplate = `
 function buildMenu(table) {
 	return`<h1>Menu</h1>
 	<h2>Table #${table}</h2>
-	<form>
-		<button>burgers</button>
-		<button>pizza</button>
-		<button>tator-tots</button>
-		<button>beer</button>
-		<button>wine</button>
-		<button>ice-cream</button>
+	<form class="menu">
+		<button data-front-menu = 'main'>Entrees</button>
+		<button data-front-menu = 'apps'>Apps</button>
+		<button data-front-menu = 'sides'>Sides</button>
+		<button data-front-menu = 'beer'>Beer</button>
+		<button data-front-menu = 'wine'>Wine</button>
+		<button data-front-menu = 'cocktails'>Cocktails</button>
+		<button data-front-menu = 'dessert'>Dessert</button>
 	</form>
 	`;
 }
 
+function buildEntrees(main){
+	return`
+	<h1>Entrees</h1>
+	<form>
+	<button data-item = 'steak'>Steak</button>
+	</form>`
+}
+
+function buildApps(app){
+	return`
+	<h1>Apps</h1>
+	<form>
+	<button data-item = 'cal'>Calamari</button>
+	</form>`
+}
+
+function buildSides(side){
+	return`
+	<h1>Sides</h1>
+	<form>
+	<button data-item = 'fries'>Fries</button>
+	</form>`
+}
+
+function buildBeer(beer){
+	return`
+	<h1>Beer</h1>
+	<form>
+	<button data-item = 'ipa'>IPA</button>
+	</form>`
+}
+
+function buildWine(wine){
+	return`
+	<h1>Wine</h1>
+	<form>
+	<button data-item = 'pino'>Pino-Noir</button>
+	</form>`
+}
+
+function buildCocktails(cocktail){
+	return`
+	<h1>Cocktails</h1>
+	<form>
+	<button data-item = 'old-f'>Old Fashion</button>
+	</form>`
+}
+
+function buildDessert(dessert){
+	return`
+	<h1>Dessert</h1>
+	<form>
+	<button data-item = 'keylime'>Keylime Tart</button>
+	</form>`
+}
+
+function buildOption(item, name){
+	return`
+	<h1>${name}</h1>
+	<form>
+	<button>course</button>
+	</form>`
+}
+
+
 const menuTemplate = 
 	`<h1>Menu</h1>
 	<form>
-		<button>burgers</button>
-		<button>pizza</button>
-		<button>tator-tots</button>
-		<button>beer</button>
-		<button>wine</button>
-		<button>ice-cream</button>
+	<button data-front-menu = 'main'>Entrees</button>
+	<button data-front-menu = 'apps'>Apps</button>
+	<button data-front-menu = 'sides'>Sides</button>
+	<button data-front-menu = 'beer'>Beer</button>
+	<button data-front-menu = 'wine'>Wine</button>
+	<button data-front-menu = 'cocktails'>Cocktails</button>
+	<button data-front-menu = 'dessert'>Dessert</button>
 	</form>
 	`;
 
@@ -103,42 +170,144 @@ document.addEventListener('click', function(click){
 	click.preventDefault();
 	if (click.target.matches ('[data-table]') ) {
 			const selectedTable = click.target.dataset.table;
-			console.log(selectedTable);
 			const menu = buildMenu(selectedTable);
 			loadPage(menu);
 	}
 });
 
-
-//add entrees with prices
-
-class Entrees {
-	constructor(food, price){
-		this.mains = [];
-		this.mainId = 0;
-		this.mainItem = food;
-		this.price = price;
+document.addEventListener("click", function(click){
+	click.preventDefault();
+	if(click.target.matches("[data-front-menu='main']")){
+		const selectedMenu = click.target.dataset.menu;
+		const entrees = buildEntrees(selectedMenu);
+		loadPage(entrees);
 	}
-}
 
-class ItemList {
+	if(click.target.matches("[data-front-menu='apps']")){
+		const selectedMenu = click.target.dataset.menu;
+		const apps = buildApps(selectedMenu);
+		loadPage(apps);
+	}
+
+	if(click.target.matches("[data-front-menu='sides']")){
+		const selectedMenu = click.target.dataset.menu;
+		const sides = buildSides(selectedMenu);
+		loadPage(sides);
+	}
+
+	if(click.target.matches("[data-front-menu='beer']")){
+		const selectedMenu = click.target.dataset.menu;
+		const beer = buildBeer(selectedMenu);
+		loadPage(beer);
+	}
+
+	if(click.target.matches("[data-front-menu='wine']")){
+		const selectedMenu = click.target.dataset.menu;
+		const wine = buildWine(selectedMenu);
+		loadPage(wine);
+	}
+
+	if(click.target.matches("[data-front-menu='cocktails']")){
+		const selectedMenu = click.target.dataset.menu;
+		const cocktails = buildCocktails(selectedMenu);
+		loadPage(cocktails);
+	}
+
+	if(click.target.matches("[data-front-menu='dessert']")){
+		const selectedMenu = click.target.dataset.menu;
+		const dessert = buildDessert(selectedMenu);
+		loadPage(dessert);
+	}
+
+});
+
+document.addEventListener('click', function(click){
+	if(click.target.matches("[data-item]")){
+		const selectedItem = click.target.dataset.menu;
+		console.log(selectedItem);
+		const options = buildOption(selectedItem, "selected");
+		loadPage(options);
+	}
+
+})
+
+
+
+
+
+//food items with prices 
+//put all of those into an order and save them 
+//connect them with the button inputs 
+
+class Order {
 	constructor(){
-		this.id = 0;
-		this.items = [];
-		}
-
-	add(content) {
-		item = new ITEMS(this.id++, content);
-		this.items[...items, content];
-		console.log(items);
+		this.order = [];
+		this.itemId = 0;
 	}
+
+	add(item){
+		item = {itemId:this.itemId++, name: item, done:false};
+		this.order.push(item);
+		console.log(`added ${item.name}`);
+	}
+	remove(id){
+		const removedItem = this.order.splice(id, 1)[0];
+		console.log(`removed ${removedItem.name}`);
+	}
+
+	done(id){
+		this.order[id].done = true;
+	}
+	change(id, newItem = ""){
+		
+		this.order = this.order.map( function(order){
+			if(order.itemId === id){
+			return {...order, name:newItem};
+			}
+			return order;
+		});
+		
+	}
+
 }
 
+const order = new Order();
+order.add('pizza');
+order.add('cake');
+order.remove(1);
 
-const entrees = new Entrees();
-const ItemList = new ItemList();
-entrees("pizza", 32);
-ItemList.add(entrees);
+order.change(0, "something");
+order.done(0);
+
+console.log(order.order);
+
+// class Entrees {
+// 	constructor(food, price){
+// 		this.mains = [];
+// 		this.mainId = 0;
+// 		this.mainItem = food;
+// 		this.price = price;
+// 	}
+// }
+
+// class ItemList {
+// 	constructor(){
+// 		this.id = 0;
+// 		this.items = [];
+// 		}
+
+// 	add(content) {
+// 		item = new ITEMS(this.id++, content);
+// 		this.items[...items, content];
+// 		console.log(items);
+// 	}
+// }
+
+
+// const entrees = new Entrees();
+// const ItemList = new ItemList();
+// entrees("pizza", 32);
+// ItemList.add(entrees);
 
 
 /* NEXT STEPS? */

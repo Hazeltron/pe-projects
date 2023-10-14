@@ -8,6 +8,7 @@ main {
 	padding: 10px;
 	border: 2px dashed red;
 	min-height: 200px;
+	background-color: aquamarine;
 }
 
 form.sign-in {
@@ -22,4 +23,27 @@ form.tables {
 	gap: 10px;
 	max-width: 400px;
 	
+}
+
+inner-column{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 700px;
+    display: block;
+
+}
+
+.sign-in button{
+	width: 200px;
+	font-size: 40px;
+}
+
+.tables button{
+	width:200px;
+	font-size: 40px;
+}
+
+.menu button {
+	width: 100px;
+	font-size: 20px;
 }
