@@ -15,6 +15,7 @@
               <button data-screen="login">login</button> 
               <button data-screen="map">map</button>
               <button data-screen="menu">menu</button>
+              <button data-screen="ticket">ticket</button>
           </nav>
 
         </inner-column>
@@ -28,11 +29,12 @@
 
         </section>
       </inner-column>
+
     </main>
 
     
     
     
 </body>
-<script src="pos-js/index.js"></script>
+<script src="pos-js/index.js" type="module"></script>
 </html>

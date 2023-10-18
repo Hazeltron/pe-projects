@@ -1,20 +1,47 @@
 
 header {
 	padding: 10px;
+	background-color: darkorchid;
 	border-bottom: 1px solid gray;
+	position: sticky;
+	top: 0;
 }
 
 main {
 	padding: 10px;
-	border: 2px dashed red;
+	border: 2px solid black;
 	min-height: 200px;
-	background-color: aquamarine;
+	height: 100vh;
+	background-color: white;
+}
+inner-column{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 700px;
+    display: block;
+
 }
 
+h1{
+	font-size: 50px;
+}
+.sign-in-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 form.sign-in {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	max-width: 200px;
+	min-width: 400px;
+
+}
+.sign-in button{
+	font-size: 3.5em;
+}
+.sign-in button:hover{
+	background-color: blueviolet;
+	color: white;
 }
 
 form.tables {
@@ -25,23 +52,43 @@ form.tables {
 	
 }
 
-inner-column{
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 700px;
-    display: block;
+.tables-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+form.tables {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	min-width: 400px;
 
 }
-
-.sign-in button{
-	width: 200px;
-	font-size: 40px;
-}
-
 .tables button{
-	width:200px;
-	font-size: 40px;
+	font-size: 3.5em;
 }
+.tables button:hover{
+	background-color: blueviolet;
+	color: white;
+}
+
+
+.menu button{
+	font-size: 3.5em;
+	min-width: 200px;
+}
+.menu button:hover{
+	background-color: blueviolet;
+	color: white;
+}
+
+
+.courses {
+	display: flex;
+	flex-direction: column;
+}
+
+
+
 
 .menu button {
 	width: 100px;

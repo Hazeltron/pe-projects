@@ -1,141 +1,214 @@
 console.clear();
+
+//menuItem
+//id/slug
+//name
+//category (main/drinks/etc.)
+//notes
+//temp
+
+
+//actual menu JSON
+const menuItemsData = [
+	{
+		name: "Hamburger",
+		id: "hamburger",
+		category: "entrees",
+	},
+	{
+		name: "Fish",
+		id: "fish",
+		category: "entrees",
+	},
+	{
+		name: "Pizza",
+		id: "pizza",
+		category: "entrees",
+	},
+]
+
+
+
+
+
 const appName = "Octopus"; // string
-const outlet = document.querySelector('section');
+const outlet = document.querySelector('section.screen');
 let password = "";
 const myPassword = "1111";
 
-
+//page loading function
 function loadPage(pageTemplate) {
 	outlet.innerHTML = pageTemplate;
 }
 
+
 const loginTemplate = `
-	<h1>Login</h1>
-	
-	<form class='sign-in'>
-		<button data-login='1'>1</button>
-		<button data-login='2'>2</button>
-		<button data-login='3'>3</button>
-		<button data-login='4'>4</button>
-		<button data-login='5'>5</button>
-		<button data-login='6'>6</button>
-		<button data-login='7'>7</button>
-		<button data-login='8'>8</button>
-		<button data-login='9'>9</button>
-	</form>
+	<section class="sign-in-block">
+		<h1>Login</h1>
+		<form class='sign-in'>
+			<button data-login='1'>1</button>
+			<button data-login='2'>2</button>
+			<button data-login='3'>3</button>
+			<button data-login='4'>4</button>
+			<button data-login='5'>5</button>
+			<button data-login='6'>6</button>
+			<button data-login='7'>7</button>
+			<button data-login='8'>8</button>
+			<button data-login='9'>9</button>
+		</form>
+	</section>
 `;
 
 
 const mapTemplate = `
-	<h1>MAP</h1>
-	
-	<form class='tables'>
-		<button data-table='1'>#1</button>					
-		<button data-table='2'>#2</button>
-		<button data-table='3'>#3</button>
-		<button data-table='4'>#4</button>
-		<button data-table='5'>#5</button>
-		<button data-table='6'>#6</button>
-	</form>
+	<section class="tables-block">
+		<h1>Floor Plan</h1>
+		
+		<form class='tables'>
+			<button data-table='1'>#1</button>					
+			<button data-table='2'>#2</button>
+			<button data-table='3'>#3</button>
+			<button data-table='4'>#4</button>
+			<button data-table='5'>#5</button>
+			<button data-table='6'>#6</button>
+		</form>
+	</section>
 `;
-function buildMenu(table) {
-	return`<h1>Menu</h1>
+
+function buildTicket(table){
+	return`
+	<button data-back="back">Back</button>
+	<h1>Ticket for Table #${table}</h1>
+	<section>
+		<button type="submit" data-send="send">Send to kitchen</button>
+	</section>
+	`
+}
+
+
+function buildOrder(table){
+	return`
+	<h1>Menu</h1>
 	<h2>Table #${table}</h2>
-	<form class="menu">
-		<button data-front-menu = 'main'>Entrees</button>
-		<button data-front-menu = 'apps'>Apps</button>
-		<button data-front-menu = 'sides'>Sides</button>
-		<button data-front-menu = 'beer'>Beer</button>
-		<button data-front-menu = 'wine'>Wine</button>
-		<button data-front-menu = 'cocktails'>Cocktails</button>
-		<button data-front-menu = 'dessert'>Dessert</button>
-	</form>
+	<section class="menu-block">
+		<form class="menu">
+	${menuItems(menuItemsData)}
+
+	<button type="submit" data-complete="finish-order">Complete Order</button>
+		</form>
+	</section>
+	`
+}
+
+function checkOut(table) {
+	return`
+	<h1>Check Out Table #${table}</h1>
+	<section>
+		<form>
+			<h2>The price is...</h2>
+			<button data-checkout="pay">Pay</button>
+		</form>
+	</section>
+	`
+}
+
+//hypothetically creates buttons/page using menuItmsData using MenuItems function 
+const menuTemplate = `
+	<section class="tables-block">
+		<h1>Menu</h1>
+		
+		
+		
+		${menuItems(menuItemsData)}
+		
+
+	</section>
+`;
+
+//button expects menu item
+//makes a button with menu item name
+
+function menuItem(item){
+	return `
+		<button data-item='${item.id}'>
+			${item.name}
+		</button>
 	`;
 }
 
-function buildEntrees(main){
-	return`
-	<h1>Entrees</h1>
-	<form>
-	<button data-item = 'steak'>Steak</button>
-	</form>`
-}
+//list out menu items
+//look at list and make list with each name
 
-function buildApps(app){
-	return`
-	<h1>Apps</h1>
-	<form>
-	<button data-item = 'cal'>Calamari</button>
-	</form>`
+function menuItems(items){
+	var template = `<ul>`;
+	items.forEach(function(item){
+		template += menuItem(item);
+	});
+	template += `</ul>`; 
+	return template;
 }
+// click item
+//go to options page
+//keep the table number and item id
+//have buttons for options
+//have a save button
 
-function buildSides(side){
+function buildOptions(selectedItem){
 	return`
-	<h1>Sides</h1>
-	<form>
-	<button data-item = 'fries'>Fries</button>
-	</form>`
-}
+	<h1>Build ${selectedItem}</h1>
+	<section>
 
-function buildBeer(beer){
-	return`
-	<h1>Beer</h1>
-	<form>
-	<button data-item = 'ipa'>IPA</button>
-	</form>`
-}
+		<h2>Course</h2>
+		<form class="courses">
+			<label>Course 1</lable>
+			<input type="radio" name="course" value="course-1" data-course="1"></input>
+			<label>Course 2</lable>
+			<input type="radio" name="course" value="course-2" data-course="2">Course 2</input>
+			<label>Course 3</lable>
+			<input type="radio" name="course" value="course-3" data-course="3">Course 3</input>
+			<label>Course 4</lable>
+			<input type="radio" name="course" value="course-4" data-course="4">Course 4</input>
+			
+			<h2>Seat Number</h2>
+			<label>Course 4</lable>
+			<input type="range" name="seat-number" data-seat="seat" step="1" max="20" min="1">
+			
+			<button data-submit="submit">Finish ${selectedItem}</button>
+		</form>
+	</section>
+	`
 
-function buildWine(wine){
-	return`
-	<h1>Wine</h1>
-	<form>
-	<button data-item = 'pino'>Pino-Noir</button>
-	</form>`
-}
-
-function buildCocktails(cocktail){
-	return`
-	<h1>Cocktails</h1>
-	<form>
-	<button data-item = 'old-f'>Old Fashion</button>
-	</form>`
-}
-
-function buildDessert(dessert){
-	return`
-	<h1>Dessert</h1>
-	<form>
-	<button data-item = 'keylime'>Keylime Tart</button>
-	</form>`
-}
-
-function buildOption(item, name){
-	return`
-	<h1>${name}</h1>
-	<form>
-	<button>course</button>
-	</form>`
+	
 }
 
 
-const menuTemplate = 
-	`<h1>Menu</h1>
-	<form>
-	<button data-front-menu = 'main'>Entrees</button>
-	<button data-front-menu = 'apps'>Apps</button>
-	<button data-front-menu = 'sides'>Sides</button>
-	<button data-front-menu = 'beer'>Beer</button>
-	<button data-front-menu = 'wine'>Wine</button>
-	<button data-front-menu = 'cocktails'>Cocktails</button>
-	<button data-front-menu = 'dessert'>Dessert</button>
-	</form>
-	`;
+
+//fuck this function 
+//Just add all the options up here ^ with radios/slider/whatever
+//save them after they're set 
+//go back to menu to add new item.
+function specifyCourse(selectedCourse){
+	return`
+	<h2>courses</h2>
+	<section>
+		<form>
+			<button data-course="1">Course 1</button>
+		</form>
+	<section>
+	`
+}
 
 
+
+
+
+
+
+//building login
 loadPage(loginTemplate);
 
-console.log(outlet);
 
+//lisens for nav clicks and directs to pages
 document.addEventListener('click', function(click) {
 	click.preventDefault();
 	
@@ -150,8 +223,16 @@ document.addEventListener('click', function(click) {
 	if ( click.target.matches('[data-screen="menu"]') ) {
 		loadPage(menuTemplate);
 	}
+
+	if(click.target.matches('[data-screen="ticket"]') ) {
+		loadPage(buildTicket());
+	}
+
+	
 });
 
+
+//listens to login and directs to home(floor plan)
 document.addEventListener('click', function(click){
 	if(click.target.matches(`[data-login]`)){
 		if(click.target.dataset.login == '1'){
@@ -166,105 +247,84 @@ document.addEventListener('click', function(click){
 	} 
 });
 
+
+var currentTable = null;
+//listens for table selection and leads to menu
 document.addEventListener('click', function(click){
 	click.preventDefault();
 	if (click.target.matches ('[data-table]') ) {
 			const selectedTable = click.target.dataset.table;
-			const menu = buildMenu(selectedTable);
-			loadPage(menu);
+			currentTable = selectedTable;
+			loadPage(buildOrder(currentTable));
+			console.log(currentTable);
 	}
+
+	if (click.target.matches ('[data-item]') ) {
+			const selectedItem = click.target.dataset.item;
+			loadPage(buildOptions(selectedItem));
+	}
+
+	if (click.target.matches ('[data-submit]') ) {
+			loadPage(buildOrder(currentTable));
+	}
+
+	if (click.target.matches ('[data-complete]') ) {
+			loadPage(buildTicket(currentTable));
+	}
+
+	if (click.target.matches ('[data-back]') ) {
+			loadPage(buildOrder(currentTable));
+	}
+
+	if (click.target.matches ('[data-send]') ) {
+			loadPage(checkOut(currentTable));
+	}
+
+	if (click.target.matches ('[data-checkout]') ) {
+			loadPage(mapTemplate);
+	}
+
+	
 });
 
-document.addEventListener("click", function(click){
-	click.preventDefault();
-	if(click.target.matches("[data-front-menu='main']")){
-		const selectedMenu = click.target.dataset.menu;
-		const entrees = buildEntrees(selectedMenu);
-		loadPage(entrees);
-	}
-
-	if(click.target.matches("[data-front-menu='apps']")){
-		const selectedMenu = click.target.dataset.menu;
-		const apps = buildApps(selectedMenu);
-		loadPage(apps);
-	}
-
-	if(click.target.matches("[data-front-menu='sides']")){
-		const selectedMenu = click.target.dataset.menu;
-		const sides = buildSides(selectedMenu);
-		loadPage(sides);
-	}
-
-	if(click.target.matches("[data-front-menu='beer']")){
-		const selectedMenu = click.target.dataset.menu;
-		const beer = buildBeer(selectedMenu);
-		loadPage(beer);
-	}
-
-	if(click.target.matches("[data-front-menu='wine']")){
-		const selectedMenu = click.target.dataset.menu;
-		const wine = buildWine(selectedMenu);
-		loadPage(wine);
-	}
-
-	if(click.target.matches("[data-front-menu='cocktails']")){
-		const selectedMenu = click.target.dataset.menu;
-		const cocktails = buildCocktails(selectedMenu);
-		loadPage(cocktails);
-	}
-
-	if(click.target.matches("[data-front-menu='dessert']")){
-		const selectedMenu = click.target.dataset.menu;
-		const dessert = buildDessert(selectedMenu);
-		loadPage(dessert);
-	}
-
-});
-
-document.addEventListener('click', function(click){
-	if(click.target.matches("[data-item]")){
-		const selectedItem = click.target.dataset.menu;
-		console.log(selectedItem);
-		const options = buildOption(selectedItem, "selected");
-		loadPage(options);
-	}
-
-})
 
 
 
 
 
-//food items with prices 
-//put all of those into an order and save them 
-//connect them with the button inputs 
 
+
+
+
+
+//class that adds-removes-changes the order in theory
 class Order {
 	constructor(){
-		this.order = [];
+		this.items = [];
 		this.itemId = 0;
 	}
 
 	add(item){
 		item = {itemId:this.itemId++, name: item, done:false};
-		this.order.push(item);
+		this.items.push(item);
 		console.log(`added ${item.name}`);
 	}
+
 	remove(id){
-		const removedItem = this.order.splice(id, 1)[0];
+		const removedItem = this.items.splice(id, 1)[0];
 		console.log(`removed ${removedItem.name}`);
 	}
 
 	done(id){
-		this.order[id].done = true;
+		this.items[id].done = true;
 	}
 	change(id, newItem = ""){
-		
-		this.order = this.order.map( function(order){
-			if(order.itemId === id){
-			return {...order, name:newItem};
+		//This is actually creating an entire new array, might wan to find specific name 
+		this.items = this.items.map( function(item){
+			if(item.itemId === id){
+				return {...item, name:newItem};
 			}
-			return order;
+			return item;
 		});
 		
 	}
@@ -274,12 +334,15 @@ class Order {
 const order = new Order();
 order.add('pizza');
 order.add('cake');
-order.remove(1);
 
-order.change(0, "something");
+
+order.change(1, "something");
 order.done(0);
 
-console.log(order.order);
+console.log(order.items);
+
+
+console.log(outlet);
 
 // class Entrees {
 // 	constructor(food, price){
