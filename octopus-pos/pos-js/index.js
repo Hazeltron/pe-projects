@@ -1,29 +1,94 @@
-console.clear();
 
 //menuItem
 //id/slug
 //name
 //category (main/drinks/etc.)
 //notes
+console.clear();
 //temp
 
 
 //actual menu JSON
 const menuItemsData = [
 	{
-		name: "Hamburger",
-		id: "hamburger",
-		category: "entrees",
+		name: "Classic Burger",
+		id: " classic burger",
+		price: 10.00,
 	},
 	{
-		name: "Fish",
-		id: "fish",
-		category: "entrees",
+		name: "Bacon Ranch Burger",
+		id: "bacon ranch burger",
+		price: 13.00,
 	},
 	{
-		name: "Pizza",
-		id: "pizza",
-		category: "entrees",
+		name: "Blue Cheese Burger",
+		id: "blue cheese burger",
+		price: 11.00,
+	},
+	{
+		name: "Mushroom Swiss Burger",
+		id: "mushroom swiss burger",
+		price: 12.00,
+	},
+	{
+		name: "Fries",
+		id: "fries",
+		price: 5.00,
+	},
+	{
+		name: "Drink",
+		id: "drink",
+		price: 4.00,
+	},
+]
+
+const tableData = [
+	{
+		name: "1",
+		id: 1,
+	},
+	{
+		name: "2",
+		id: 2,
+	},
+	{
+		name: "3",
+		id: 3,
+	},
+	{
+		name: "4",
+		id: 4,
+	},
+	{
+		name: "5",
+		id: 5,
+	},
+	{
+		name: "6",
+		id: 6,
+	},
+	{
+		name: "7",
+		id: 7,
+	},
+]
+
+const serverData = [
+	{
+		name:"Paul",
+		password:1996,
+	},
+	{
+		name:"Derek",
+		password:1234,
+	},
+	{
+		name:"Ad",
+		password:3145,
+	},
+	{
+		name:"Cinder",
+		password:1111,
 	},
 ]
 
@@ -65,12 +130,7 @@ const mapTemplate = `
 		<h1>Floor Plan</h1>
 		
 		<form class='tables'>
-			<button data-table='1'>#1</button>					
-			<button data-table='2'>#2</button>
-			<button data-table='3'>#3</button>
-			<button data-table='4'>#4</button>
-			<button data-table='5'>#5</button>
-			<button data-table='6'>#6</button>
+			${tables(tableData)}
 		</form>
 	</section>
 `;
@@ -112,7 +172,7 @@ function checkOut(table) {
 	`
 }
 
-//hypothetically creates buttons/page using menuItmsData using MenuItems function 
+//creates buttons/page using menuItmsData using MenuItems function 
 const menuTemplate = `
 	<section class="tables-block">
 		<h1>Menu</h1>
@@ -125,6 +185,23 @@ const menuTemplate = `
 	</section>
 `;
 
+//makes table button
+function table(tableData){
+	return`
+	<button data-table='${tableData.id}'>
+		${tableData.name}
+	</button>
+	`
+}
+//loops through tables and makes button list
+function tables(tableList){
+	var template = `<ul>`;
+		tableList.forEach(function(t){
+			template += table(t);
+		});
+		template += `</ul>`;
+		return template;
+}
 //button expects menu item
 //makes a button with menu item name
 
@@ -132,6 +209,7 @@ function menuItem(item){
 	return `
 		<button data-item='${item.id}'>
 			${item.name}
+			$${item.price}
 		</button>
 	`;
 }
@@ -156,22 +234,31 @@ function menuItems(items){
 function buildOptions(selectedItem){
 	return`
 	<h1>Build ${selectedItem}</h1>
-	<section>
-
-		<h2>Course</h2>
-		<form class="courses">
-			<label>Course 1</lable>
-			<input type="radio" name="course" value="course-1" data-course="1"></input>
-			<label>Course 2</lable>
-			<input type="radio" name="course" value="course-2" data-course="2">Course 2</input>
-			<label>Course 3</lable>
-			<input type="radio" name="course" value="course-3" data-course="3">Course 3</input>
-			<label>Course 4</lable>
-			<input type="radio" name="course" value="course-4" data-course="4">Course 4</input>
+	<section class="options-block">
+		<form class="options">
+			<h2>Temp</h2>
+			<label>Rare</lable>
+			<input type="radio" name="temp" value="rare" data-temp="rare"></input>
+			<label>Medium Rare</lable>
+			<input type="radio" name="temp" value="medium rare" data-temp="medium-rare"></input>
+			<label>Medium</lable>
+			<input type="radio" name="temp" value="medium" data-temp="medium"></input>
+			<label>Medium Well</lable>
+			<input type="radio" name="temp" value="medium well" data-temp="medium-well"></input>
+			<label>Well-Done</lable>
+			<input type="radio" name="temp" value="well-done" data-temp="well-done"></input>
+		
+			
 			
 			<h2>Seat Number</h2>
-			<label>Course 4</lable>
+			<label>Number</lable>
 			<input type="range" name="seat-number" data-seat="seat" step="1" max="20" min="1">
+
+			<h2>Notes</h2>
+			<label>Add Note</label>
+			<input type="text">
+
+
 			
 			<button data-submit="submit">Finish ${selectedItem}</button>
 		</form>
@@ -181,27 +268,26 @@ function buildOptions(selectedItem){
 	
 }
 
-
-
-//fuck this function 
 //Just add all the options up here ^ with radios/slider/whatever
 //save them after they're set 
 //go back to menu to add new item.
-function specifyCourse(selectedCourse){
-	return`
-	<h2>courses</h2>
-	<section>
-		<form>
-			<button data-course="1">Course 1</button>
-		</form>
-	<section>
-	`
+
+
+
+
+//finds the price in object array 
+function getPriceById(itemId){
+	 var menuItem = menuItemsData.find(function(item){
+		return item.id === itemId;
+	 });
+
+	 if (menuItem) {
+		var cash = menuItem.price;
+		console.log(cash);
+		return cash;
+	 }
 }
-
-
-
-
-
+getPriceById('drink');
 
 
 //building login
@@ -261,7 +347,10 @@ document.addEventListener('click', function(click){
 
 	if (click.target.matches ('[data-item]') ) {
 			const selectedItem = click.target.dataset.item;
+			const price = getPriceById(selectedItem);
 			loadPage(buildOptions(selectedItem));
+			order.add(selectedItem, price, currentTable);
+			console.log(order);
 	}
 
 	if (click.target.matches ('[data-submit]') ) {
@@ -304,8 +393,14 @@ class Order {
 		this.itemId = 0;
 	}
 
-	add(item){
-		item = {itemId:this.itemId++, name: item, done:false};
+	add(item, price, table){
+		item = {
+			itemId:this.itemId++, 
+			name: item, 
+			price,
+			table,
+			done:false
+		};
 		this.items.push(item);
 		console.log(`added ${item.name}`);
 	}
@@ -332,12 +427,6 @@ class Order {
 }
 
 const order = new Order();
-order.add('pizza');
-order.add('cake');
-
-
-order.change(1, "something");
-order.done(0);
 
 console.log(order.items);
 
