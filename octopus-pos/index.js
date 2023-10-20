@@ -144,6 +144,7 @@ document.addEventListener('click', function(click){
 				console.log("Order exists");
 				orders[id].items.push(item);
 				orderExists = true;
+				console.log(orders);
 			  }
 			});
 	  
