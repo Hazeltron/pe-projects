@@ -144,7 +144,6 @@ document.addEventListener('click', function(click){
 				console.log("Order exists");
 				orders[id].items.push(item);
 				orderExists = true;
-				console.log(orders);
 			  }
 			});
 	  
@@ -160,11 +159,12 @@ document.addEventListener('click', function(click){
 			  };
 	  
 			  orders.push(newOrder);
-			  console.log(orders);
+			  
 			}
 		  }
 	  
 		  checkOrders(orders, currentTable);
+		  console.log(orders);
 		
 
 
