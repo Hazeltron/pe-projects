@@ -26,11 +26,6 @@ console.clear();
 
 
 
-
-
-
-
-
 //when a new order is staarted creeate a new order and save it as a key in this object
 //start new order when the first item is added to the table
 const orders = [
@@ -122,9 +117,7 @@ document.addEventListener('click', function(click){
 	} 
 });
 
-
-
-var currentTable = null;
+let currentTable;
 //listens for table selection and leads to menu
 document.addEventListener('click', function(click){
 	click.preventDefault();
@@ -139,10 +132,42 @@ document.addEventListener('click', function(click){
 		//this is where you would create new order in the orders object
 		//check if order exists for this table
 		//if it doesn't create a new order
+		const selectedItem = click.target.dataset.item;
+		const  item = getItemById(selectedItem);
 
 
-			const selectedItem = click.target.dataset.item;
-			const  item = getItemById(selectedItem);
+		function checkOrders(orders, currentTable) {
+			let orderExists = false;
+	  
+			orders.forEach(function (order, id) {
+			  if (order.open === true && currentTable === order.tableNum) {
+				console.log("Order exists");
+				orders[id].items.push(item);
+				orderExists = true;
+			  }
+			});
+	  
+			if (!orderExists) {
+			  console.error("Order doesn't exist");
+			 
+			  const newOrder = {
+				open: true,
+				time: "", // Fill in your date and time
+				serverName: "Cinder",
+				items: [item], // Add the selected item to the items array
+				tableNum: currentTable
+			  };
+	  
+			  orders.push(newOrder);
+			  console.log(orders);
+			}
+		  }
+	  
+		  checkOrders(orders, currentTable);
+		
+
+
+			
 			
 			//loadPage(buildOptions(selectedItem));
 			
@@ -155,13 +180,12 @@ document.addEventListener('click', function(click){
 
 			renderOrder(order);
 			//show updated order on the screen 
-			//
-			console.log(order);
+			
 			
 
 
 			//saving to local storage
-			//addToStorage(`Table ${currentTable}`, JSON.stringify(order.items))
+			addToStorage(`Table ${currentTable}`, JSON.stringify(orders));
 	}
 
 	if (click.target.matches ('[data-submit]') ) {
@@ -187,15 +211,6 @@ document.addEventListener('click', function(click){
 
 	
 });
-
-
-
-
-
-
-
-
-
 
 
 //class that adds-removes-changes the order in theory
@@ -237,7 +252,7 @@ class Order {
 
 const order = new Order();
 
-console.log(order.items);
+// console.log(order.items);
 
 
 
@@ -248,64 +263,3 @@ console.log(outlet);
 loadPage(loginTemplate);
 loadPage(mapTemplate);
 loadPage(buildOrder(4));
-
-
-// class Entrees {
-// 	constructor(food, price){
-// 		this.mains = [];
-// 		this.mainId = 0;
-// 		this.mainItem = food;
-// 		this.price = price;
-// 	}
-// }
-
-// class ItemList {
-// 	constructor(){
-// 		this.id = 0;
-// 		this.items = [];
-// 		}
-
-// 	add(content) {
-// 		item = new ITEMS(this.id++, content);
-// 		this.items[...items, content];
-// 		console.log(items);
-// 	}
-// }
-
-
-// const entrees = new Entrees();
-// const ItemList = new ItemList();
-// entrees("pizza", 32);
-// ItemList.add(entrees);
-
-
-/* NEXT STEPS? */
-
-/* make a map... for tables...  */
-/* when you click a table - then you are taken to the menu... but it now knows you're on that table... so you can save the items in the order... (so you also need a page for the menu) */
-
-
-// P O S
-
-// (CRUD)
-
-// ITEM (menu items)  (the whole system)
-// add/change/remove/mark-as-86/fire (sent to station)
-
-// ORDER
-// add/remove/leave note about item/add-ons/remove ingredient
-
-// BILL
-// add up prices of all the things - and add tax
-// gratuity?
-
-// PAGE ("view") ("screen")
-// Change pages? -- also, navigation to get between them
-
-// - login screen (each server has a password)
-// - tables diagram
-// - main menu screen (knows what table you're talking about)
-/////// group things.... and then fire them (courses)
-// checkout / payment
-
-// - clock in/clock out (bonus ideas for later)
