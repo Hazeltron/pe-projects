@@ -1,5 +1,7 @@
 import { menuItemsData } from "../data/menu-items.js";
 
+import { getStorage } from "./site.js";
+
 function table(tableData){
 	return`
 	<button data-table='${tableData.id}'>
@@ -108,11 +110,7 @@ function buildOptions(selectedItem){
 
 function buildTicket(table){
 	return`
-	<button data-back="back">Back</button>
-	<h1>Ticket for Table #${table}</h1>
-	<section>
-		<button type="submit" data-send="send">Send to kitchen</button>
-	</section>
+	
 	`
 }
 

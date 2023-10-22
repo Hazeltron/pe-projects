@@ -18,6 +18,8 @@ function getItemById(itemId){
     }
 }
 
+
+
 const savedData = localStorage;
 function addToStorage(key, value){
 	savedData.setItem(key, JSON.stringify(value));
@@ -26,7 +28,7 @@ function addToStorage(key, value){
 //get local storage function
 function getStorage(key){
 	const storageItem = savedData.getItem(key);
-	console.log(JSON.parse(storageItem));
+	JSON.parse(storageItem);
 }
 
 

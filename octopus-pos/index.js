@@ -1,6 +1,7 @@
 import {menuItemsData} from "./data/menu-items.js";
 import {tableData} from "./data/table-details.js";
 import {serverData} from "./data/server-details.js";
+import{orders} from "./data/order.js";
 
 import{
 	loadPage,
@@ -28,16 +29,7 @@ console.clear();
 
 //when a new order is staarted creeate a new order and save it as a key in this object
 //start new order when the first item is added to the table
-const orders = [
-		{
-			open: true, //bullion
-			time: "", //date and time
-			serverName: "Cinder",//string
-			items: [], //array
-			tableNum: "1"//string
 
-		},
-]
 
 
 
@@ -152,9 +144,9 @@ document.addEventListener('click', function(click){
 			 
 			  const newOrder = {
 				open: true,
-				time: "", // Fill in your date and time
+				time: "",
 				serverName: "Cinder",
-				items: [item], // Add the selected item to the items array
+				items: [item],
 				tableNum: currentTable
 			  };
 	  
@@ -179,7 +171,7 @@ document.addEventListener('click', function(click){
 			
 
 
-			renderOrder(order);
+					renderOrder(order);
 			//show updated order on the screen 
 			
 			
@@ -196,7 +188,68 @@ document.addEventListener('click', function(click){
 	if (click.target.matches ('[data-complete]') ) {
 			loadPage(buildTicket(currentTable));
 			getStorage(`Table ${currentTable}`);
+
+			//get the names and prices for each item entered for a table
+			//make a function to do this 
+			function render(currentTable, orders) {
+				let template = `<ul>`;
+				let visualTotal = `<p> Total: `;
+				let taxTotal = `<p> Total with tax: `;
+				orders.forEach(function(order){
+					if(currentTable === order.tableNum){
+						let total = 0;
+
+						order.items.forEach(function(item){
+						console.log(currentTable);
+						let price = item.price;
+						let name = item.name;
+						
+						let orderItem = `<li>${name}	$${price}</li>`
+						template += orderItem;
+						
+						
+						console.log(orderItem);
+						total += price;
+
+						return {price, name, total};
+						
+						})
+						visualTotal += total;
+						console.log(total);
+						
+						let withTax = total * 1.03;
+						taxTotal += withTax;
+						console.log(withTax);
+					}
+				})
+				template += `<ul>`;
+				visualTotal += `</p>`
+				taxTotal += `</p>`
+				console.log(visualTotal);
+				outlet.innerHTML = `
+
+				<button data-back="back">Back</button>
+				<h1>Ticket for Table #${currentTable}</h1>
+				<section>
+					<h2>Order Details</h2>
+					${template}
+					${visualTotal}
+					${taxTotal}
+
+					<button type="submit" data-send="send">Send to kitchen</button>
+				</section>
+				`
+				console.log(name);
+			}
+			
+			render(currentTable, orders);
+			//add up prices 
+			//add tax
+			//print item name and price
+			//print total
+			
 	}
+	console.log(name);
 
 	if (click.target.matches ('[data-back]') ) {
 			loadPage(buildOrder(currentTable));
