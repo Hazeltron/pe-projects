@@ -8,10 +8,3 @@ export const orders = [
 
     },
 ]
-
-//get the names and prices for each item entered for a table
-//make a function to do this 
-//add up prices 
-//add tax
-//print item name and price
-//print total

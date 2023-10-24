@@ -70,6 +70,61 @@ const mapTemplate = `
 	</section>
 `;
 
+function render(currentTable, orders) {
+	let template = `<ul>`;
+	let visualTotal = `<p> Total: `;
+	let taxTotal = `<p> Total with tax: `;
+	let itemsAcess = []
+	orders.forEach(function(order){
+		if(currentTable === order.tableNum){
+			let total = 0;
+
+			order.items.forEach(function(item){
+			console.log(currentTable);
+			let price = item.price;
+			let name = item.name;
+			
+			let orderItem = `<li>${name}	$${price}</li>`;
+			template += orderItem;
+			
+			
+			console.log(orderItem);
+			total += price;
+	
+			itemsAcess.push({name, price});
+			})
+			visualTotal += total;
+			console.log(total);
+			
+			let withTax = total * 1.03;
+			taxTotal += withTax;
+			console.log(withTax);
+		}
+	})
+	template += `<ul>`;
+	visualTotal += `</p>`
+	taxTotal += `</p>`
+	console.log(visualTotal);
+	outlet.innerHTML = `
+
+	<button data-back="back">Back</button>
+	<h1>Ticket for Table #${currentTable}</h1>
+	<section>
+		<h2>Order Details</h2>
+		${template}
+		${visualTotal}
+		${taxTotal}
+
+		<button type="submit" data-send="send">Send to kitchen</button>
+	</section>
+	`
+
+}
+
+loadPage(loginTemplate);
+loadPage(mapTemplate);
+loadPage(buildOrder(4));
+
 //lisens for nav clicks and directs to pages
 document.addEventListener('click', function(click) {
 	click.preventDefault();
@@ -121,9 +176,6 @@ document.addEventListener('click', function(click){
 	}
 
 	if (click.target.matches ('[data-item]') ) {
-		//this is where you would create new order in the orders object
-		//check if order exists for this table
-		//if it doesn't create a new order
 		const selectedItem = click.target.dataset.item;
 		const  item = getItemById(selectedItem);
 
@@ -153,32 +205,14 @@ document.addEventListener('click', function(click){
 			  orders.push(newOrder);
 			  
 			}
-		  }
+		}
 	  
-		  checkOrders(orders, currentTable);
-		  console.log(orders);
-		
-
-
-			
-			
-			//loadPage(buildOptions(selectedItem));
-			
-			//adding to order
-			order.add(item);
-
-
-			
-
-
-					renderOrder(order);
-			//show updated order on the screen 
-			
-			
-
-
-			//saving to local storage
-			addToStorage(`Table ${currentTable}`, JSON.stringify(orders));
+		checkOrders(orders, currentTable);
+		console.log(orders);
+		loadPage(buildOptions(selectedItem));
+		order.add(item);
+		renderOrder(order);
+		addToStorage(`Table ${currentTable}`, JSON.stringify(orders));
 	}
 
 	if (click.target.matches ('[data-submit]') ) {
@@ -188,68 +222,8 @@ document.addEventListener('click', function(click){
 	if (click.target.matches ('[data-complete]') ) {
 			loadPage(buildTicket(currentTable));
 			getStorage(`Table ${currentTable}`);
-
-			//get the names and prices for each item entered for a table
-			//make a function to do this 
-			function render(currentTable, orders) {
-				let template = `<ul>`;
-				let visualTotal = `<p> Total: `;
-				let taxTotal = `<p> Total with tax: `;
-				orders.forEach(function(order){
-					if(currentTable === order.tableNum){
-						let total = 0;
-
-						order.items.forEach(function(item){
-						console.log(currentTable);
-						let price = item.price;
-						let name = item.name;
-						
-						let orderItem = `<li>${name}	$${price}</li>`
-						template += orderItem;
-						
-						
-						console.log(orderItem);
-						total += price;
-
-						return {price, name, total};
-						
-						})
-						visualTotal += total;
-						console.log(total);
-						
-						let withTax = total * 1.03;
-						taxTotal += withTax;
-						console.log(withTax);
-					}
-				})
-				template += `<ul>`;
-				visualTotal += `</p>`
-				taxTotal += `</p>`
-				console.log(visualTotal);
-				outlet.innerHTML = `
-
-				<button data-back="back">Back</button>
-				<h1>Ticket for Table #${currentTable}</h1>
-				<section>
-					<h2>Order Details</h2>
-					${template}
-					${visualTotal}
-					${taxTotal}
-
-					<button type="submit" data-send="send">Send to kitchen</button>
-				</section>
-				`
-				console.log(name);
-			}
-			
-			render(currentTable, orders);
-			//add up prices 
-			//add tax
-			//print item name and price
-			//print total
-			
+			render(currentTable, orders);	
 	}
-	console.log(name);
 
 	if (click.target.matches ('[data-back]') ) {
 			loadPage(buildOrder(currentTable));
@@ -314,6 +288,4 @@ const order = new Order();
 console.log(outlet);
 
 //building login
-loadPage(loginTemplate);
-loadPage(mapTemplate);
-loadPage(buildOrder(4));
+
