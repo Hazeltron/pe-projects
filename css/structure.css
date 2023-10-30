@@ -7,9 +7,11 @@ body {
 /*	background-color: var(--paper);*/
 /*	background-image: linear-gradient(to left, rgba(12,24,38,1), rgba(255,255,255,0));*/
 }
+/* body *{
+	border: black 1px solid;
+} */
 
 main {
-/*	border: black 3px solid;*/
 	flex-grow: 1;
 }
 
@@ -23,7 +25,8 @@ nav {
 	max-width: 1000px;
 	margin-right: auto;
 	margin-left: auto;
-	padding: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 	/*border: black solid 3px;*/
 }
 
@@ -48,16 +51,7 @@ nav li {
 
 nav a {
 	text-decoration: none;
-	color: black;
-}
-
-form {
-	padding: 20px;
-}
-
-.field + .field {
-	margin-top: 20px;
-
+	color: rgb(237, 237, 237);
 }
 
 textarea {

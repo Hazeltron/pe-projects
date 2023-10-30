@@ -2,18 +2,6 @@
 
 $facts =[
 	[
-		"date" => "June - Present",
-		"title" => "Web Design Student",
-		"location" => "Perpetual Education",
-		"description" => "Under the mentorship of Derek Wood, I'm learning best practices in front end development and design. The program is six days a week, for nine months.",
-	],
-	[
-		"date" => "Aug 2023 - Present",
-		"title" => "DESIGN CUNSOLTANT",
-		"location" => "Exterior-Visions, Colorado Springs, CO",
-		"description" => "HI helped this small company find direction for their site and sometimes answer design questions for them.",
-	],
-	[
 		"date" => "June 2022 - Present",
 		"title" => "EXPO/SERVER",
 		"location" => "Jax Fish House and Oyster Bar, Colorado Springs, CO",

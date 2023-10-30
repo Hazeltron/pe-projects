@@ -1,8 +1,10 @@
 html{
-	--ink: #ffffff;
-	--paper: #0c1826;
-	--highlight: #f1c615;
+	--ink: #474646;
+	--light-ink: hsl(0, 1%, 56%);
+	--paper: #f5eeee;
+	--paper-dark: rgb(77, 103, 108);
+	--highlight: #f16615;
 
-	--primary-font: 'Roboto', serif;
-	--secondary-font: 'Libre Baskerville', sans-serif;
+	--primary-font: 'Kanit', serif;
+	--secondary-font: 'Fira Sans Condensed', sans-serif;
 }

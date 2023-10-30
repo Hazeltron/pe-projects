@@ -8,8 +8,8 @@
 @import "modules.css";
 
 body {
-	background-color: #393D3F;
-	color: whitesmoke;
+	background-color:var(--paper);
+	color: var(--ink);
 }
 
 p+p{
@@ -33,39 +33,9 @@ section + section{
 		align-items: center;
 }
 
-@media(max-width:900px){
-	.me-img{
-		display: none;
-	}
-
+.full-resume {
+	display: none;
 }
-    
-
-/* field specific */
-
-.field {
-	display: flex;
-	flex-direction: column;
-}
-
-input {
-	max-width: 400px;
-	margin-top: 10px;
-	height:  30px;
-}
-
-textarea {
-	max-width: 400px;
-	min-height: 200px;
-	margin-top: 10px;
-}
-
-button {
-	margin-top: 20px;
-	padding: 10px;
-}
-
-
 
 
 

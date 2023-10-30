@@ -5,23 +5,14 @@
 
 		<div class="about-container">
 
-			<picture class="me-img">
-				<img src="https://paulhazelton.files.wordpress.com/2015/04/dsc_0269.jpg?w=436&h=290" alt="">
-			</picture>
-
 			<section class="about-content">
-				<h2 class="loud-voice">About</h2>
-				<p>I’m a 30-year-old guy who’s worked a couple different jobs so far. I’ve been a buss boy, a dishwasher, a server, an expo, and a teacher.</p>
-
-				<p>Until very recently I was living in Hanoi, Vietnam. I lived there for four years (a long and complicated story for another time). Currently, I live in Colorado Springs, Colorado where I work as a server at Jax Fish House and Oyster Bar.</p>
-
-				<p>I’m also studying to land a job in tech, either as a front-end programmer or a UX designer.</p>
-
-				<p>Three of my closest friends work in the field and I'd always been interested in it.</p>
-
-				<p>I certainly don't regret getting into tech and I'm excited to discover what this chapter in my life will look like.</p>
-
-				<p>I'd love to connect with whoever's reading this and share my knowledge and expertise to help people with their projects.</p>
+				<h1 class="loud-voice">Paul Hazelton.</h1>
+				<h2 class="medium-voice">Designer & Developer</h2>
+				<p>
+				I believe the web can be a more vibrant and original space through collaberation and empathy. I enjoy creating visual languages, design systems and thinking about how the little boxes that make up the web can work smarter. <br><br>	
+				Currently, I'm interested in building responsive layout modules, which you can view in my Layout Garden.<br> <br>
+				If you want to learn more, check out my <a href="https://substack.com/@hazeltron?utm_source=user-menu" class="calm-strong-voice">SubStack!</a> 
+				</p>
 			</section>
 
 		</div>
@@ -34,23 +25,110 @@
 	<div class="inner-column">
 		<h2 class="attention-voice">Contact</h2>
 		<ul>
-			<li>Cell:(719)337-0666</li>
-			<li>Email: paulhazelton.work@gmail.com</li>
+			<li><i>Cell:</i> (719)337-0666</li>
+			<li><i>Email:</i> paulhazelton.work@gmail.com</li>
+			<li><i>GitHub:</i> Hazeltron</li>
 		</ul>
 	</div>
 </section>
 
 
-<section class="affinity">
+<section>
 	<div class="inner-column">
-
-		<h2 class="attention-voice">Affinity Work</h2>
-		<p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Officiis sed ex saepe dignissimos provident! Error ratione laudantium dolorem enim consectetur quod minima distinctio, deleniti illo eos impedit cupiditate sed doloremque veritatis laboriosam quas id totam facere dicta iste et fugiat.</p>
-
-		<?php include("modules/affinity/template.php"); ?>
+		<h2 class="loud-voice">Resume</h2>
+		<button class="calm-strong-voice resume-button">View</button>
 
 	</div>
 </section>
+
+
+<section class="full-resume">
+
+	<section class="educ-contact">
+		<div class="inner-column">
+		
+
+			<ul class="educ-contact-container">
+				<li class="education">
+					
+					<h2 class="attention-voice">Education</h2>
+
+					<p>Colorado State University<br>
+					Fort Collins, CO<br>
+					Bachelor of Arts (B.A.) Mass Communication and Journalism (Jun 2016)</p>
+					
+				</li>
+				
+			</ul>
+			
+
+		</div>
+	</section>
+
+
+
+	<section class="additional">
+		<div class="inner-column">
+
+			<section class="add">
+
+				<div>
+
+					<h2 class="attention-voice">Skills</h2>
+					<p class="strong-voice">Programming</p>
+					<p class="calm-voice">HTML / CSS / PHP / JavaScript</p>
+
+					<p class="strong-voice">Design</p>
+					<p class="calm-voice">Figma / Affinity Designer</p>
+
+				</div>
+				
+
+			</section>
+
+		</div>
+	</section>
+
+
+
+	<section class="experience">
+		<div class="inner-column">
+
+		<h2 class="attention-voice">Experience</h2>
+
+				<?php 
+					include("data-php/resume-xp-data.php");
+					
+					foreach($facts as $fact){?>
+
+				<ul class="xp-container">
+
+
+				<li>
+					<h3 class="strong-voice"><?=$fact["date"]?></h3>
+				</li>
+
+
+				<li>
+					<h3 class="attention-voice"><?=$fact["title"]?></h3>
+				</li>
+
+				</ul>
+
+				<p class="strong-voice"><?=$fact["location"]?></p>
+
+				<p><?=$fact["description"]?></p>
+
+				<?php } ?>
+
+		</div>
+	</section>
+
+</section>
+
+
+
+
 
 
 <?php include ('footer.php'); ?>

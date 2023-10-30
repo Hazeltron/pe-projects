@@ -79,6 +79,14 @@ include '../../header.php';
 	</div>
 </section>
 
+<section class="montana">
+	<div class="inner-column">
+
+		<?php include(getFile('modules/montana-cans/template.php')); ?>
+		
+	</div>
+</section>
+
 
 
 
