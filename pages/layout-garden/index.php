@@ -8,6 +8,8 @@ include '../../header.php';
 	<div class="inner-column">
 
 		<h1 class="loud-voice">Layout Garden</h1>
+		<p>What is a layout garden and why have one? <br>
+		</p>
 		
 	</div>
 </section>
