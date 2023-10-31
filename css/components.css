@@ -8,10 +8,14 @@
 	min-width: 120px;
 	text-align: center;
 	border: solid black 1px;
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0);
 }
 
 .button:hover{
 	background-color: var(--color);
 }
+
+
+
+
 

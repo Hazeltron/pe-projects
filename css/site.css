@@ -12,10 +12,6 @@ body {
 	color: var(--ink);
 }
 
-p+p{
-	margin-top: 5px;
-}
-
 section + section{
 	margin-top: 20px;
 }
@@ -24,7 +20,7 @@ section + section{
 	position: sticky;
 	top: 0;
 	opacity: 1;
-	x-index: 30;
+	z-index: 30 !important;
 }
 /*home specific*/
 
