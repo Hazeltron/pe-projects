@@ -31,8 +31,9 @@ starbucks-cta p {
 }
 
 starbucks-cta h2 {
+	font-family: Arial, Helvetica,
 	text-align: center;
-	font-size: 1rem;
+	font-size: 2rem;
 }
 
 starbucks-cta .button {

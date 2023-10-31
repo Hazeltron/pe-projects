@@ -12,7 +12,7 @@
 
 	<text-content>
 
-		<h2 class="attention-voice"><?=$heading?></h2>
+		<h2><?=$heading?></h2>
 		<p><?=$paragraph?></p>
 		<a class="button" href="">Order Now</a>
 
