@@ -14,23 +14,70 @@ include '../../header.php';
 	</div>
 </section>
 
+<?php 
+	$json = file_get_contents('../../data-php/layout-garden.json');
+	$layouts = json_decode($json, true);
 
-<section class="cards">
-	<div class="inner-column">
+	foreach($layouts as $layout){ ?>
 
-		<?php include(getFile('modules/layout-cards/template.php')); ?>
-		
-	</div>
-</section>
+		<section class="case-study">
+			<div class="inner-column">
+
+				<h2 class="attention-voice"><?=$layout['name']?></h2>
+				<a class="calm-strong-voice" href="<?=$layout['link']?>">Source</a>
+
+				<h2 class="strong-voice">Why:</h2>
+				<p><?=$layout['whyText']?></p>
+
+				<h2 class="strong-voice">Difficulties:</h2>
+				<p><?=$layout['diffText']?></p>
+
+				<h2 class="strong-voice">How I made it:</h2>
+				<p><?=$layout['howText']?></p>
+
+			</div>
+		</section>
+			
+
+		<section class="<?=$layout['class']?>">
+			<div class="inner-column">
+
+				<?php include(getFile("modules/{$layout['layout']}/template.php")); ?>
+
+			</div>
+		</section>
+
+<?php } ?>
+
+
+
+
+<section class="case-study">
+			<div class="inner-column">
+
+				<h2 class="attention-voice">Starbucks</h2>
+				<a class="calm-strong-voice" href="https://www.starbucks.com/">Source</a>
+
+				<h2 class="strong-voice">Why:</h2>
+				<p></p>
+
+				<h2 class="strong-voice">Difficulties:</h2>
+				<p></p>
+
+				<h2 class="strong-voice">How I made it:</h2>
+				<p></p>
+
+			</div>
+		</section>
 
 <section class="starbucks pumpkin">
 	<div class="inner-column">
 
-		<?php  
+		
+	<?php  
 			$heading = "Tap for pumpkin";
 			$paragraph = "The Pumpkin Spice Latte and Pumpkin Cream Cold Brew are here, and you can order them now on our app when you join Starbucks® Rewards.";
-		?>
-
+			?>
 		<?php include(getFile('modules/starbucks/template.php')); ?>
 		
 	</div>
@@ -57,37 +104,13 @@ include '../../header.php';
 	</div>
 </section>
 
-<section class="hydro-flask">
-	<div class="inner-column">
-		
-		<?php include(getFile('modules/hydro-flask/template.php')); ?>
-		
-	</div>
-</section>
 
-<section class="disfutar">
-	<div class="inner-column">
-		
-		<?php include(getFile('modules/simple-menu/template.php')); ?>
-		
-	</div>
-</section>
 
-<section class="timberland">
-	<div class="inner-column">
 
-		<?php include(getFile('modules/timberland/template.php')); ?>
-		
-	</div>
-</section>
 
-<section class="montana">
-	<div class="inner-column">
 
-		<?php include(getFile('modules/montana-cans/template.php')); ?>
-		
-	</div>
-</section>
+
+
 
 
 
