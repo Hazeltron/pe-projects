@@ -4,8 +4,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-/*	background-color: var(--paper);*/
-/*	background-image: linear-gradient(to left, rgba(12,24,38,1), rgba(255,255,255,0));*/
+
+	/* background-image: linear-gradient(to left, rgba(12,24,38,1), rgba(255,255,255,0)); */
 }
 /* body *{
 	border: black 1px solid;
@@ -16,9 +16,7 @@ main {
 }
 
 nav {
-	
 	background-color: var(--highlight);
-	
 }
 
 .inner-column {
@@ -40,13 +38,9 @@ img {
 	height:auto;
 }
 
-
-
-
 nav li {
 	display: inline-block;
 	color: black;
-	margin-left: 20px;
 }
 
 nav a {
@@ -54,18 +48,10 @@ nav a {
 	color: rgb(237, 237, 237);
 }
 
-textarea {
-	max-width: 400px;
-	min-height: 200px;
-}
-
-
-
 footer li {
 	display: inline-block;
-	padding-left: 20px;
 	text-decoration: none;
-	color: whitesmoke;
+	color: var(--ink);
 }
 
 footer a {

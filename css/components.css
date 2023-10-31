@@ -15,39 +15,3 @@
 	background-color: var(--color);
 }
 
-
-
-form{
-	background-color: white;
-	color: black;
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-}
-form field{
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-}
-form input {
-	max-width: 200px;
-
-}
-form .radio{
-	max-width: 20px;
-}
-
-form select{
-	max-width:150px;
-	padding: 10px;
-}
-
-form button {
-	max-width: 100px;
-}
-
-
-output {
-	display: block;
-}
-
