@@ -32,9 +32,25 @@
 	</div>
 </section>
 
+<section class="layout-template">
+	<inner-column>
+		<div class="layout-template-container">
+			<div class="box1"></div>
+			<div class="box2"></div>
+			<div class="box3"></div>
+			<div class="box4"></div>
+			<div class="box5"></div>
+			<div class="box6"></div>
+		</div>	
+	
+
+	</inner-column>
+	
+</section>
+
 
 <section>
-	<div class="inner-column">
+	<div class="inner-column resume-controller">
 		<h2 class="loud-voice">Resume</h2>
 		<button class="calm-strong-voice resume-button">View</button>
 
