@@ -36,7 +36,7 @@ starbucks-cta h2 {
 	font-size: 2rem;
 }
 
-starbucks-cta .button {
+starbucks-cta .coffee-button {
 	margin-top: 30px;
 	border: solid white 1px;
 	border-radius: 30px;
@@ -44,7 +44,7 @@ starbucks-cta .button {
 	text-align: center;
 }
 
-starbucks-cta .button:hover {
+starbucks-cta .coffee-button:hover {
 	background-color: #693538;
 }
 
@@ -95,7 +95,7 @@ starbucks-cta .button:hover {
 	background-color: #cba259;
 }
 
-.starbucks.pumpkin .button:hover {
+.starbucks.pumpkin .coffee-button:hover {
 	background-color: #c39341;
 }
 

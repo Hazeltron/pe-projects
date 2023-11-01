@@ -14,7 +14,7 @@
 
 		<h2><?=$heading?></h2>
 		<p><?=$paragraph?></p>
-		<a class="button" href="">Order Now</a>
+		<a class="coffee-button" href="">Order Now</a>
 
 	</text-content>
 	
