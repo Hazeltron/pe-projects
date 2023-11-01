@@ -7,9 +7,9 @@ body {
 
 	/* background-image: linear-gradient(to left, rgba(12,24,38,1), rgba(255,255,255,0)); */
 }
-body *{
+/* body *{
 	border: black 1px solid;
-}
+} */
 
 main {
 	flex-grow: 1;

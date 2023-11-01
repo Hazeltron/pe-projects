@@ -25,6 +25,18 @@ section + section{
 /*home specific*/
 
 /* Artificial grid */
+@keyframes cardEntrance {
+	from{
+		opacity: 0;
+		transform: scale(0.3);
+		filter: hue-rotate(360deg);
+	}	
+	to{
+		opacity: 1;
+		transform: scale(1);
+		filter: hue-rotation(0deg);
+	}
+}
 .layout-template-container {
 	display: grid;
 	grid-template-areas:
@@ -34,32 +46,45 @@ section + section{
 	"box4 box4 box4"
 	;
 	gap:5px;
+	animation-delay: 600ms;
 }
 
 .box1{
 	grid-area: box1;
+	
+	animation-delay: calc(1 * 600ms);
 }
 
 .box2{
 	grid-area: box2;
+	animation-delay: calc(2 * 600ms);
+	
 }
 
 .box3{
 	grid-area: box3;
+	animation-delay: calc(3 * 600ms);
+	
 }
 
 .box4{
 	grid-area: box4;
+	animation-delay: calc(4 * 600ms);
+	
 }
 
 .box5{
 	grid-area: box5;
 	display: none;
+	animation-delay: calc(5 * 600ms);
+	
 }
 
 .box6 {
 	grid-areaa: box6;
 	display: none;
+	animation-delay: calc(6 * 100ms);
+	
 }
 .box1:hover{
 	background-color: var(--ink);
@@ -89,7 +114,10 @@ section + section{
 .layout-template-container div {
 	min-width:200px;
 	min-height: 200px;
-	border: 2px solid var(--highlight);
+	border: 2px solid var(--ink);
+	background-color: var(--highlight);
+	animation: cardEntrance 1700ms ease-out;
+	animation-fill-mode: backwards;
 }
 
 /* resume sections */
