@@ -24,7 +24,7 @@ include '../../header.php';
 			<div class="inner-column">
 
 				<h2 class="attention-voice"><?=$layout['name']?></h2>
-				<button class="calm-strong-voice <?=$layout['button']?>">View Case Study</button>
+				<button class="calm-strong-voice button <?=$layout['button']?>">View Case Study</button>
 
 				<div class="case-study-content" data-target="<?=$layout['button']?>">
 
@@ -63,7 +63,7 @@ include '../../header.php';
 
 				<h2 class="attention-voice">Starbucks</h2>
 				<a class="calm-strong-voice" href="https://www.starbucks.com/">Source</a>
-				<button class="calm-strong-voice starbucks-button">View Case Study</button>
+				<button class="calm-strong-voice button starbucks-button">View Case Study</button>
 
 				<div class="case-study-content" data-target="starbucks-content">
 					<h2 class="strong-voice">Why:</h2>

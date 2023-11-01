@@ -52,7 +52,7 @@
 <section>
 	<div class="inner-column resume-controller">
 		<h2 class="loud-voice">Resume</h2>
-		<button class="calm-strong-voice resume-button">View</button>
+		<button class="calm-strong-voice button">View</button>
 
 	</div>
 </section>
