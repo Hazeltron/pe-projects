@@ -1,7 +1,7 @@
 console.clear();
 
 const resume = document.querySelector('.full-resume');
-const resumeButton = document.querySelector('.resume-button');
+const resumeButton = document.querySelector('.button');
 
 
 
@@ -22,8 +22,7 @@ const resumeButton = document.querySelector('.resume-button');
 // };
 
 // dropDown(resume, resumeButton);
-// dropDown(caseStudy, vacationButton);
-// dropDown(caseStudy, hydroButton);
+
 
 resumeButton.addEventListener('click', function(click) {
     if(resume.style.display !== 'block') {
