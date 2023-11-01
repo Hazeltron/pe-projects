@@ -6,15 +6,15 @@ function showErrors() {
 }
 showErrors();
 
-function format($variable) {
-	echo "<pre>";
-		echo "<code>";
-			echo print_r( $variable );
-		echo "</code>";
-	echo "</pre>";
-}
+// function format($variable) {
+// 	echo "<pre>";
+// 		echo "<code>";
+// 			echo print_r( $variable );
+// 		echo "</code>";
+// 	echo "</pre>";
+// }
 
-format( $_POST );
+// format( $_POST );
 
 function getFile($path){
 	return dirname(__FILE__) . '/' . $path;
