@@ -24,7 +24,7 @@
 
 		<p class='teaser'><?=$description?></p>
 
-		<a class='button' href='#'>BOOK</a>
+		<a class='card-button' href='#'>BOOK</a>
 	</text-content>
 </article>
 </li>
