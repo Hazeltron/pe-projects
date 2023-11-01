@@ -15,10 +15,8 @@ const starbucksButton = document.querySelector('.starbucks-button');
 function displayContent(content) {
     if (content.style.display !== 'block') {
         content.style.display = 'block';
-        console.log("It was pressed");
     } else {
         content.style.display = 'none';
-        console.log("That didn't work");
     }
 }
 
@@ -44,7 +42,6 @@ montanaButton.addEventListener('click', function() {
 
 starbucksButton.addEventListener('click', function() {
     displayContent(starStudy);
-    console.log("yes");
 });
 
 
