@@ -24,16 +24,22 @@ include '../../header.php';
 			<div class="inner-column">
 
 				<h2 class="attention-voice"><?=$layout['name']?></h2>
-				<a class="calm-strong-voice" href="<?=$layout['link']?>">Source</a>
+				<button class="calm-strong-voice <?=$layout['button']?>">View Case Study</button>
 
-				<h2 class="strong-voice">Why:</h2>
-				<p><?=$layout['whyText']?></p>
+				<div class="case-study-content" data-target="<?=$layout['button']?>">
 
-				<h2 class="strong-voice">Difficulties:</h2>
-				<p><?=$layout['diffText']?></p>
+					<a class="calm-strong-voice" href="<?=$layout['link']?>">Source</a>
 
-				<h2 class="strong-voice">How I made it:</h2>
-				<p><?=$layout['howText']?></p>
+					<h2 class="strong-voice">Why:</h2>
+					<p><?=$layout['whyText']?></p>
+
+					<h2 class="strong-voice">Difficulties:</h2>
+					<p><?=$layout['diffText']?></p>
+
+					<h2 class="strong-voice">How I made it:</h2>
+					<p><?=$layout['howText']?></p>
+
+				</div>
 
 			</div>
 		</section>
@@ -57,15 +63,18 @@ include '../../header.php';
 
 				<h2 class="attention-voice">Starbucks</h2>
 				<a class="calm-strong-voice" href="https://www.starbucks.com/">Source</a>
+				<button class="calm-strong-voice starbucks-button">View Case Study</button>
 
-				<h2 class="strong-voice">Why:</h2>
-				<p></p>
+				<div class="case-study-content" data-target="starbucks-content">
+					<h2 class="strong-voice">Why:</h2>
+					<p></p>
 
-				<h2 class="strong-voice">Difficulties:</h2>
-				<p></p>
+					<h2 class="strong-voice">Difficulties:</h2>
+					<p></p>
 
-				<h2 class="strong-voice">How I made it:</h2>
-				<p></p>
+					<h2 class="strong-voice">How I made it:</h2>
+					<p></p>
+				</div>
 
 			</div>
 		</section>
