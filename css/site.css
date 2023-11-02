@@ -16,11 +16,35 @@ section + section{
 	margin-top: 20px;
 }
 
+p + p {
+	margin-top: 5px;
+}
+
+.nav-content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.nav-links {
+	margin-left: 70px;
+	text-decoration: overline;
+}
+
+.nav-links .garden{
+	margin-left: 70px;
+}
+
+
+
 .sticky-nav{
 	position: sticky;
 	top: 0;
 	opacity: 1;
 	z-index: 30 !important;
+	padding: 10px 0px 10px 0px;
+	background-color: var(--highlight);
+	border-bottom: solid 1px grey;
 }
 /*home specific*/
 
