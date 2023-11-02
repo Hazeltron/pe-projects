@@ -30,17 +30,17 @@
 		<header class="sticky-nav">
 
 			<nav>
-				<div class="inner-column">
+				<div class="inner-column nav-content">
 
-					<ul>
+					<ul class="logo">
 						<li class="strong-voice">Haze Designs</li>
 					</ul>
-					<ul>
-						<li class="calm-voice">
-							<a href="">Home</a>
-						</li>
+					<ul class="nav-links">
 						<li>
-							<a href="pages/layout-garden">Layout Garden</a>
+							<a class="calm-nav-voice" href="index.php">Home</a>
+						</li>
+						<li class="garden">
+							<a class="calm-nav-voice" href="pages/layout-garden">Layout Garden</a>
 						</li>
 					</ul>
 
