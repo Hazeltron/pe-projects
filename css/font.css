@@ -48,6 +48,17 @@
     color: var(--highlight)
     
 }
+
+.calm-nav-voice {
+    font-family: var(--secondary-font);
+    font-size: 1rem;
+    line-height: 1.5em;
+    max-width: 75ch;
+    font-weight: 500;
+    color: var(--paper)
+    
+}
+
 .calm-voice, p, li, a {
     font-family: var(--secondary-font);
     font-size: 1rem;
