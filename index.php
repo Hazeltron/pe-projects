@@ -67,7 +67,7 @@
             </div>
             <div class="box7">
                 <picture>
-                    <img src="assets/nas.png" alt="">
+                    <img src="assets/music.png" alt="">
                 </picture>
             </div>
         </div>
