@@ -25,16 +25,29 @@ section + section{
 /*home specific*/
 
 /* Artificial grid */
+.layout-template-container picture {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.layout-template-container img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
 @keyframes cardEntrance {
 	from{
 		opacity: 0;
 		transform: scale(0.3);
-		filter: hue-rotate(360deg);
+		filter: hue-rotate(20deg);
 	}	
 	to{
 		opacity: 1;
 		transform: scale(1);
-		filter: hue-rotation(0deg);
+		filter: hue-rotate(0deg);
 	}
 }
 .layout-template-container {
@@ -47,12 +60,14 @@ section + section{
 	;
 	gap:5px;
 	animation-delay: 600ms;
+	max-width: 90vw;
+	max-height: 80vh;
 }
 
 .box1{
 	grid-area: box1;
-	
 	animation-delay: calc(1 * 600ms);
+	
 }
 
 .box2{
@@ -81,41 +96,86 @@ section + section{
 }
 
 .box6 {
-	grid-areaa: box6;
+	grid-area: box6;
 	display: none;
 	animation-delay: calc(6 * 100ms);
 	
 }
+
+.box7 {
+	grid-area: box7;
+	display: none;
+	animation-delay: calc(7 * 100ms);
+	
+}
+
+.box1 img:hover{
+	opacity: .8;
+	
+}
+
 .box1:hover{
-	background-color: var(--ink);
+	transform: scale(1.01);
+}
+
+.box2 img:hover{
+	opacity: .8;
 }
 
 .box2:hover{
-	background-color: var(--ink);
+	transform: scale(1.01);
+}
+
+.box3 img:hover{
+	opacity: .8;
 }
 
 .box3:hover{
-	background-color: var(--ink);
+	transform: scale(1.01);
+}
+
+.box4 img:hover{
+	opacity: .8;
 }
 
 .box4:hover{
-	background-color: var(--ink);
+	transform: scale(1.01);
+}
+
+.box5 img:hover{
+	opacity: .8;
 }
 
 .box5:hover{
-	background-color: var(--ink);
+	transform: scale(1.01);
 }
 
-.box6:hover {
-	background-color: var(--ink);
+.box6 img:hover {
+	opacity: .8;
 }
 
+.box6:hover{
+	transform: scale(1.01);
+}
+
+.box7 img:hover {
+	opacity: .8;
+}
+
+.box7:hover{
+	transform: scale(1.01);
+}
+
+
+.resume-title {
+	margin-bottom: 100px;
+}
 
 .layout-template-container div {
 	min-width:200px;
 	min-height: 200px;
 	border: 2px solid var(--ink);
-	background-color: var(--highlight);
+	background-color: grey;
 	animation: cardEntrance 1700ms ease-out;
 	animation-fill-mode: backwards;
 }
@@ -136,7 +196,7 @@ section + section{
 }
 
 @media(min-width:600px) {
-	.resume-controller {
+	.resume-title-controller {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -162,13 +222,17 @@ section + section{
 @media(min-width: 1000px) {
 	.layout-template-container {
 		grid-template-areas:
-		"box1 box1 box1 box2"
-		"box1 box1 box1 box2"
-		"box3 box4 box4 box2"
-		"box3 box5 box5 box6"
+		" box7 box1 box1 box2"
+		" box7 box1 box1 box2"
+		" box3 box4 box4 box2"
+		" box3 box5 box5 box6"
 		;
 	}
 	.box6{
+		display: block;
+	}
+
+	.box7{
 		display: block;
 	}
 	
