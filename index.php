@@ -33,24 +33,50 @@
 </section>
 
 <section class="layout-template">
-	<inner-column>
-		<div class="layout-template-container">
-			<div class="box1"></div>
-			<div class="box2"></div>
-			<div class="box3"></div>
-			<div class="box4"></div>
-			<div class="box5"></div>
-			<div class="box6"></div>
-		</div>	
-	
-
-	</inner-column>
-	
+    <inner-column>
+        <div class="layout-template-container">
+            <div class="box1">
+                <picture>
+                    <img src="assets/books.png" alt="">
+                </picture>
+            </div>
+            <div class="box2">
+                <picture>
+                    <img src="assets/travel.png" alt="">
+                </picture>
+            </div>
+            <div class="box3">
+                <picture>
+                    <img src="assets/code.png" alt="">
+                </picture>
+            </div>
+            <div class="box4">
+                <picture>
+                    <img src="assets/billards.png" alt="">
+                </picture>
+            </div>
+            <div class="box5">
+                <picture>
+                    <img src="assets/movies.png" alt="">
+                </picture>
+            </div>
+            <div class="box6">
+                <picture>
+                    <img src="assets/graph.png" alt="">
+                </picture>
+            </div>
+            <div class="box7">
+                <picture>
+                    <img src="assets/nas.png" alt="">
+                </picture>
+            </div>
+        </div>
+    </inner-column>
 </section>
 
 
-<section>
-	<div class="inner-column resume-controller">
+<section class="resume-title">
+	<div class="inner-column resume-title-controller">
 		<h2 class="loud-voice">Resume</h2>
 		<button class="calm-strong-voice button">View</button>
 
