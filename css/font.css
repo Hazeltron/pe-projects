@@ -51,21 +51,39 @@
 
 .calm-nav-voice {
     font-family: var(--secondary-font);
-    font-size: 1rem;
+    font-size: 1.3rem;
     line-height: 1.5em;
     max-width: 75ch;
-    font-weight: 500;
-    color: var(--paper)
-    
+    font-weight: 500;    
 }
 
-.calm-voice, p, li, a {
+.calm-voice, p{
     font-family: var(--secondary-font);
     font-size: 1rem;
     line-height: 1.5em;
     max-width: 75ch;
     font-weight: 300;
     color: var(light-ink)
+}
+
+p + p {
+	margin-top: 0.5em;
+}
+
+h1 + p {
+    margin-top: 1em;
+}
+
+h2 + ul {
+    margin-top: 0.5em;
+}
+
+p + h2{
+    margin-top: 1.5em;
+}
+
+h2 + p {
+    margin-top: 0.5em;
 }
 
 
