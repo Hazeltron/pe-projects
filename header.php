@@ -33,7 +33,7 @@
 				<div class="inner-column nav-content">
 
 					<ul class="logo">
-						<li class="strong-voice">Haze Designs</li>
+						<li class="strong-voice">Haze</li>
 					</ul>
 					<ul class="nav-links">
 						<li>
