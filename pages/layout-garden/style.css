@@ -1,7 +1,24 @@
+.layout-intro {
+	padding: 50px 0px 100px 0px;
+}
+
 .case-study-content {
     display: none;
 }
 
+.layout-intro .layout-links {
+    margin-top: 2em;
+}
+
+.layouts {
+    padding: 60px 0px 20px 0px;
+}
 
 
+.case-study {
+    padding: 150px 0px 0px 0px;
+}
 
+.starbucks-study {
+    padding: 0px 0px 50px 0px;
+}
