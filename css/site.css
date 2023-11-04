@@ -12,27 +12,23 @@ body {
 	color: var(--ink);
 }
 
-section + section{
-	margin-top: 20px;
-}
-
-p + p {
-	margin-top: 5px;
-}
 
 .nav-content {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	gap: 20px;
 }
 
-.nav-links {
-	margin-left: 70px;
-	text-decoration: overline;
+.nav-content ul li{
+	color: white;
 }
 
-.nav-links .garden{
-	margin-left: 70px;
+.nav-links a {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding: 20px
 }
 
 
@@ -42,11 +38,17 @@ p + p {
 	top: 0;
 	opacity: 1;
 	z-index: 30 !important;
-	padding: 10px 0px 10px 0px;
-	background-color: var(--highlight);
+	background-color: var(--ink);
 	border-bottom: solid 1px grey;
+
 }
 /*home specific*/
+
+
+
+.about {
+	padding: 50px 0px 100px 0px;
+}
 
 /* Artificial grid */
 .layout-template-container picture {
@@ -198,12 +200,20 @@ p + p {
 .layout-template-container div {
 	min-width:200px;
 	min-height: 200px;
-	border: 2px solid var(--ink);
+	border: 1px solid var(--ink);
 	background-color: grey;
-	animation: cardEntrance 1700ms ease-out;
+	animation: cardEntrance 1000ms ease-out;
 	animation-fill-mode: backwards;
 }
 
+.contact-content {
+	padding: 50px 0px 100px 0px;
+
+}
+
+.contact-content-container ul li {
+	margin-top: 1em;
+}
 /* resume sections */
 .resume-button {
 	min-width: 100px;
