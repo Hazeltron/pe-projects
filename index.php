@@ -8,10 +8,9 @@
 			<section class="about-content">
 				<h1 class="loud-voice">Paul Hazelton.</h1>
 				<h2 class="medium-voice">Designer & Developer</h2>
-				<p>
-				I believe the web can be a more vibrant and original space through collaberation and empathy. I enjoy creating visual languages, design systems and thinking about how the little boxes that make up the web can work smarter. <br><br>	
-				Currently, I'm interested in building responsive layout modules, which you can view in my Layout Garden.<br> <br>
-				If you want to learn more, check out my <a href="https://substack.com/@hazeltron?utm_source=user-menu" class="calm-strong-voice">SubStack!</a> 
+				<p>I believe the web can be a more vibrant and original space through collaberation and empathy. I enjoy creating visual languages, design systems and thinking about how the little boxes that make up the web can work smarter.</p>
+				<p>Currently, I'm interested in building responsive layout modules, which you can view in my Layout Garden.</p>
+				<p>If you want to learn more, check out my <a href="https://substack.com/@hazeltron?utm_source=user-menu" class="calm-strong-voice">SubStack!</a> 
 				</p>
 			</section>
 
@@ -20,17 +19,6 @@
 	</div>
 </section>
 
-
-<section class="contact-content">
-	<div class="inner-column">
-		<h2 class="attention-voice">Contact</h2>
-		<ul>
-			<li><i>Cell:</i> (719)337-0666</li>
-			<li><i>Email:</i> paulhazelton.work@gmail.com</li>
-			<li><i>GitHub:</i> Hazeltron</li>
-		</ul>
-	</div>
-</section>
 
 <section class="layout-template">
     <inner-column>
@@ -75,7 +63,19 @@
 </section>
 
 
-<section class="resume-title">
+<section class="contact-content">
+	<div class="inner-column contact-content-container">
+		<h2 class="attention-voice">Contact</h2>
+		<ul>
+			<li><i>Cell:</i> (719)337-0666</li>
+			<li><i>Email:</i> paulhazelton.work@gmail.com</li>
+			<li><i>GitHub:</i> Hazeltron</li>
+		</ul>
+	</div>
+</section>
+
+
+<!-- <section class="resume-title">
 	<div class="inner-column resume-title-controller">
 		<h2 class="loud-voice">Resume</h2>
 		<button class="calm-strong-voice button">View</button>
@@ -166,7 +166,7 @@
 		</div>
 	</section>
 
-</section>
+</section> -->
 
 
 
