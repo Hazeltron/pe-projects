@@ -1,12 +1,12 @@
 
 
-<?php include('../header.php'); ?>
+
 
 <section>
 	<div class="inner-column">
 
 		<form method="Post">
-			<field class="bmi-calc">
+			<field class="bmi-calc form-continer">
 
 				<label for="feet" class="calm-voice">How tall are you in feet?</label>
 				<input type="range" id="feet" min="0" max="10"  step="1">
