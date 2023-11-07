@@ -41,7 +41,7 @@
 		<text-area>
 			<p>32 oz & 40 oz with a handle and
 			straw to sip any which way.</p>
-			<a href="">Shop now</a>
+			<a href="#">Shop now</a>
 		</text-area>
 
 	</div>

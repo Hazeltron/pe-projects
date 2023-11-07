@@ -17,6 +17,11 @@ hydro-flask-mod text-area p {
 	width: 29ch;
 
 }
+
+hydro-flask-mod text-area a {
+	font-family: helvetica;
+
+}
 hydro-flask-grid{
 	background-color: white;
 	color: black;
@@ -52,6 +57,30 @@ hydro-flask-grid a {
 		font-weight: 700;
 		
 }
+
+.hydro-flask .main-image a {
+	border-radius: 30px;
+	background-color: #60a3c5;
+	color: white;
+	padding: 10px;
+	min-width: 150px;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+hydro-flask-grid a:hover {
+	color: #79cbf4;	
+}
+
+.hydro-flask .main-image a:hover {
+	background-color: #79cbf4;
+}
+
+.hydro-flask .main-image text-area {
+	margin-top: 20px;
+}
+
+
 
 @media(min-width: 591px){
 	.bottles{
