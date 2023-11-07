@@ -1,15 +1,21 @@
 .button {
 	min-width: 100px;
+	border: solid black 1px;
+	background-color: white;
+	padding: 10px;
 }
 
 .button:hover {
 	background-color: var(--highlight);
-	height:28px;
-	min-width: 122px;
+	min-width: 100px;
 	color: var(--paper);
-	border: 0px;
+	border: solid var(--highlight) 1px;
 	border-radius: 3px;
+	padding: 10px;
+
 }
+
+
 
 
 pre code {

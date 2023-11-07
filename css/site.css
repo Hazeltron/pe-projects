@@ -214,6 +214,11 @@ body {
 .contact-content-container ul li {
 	margin-top: 1em;
 }
+
+.cotact-content-container li a {
+	display: inline-block;
+	color:aqua;
+}
 /* resume sections */
 .resume-button {
 	min-width: 100px;
