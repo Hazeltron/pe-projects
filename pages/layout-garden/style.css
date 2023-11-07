@@ -11,14 +11,75 @@
 }
 
 .layouts {
-    padding: 60px 0px 20px 0px;
+    padding: 60px 0px 0px 0px;
 }
 
+.layouts.bordered * {
+    border: dashed black 1px;
+}
 
 .case-study {
-    padding: 150px 0px 0px 0px;
+    margin-top: 256px;
+    padding: 20px 0px 20px 0px;
+    background-color: rgb(195, 195, 195);
 }
 
-.starbucks-study {
-    padding: 0px 0px 50px 0px;
+.code-example {
+	margin-top: 2em;
+}
+
+.case-study-container {
+    margin-top: 20px;
+}
+
+.case-study-container button {
+    margin-top: 15px;
+}
+
+.case-study-content {
+    margin-top: 1em;
+}
+
+.layout-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.layout-controls label,
+.layout-controls input {
+    display: none;
+}
+
+/* .screen {
+    width: 50vw;
+    border: 2px solid #333;
+    margin: 20px;
+    transition: all 0.3s ease-in-out;
+  } */
+
+@media (min-width: 600px) {
+    .layout-controls {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .layout-controls label,
+    .layout-controls input {
+        display: block;
+    }
+
+    .layout-intro .layout-links {
+        margin-top: .4em;
+    }
+
+    .layout-intro-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 10%;
+    }
+
 }
