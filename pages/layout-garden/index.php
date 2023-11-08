@@ -18,17 +18,21 @@ include '../../header.php';
 		<div class="layout-links">
 			<h2 class="strong-voice">Find a Project</h2>
 			<ul>
-				<li><a href="#starbucks" class="calm-strong-voice">Starbucks</a></li>
+				<li><a href="pages/layout-garden/#starbucks" class="calm-strong-voice">Starbucks</a></li>
+				<li><a href="pages/layout-garden/#cards" class="calm-strong-voice">Cards</a></li>
+				<li><a href="pages/layout-garden/#dis" class="calm-strong-voice">Simple Menu</a></li>
+				<li><a href="pages/layout-garden/#timland" class="calm-strong-voice">Timberland</a></li>
+				<li><a href="pages/layout-garden/#montana" class="calm-strong-voice">Montana Cans</a></li>
 			</ul>
 		</div>
 		
 	</div>
 </section>
 
-<section class="starbucks-study">
+<section class="starbucks-study" id="starbucks">
 	<div class="inner-column">
 
-	<h2 class="attention-voice" id="starbucks">Starbucks</h2>
+	<h2 class="attention-voice">Starbucks</h2>
 
 		<div class="layout-controls">
 
@@ -118,7 +122,7 @@ include '../../header.php';
 				<div class="layout-controls">
 
 					<label for="screen-size-slider" class="calm-strong-voice">Screen Size</label>
-					<input type="range" id="<?=$layout['range-slide']?>" min="30" max="100" step="1" value="100">
+					<input type="range" id="<?=$layout['range-slide']?>" min="30" max="100" step=".5" value="100">
 					<button class="calm-strong-voice button <?=$layout['wire-button']?>">Toggle wireframe</button>
 
 				</div>

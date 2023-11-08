@@ -1,9 +1,9 @@
 
-
 body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	scroll-behavior: smooth;
 
 	/* background-image: linear-gradient(to left, rgba(12,24,38,1), rgba(255,255,255,0)); */
 }
