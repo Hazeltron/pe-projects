@@ -50,6 +50,7 @@ body {
 	padding: 50px 0px 100px 0px;
 }
 
+
 /* Artificial grid */
 .layout-template-container picture {
 	object-fit: cover;
@@ -273,6 +274,12 @@ body {
 
 	.box7{
 		display: block;
+	}
+
+	.about-container {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
 	}
 	
 	

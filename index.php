@@ -68,7 +68,7 @@
 		<h2 class="attention-voice">Contact</h2>
 		<ul>
 			<li class="calm-voice"><i>Cell:</i> (719) 337-0666</li>
-			<li class="calm-voice"><i>Email:</i> <a href="mailto:paulhazelton.work@gmail.com">paulhazelton.work@gmail.com</a></li>
+			<li class="calm-voice"><i>Email:</i> <a href="paulhazelton.work@gmail.com">paulhazelton.work@gmail.com</a></li>
 			<li class="calm-voice"><i>GitHub:</i> Hazeltron</li>
 		</ul>
 	</div>
