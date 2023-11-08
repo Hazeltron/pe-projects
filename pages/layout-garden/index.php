@@ -122,7 +122,7 @@ include '../../header.php';
 				<div class="layout-controls">
 
 					<label for="screen-size-slider" class="calm-strong-voice">Screen Size</label>
-					<input type="range" id="<?=$layout['range-slide']?>" min="30" max="100" step=".5" value="100">
+					<input type="range" id="<?=$layout['range-slide']?>" min="30" max="100" step="3" value="100">
 					<button class="calm-strong-voice button <?=$layout['wire-button']?>">Toggle wireframe</button>
 
 				</div>
