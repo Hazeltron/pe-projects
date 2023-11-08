@@ -18,7 +18,7 @@ include '../../header.php';
 		<div class="layout-links">
 			<h2 class="strong-voice">Find a Project</h2>
 			<ul>
-				<li><a href="#inner-link" class="calm-strong-voice">Starbucks</a></li>
+				<li><a href="#starbucks" class="calm-strong-voice">Starbucks</a></li>
 			</ul>
 		</div>
 		
@@ -28,12 +28,12 @@ include '../../header.php';
 <section class="starbucks-study">
 	<div class="inner-column">
 
-	<h2 class="attention-voice" id="inner-link">Starbucks</h2>
+	<h2 class="attention-voice" id="starbucks">Starbucks</h2>
 
 		<div class="layout-controls">
 
 			<label for="screen-size-slider" class="calm-strong-voice">Screen Size</label>
-			<input type="range" id="screen-size-slider" min="1" max="3" step="1" max="3" value="3">
+			<input type="range" id="range" min="30" max="100" step="1" value="50">
 			<button class="calm-strong-voice button starbucks-button-wire">Toggle wireframe</button>
 
 		</div>
@@ -43,7 +43,7 @@ include '../../header.php';
 				
 
 			
-<section class="starbucks-container layouts" data-wire="starbucks-content">
+<section class="starbucks-container layouts screen" data-wire="starbucks-content" data-screen="starbucks-content">
 
 	<section class="starbucks pumpkin">
 		<div class="inner-column">
@@ -118,7 +118,7 @@ include '../../header.php';
 				<div class="layout-controls">
 
 					<label for="screen-size-slider" class="calm-strong-voice">Screen Size</label>
-					<input type="range" id="screen-size-slider" min="10" max="100" step="1" value="50">
+					<input type="range" id="<?=$layout['range-slide']?>" min="30" max="100" step="1" value="100">
 					<button class="calm-strong-voice button <?=$layout['wire-button']?>">Toggle wireframe</button>
 
 				</div>
@@ -131,7 +131,7 @@ include '../../header.php';
 		<hr>
 			
 
-		<section class="<?=$layout['class']?> layouts screen" data-screen="<?=$layout['button']?>" data-wire="<?=$layout['button']?>">
+		<section class="<?=$layout['class']?> layouts screen"  data-wire="<?=$layout['button']?>" data-screen="<?=$layout['button']?>">
 			<div class="inner-column">
 
 				<?php include(getFile("modules/{$layout['layout']}/template.php")); ?>
