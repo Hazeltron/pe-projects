@@ -60,6 +60,23 @@ timberland-container .stairs img {
 	display: none;
 }
 
+timberland-container text-content a {
+	border: transparent solid 1px;
+	max-width: 140px;
+	background-color: #cfb06e;
+	padding: 10px;
+	text-align: center;
+	margin-top: 20px;
+	color: black;
+
+}
+
+timberland-container text-content a:hover {
+	background-color: black;
+	border: #545e4f solid 1px;
+	color: white;
+
+}
 
 
 
