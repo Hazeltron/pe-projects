@@ -37,7 +37,7 @@
 }
 
 
-@media(min-width: 1000px) {
+@container (min-width: 600px) {
     .montana .cans-container {
         align-items: flex-end;
         gap:300px;
@@ -50,7 +50,7 @@
     
 }
 
-@media(min-width: 1400px) {
+@container (min-width: 1000px) {
     .montana .cans-container {
         align-items: flex-end;
         justify-content: space-between;

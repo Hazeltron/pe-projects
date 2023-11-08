@@ -13,7 +13,7 @@ starbucks-cta text-content {
 	font-family: Arial, Helvetica, sans-serif;
 	margin-left: auto;
 	margin-right: auto;
-	width: 90vw;
+	
 	padding: 32px 16px;
 	display: flex;
 	flex-direction: column;
@@ -49,14 +49,14 @@ starbucks-cta .coffee-button:hover {
 }
 
 
-@media (min-width:600px) {
+@container (min-width:600px) {
 	starbucks-cta {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 	}
 }
-@media (min-width:750px) {
+@container (min-width:750px) {
 	starbucks-cta {
 		display: flex;
 		flex-direction: row;
@@ -71,7 +71,7 @@ starbucks-cta .coffee-button:hover {
 	padding: 0px;
 }
 
-@media (min-width:600px) {
+@container (min-width:600px) {
 	.starbucks.iced starbucks-cta {
 		flex-direction: row-reverse;
 	}

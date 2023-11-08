@@ -82,7 +82,7 @@ hydro-flask-grid a:hover {
 
 
 
-@media(min-width: 591px){
+@container (min-width: 591px){
 	.bottles{
 		object-fit: fill;
 		
@@ -94,9 +94,11 @@ hydro-flask-grid a:hover {
 	}
 
 }
+
+
 	
 
-@media(min-width: 900px){
+@container (min-width: 900px){
 
 	hydro-flask-mod {
 		display: flex;

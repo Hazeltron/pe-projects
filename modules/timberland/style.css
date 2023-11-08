@@ -64,7 +64,7 @@ timberland-container .stairs img {
 
 
 
-@media (min-width:900px) {
+@container (min-width:900px) {
 	timberland-container ul { 
 	display: block;
 	display: grid;

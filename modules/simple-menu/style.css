@@ -55,7 +55,7 @@ simple-menu-contain .date:hover {
 	color: white;
 }
 
-@media(min-width: 600px) {
+@container (min-width: 600px) {
 	simple-menu-contain .press{
 		border-bottom: black solid 1px;
 	}
