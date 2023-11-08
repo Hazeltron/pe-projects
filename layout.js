@@ -90,7 +90,12 @@ starbucksButtonWire.addEventListener('click', function() {
 
 
 
-const screenSizeSlider = document.querySelector('#screen-size-slider');
+const rangeSliderStar = document.querySelector('#range');
+const rangeSliderCards = document.querySelector('#cards-range');
+const rangeSliderHydro = document.querySelector('#hydro-range');
+const rangeSliderDis = document.querySelector('#dis-range');
+const rangeSliderTimland = document.querySelector('#timland-range');
+const rangeSliderCans = document.querySelector('#cans-range');
 const vacationScreen = document.querySelector('.screen[data-screen="vacation"]');
 const hydroScreen = document.querySelector('.screen[data-screen="hydro"]');
 const disScreen = document.querySelector('.screen[data-screen="dis"]');
@@ -99,4 +104,41 @@ const montanaScreen = document.querySelector('.screen[data-screen="cans"]');
 const starScreen = document.querySelector('.screen[data-screen="starbucks-content"]');
 
 
-//when I move the slider I want the screen to change widths
+//when I move the slider I want the "screen" to change widths
+//I want the @media breakpoints to respond accordingly
+
+function changeScreenSize(slider, screen) {
+    const screenValue = slider.value;
+    screen.style.width = screenValue + "vw";
+};
+
+rangeSliderStar.addEventListener('input', function() {
+    console.log("test");
+    changeScreenSize(rangeSliderStar,  starScreen);
+});
+
+rangeSliderCards.addEventListener('input', function() {
+    console.log("test");
+    changeScreenSize(rangeSliderCards,  vacationScreen);
+});
+
+rangeSliderHydro.addEventListener('input', function() {
+    console.log("test");
+    changeScreenSize(rangeSliderHydro,  hydroScreen);
+});
+
+rangeSliderDis.addEventListener('input', function() {
+    console.log("test");
+    changeScreenSize(rangeSliderDis,  disScreen);
+});
+
+rangeSliderTimland.addEventListener('input', function() {
+    console.log("test");
+    changeScreenSize(rangeSliderTimland,  timlandScreen);
+});
+
+
+rangeSliderCans.addEventListener('input', function() {
+    console.log("test");
+    changeScreenSize(rangeSliderCans,  montanaScreen);
+});
