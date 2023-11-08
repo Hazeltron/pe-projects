@@ -84,9 +84,13 @@ hydro-flask-grid a:hover {
 
 @container (min-width: 591px){
 	.bottles{
-		object-fit: fill;
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
 		
 	}
+
+	
 
 	hydro-flask-grid {
 		grid-auto-rows: 470px;
