@@ -54,9 +54,11 @@ include '../../header.php';
 			
 			
 		<?php  
-				$heading = "Tap for pumpkin";
-				$paragraph = "The Pumpkin Spice Latte and Pumpkin Cream Cold Brew are here, and you can order them now on our app when you join Starbucks® Rewards.";
+				$heading = "Grab a glass";
+				$paragraph = "Our sinature amber is back and better than ever. Made with home-grown American-variety hops, enjoy notes of citrus, fruit and pine for an unforgettable pour.";
+				$link = "Order Now";
 				?>
+				
 			<?php include(getFile('modules/starbucks/template.php')); ?>
 			
 		</div>
@@ -74,8 +76,9 @@ include '../../header.php';
 		<div class="inner-column">
 
 			<?php  
-				$heading = "Pastry fans, rejoice";
-				$paragraph = "Say hello to the new Baked Apple Croissant filled with warm apple filling.";
+				$heading = "Countless choices";
+				$paragraph = "Say hello to our new line of beers. It can be difficult making decisions, so why not try them all?";
+				$link = "Order Now";
 			?>
 
 			<?php include(getFile('modules/starbucks/template.php')); ?>
@@ -95,13 +98,18 @@ include '../../header.php';
 
 				<div class="case-study-content" data-target="starbucks-content">
 					<h2 class="strong-voice">Why:</h2>
-					<p></p>
+					<p class="calm-voice">Originally I saw a version of this on the Starbucks website. I looked at it as an easy win.</p>
+					<p class="calm-voice">I wanted to experiment with limited space, images and flex-blox.</p>
 
 					<h2 class="strong-voice">Difficulties:</h2>
-					<p></p>
+					<p class="calm-voice">Setting the images and text to flex exactly fifty percent of the container was easy, but getting the images to fit perfectly as the screen sized changed wasn’t.</p>
+					<p class="calm-voice">I also wanted to find a way to reuse the same HTML and simply change the CSS. Which again, went fine until I realized I would need different text.</p>
 
 					<h2 class="strong-voice">How I made it:</h2>
-					<p></p>
+					<p class="calm-voice">As the screen changed sizes, the images would display different behaviors. Some would stay filling their parents and others would fail to do so, sticking to the center as everything grew around them.<p>
+					<p class="calm-voice">At first, I thought, object-fit was the answer. Eventually, I realized that while subtle my images were a mix of landscape and portrait. I normalized them to both be perfect squares as a result.<p> 
+
+					<p class="calm-voice">For the differing text, I set up default text using PHP. </p>
 				</div>
 
 			</div>
