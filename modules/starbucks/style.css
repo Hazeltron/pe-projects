@@ -13,91 +13,123 @@ starbucks-cta text-content {
 	font-family: Arial, Helvetica, sans-serif;
 	margin-left: auto;
 	margin-right: auto;
-	
-	padding: 32px 16px;
+	padding: 2rem 3rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	flex:50%;
-	color: white;
 }
 
 starbucks-cta p {
 	margin-top: 20px;
 	max-width: 45ch;
 	text-align: center;
-	font-size: 19px;
+	font-size: 1.1rem;
+	line-height: 1.4;
+	opacity: 0.7;
+
+
 }
 
 starbucks-cta h2 {
-	font-family: Arial, Helvetica,
+	font-family: Arial, Helvetica,;
 	text-align: center;
 	font-size: 2rem;
+	color: #d4d4d4;
+
 }
 
 starbucks-cta .coffee-button {
 	margin-top: 30px;
-	border: solid white 1px;
-	border-radius: 30px;
-	padding: 5px 10px 5px 10px;
+	color: #d4d4d4;
+	border: solid  #d4d4d4 1px;
+	border-radius: 10px;
+	padding: 10px 15px 10px 15px;
 	text-align: center;
 }
 
+.starbucks starbucks-cta{
+	background: rgb(45,52,54);
+	background: linear-gradient(93deg, rgba(45,52,54,1) 50%, rgba(0,0,0,1) 99%);
+}
+
 starbucks-cta .coffee-button:hover {
-	background-color: #693538;
+	background-color: #9c591e;
+}
+
+.starbucks.flip starbucks-cta {
+	background: rgb(156,89,30);
+	background: linear-gradient(93deg, rgba(156,89,30,1) 50%, rgba(0,0,0,1) 99%);
+}
+.starbucks.flip .coffee-button:hover {
+	background-color:  #563d2d;
+	
+}
+
+.starbucks.pumpkin starbucks-cta {
+	background: rgb(156,89,30);
+	background: linear-gradient(93deg, rgba(156,89,30,1) 50%, rgba(0,0,0,1) 99%);
+}
+
+.starbucks.pumpkin .coffee-button:hover {
+	background-color: #563d2d;
+}
+
+.starbucks img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	/* aspect-ratio: 1/.85; */
+
+}
+
+.starbucks picture {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	
+
+}
+
+.starbucks.flip img {
+	content: url("../../assets/beer-choices.png");
+}
+
+.starbucks.pumpkin img {
+	content: url("../../assets/beer-line.png");
 }
 
 
-@container (min-width:600px) {
+
+@container (min-width:850px) {
 	starbucks-cta {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 	}
+
+	.starbucks.iced starbucks-cta {
+		flex-direction: row-reverse;
+	}
 }
-@container (min-width:750px) {
+@container (min-width:1000px) {
 	starbucks-cta {
 		display: flex;
 		flex-direction: row;
 	}
 }
 
-.starbucks starbucks-cta{
-	background-color: #6d2931;
-}
+/* Tne image is having to shrink with the page because it doesn't have enough space to be tall enough */
+/* s it because I'm asking it to be 50% and it physically cant? */
 
-.starbucks .inner-column{
-	padding: 0px;
-}
-
-@container (min-width:600px) {
-	.starbucks.iced starbucks-cta {
-		flex-direction: row-reverse;
-	}
-}
-
-.starbucks.flip img {
-	content: url("../../assets/starbucks-2.png");
-}
+/* The reason its doing this is I'm cmpressing the width and then expecting the hight to just somehow strech. But the image is thinking "No that's gonna fuck the aspect raatio and I'm gonna look all weird, so instead, I'll taake up as much space as posssible while retaining image quality. because I'm boxed in by this inner column and the screen size." It could do this if the text were smaller/shorter. */
 
 
-.starbucks.flip starbucks-cta {
-	background-color: #a4505c;
-}
 
 
-.starbucks.pumpkin img {
-	content: url("../../assets/starbucks-3.png");
-}
-
-.starbucks.pumpkin starbucks-cta {
-	background-color: #cba259;
-}
-
-.starbucks.pumpkin .coffee-button:hover {
-	background-color: #c39341;
-}
 
 
 
