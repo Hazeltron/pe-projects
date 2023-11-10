@@ -35,7 +35,7 @@
 	<div class="main-image">
 
 		<picture class="girl">
-			<img src="assets/girl-hydro.png" alt="">
+			<img src="assets/mac-dark.png" alt="">
 		</picture>
 
 		<text-area>
