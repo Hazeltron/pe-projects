@@ -27,10 +27,26 @@ hydro-flask-grid{
 	color: black;
 }
 
-	.bottles img {
-		aspect-ratio: 1/1;
-		
+hydro-flask-grid{
+	position: relative;
+}
+
+.clothes .text{
+	position: absolute;
+	bottom: 20px;
+	color:#60a3c5
+}
+	/* .bottles img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
 	}
+
+	.bottles picture {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	} */
 
 .bottle-1, .bottle-2, .bottle-3, .bottle-4 {
 	
@@ -46,6 +62,7 @@ hydro-flask-grid{
 hydro-flask-grid {
 		display: block;
 		display: grid;
+		gap: 10px;
 		grid-template-columns: repeat(2, minmax(100px, 1fr));
 	/*	row height */
 		grid-auto-rows: 300px;
