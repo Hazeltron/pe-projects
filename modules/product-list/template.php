@@ -1,34 +1,78 @@
-<section>
-    <inner-column>
 
-        <picture>
-            <img src="" alt="">
-        </picture>
 
+        <module>
+
+            <picture class="product-picture">
+                <img class="product-img" src="assets/watch.png" alt="">
+            </picture>
+
+        <color-picker>
         <ul>
-            <li>
-                <picture>
-                    <img src="" alt="">
+                <li>
+                    <picture class="color-select">
+                        <img src="assets/black-square.png" alt="">
+                    </picture>
+                </li>
+
+                <li>
+                    <picture class="color-select">
+                        <img src="assets/black-square.png" alt="">
+                    </picture>
+                </li>
+                <li>
+                    <picture class="color-select">
+                        <img src="assets/black-square.png" alt="">
+                    </picture>
+                </li>
+                <li>
+                    <picture class="color-select">
+                        <img src="assets/black-square.png" alt="">
+                    </picture>
+                </li>
+            </ul>
+
+            <ul>
+                <picture class="color-select">
+                    <img src="assets/black-square.png" alt="">
                 </picture>
-            </li>
+            </ul>
 
-            <li>
-                <picture>
-                    <img src="" alt="">
-                </picture>
-            </li>
-        </ul>
+        </color-picker>
+            
 
-        <p>some text</p>
+            <p class="product-name">Men's Ski School Water Repellent Puffer Jacket</p>
 
-        <picture>
-            <img src="" alt="">
-        </picture>
-        <p>item number</p>
+            <rating>
+                <ul>
+                    <li>
+                        <picture>
+                            <img src="assets/star.svg" alt="">
+                        </picture>
+                        <li>
+                        <picture>
+                            <img src="assets/star.svg" alt="">
+                        </picture>
+                    </li>
+                    <li>
+                        <picture>
+                            <img src="assets/star.svg" alt="">
+                        </picture>
+                    </li>
+                    <li>
+                        <picture>
+                            <img src="assets/star.svg" alt="">
+                        </picture>
+                    </li>
+                    </li>
+                </ul>
+                
+                <p>(115)</p>
 
-        <p>price</p>
+            </rating>
+            
 
-        <a href="">Add</a>
+            <p>$220.00</p>
 
-    </inner-column>
-</section>
+            <a class="add-button" href="#">+Add</a>
+            
+        </module>
