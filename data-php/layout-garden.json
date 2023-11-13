@@ -83,5 +83,21 @@
         "howText": "",
         "layout": "montana-cans",
         "id": "montana"
+    },
+    {
+        "name": "Product list",
+        "link": "",
+        "class": "product",
+        "button": "product",
+        "wire-button": "product-wire",
+        "screen-button": "product-screen",
+        "range-slide": "product-range",
+        "whyText": "why though",
+        "diffText": "",
+        "howText": "",
+        "layout": "product-list",
+        "id": "product-list"
     }
 ]
+
+
