@@ -1,78 +1,68 @@
 
 
         <module>
+     
+       
 
-            <picture class="product-picture">
-                <img class="product-img" src="assets/watch.png" alt="">
-            </picture>
+        <?php
+        $json = file_get_contents('../../data-php/product-list.json');
+        $products = json_decode($json, true);
 
-        <color-picker>
-        <ul>
-                <li>
-                    <picture class="color-select">
-                        <img src="assets/black-square.png" alt="">
-                    </picture>
-                </li>
+        foreach ($products as $product) { ?>
 
-                <li>
-                    <picture class="color-select">
-                        <img src="assets/black-square.png" alt="">
-                    </picture>
-                </li>
-                <li>
-                    <picture class="color-select">
-                        <img src="assets/black-square.png" alt="">
-                    </picture>
-                </li>
-                <li>
-                    <picture class="color-select">
-                        <img src="assets/black-square.png" alt="">
-                    </picture>
-                </li>
-            </ul>
+        <article class='product-card'>
 
-            <ul>
-                <picture class="color-select">
-                    <img src="assets/black-square.png" alt="">
+            <figure class='thumbnail'>
+                <picture class='product-picture pic-1'>
+                    <img src="assets/<?= $product['image-1'] ?>" alt="" />
                 </picture>
-            </ul>
 
-        </color-picker>
-            
+                <picture class='product-picture pic-2'>
+                    <img src="assets/<?= $product['image-2'] ?>" alt="" />
+                </picture>
+            </figure>
 
-            <p class="product-name">Men's Ski School Water Repellent Puffer Jacket</p>
+            <color-picker>
+                <ul>
+                    <li>
+                        <picture class="color-select">
+                            <img src="assets/<?= $product['color-select'] ?>" alt="">
+                        </picture>
+                    </li>
+                    <!-- Add more color options here if needed -->
+                </ul>
+                <ul>
+                    <li>
+                        <picture class="color-select">
+                            <img src="assets/<?= $product['color-select'] ?>" alt="">
+                        </picture>
+                    </li>
+                    <!-- Add more color options here if needed -->
+                </ul>
+            </color-picker>
+
+            <p class="product-calm-voice product-name"><?= $product['name'] ?></p>
 
             <rating>
                 <ul>
                     <li>
                         <picture>
-                            <img src="assets/star.svg" alt="">
+                            <img src="assets/<?= $product['star-rating'] ?>" alt="">
                         </picture>
-                        <li>
-                        <picture>
-                            <img src="assets/star.svg" alt="">
-                        </picture>
-                    </li>
-                    <li>
-                        <picture>
-                            <img src="assets/star.svg" alt="">
-                        </picture>
-                    </li>
-                    <li>
-                        <picture>
-                            <img src="assets/star.svg" alt="">
-                        </picture>
-                    </li>
                     </li>
                 </ul>
-                
-                <p>(115)</p>
 
+                <p><?= $product['num-reviews'] ?></p>
             </rating>
-            
 
-            <p>$220.00</p>
+            <p class="product-calm-voice"><?= $product['price'] ?></p>
 
-            <a class="add-button" href="#">+Add</a>
-            
-        </module>
+            <a class="add-button href="#">
+                <div class="product-button-voice">+</div>
+                <div class="product-button-voice">Add</div>
+            </a>
+        </article>
+
+    <?php } ?>
+
+</module>
