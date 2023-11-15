@@ -1,6 +1,6 @@
 [
     {
-        "image-1": "shoe.png",
+        "image-1": "boots-hover.png",
         "image-2": "boot.png",
         "color-select": "black-square.png",
         "name": "Men's Ski School Water Repellent Puffer Jacket",
@@ -9,8 +9,8 @@
         "price": "$220.00"
     },
     {
-        "image-1": "girl-hydro.png",
-        "image-2": "boot.png",
+        "image-1": "boot-girl-hover.png",
+        "image-2": "boot-girl.png",
         "color-select": "black-square.png",
         "name": "Men's Ski School Water Repellent Puffer Jacket",
         "star-rating": "star-rating.svg",
@@ -18,8 +18,8 @@
         "price": "$220.00"
     },
     {
-        "image-1": "girl-hydro.png",
-        "image-2": "boot.png",
+        "image-1": "jacket-female-hover.png",
+        "image-2": "jacket-female.png",
         "color-select": "black-square.png",
         "name": "Men's Ski School Water Repellent Puffer Jacket",
         "star-rating": "star-rating.svg",
@@ -27,30 +27,13 @@
         "price": "$220.00"
     },
     {
-        "image-1": "girl-hydro.png",
-        "image-2": "boot.png",
-        "color-select": "black-square.png",
-        "name": "Men's Ski School Water Repellent Puffer Jacket",
-        "star-rating": "star-rating.svg",
-        "num-reviews": "(115)",
-        "price": "$220.00"
-    },
-    {
-        "image-1": "girl-hydro.png",
-        "image-2": "boot.png",
-        "color-select": "black-square.png",
-        "name": "Men's Ski School Water Repellent Puffer Jacket",
-        "star-rating": "star-rating.svg",
-        "num-reviews": "(115)",
-        "price": "$220.00"
-    },
-    {
-        "image-1": "girl-hydro.png",
-        "image-2": "boot.png",
+        "image-1": "jacket-male-hover.png",
+        "image-2": "jacket-male.png",
         "color-select": "black-square.png",
         "name": "Men's Ski School Water Repellent Puffer Jacket",
         "star-rating": "star-rating.svg",
         "num-reviews": "(115)",
         "price": "$220.00"
     }
+
 ]
