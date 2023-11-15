@@ -1,0 +1,45 @@
+cool-girls {
+    display: block;
+}
+.cool-girls cool-girls ul {
+    display: grid;
+    grid-template-areas:
+    "main main hoodie shirt"
+    "main main jewels hat"
+    ;
+    gap: 2px;
+}
+
+.main {
+    grid-area: main;
+}
+
+.hoodie {
+    grid-area: hoodie;
+}
+
+.hat {
+    grid-area: hat;
+}
+
+.jewels {
+    grid-area: jewels;
+}
+.shirt {
+    grid-area: shirt;
+}
+
+picture {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
+}
+
