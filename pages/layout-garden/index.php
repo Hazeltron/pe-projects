@@ -55,7 +55,7 @@ include '../../header.php';
 			
 		<?php  
 				$heading = "Grab a glass";
-				$paragraph = "Our sinature amber is back and better than ever. Made with home-grown American-variety hops, enjoy notes of citrus, fruit and pine for an unforgettable pour.";
+				$paragraph = "Our signature amber is back and better than ever. Made with home-grown American-variety hops, enjoy notes of citrus, fruit and pine for an unforgettable pour.";
 				$link = "Order Now";
 				?>
 				
