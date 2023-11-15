@@ -1,6 +1,10 @@
 /* .product * {
     border: black solid 1px;
 } */
+
+.product .inner-column{
+    width: 2000px
+}
 .product module .product-calm-voice {
     font-size: 1rem;
     font-weight: 400;
@@ -106,13 +110,16 @@
 .product module .add-button:hover {
    background-color: #706f6f;
    color: rgb(228, 228, 228);
-   transition: .3s;
+   transition: ease-in-out .4s ;
 }
 
 .product module {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 60px;
+    grid-auto-flow: row;
+ 
     
 }
 
