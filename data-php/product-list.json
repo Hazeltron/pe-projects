@@ -3,7 +3,7 @@
         "image-1": "boots-hover.png",
         "image-2": "boot.png",
         "color-select": "black-square.png",
-        "name": "Men's Ski School Water Repellent Puffer Jacket",
+        "name": "Men's Ski School Timberland® Premium 6-Inch Waterproof Boot",
         "star-rating": "star-rating.svg",
         "num-reviews": "(115)",
         "price": "$220.00"
@@ -12,7 +12,7 @@
         "image-1": "boot-girl-hover.png",
         "image-2": "boot-girl.png",
         "color-select": "black-square.png",
-        "name": "Men's Ski School Water Repellent Puffer Jacket",
+        "name": "Women's Ski School Timberland® Heritage 6 Inch Waterproof Boot",
         "star-rating": "star-rating.svg",
         "num-reviews": "(115)",
         "price": "$220.00"
@@ -21,10 +21,10 @@
         "image-1": "jacket-female-hover.png",
         "image-2": "jacket-female.png",
         "color-select": "black-square.png",
-        "name": "Men's Ski School Water Repellent Puffer Jacket",
+        "name": "Women's Ski School Water Repellent Puffer Jacket",
         "star-rating": "star-rating.svg",
         "num-reviews": "(115)",
-        "price": "$220.00"
+        "price": "$189.00"
     },
     {
         "image-1": "jacket-male-hover.png",

@@ -2,16 +2,15 @@
     border: black solid 1px;
 } */
 
-.product .inner-column{
-    width: 2000px
+.product .inner-column {
+    padding: 0;
 }
+
 .product module .product-calm-voice {
     font-size: 1rem;
     font-weight: 400;
-    letter-spacing: .06rem;
+    letter-spacing: .05rem;
     color: #706f6f;
-    
-
 }
 
 .product module .product-button-voice {
@@ -19,35 +18,11 @@
     font-weight: 500;
 }
 
-.product module .product-card{
-        max-width: 295px;
-        display: flex;
-        flex-direction: column;
-}
 
 
-
-.product module rating {
-    display: block;
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    gap: .5em;
-
-}
-
-.product module color-picker {
-    display:block;
-    display: flex;
-    flex-directions: row;
-    justify-content: space-between;
-    margin-top: 10px;
-    
-}
 
 /* transitioning two images in a grid ontop of eachother */
 .product module .product-picture img {
-    max-width: 295px;
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -75,10 +50,13 @@
 
 /* end of transition */
 
-.product module ul {
+.product module color-picker {
+    display:block;
     display: flex;
-    flex-direction: row;
-    gap: 10px;
+    flex-directions: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    
 }
 
 .product module .color-select {
@@ -86,22 +64,33 @@
     border-radius: 90px;
 }
 
-
-
 .product module .product-name {
     margin-top: 10px;
+    min-height: 50px;
+}
+
+
+.product module rating {
+    display: block;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5em;
+
 }
 
 .product module rating picture {
     max-width: 20px;
 }
 
-.product module rating ul {
-    gap: 0px;
+.product module ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .product module .add-button {
-    padding: 5px 97px 5px 97px;
+    padding: 5px 45% 5px 45%;
     text-align: center;
     margin-top: 15px;
     border: solid black 1px;
@@ -115,13 +104,42 @@
 
 .product module {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
     row-gap: 60px;
     grid-auto-flow: row;
- 
-    
+    padding: 0 20px;
 }
+
+@container (min-width: 728px){
+    .product module .product-calm-voice {
+        letter-spacing: .09rem;
+    }
+
+}
+
+@container (min-width: 779px){
+     .product module .product-calm-voice {
+        letter-spacing: .05rem;
+    }
+
+}
+
+@container (min-width: 820px){
+    .product module {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@container (min-width: 1050px) {
+    .product module {
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        padding: 0;
+    }
+
+}
+
 
 
 
