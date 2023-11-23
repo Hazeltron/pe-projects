@@ -1,6 +1,21 @@
 cool-girls {
     display: block;
 }
+
+picture {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
+}
+
 .cool-girls cool-girls .main-grid {
     display: grid;
     grid-template-areas:
@@ -49,20 +64,22 @@ cool-girls .grey-hover:hover {
     padding: 0 9px 0 25px;
     min-width: 150px;
     border: solid  #eae4df 1px;
-    text-align: right;
-
-    border-radius: 0 10px ;
+    text-align: left;
+    -webkit-text-stroke-width: 1px;
+    
+    /* border-radius: 0 10px ; */
 }
 
 .cool-girls cool-girls .main-grid .product-link:hover{
     opacity: 1;
+    /* color: indianred; */
     color: #5ac2d2;
     
 }
 
 .cool-girls cool-girls .main-grid .main-link{
     position: absolute;
-    top: 50px;
+    top: 30px;
     left: 10px;
     opacity: .98;
     color:  #eae4df;
@@ -76,6 +93,16 @@ cool-girls .grey-hover:hover {
     display: inline;
 }
 
+@container(min-width: 800px) {
+    .cool-girls cool-girls .main-grid {
+        grid-template-areas:
+        "main main hoodie shirt"
+        "main main jewels hat"
+        ;
+    }
+    
+
+}
 /* .cool-girls cool-girls .sub-grid {
     display: grid;
     
@@ -105,29 +132,3 @@ cool-girls .grey-hover:hover {
 .shirt-link {
     grid-area: shirt-text
 } */
-
-@container(min-width: 800px) {
-    .cool-girls cool-girls .main-grid {
-        grid-template-areas:
-        "main main hoodie shirt"
-        "main main jewels hat"
-        ;
-    }
-    
-
-}
-
-picture {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    
-}
-
-img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    
-}
-
