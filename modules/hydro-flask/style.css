@@ -97,17 +97,18 @@ hydro-flask-grid a:hover {
 	margin-top: 20px;
 }
 
-
+.bottles{
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	
+}
+.bottles img {
+	aspect-ratio: 1/1;
+	
+}
 
 @container (min-width: 591px){
-	.bottles{
-		object-fit: cover;
-		height: 100%;
-		width: 100%;
-		
-	}
-
-	
 
 	hydro-flask-grid {
 		grid-auto-rows: 470px;
