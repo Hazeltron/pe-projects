@@ -43,7 +43,7 @@
             </picture>
             <a href="#" class="attention-voice product-link">Shirts</a>
         </li>
-
+<!-- should the wolde pic img and a be wrapped in an a??? ya know? -->
         <!-- <li class="sub-grid">
             <div class="title">
                 <h2 class="attention-voice">Hello</h2>
