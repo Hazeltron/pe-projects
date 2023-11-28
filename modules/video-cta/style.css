@@ -5,6 +5,21 @@
     gap: 20px;
 }
 
+.video-cta video-cta video-container {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.video-cta video-cta video-states {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+}
+
 .video-cta video-cta video {
     /* this is a good trick: 
     video {
@@ -12,7 +27,8 @@
         object-fit: cover; 
     }*/
     
-    max-width: 50%;
+    max-width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -20,11 +36,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 40px;
+    gap: 100px;
 }
 
 .video-cta video-cta text-content a{
     border: 1px solid grey;
     padding: 10px 20px;
     border-radius: 30px;
+    max-width: fit-content;
+    margin-top: 40px;;
+}
+
+.video-cta video-cta text-content a:hover{
+   color: indianred;
+   border-radius: 40px;
+
 }
