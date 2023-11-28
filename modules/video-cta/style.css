@@ -1,0 +1,30 @@
+.video-cta video-cta {
+    display: block;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+.video-cta video-cta video {
+    /* this is a good trick: 
+    video {
+        max-width: 50%; 
+        object-fit: cover; 
+    }*/
+    
+    max-width: 50%;
+    object-fit: cover;
+}
+
+.video-cta video-cta text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.video-cta video-cta text-content a{
+    border: 1px solid grey;
+    padding: 10px 20px;
+    border-radius: 30px;
+}

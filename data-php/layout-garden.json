@@ -111,6 +111,20 @@
         "howText": "",
         "layout": "custom-grid",
         "id": "cool-girls"
+    },
+    {
+        "name": "video-cta",
+        "link": "",
+        "class": "video-cta",
+        "button": "viideo",
+        "wire-button": "video-wire",
+        "screen-button": "video-screen",
+        "range-slide": "video-range",
+        "whyText": "why though",
+        "diffText": "",
+        "howText": "",
+        "layout": "video-cta",
+        "id": "video-cta"
     }
 ]
 
