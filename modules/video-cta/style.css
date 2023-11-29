@@ -17,7 +17,11 @@
     flex-direction: row;
     justify-content: space-between;
     position: absolute;
+    width: 100%;
+    gap: 150px;
+    padding: 10px;
     bottom: 0;
+    border: 2px solid red;
 }
 
 .video-cta video-cta video {
