@@ -3,7 +3,6 @@ include '../../header.php';
 
 ?>
 			
-
 <section class="layout-intro">
 	<div class="inner-column layout-intro-container">
 
@@ -15,7 +14,7 @@ include '../../header.php';
 			Each of these layouts are designed to be highly responsive and fun. So, take a look around!</p>
 		</div>
 
-		<div class="layout-links">
+		<nav class="layout-links">
 			<h2 class="strong-voice">Find a Project</h2>
 			<ul>
 				<li><a href="pages/layout-garden/#starbucks" class="calm-strong-voice">Starbucks</a></li>
@@ -24,10 +23,12 @@ include '../../header.php';
 				<li><a href="pages/layout-garden/#timland" class="calm-strong-voice">Timberland</a></li>
 				<li><a href="pages/layout-garden/#montana" class="calm-strong-voice">Montana Cans</a></li>
 			</ul>
-		</div>
+		</nav>
 		
 	</div>
 </section>
+
+ 
 
 <section class="starbucks-study" id="starbucks">
 	<div class="inner-column">
@@ -116,7 +117,8 @@ include '../../header.php';
 		</section>
 
 
-<?php 
+
+		<?php 
 	$json = file_get_contents('../../data-php/layout-garden.json');
 	$layouts = json_decode($json, true);
 
@@ -190,6 +192,7 @@ include '../../header.php';
 		</section>
 		
 <?php } ?>
+
 
 
 
