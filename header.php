@@ -30,9 +30,9 @@
 	<body>
 		<header class="sticky-nav">
 
-			<nav>
-				<div class="inner-column nav-content">
-
+			
+			<div class="inner-column">
+				<nav class="nav-content">
 					<ul class="logo">
 						<li class="strong-voice">Haze</li>
 					</ul>
@@ -47,9 +47,11 @@
 							<a class="calm-nav-voice" href="pages/form-garden">Form Garden</a>
 						</li>
 					</ul>
+				</nav>
+				
 
-				</div>
-			</nav>
+			</div>
+		
 
 		</header>
 
