@@ -15,15 +15,6 @@ main {
 	flex-grow: 1;
 }
 
-.inner-column {
-	max-width: 1000px;
-	margin-right: auto;
-	margin-left: auto;
-	padding-left: 10px;
-	padding-right: 10px;
-	/* border: black solid 3px; */
-}
-
 picture {
     display: block;
 }
