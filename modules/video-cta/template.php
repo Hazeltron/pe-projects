@@ -1,7 +1,7 @@
 <video-cta>
     <video-container>
         <video class="tiff-video" autoplay muted loop>
-        <source src="assets/video.mp4" type="video/mp4">
+        <source src="assets/wayne.mp4" type="video/mp4">
         </video>
         <video-states>
             <button onclick="playPause()">playpause</button>
