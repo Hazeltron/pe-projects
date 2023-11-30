@@ -35,6 +35,9 @@
 				<nav class="nav-content">
 					<ul class="logo">
 						<li class="strong-voice">Haze</li>
+						<li>
+							<button class="toggle calm-nav-voice">Menu</button>
+						</li>
 					</ul>
 					<ul class="nav-links">
 						<li>
@@ -46,6 +49,9 @@
 						<li class="forms-garden">
 							<a class="calm-nav-voice" href="pages/form-garden">Form Garden</a>
 						</li>
+						<li>
+							<button class="toggle calm-nav-voice">Close</button>
+						</li>
 					</ul>
 				</nav>
 				
@@ -54,6 +60,27 @@
 		
 
 		</header>
+
+		<script>
+			var body = document.querySelector('body');
+
+// set up a "listener" that will 
+// listen for "clicks" (and taps) on the whole page!
+document.addEventListener('click', function(event) {
+
+  console.log(event.target);
+
+  if ( event.target.matches('.toggle') ) {
+    body.classList.toggle('small-menu-open');
+  }
+
+  if ( event.target.matches('a') ) {
+    alert(`I'm a link for ${event.target.textContent}`);
+  }
+
+});
+
+		</script>
 
 		<main>
 
