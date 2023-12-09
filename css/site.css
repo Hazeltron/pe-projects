@@ -12,6 +12,13 @@ body {
 	color: var(--ink);
 }
 
+.logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
 .nav-links {
 	position: fixed;
 	top: 0;
@@ -21,6 +28,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	opacity: 0;
 	transform: translate(-100%, 0);
 	transform: scale(.5);
@@ -31,10 +39,11 @@ body {
 body.small-menu-open .nav-links {
     opacity: 1;
     pointer-events: initial;
-    transform: translate(0, 0); /* another fun option to try #a */
+    transform: translate(0, 0);
     transform: scale(1);
     transition: .2s;
 	background-color: black;
+	opacity: .9;
   }
 
 
@@ -44,11 +53,16 @@ body.small-menu-open .nav-links {
 
 }
 
-.nav-links a {
+.nav-links {
 	display: flex;
 	align-items: center;
 	gap: 20px;
 	padding: 20px
+}
+
+.nav-links a:hover {
+	color: var(--highlight);
+
 }
 
 
@@ -256,29 +270,30 @@ body.small-menu-open .nav-links {
 }
 
 @media(min-width:600px) {
-	
+
+	.nav-links {
+		position: static;
+		width: auto;
+		height: auto;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-end;
+		opacity: 1;
+		transform: translate(0%, 0);
+		transform: scale(1);
+		
+	}
 
 	.nav-content {
 		display: flex;
 		flex-direction: row;
-		
-		gap: 20px;
-	}
-
-	.sticky-nav {
-		display: flex;
-		flex-direction: row;
 		align-items: center;
 		gap: 20px;
 	}
 
-	.nav-links {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		gap: 20px;
-		opacity: 1;
-		
+	.toggle {
+		display: none;
 	}
 	
 	.resume-title-controller {
