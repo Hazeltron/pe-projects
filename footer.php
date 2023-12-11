@@ -8,6 +8,5 @@
 		</footer>
 		<script src="site.js"></script>
 		<script src="layout.js"></script>
-		
 	</body>
 </html>
