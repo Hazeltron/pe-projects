@@ -52,8 +52,8 @@
 }
 
 .video-cta video-cta text-content a:hover{
-   background-color: rgb(233, 92, 92);
-   color: azure;
+   background-color: var(--ink);
+   color: var(--paper);
    border-radius: 40px;
 
 }
