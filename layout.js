@@ -62,6 +62,8 @@ videoCtaButton.addEventListener('click', function() {
 
 
 
+
+
 const vacationWire = document.querySelector('.layouts[data-wire="vacation"]');
 const hydroWire = document.querySelector('.layouts[data-wire="hydro"]');
 const disWire = document.querySelector('.layouts[data-wire="dis"]');
@@ -153,48 +155,22 @@ function changeScreenSize(slider, screen) {
     screen.style.width = screenValue + "vw";
 };
 
-rangeSliderStar.addEventListener('input', function() {
-    console.log("test");
-    changeScreenSize(rangeSliderStar,  starScreen);
-});
+function setupSlider(sliderId, screenDataAttr) {
+    const rangeSlider = document.querySelector(`#${sliderId}`);
+    const screen = document.querySelector(`.screen[data-screen="${screenDataAttr}"]`);
 
-rangeSliderCards.addEventListener('input', function() {
-    console.log("test");
-    changeScreenSize(rangeSliderCards,  vacationScreen);
-});
+    rangeSlider.addEventListener('input', function() {
+        console.log("test");
+        changeScreenSize(rangeSlider, screen);
+    });
+}
 
-rangeSliderHydro.addEventListener('input', function() {
-    console.log("test");
-    changeScreenSize(rangeSliderHydro,  hydroScreen);
-});
-
-rangeSliderDis.addEventListener('input', function() {
-    console.log("test");
-    changeScreenSize(rangeSliderDis,  disScreen);
-});
-
-rangeSliderTimland.addEventListener('input', function() {
-    console.log("test");
-    changeScreenSize(rangeSliderTimland,  timlandScreen);
-});
-
-
-rangeSliderCans.addEventListener('input', function() {
-    console.log("test");
-    changeScreenSize(rangeSliderCans,  montanaScreen);
-});
-
-rangeSliderProduct.addEventListener('input', function() {
-    console.log("test");
-    changeScreenSize(rangeSliderProduct,  productScreen);
-});
-
-rangeSliderCoolGirls.addEventListener('input', function() {
-    console.log("test");
-    changeScreenSize(rangeSliderCoolGirls,  coolGirlsScreen);
-});
-
-rangeSliderVideoCta.addEventListener('input', function() {
-    console.log("test");
-    changeScreenSize(rangeSliderVideoCta,  videoCtaScreen);
-});
+setupSlider('range', 'starbucks-content');
+setupSlider('cards-range', 'vacation');
+setupSlider('hydro-range', 'hydro');
+setupSlider('dis-range', 'dis');
+setupSlider('timland-range', 'timland');
+setupSlider('cans-range', 'cans');
+setupSlider('product-range', 'product-list');
+setupSlider('cool-girls-range', 'girls');
+setupSlider('video-range', 'video');

@@ -125,7 +125,22 @@
         "howText": "",
         "layout": "video-cta",
         "id": "video-cta"
+    },
+    {
+        "name": "Game Spot",
+        "link": "",
+        "class": "game-spot",
+        "button": "game-spot-button",
+        "wire-button": "game-wire",
+        "screen-button": "game-screen",
+        "range-slide": "game-range",
+        "whyText": "why though",
+        "diffText": "",
+        "howText": "",
+        "layout": "game-spot",
+        "id": "game-spot"
     }
+    
     
 ]
 
