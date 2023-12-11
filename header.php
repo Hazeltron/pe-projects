@@ -25,11 +25,17 @@
 					d="m512 384l0 37c0 5-2 9-5 12-4 4-8 6-13 6l-476 0c-5 0-9-2-13-6-3-3-5-7-5-12l0-37c0-5 2-9 5-13 4-3 8-5 13-5l476 0c5 0 9 2 13 5 3 4 5 8 5 13z m0-110l0 37c0 5-2 9-5 13-4 3-8 5-13 5l-476 0c-5 0-9-2-13-5-3-4-5-8-5-13l0-37c0-5 2-9 5-13 4-3 8-5 13-5l476 0c5 0 9 2 13 5 3 4 5 8 5 13z m0-109l0 36c0 5-2 9-5 13-4 4-8 5-13 5l-476 0c-5 0-9-1-13-5-3-4-5-8-5-13l0-36c0-5 2-10 5-13 4-4 8-6 13-6l476 0c5 0 9 2 13 6 3 3 5 8 5 13z m0-110l0 36c0 5-2 10-5 13-4 4-8 6-13 6l-476 0c-5 0-9-2-13-6-3-3-5-8-5-13l0-36c0-5 2-9 5-13 4-4 8-5 13-5l476 0c5 0 9 1 13 5 3 4 5 8 5 13z"
 				/>
 			</symbol>
+			<symbol id="icon-sound" viewBox="0 0 512 512">
+				<path d="m311 101l0 310c0 5-2 10-6 13-3 4-7 6-12 6-5 0-10-2-13-6l-95-95-75 0c-5 0-10-2-13-5-4-4-6-8-6-13l0-110c0-5 2-9 6-13 3-3 8-5 13-5l75 0 95-95c3-4 8-6 13-6 5 0 9 2 12 6 4 3 6 8 6 13z m110 155c0 14-4 28-13 40-8 13-18 22-32 27-2 1-4 2-7 2-5 0-9-2-13-6-3-3-5-8-5-13 0-4 1-7 3-10 3-3 5-5 9-7 3-2 6-4 9-7 4-2 6-5 9-10 2-4 3-10 3-16 0-6-1-12-3-16-3-5-5-8-9-10-3-3-6-5-9-7-4-2-6-4-9-7-2-3-3-6-3-10 0-5 2-10 5-13 4-4 8-6 13-6 3 0 5 1 7 2 14 5 24 14 32 26 9 13 13 27 13 41z"/>
+			</symbol>
+			<symbol id="icon-play" viewBox="0 0 512 512">
+      			<path d="m128 96l256 160-256 160z"/>
+    		</symbol>
 		</svg>
 
 
 		<link rel="stylesheet" href="css/site.css">
-		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
 		
 
 
@@ -57,7 +63,7 @@
 					</ul>
 					<ul class="nav-links">
 						<li>
-							<a class="calm-nav-voice" href="index.php">Home</a>
+							<a class="calm-nav-voice " href="index.php">Home</a>
 						</li>
 						<li>
 							<a class="calm-nav-voice" href="pages/layout-garden">Layout Garden</a>
@@ -66,7 +72,7 @@
 							<a class="calm-nav-voice" href="pages/form-garden">Form Garden</a>
 						</li>
 						<li>
-							<button class="toggle close calm-nav-voice">Close</button>
+							<button class="toggle calm-nav-voice">Close</button>
 						</li>
 					</ul>
 				</nav>
@@ -78,24 +84,21 @@
 		</header>
 
 <script>
-
 const body = document.querySelector('body');
 
-
-// set up a "listener" that will 
-// listen for "clicks" (and taps) on the whole page!
 document.addEventListener('click', function(event) {
 
   console.log(event.target);
 
   if ( event.target.matches('.toggle') ) {
     body.classList.toggle('small-menu-open')
+
+	// if (window.innerWidth <= 600) {
+	// 	body.classList.toggle('small-menu-open');
+	// }
   }
 
 });
-
-//when the screen is small 
-
 </script>
 
 		<main>
