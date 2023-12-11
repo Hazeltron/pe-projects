@@ -6,6 +6,8 @@ const montanaStudy = document.querySelector('.case-study-content[data-target="ca
 const starStudy = document.querySelector('.case-study-content[data-target="starbucks-content"]');
 const productStudy = document.querySelector('.case-study-content[data-target="product-list"]');
 const coolGirlsStudy = document.querySelector('.case-study-content[data-target="girls"]');
+const videoCtaStudy = document.querySelector('.case-study-content[data-target="video"]');
+
 const vacationButton = document.querySelector('.vacation');
 const hydroButton = document.querySelector('.hydro');
 const disButton = document.querySelector('.dis');
@@ -14,6 +16,7 @@ const montanaButton = document.querySelector('.cans');
 const starbucksButton = document.querySelector('.starbucks-button');
 const productButton = document.querySelector('.product-list');
 const coolGirlsButton = document.querySelector('.girls');
+const videoCtaButton = document.querySelector('.video');
 
 function displayContent(content) {
     if (content.style.display !== 'block') {
@@ -53,6 +56,9 @@ productButton.addEventListener('click', function() {
 coolGirlsButton.addEventListener('click', function() {
     displayContent(coolGirlsStudy);
 });
+videoCtaButton.addEventListener('click', function() {
+    displayContent(videoCtaStudy);
+});
 
 
 
@@ -64,6 +70,8 @@ const montanaWire = document.querySelector('.layouts[data-wire="cans"]');
 const starWire = document.querySelector('.layouts[data-wire="starbucks-content"]');
 const productWire = document.querySelector('.layouts[data-wire="product-list"]');
 const coolGirlsWire = document.querySelector('.layouts[data-wire="girls"]');
+const videoCtaWire = document.querySelector('.layouts[data-wire="video"]');
+
 const vacationButtonWire = document.querySelector('.vacation-wire');
 const hydroButtonWire = document.querySelector('.hydro-wire');
 const disButtonWire = document.querySelector('.dis-wire');
@@ -72,6 +80,7 @@ const montanaButtonWire = document.querySelector('.cans-wire');
 const starbucksButtonWire = document.querySelector('.starbucks-button-wire');
 const productButtonWire = document.querySelector('.product-wire');
 const coolGirlsButtonWire = document.querySelector('.cool-girls-wire');
+const videoCtaButtonWire = document.querySelector('.video-wire');
 
 function toggleBorder(layout) {
     layout.classList.toggle('bordered');
@@ -108,6 +117,9 @@ productButtonWire.addEventListener('click', function() {
 coolGirlsButtonWire.addEventListener('click', function() {
     toggleBorder(coolGirlsWire);
 });
+videoCtaButtonWire.addEventListener('click', function() {
+    toggleBorder(videoCtaWire);
+});
 
 
 
@@ -119,6 +131,9 @@ const rangeSliderTimland = document.querySelector('#timland-range');
 const rangeSliderCans = document.querySelector('#cans-range');
 const rangeSliderProduct = document.querySelector('#product-range');
 const rangeSliderCoolGirls = document.querySelector('#cool-girls-range');
+const rangeSliderVideoCta = document.querySelector('#video-range');
+
+
 const vacationScreen = document.querySelector('.screen[data-screen="vacation"]');
 const hydroScreen = document.querySelector('.screen[data-screen="hydro"]');
 const disScreen = document.querySelector('.screen[data-screen="dis"]');
@@ -127,6 +142,7 @@ const montanaScreen = document.querySelector('.screen[data-screen="cans"]');
 const starScreen = document.querySelector('.screen[data-screen="starbucks-content"]');
 const productScreen = document.querySelector('.screen[data-screen="product-list"]');
 const coolGirlsScreen = document.querySelector('.screen[data-screen="girls"]');
+const videoCtaScreen = document.querySelector('.screen[data-screen="video"]');
 
 
 //when I move the slider I want the "screen" to change widths
@@ -176,4 +192,9 @@ rangeSliderProduct.addEventListener('input', function() {
 rangeSliderCoolGirls.addEventListener('input', function() {
     console.log("test");
     changeScreenSize(rangeSliderCoolGirls,  coolGirlsScreen);
+});
+
+rangeSliderVideoCta.addEventListener('input', function() {
+    console.log("test");
+    changeScreenSize(rangeSliderVideoCta,  videoCtaScreen);
 });

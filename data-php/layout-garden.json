@@ -116,7 +116,7 @@
         "name": "video-cta",
         "link": "",
         "class": "video-cta",
-        "button": "viideo",
+        "button": "video",
         "wire-button": "video-wire",
         "screen-button": "video-screen",
         "range-slide": "video-range",
@@ -126,6 +126,7 @@
         "layout": "video-cta",
         "id": "video-cta"
     }
+    
 ]
 
 
