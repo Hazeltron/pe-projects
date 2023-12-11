@@ -4,8 +4,8 @@
         <source src="assets/video.mp4" type="video/mp4">
         </video>
         <video-states>
-            <button onclick="playPause()"><svg class="icon-play"><use xlink:href="#icon-play"></use></svg></button>
-            <button onclick="muteUnmute()"><svg class="icon-mute"><use xlink:href="#icon-sound"></use></svg></button>
+            <button class="play" onclick="playPause()"><svg class="icon-pause"><use xlink:href="#icon-pause"></use></svg></button>
+            <button class="unmute" onclick="muteUnmute()"><svg class="icon-volume-up"><use xlink:href="#icon-volume-up"></use></svg></button>
         </video-states>
     
     </video-container>
@@ -23,24 +23,34 @@
 
 <script>
     const video = document.querySelector(".tiff-video");
+    const playButton = document.querySelector(".play");
+    const muteButton = document.querySelector(".unmute");
 
 
     function playPause() {
         if(video.paused) {
             video.play();
+            playButton.innerHTML = `<svg class="icon-pause"><use xlink:href="#icon-pause"></use></svg>`;
         } else {
             video.pause();
+            playButton.innerHTML = `<svg class="icon-play"><use xlink:href="#icon-play"></use></svg>`;
+            
         }
     };
 
     function muteUnmute() {
         if(video.muted) {
             video.muted = false;
+            muteButton.innerHTML = `<svg class="icon-volume-off"><use xlink:href="#icon-volume-off"></use></svg>`;
         } else {
             video.muted = true;
+            muteButton.innerHTML = `<svg class="icon-volume-up"><use xlink:href="#icon-volume-up"></use></svg>`;
         }
     };
 
+
+    //if the play button is pressed add the pause button
+    //if the unmute button is pressed add the mute button
     
 
 </script>

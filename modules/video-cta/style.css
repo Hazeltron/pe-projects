@@ -24,13 +24,16 @@
     bottom: 0;
 }
 
+.video-cta video-cta video-states button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    padding: 5px;
+}
+
 .video-cta video-cta video {
-    /* this is a good trick: 
-    video {
-        max-width: 50%; 
-        object-fit: cover; 
-    }*/
-    
     max-width: 100%;
     height: 100%;
     object-fit: cover;
