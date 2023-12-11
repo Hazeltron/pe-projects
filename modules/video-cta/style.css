@@ -39,6 +39,14 @@
     object-fit: cover;
 }
 
+.icon-play {
+    transform: translateX( 2px )
+}
+
+.icon-volume-off {
+    transform: translateX( -1px )
+}
+
 .video-cta video-cta text-content {
     display: flex;
     flex-direction: column;
