@@ -49,9 +49,10 @@ include '../../header.php';
 
 			
 <section class="starbucks-container layouts screen" data-wire="starbucks-content" data-screen="starbucks-content">
+<div class="inner-column">
 
 	<section class="starbucks pumpkin">
-		<div class="inner-column">
+		
 			
 			
 		<?php  
@@ -62,19 +63,19 @@ include '../../header.php';
 				
 			<?php include(getFile('modules/starbucks/template.php')); ?>
 			
-		</div>
+		
 	</section>
 
 	<section class="starbucks iced">
-		<div class="inner-column">
+		
 
 			<?php include(getFile('modules/starbucks/template.php')); ?>
 			
-		</div>
+		
 	</section>
 
 	<section class="starbucks flip">
-		<div class="inner-column">
+		
 
 			<?php  
 				$heading = "Countless choices";
@@ -84,11 +85,11 @@ include '../../header.php';
 
 			<?php include(getFile('modules/starbucks/template.php')); ?>
 			
-		</div>
+		
 	</section>
 
 
-
+	</div>
 </section>
 
 
