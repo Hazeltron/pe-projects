@@ -94,6 +94,12 @@ h2 + p {
     line-height: 1.5em;
     font-weight: 100;
     color: var(--ink-light);
+}
 
-
+.lay-attention-voice {
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    font-weight: 100;
+    color: var(--ink-light);
 }
