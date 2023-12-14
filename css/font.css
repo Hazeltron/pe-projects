@@ -96,10 +96,34 @@ h2 + p {
     color: var(--ink-light);
 }
 
+.lay-loud-voice-bold {
+    font-family: var(--primary-font);
+    font-size: 2.5rem;
+    line-height: 1.5em;
+    font-weight: 400;
+    color: var(--ink-light);
+}
+
 .lay-attention-voice {
     font-family: var(--primary-font);
     font-size: 1.5rem;
     line-height: 1.5em;
-    font-weight: 100;
+    font-weight: 300;
+    color: var(--ink-light);
+}
+
+.lay-attention-voice-bold {
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: var(--ink-light);
+}
+
+.lay-calm-voice-bold {
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    font-weight: 400;
     color: var(--ink-light);
 }
