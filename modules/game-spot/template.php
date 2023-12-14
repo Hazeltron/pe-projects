@@ -8,6 +8,7 @@
         foreach ($cards as $card) { ?>
             
             <article class="<?= $card['card-class'] ?>">
+            <a href="#">
 
             <div>
                 <picture>
@@ -17,9 +18,10 @@
                 
 
                 <div class="<?= $card['text-class'] ?>">
-                    <h2 class="lay-attention-voice"><?= $card['title'] ?></h2>
+                    <h2 class="<?= $card['font-class'] ?>"><?= $card['title'] ?></h2>
                     <p><?= $card['text'] ?></p>
                 </div>
+                </a>
         </article>
             
     <?php } ?>
