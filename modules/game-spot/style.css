@@ -14,7 +14,8 @@
 }
 
 .gamespot-container .large-text, .small-text {
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .gamespot-container picture {
@@ -44,6 +45,10 @@
         background: linear-gradient(rgba(122, 122, 122, 0.1), rgba(71, 71, 71, 0.9));
      }
 
+     .gamespot-container .large-text {
+        margin-bottom: 0px;
+    }
+
      .gamespot-container .large-text p {
         display: none;
  
@@ -57,7 +62,6 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        height: 20%;
      }
 
      .gamespot-container .large-card:hover .large-text {
@@ -113,5 +117,10 @@
 
     .gamespot-container .small-card {
         grid-column: span 3;
+    }
+
+    .gamespot-container .large-text, .small-text {
+        margin-top: 10px;
+        margin-bottom: 0px;
     }
 }
