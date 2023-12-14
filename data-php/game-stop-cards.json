@@ -4,69 +4,79 @@
         "title": "The Best Xbox-Exclusive Games Of 2023",
         "text": "These Xbox console exclusives stood above the rest in 2023.",
         "card-class": "large-ad-one large-card",
-        "text-class": "large-text"
+        "text-class": "large-text",
+        "font-class": "lay-attention-voice-bold"
     },
     {
         "img": "gamespot-two.jpeg",
-        "title": "Something cool. Check it out",
-        "text": "These Xbox console exclusives stood above the rest in 2023.",
+        "title": "The 20 Worst Movies Of 2023, According To Metacritic",
+        "text": "There were some big movies with low review scores this year, but which ones did critics dislike the most?",
         "card-class": "large-ad-two large-card",
-        "text-class": "large-text"
+        "text-class": "large-text",
+        "font-class": "lay-attention-voice-bold"
     },
     {
         "img": "gamespot-three.jpeg",
-        "title": "Something cool. Check it out",
-        "text": "These Xbox console exclusives stood above the rest in 2023.",
+        "title": "The Best PlayStation Games Of 2023 According To Metacritic",
+        "text": "",
         "card-class": "small-ad-one small-card",
-        "text-class": "small-text"
+        "text-class": "small-text",
+        "font-class": "lay-calm-voice-bold"
     },
     {
         "img": "gamespot-four.jpeg",
-        "title": "Something cool. Check it out",
-        "text": "These Xbox console exclusives stood above the rest in 2023.",
+        "title": "E3 Is Permanently Canceled",
+        "text": "",
         "card-class": "small-ad-two small-card",
-        "text-class": "small-text"
+        "text-class": "small-text",
+        "font-class": "lay-calm-voice-bold"
     },
     {
         "img": "gamespot-five.jpeg",
-        "title": "Something cool. Check it out",
-        "text": "These Xbox console exclusives stood above the rest in 2023.",
+        "title": "The Best PC Games Of 2023",
+        "text": "",
         "card-class": "small-ad-three small-card",
-        "text-class": "small-text"
+        "text-class": "small-text",
+        "font-class": "lay-calm-voice-bold"
     },
     {
         "img": "gamespot-six.jpeg",
-        "title": "Something cool. Check it out",
-        "text": "These Xbox console exclusives stood above the rest in 2023.",
+        "title": "The Best Xbox-Exclusive Games Of 2023",
+        "text": "",
         "card-class": "small-ad-four small-card",
-        "text-class": "small-text"
+        "text-class": "small-text",
+        "font-class": "lay-calm-voice-bold"
     },
     {
         "img": "gamespot-seven.jpeg",
-        "title": "Something cool. Check it out",
-        "text": "These Xbox console exclusives stood above the rest in 2023.",
+        "title": "SMarvel Has Eyes On Wakanda With New Black Panther Disney Plus Series",
+        "text": "",
         "card-class": "small-ad-five small-card",
-        "text-class": "small-text"
+        "text-class": "small-text",
+        "font-class": "lay-calm-voice-bold"
     },
     {
         "img": "gamespot-eight.jpeg",
-        "title": "Something cool. Check it out",
-        "text": "These Xbox console exclusives stood above the rest in 2023.",
+        "title": "The Day Before Studio Shuts Down Days After Disastrous Launch",
+        "text": "",
         "card-class": "small-ad-six small-card",
-        "text-class": "small-text"
+        "text-class": "small-text",
+        "font-class": "lay-calm-voice-bold"
     },
     {
         "img": "gamespot-nine.jpeg",
-        "title": "Something cool. Check it out",
-        "text": "These Xbox console exclusives stood above the rest in 2023.",
+        "title": "Lego Fortnite Tips And Tricks",
+        "text": "",
         "card-class": "small-ad-seven small-card",
-        "text-class": "small-text"
+        "text-class": "small-text",
+        "font-class": "lay-calm-voice-bold"
     },
     {
         "img": "gamespot-ten.jpeg",
-        "title": "Something cool. Check it out",
-        "text": "These Xbox console exclusives stood above the rest in 2023.",
+        "title": "There Are Some Amazing PC Game Deals In Fanatical's Winter Sale",
+        "text": "",
         "card-class": "small-ad-eight small-card",
-        "text-class": "small-text"
+        "text-class": "small-text",
+        "font-class": "lay-calm-voice-bold"
     }
 ]
