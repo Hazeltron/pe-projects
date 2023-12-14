@@ -11,7 +11,7 @@
 
             <div>
                 <picture>
-                    <img src="../../assets/<?= $card['img'] ?>" alt="">
+                    <img src="assets/<?= $card['img'] ?>" alt="">
                 </picture>
             </div>
                 
