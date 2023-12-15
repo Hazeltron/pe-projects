@@ -139,9 +139,21 @@
         "howText": "",
         "layout": "game-spot",
         "id": "game-spot"
+    },
+    {
+        "name": "Shell",
+        "link": "",
+        "class": "shell",
+        "button": "shell-button",
+        "wire-button": "shell-wire",
+        "screen-button": "shell-screen",
+        "range-slide": "shell-range",
+        "whyText": "why though",
+        "diffText": "",
+        "howText": "",
+        "layout": "shell",
+        "id": "shell"
     }
-    
-    
 ]
 
 
