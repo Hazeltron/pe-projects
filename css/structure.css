@@ -25,24 +25,20 @@ img {
 	height:auto;
 }
 
-nav li {
-	display: inline-block;
-	color: black;
-}
+
 
 nav a {
 	text-decoration: none;
 	color: rgb(237, 237, 237);
 }
 
-footer li {
+footer {
 	display: inline-block;
 	text-decoration: none;
-	color: var(--ink);
+	color: var(--paper);
+	background-color: var(--ink);
+	padding: 20px 0px;
+	margin-top: 40px;
 }
 
-footer a {
-	text-decoration: none;
-	color: black;
-}
 

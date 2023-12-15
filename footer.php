@@ -2,9 +2,12 @@
 		</main>
 
 		<footer>
-			<div class="inner-column">
+			<inner-column>
+				<section>
 				<p>Thanks for coming!</p>
-			</div>
+				</section>
+				
+			</inner-column>
 		</footer>
 		<script src="site.js"></script>
 		<script src="layout.js"></script>
