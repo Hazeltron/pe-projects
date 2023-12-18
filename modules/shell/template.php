@@ -1,21 +1,54 @@
-<div class="shell-container">
+<div class="upper-shell">
 
-    <ul>
+    <ul class="upper-grid">
+    <?php 
+      $json = file_get_contents('../../data-php/shell.json');
+      $cards = json_decode($json, true);
+
+    foreach (array_slice($cards, 0, 5) as $card) { ?>
         <li>
-            <article>
+            <article class="upper-cards">
                 <div class="shell-img">
                     <picture>
-                        <img src="assets/landscape.jpg" alt="">
+                        <img src="assets/<?= $card['img'] ?>" alt="">
                     </picture>
                 </div>
 
                 <div class="shell-text">
-                    <h2>Something</h2>
-                    <p>Something else</p>
-                    <a href="#">Something link</a>
+                    <h2 class="lay-attention-voice"><?= $card['title'] ?></h2>
+                    <p class="lay-calm-voice"><?= $card['text'] ?></p>
+                    <a href="#" class="lay-calm-voice"><?= $card['link'] ?></a>
                 </div>
             </article>
         </li>
+    <?php } ?>
     </ul>
 
+    
+
+</div>
+
+<div class="lower-shell">
+    <h2 class="lay-loud-voice">Featured content</h2>
+    <ul class="lower-grid">
+            
+        <?php 
+        foreach (array_slice($cards, 5) as $card) { ?>
+            <li>
+                <article class="lower-cards">
+                    <div class="shell-img">
+                        <picture>
+                            <img src="assets/<?= $card['img'] ?>" alt="">
+                        </picture>
+                    </div>
+
+                    <div class="shell-text">
+                        <h2 class="lay-attention-voice"><?= $card['title'] ?></h2>
+                        <p><?= $card['text'] ?></p>
+                        <a href="#"><?= $card['link'] ?></a>
+                    </div>
+                </article>
+            </li>
+        <?php } ?>
+        </ul>
 </div>
