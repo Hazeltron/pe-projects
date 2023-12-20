@@ -6,21 +6,20 @@
 
         foreach (array_slice($cards, 0, 5) as $card) { ?>
             <li>
-                <article class="upper-cards">
-                    <a href="#">
-                        <div class="shell-img">
+            <a href="#" class="card-link">hello</a>
+                    <article class="upper-cards">
                             <picture>
                                 <img src="assets/<?= $card['img'] ?>" alt="">
                             </picture>
-                        </div>
 
                         <div class="shell-text">
                             <h2 class="lay-attention-voice"><?= $card['title'] ?></h2>
                             <p class="lay-calm-voice"><?= $card['text'] ?></p>
-                            <a href="#" class="lay-calm-voice"><?= $card['link'] ?></a>
+                            <a href="#" class="lay-calm-voice link-text"><?= $card['link-text'] ?></a>
                         </div>
-                    </a>
-                </article>
+                        
+                    </article>
+      
             </li>
         <?php } ?>
     </ul>
@@ -32,21 +31,21 @@
         <?php 
         foreach (array_slice($cards, 5) as $card) { ?>
             <li>
-                <article class="lower-cards">
-                    <a href="#">
-                        <div class="shell-img">
+            <a href="#" class="card-link"></a>
+                    <article class="lower-cards">
                             <picture>
                                 <img src="assets/<?= $card['img'] ?>" alt="">
                             </picture>
-                        </div>
 
                         <div class="shell-text">
                             <h2 class="lay-attention-voice"><?= $card['title'] ?></h2>
-                            <p><?= $card['text'] ?></p>
-                            <a href="#"><?= $card['link'] ?></a>
+                            <p class="lay-calm-voice"><?= $card['text'] ?></p>
+                            
+                            <a href="#" class="lay-calm-voice link-text"><?= $card['link-text'] ?></a>
                         </div>
-                    </a>
-                </article>
+                        
+                    </article>
+                
             </li>
         <?php } ?>
     </ul>
