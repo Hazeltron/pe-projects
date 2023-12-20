@@ -153,6 +153,20 @@
         "howText": "",
         "layout": "shell",
         "id": "shell"
+    },
+    {
+        "name": "android",
+        "link": "",
+        "class": "android",
+        "button": "android-button",
+        "wire-button": "android-wire",
+        "screen-button": "android-screen",
+        "range-slide": "android-range",
+        "whyText": "why though",
+        "diffText": "",
+        "howText": "",
+        "layout": "android",
+        "id": "android-id"
     }
 ]
 
