@@ -3,55 +3,55 @@
         "img": "cows-feeding-in-shed.png",
         "title": "Farming offers fertile ground for biomethane growth",
         "text": "Inside Nature Energy, one of Europe’s leading producers of renewable natural gas.",
-        "link": "Read more"
+        "link-text": "Read more"
     },
     {
         "img": "vito-deep-water-usa.png",
         "title": "Is there a role for oil and gas in the journey to net zero?",
         "text": "How can the energy industry reduce emissions while continuing to deliver the secure and affordable energy people need today? The Energy Podcast investigates.",
-        "link": "Listen here"
+        "link-text": "Listen here"
     },
     {
         "img": "circuit-board.png",
         "title": "Faster energy innovation with digital and AI",
         "text": "Inside Nature Energy, one of Europe’s leading producers of renewable natural gas.",
-        "link": "Read more"
+        "link-text": "Read more"
     },
     {
         "img": "powering-progress-in-action-hd.png",
         "title": "Powering Progress in action",
         "text": "Inside Nature Energy, one of Europe’s leading producers of renewable natural gas.",
-        "link": "Read more"
+        "link-text": "Read more"
     },
     {
         "img": "sign-language-coffee-bar-chefs-smiling.png",
         "title": "Empowering people with disabilities is good business sense",
         "text": "Inside Nature Energy, one of Europe’s leading producers of renewable natural gas.",
-        "link": "Read more"
+        "link-text": "Read more"
     },
     {
         "img": "retail-shell-logo.png",
         "title": "Ukraine: our response",
         "text": "See more on Shell’s response to the war in Ukraine.",
-        "link": "Read more"
+        "link-text": "Read more"
     },
     {
         "img": "our-climate-target.png",
         "title": "Our climate target",
         "text": "Shell’s target is to become a net-zero emissions energy business by 2050.",
-        "link": "Read more"
+        "link-text": "Read more"
     },
     {
         "img": "pp-shell-powering-progress-newsletter.png",
         "title": "Powering Progress newsletter",
         "text": "Discover what Shell is doing as the world makes the transition to cleaner energy. Sign up now.",
-        "link": "Read more"
+        "link-text": "Read more"
     },
     {
         "img": "accelerate-to-zero-revised.png",
         "title": "Accelerate to Zero",
         "text": "Map your fleet decarbonisation journey with us.",
-        "link": "Read more"
+        "link-text": "Read more"
     }
     
 ]
