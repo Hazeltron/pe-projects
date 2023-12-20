@@ -1,32 +1,35 @@
-.shell {
+.shell *{
+    /* border: solid 1px blue; */
 
-    /* & .shell-img {
+    & li {
+        position: relative;
+    }
+
+    & .card-link {
+        position: absolute;
+        bottom: 0;
+        left: 0;
         height: 100%;
-        & picture {
-            height: 100%;
-            & img {
-                height: 100%; 
-            }
-        }
-    } */
+        width: 100%;
+        opacity: 0;
+        z-index: 20;
+    }
+
     & .upper-grid {
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
 
-        & a:nth-of-type(2) {
+        & a {
             margin-top: 20px;
             text-decoration: underline;
         }
 
         & li:nth-of-type(1) {
             border-radius: 20px;
-            & .shell-img {
+            
+            & picture {
                 border-radius: 20px 20px 0 0;
-                & picture {
-                    border-radius: 20px 20px 0 0;
-                }
-
             }
             
 
@@ -37,9 +40,9 @@
 
         & li:nth-of-type(2) {
             position: relative;
-
             & picture {
                 border-radius: 20px;
+                
             }
 
             & .shell-text {
@@ -56,22 +59,21 @@
         }
 
         & li:nth-of-type(n + 3) {
-            /* position: relative; */
-
+            
             & article {
                 display: grid;
-                grid-template-columns: 1fr 1fr;
-                align-items: center;
+                grid-template-columns: 1fr;
+                
                 gap: 20px;
                 background-color: #f5f5f5;
                 border-radius: 20px;
 
-                & .shell-img {
-
-                    & picture {
-                        border-radius: 20px 0 0 20px;
-                    }
+                & picture {
+                    border-radius: 20px 0 0 20px;
+                    aspect-ratio: 2/1;
+                    width: 100%;
                 }
+                
 
                 & .shell-text {
                     padding: 10px;
@@ -81,14 +83,12 @@
                     display: none;
                 }
 
-                & a:nth-of-type(2) {
+                & a {
                     display: none;
                 }
             }
 
             &:hover .upper-cards {
-                /* position: absolute;
-                bottom: 1px; */
                 filter: drop-shadow(5px 5px 4px #9d9d9d);
                 transform: translateY(-2px);
             }
@@ -106,28 +106,25 @@
             gap: 20px;
 
             & li:nth-of-type(n + 1) {
+                
                 & article {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
+                    /* rule is breaking images */
                     align-items: center;
                     gap: 20px;
                     background-color: #ffffff;
                     border-radius: 20px;
-
-                    & .shell-img {
+                   
+                    & picture {
                         border-radius: 20px 0 0 20px;
-
-                        & picture {
-                            border-radius: 20px 0 0 20px;
-                        }
-
                     }
+
                     
     
                     & .shell-text {
                         padding: 10px;
-    
-                        & p, a:nth-of-type(2) {
+                        & p, a {
                             display: none;
                         }
                     }
@@ -146,7 +143,6 @@
     @container (min-width: 700px) {
         & .upper-grid {
             grid-template-columns: 1fr 1fr;
-
             & li:nth-of-type(2) {
                 & .shell-text {
                     height: 60%;
@@ -159,28 +155,21 @@
 
                 & article {
                     grid-template-columns: 1fr;
-                    align-self: span;
-                    justify-self: span;
+                    grid-template-rows: auto 1fr;
                     gap: 20px;
                     background-color: #f5f5f5;
                     border-radius: 20px;
                     /* this height is messing up the images */
-                    /* height: 100%; */
+                    height: 100%;
 
-                    & .shell-img {
-                        width: 100%;
+                    & picture {
+                        border-radius: 20px;
                         border-radius: 20px 20px 0 0;
-
-                        & picture {
-                            border-radius: 20px;
-                            border-radius: 20px 20px 0 0;
-                        }
-
                     }
+
+               
                     
                     & .shell-text {
-                        width: 100%;
-
                         & p {
                             display: block;
                         }
@@ -195,22 +184,18 @@
             
 
             & li:nth-of-type(n + 1) {
-                grid-column: span 1;
                 & article {
                     /* This is messing up your images */
-                    /* height: 100%; */
                     grid-template-columns: 1fr;
+                    grid-template-rows: auto 1fr;
+                    height: 100%;
                     border-radius: 20px;
-                    
+                    align-items: initial;
 
-                    & .shell-img {
+                    & picture {
                         border-radius: 20px 20px 0 0;
-
-                        & picture {
-                            border-radius: 20px 20px 0 0;
-                        }
-
                     }
+
                     & .shell-text {
 
                         & p {
@@ -234,39 +219,25 @@
                 grid-column: span 8;
                 position: relative;
                 border-radius: 20px;
-                height: 100%;
 
                 & article {
-        
-                        & a {
-                            height: 100%;
-                        }
-    
-                        & .shell-img {
-                            height: 100%;
-                            border-radius: 20px 20px 20px 20px;
-                            & picture {
-                                border-radius: 20px 20px 20px 20px;
-                                height: 100%;
-                                & img {
-                                    height: 100%; 
-                                }
-        
-                            }
-                        }
-
-                        & .shell-text {
-                            position: absolute;
-                            bottom: 20%;
-                            left: 5%;
-                            background-color: rgba(0, 0, 0, 0.5);
-                            color: white;
-                            max-height: 100%;
-                            max-width: 40%;
-                            border-radius: 20px;
-                            padding: 10px;
-                        }
+                    height: 100%;
+                    & picture {
+                        border-radius: 20px 20px 20px 20px;
                     }
+
+                    & .shell-text {
+                        position: absolute;
+                        bottom: 20%;
+                        left: 5%;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        color: white;
+                        max-height: 100%;
+                        max-width: 40%;
+                        border-radius: 20px;
+                        padding: 10px;
+                    }
+                }
 
 
                     
