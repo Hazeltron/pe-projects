@@ -17,33 +17,35 @@
             min-height: 990px;
         }
 
+       
+        & .title {
+            display: block;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            grid-column: 1/-1;
+            grid-row: 1/2;
+            color: white;
+
+            & a {
+                padding: 10px;
+                background-color: white;
+                color: black;
+                border-radius: 20px;
+                
+            }
+        }
+
+
         & hero-grid {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             grid-template-rows: repeat(4, 1fr);
+            gap: 40px;
             position: absolute;
             bottom: 5%;
             right: 0;
-            & .title {
-                display: block;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-                grid-column: 1/-1;
-                grid-row: 1/2;
-                color: white;
-
-                & a {
-                    padding: 10px;
-                    background-color: white;
-                    color: black;
-                    border-radius: 20px;
-                    
-                }
-            }
-
-
         }
 
         & forground-card {
@@ -70,8 +72,8 @@
             gap: 10px;
             background-color: white;
             padding: 10px;
-            grid-column: 2/12;
-            grid-row: 1/2;
+            /* grid-column: 2/12;
+            grid-row: 1/2; */
         }
     }
 
@@ -163,6 +165,18 @@
             height: 100%;
             width: 100%;
         }
+
+        & hero-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 40px;
+            position: absolute;
+            bottom: 5%;
+            right: 0;
+        }
+
+        
     }
 
     @container (min-width: 700px) {
@@ -176,6 +190,26 @@
             height: 100%;
             width: 100%;
         }
+
+        & .top-section forground-card {
+            display: block;
+            overflow: hidden;
+            border-radius: 20px;
+            grid-column: 2/11;
+            grid-row: 2/-1;
+            min-height: 400px;
+
+        }
+
+        & .top-section .title {
+            display: block;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+            grid-column: 1/5;
+            grid-row: 1/2;
+        }
     }
 
     @container (min-width: 800px) {
@@ -186,6 +220,26 @@
             background-position: center;
             height: 100%;
             width: 100%;
+        }
+
+        & .top-section forground-card {
+            display: block;
+            overflow: hidden;
+            border-radius: 20px;
+            grid-column: 5/-1;
+            grid-row: 1/-1;
+            min-height: 400px;
+
+        }
+
+        & .top-section .title {
+            display: block;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+            grid-column: 1/5;
+            grid-row: 1/-1;
         }
     }
 
