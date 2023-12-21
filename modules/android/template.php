@@ -1,33 +1,34 @@
 <section class="top-section">
     <article>
 
-        <background-card>
+        <hero-img>
 
-            <picture>
-                <img src="assets/android-main-lady-small.png" alt="">
-            </picture>
+            
 
-            <text-content>
-                <h2 class="lay-attention-voice">Android lets you do you.</h2>
+        </hero-img>
+
+
+        <hero-grid>
+
+            <div class="title">
+                <h2 class="lay-loud-voice">Android lets you do you.</h2>
                 <a href="#" class="lay-calm-voice">Get in on what's new</a> 
-            </text-content>
-                
-        </background-card>
+            </div>
+            
+            <forground-card>
+                <text-content>
+                    <h3>Emoji Kitchen stickers</h3>
+                    <a href=""></a> 
+                    <h2 class="lay-attention-voice">New season, new sticker combinations.</h2>
+                </text-content>
+
+                <picture>
+                    <img src="assets/android-girls-on-phone.png" alt="">
+                </picture>
+            </forground-card>
 
 
-        <forground-card>
-
-            <text-content>
-                <h3>Emoji Kitchen stickers</h3>
-                <a href=""></a> 
-                <h2 class="lay-attention-voice">New season, new sticker combinations.</h2>
-            </text-content>
-
-            <picture>
-                <img src="assets/android-girls-on-phone.png" alt="">
-            </picture>
-
-        </forground-card>
+        </hero-grid>
 
     </article>
 

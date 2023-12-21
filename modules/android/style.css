@@ -3,53 +3,75 @@
     & .top-section {
         position: relative;
 
-        & background-card {
+        & hero-img {
             display: block;
             position: relative;
             overflow: hidden;
             border-radius: 20px;
-            max-height: 990px;
-            
+            background-image: url('../../assets/android-main-lady-small.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center ;
+            height: 100%;
+            width: 100%;
+            min-height: 990px;
+        }
 
-            & text-content {
+        & hero-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            position: absolute;
+            bottom: 5%;
+            right: 0;
+            & .title {
                 display: block;
-                position: absolute;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                text-align: center;
-                bottom: 55%;
-                left: 15%;
+                gap: 10px;
+                grid-column: 1/-1;
+                grid-row: 1/2;
                 color: white;
 
                 & a {
-                    padding: 15px;
-                    max-width: 300px;
+                    padding: 10px;
                     background-color: white;
                     color: black;
                     border-radius: 20px;
-                    text-align: center;
+                    
                 }
             }
+
+
         }
 
         & forground-card {
             display: block;
-            position: absolute;
-            bottom: 5%;
-            right: 3%;
             overflow: hidden;
             border-radius: 20px;
-            max-width: 450px;
+            grid-column: 2/12;
+            grid-row: 2/-1;
+            min-height: 400px;
 
-            & text-content {
-                display: block;
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-                background-color: white;
-                padding: 10px;
+            & picture {
+                height: 100%;
+                aspect-ratio: 16/9;
+                
             }
+
+            
+        }
+
+        & text-content {
+            display: block;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: white;
+            padding: 10px;
+            grid-column: 2/12;
+            grid-row: 1/2;
         }
     }
 
@@ -132,7 +154,41 @@
         & .lower-section .grid-wrapper-bottom {
             grid-template-columns: 1fr 1fr;
         }
+
+        & .top-section hero-img {
+            background-image: url('../../assets/android-main-lady-middle.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+        }
     }
+
+    @container (min-width: 700px) {
+
+
+        & .top-section hero-img {
+            background-image: url('../../assets/android-main-lady-middle.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    @container (min-width: 800px) {
+        & .top-section hero-img {
+            background-image: url('../../assets/android-main-lady.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
 
     
 }
