@@ -2,12 +2,9 @@
     <article>
 
         <hero-img>
-
-            
-
+            <!-- background img here -->
         </hero-img>
-
-
+        
         <hero-grid>
 
             <div class="title">
@@ -52,7 +49,7 @@
 
                 <text-content>
                     <h3></h3>
-                    <a href=""></a>
+                    <input name="color" type="radio" value="grey">
                     <!-- or button -->
                 </text-content>
             </article>
