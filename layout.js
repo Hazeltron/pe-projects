@@ -159,12 +159,12 @@ const videoCtaScreen = document.querySelector('.screen[data-screen="video"]');
 const gameSpotScreen = document.querySelector('.screen[data-screen="game-spot-button"]');
 
 
-//when I move the slider I want the "screen" to change widths
-//I want the @media breakpoints to respond accordingly
-
+//I want to make the range slider respond to the screen size
 function changeScreenSize(slider, screen) {
     const screenValue = slider.value;
-    screen.style.width = screenValue + "vw";
+    const windowSize = window.innerWidth;
+    console.log(windowSize);
+    screen.style.width = screenValue + "%";
 };
 
 function setupSlider(sliderId, screenDataAttr) {
