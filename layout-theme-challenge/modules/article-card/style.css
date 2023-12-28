@@ -23,7 +23,8 @@
 
 
 text-content p{
-	min-height: 80px;
+	margin-top: 10px;
+	min-height: 100px;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	max-width: 75ch;
