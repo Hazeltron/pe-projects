@@ -1,4 +1,4 @@
-<?php include('../header.php'); ?>
+
 
 <section>
 	<div class="inner-column">
