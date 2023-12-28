@@ -5,7 +5,7 @@
 		<ul>
 			<li>
 				<a class='home' href='#'>
-					<?php include('modules/logo.php'); ?>
+					<?php include('modules/logo-two.php'); ?>
 				</a>
 			</li>
 

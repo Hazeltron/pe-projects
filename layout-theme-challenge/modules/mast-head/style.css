@@ -23,6 +23,11 @@ mast-head nav ul {
 	align-items: center;
 }
 
+mast-head svg {
+	width: 150px;
+	fill: var(--ink);
+}
+
 mast-head nav .home {
 	padding: 9px 0;
 }
@@ -40,10 +45,11 @@ mast-head nav .home {
 }
 
 .site-menu a:not(.home):hover {
-	
 	text-decoration: underline;
+}
 
-	
+mast-head .user-menu .button {
+	padding: 10px;
 }
 
 

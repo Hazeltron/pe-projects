@@ -6,16 +6,8 @@
 		<ul>
 			<li>
 				<a href='#'>
-					<?php include('modules/logo.php'); ?>
+					<?php include('modules/logo-two.php'); ?>
 				</a>
-			</li>
-
-			<li>
-				<a href='#'>Home</a>
-			</li>
-
-			<li>
-				<a href='#'>Book Now</a>
 			</li>
 		</ul>
 	</nav>

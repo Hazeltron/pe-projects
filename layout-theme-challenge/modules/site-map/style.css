@@ -20,6 +20,11 @@ site-map li {
 	margin-top: 10px;
 }
 
+site-map svg {
+	width: 200px;
+	fill: var(--paper);
+}
+
 site-map h3 {
 	color:aquamarine;
 }
