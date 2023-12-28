@@ -1,6 +1,6 @@
 <?php 
 	$heading = $heading ?? "Take a break.";
-	$paragraph = $paragraph ?? "Come to sandals and escape the grind. Our exclusive island hosts multiple villas overseeing stunning sea side views. We offer inclusive trips and sand so soft your feet will melt through the grains.";
+	$paragraph = $paragraph ?? "Escape the daily grind at Coral Cove. Our exclusive island retreat boasts multiple villas with breathtaking seaside views. Experience all-inclusive getaways and sink your feet into the softest sands imaginable.";
 ?>
 
 <call-to-action>

@@ -70,7 +70,7 @@
 				
 				<?php 
 				$heading = "Sign up for our exclusive packages.";
-				$paragraph = "Becoming a member of Sandals exclusive loyalty group will ensure lower prices and upgrades for packages and events. After your eventual death, your children will be grandfathered in. Then they can join the Illumanati like you.";
+				$paragraph = "Joining Coral Cove's exclusive loyalty program guarantees you preferential rates and premium upgrades for packages and events. Your legacy continues, as your children inherit these privileges, ensuring an everlasting connection to luxury. Dive into a world of exclusivity – the Coral Cove experience transcends generations.";
 				include('modules/call-to-action/template.php'); 
 				?>
 

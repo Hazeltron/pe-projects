@@ -5,7 +5,7 @@
 	<header>
 		<h2 class='attention-voice'>Experiences</h2>
 
-		<p>At sandals anything is possible. We offer unforgettible experiencs. Wether you want to snorkle our breathtaking reefs, fish the open seas, or you just want to enjoy the sun--It can be found here.</p>
+		<p>At Coral Cove, possibilities unfold. Immerse yourself in unforgettable experiences—whether snorkeling our breathtaking reefs, fishing the open seas, or simply basking in the sun. Your desires find a home here.</p>
 	</header>
 
 	<article-grid>
