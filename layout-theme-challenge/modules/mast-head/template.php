@@ -14,8 +14,20 @@
 			</li>
 
 			<li>
-				<a href='#'>rooms</a>
+				<a href='#'>accommodation</a>
 			</li>
+
+			<li>
+				<a href='#'>dining</a>
+			</li>
+
+			<!-- <li>
+				<a href='#'>activities</a>
+			</li>
+
+			<li>
+				<a href='#'>offers</a>
+			</li> -->
 		</ul>
 	</nav>
 

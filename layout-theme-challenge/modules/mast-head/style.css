@@ -40,7 +40,8 @@ mast-head nav .home {
 }
 
 .site-menu a:not(.home):hover {
-	color: var(--highlight);
+	
+	text-decoration: underline;
 
 	
 }
