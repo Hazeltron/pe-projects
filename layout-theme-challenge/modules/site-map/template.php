@@ -11,77 +11,80 @@
 			</li>
 
 			<li>
-				<a href='#'>Some page</a>
+				<a href='#'>Home</a>
 			</li>
 
 			<li>
-				<a href='#'>Some other page</a>
+				<a href='#'>Book Now</a>
 			</li>
 		</ul>
 	</nav>
 
 	<nav class='x-menu'>
-		<h3 class='strong-voice'>Menu heading here</h3>
+		<h3 class='strong-voice'>Contact</h3>
 
 		<ul>
 			<li>
-				<a href='#'>Some page</a>
+			Coral Cove, 76 Pitts Bay Road, HM08, Bermuda.
 			</li>
 
 			<li>
-				<a href='#'>Some page</a>
+				+1-441-295-3000
 			</li>
 
 			<li>
-				<a href='#'>Some other page</a>
-			</li>
-
-			<li>
-				<a href='#'>Some page</a>
+				<a href='#'>coralcove​@gmail.com</a>
 			</li>
 		</ul>
 	</nav>
 
 	<nav class='x-menu'>
-		<h3 class='strong-voice'>Menu heading here</h3>
+		<h3 class='strong-voice'>Hotel</h3>
 		
 		<ul>
 			<li>
-				<a href='#'>Some page</a>
+				<a href='#'>Destination</a>
 			</li>
 
 			<li>
-				<a href='#'>Some page</a>
+				<a href='#'>Careers</a>
 			</li>
 
 			<li>
-				<a href='#'>Some other page</a>
+				<a href='#'>Sitemap</a>
 			</li>
 
 			<li>
-				<a href='#'>Some page</a>
+				<a href='#'>Terms</a>
+			</li>
+			<li>
+				<a href='#'>Privacy Policy</a>
 			</li>
 		</ul>
 	</nav>
 
 	<nav class='x-menu'>
-		<h3 class='strong-voice'>Menu heading here</h3>
+		<h3 class='strong-voice'>About</h3>
 		
 		<ul>
 			<li>
-				<a href='#'>Some page</a>
+				<a href='#'>News</a>
 			</li>
 
 			<li>
-				<a href='#'>Some page</a>
+				<a href='#'>Guest Travel Guidelines</a>
 			</li>
 
 			<li>
-				<a href='#'>Some other page</a>
+				<a href='#'>Media Gallery</a>
 			</li>
 
 			<li>
-				<a href='#'>Some page</a>
+				<a href='#'>Guest Services</a>
+			</li>
+
+			<li>
+				<a href='#'>Best Rate Guarantee</a>
 			</li>
 		</ul>
 	</nav>
