@@ -32,7 +32,7 @@
 </section>
 
 
-<section>
+<section class="middle-section">
     <h2 class="lay-loud-voice">New Android phones dropped.</h2>
 
     <ul>
@@ -44,12 +44,16 @@
         <li>
             <article>
                 <picture>
-                    <img src="" alt="">
+                    <img src="assets/<?= $card['img'] ?>" alt="">
                 </picture>
 
                 <text-content>
-                    <h3></h3>
+                    <h3 class="lay-calm-voice-bold"><?= $card['title'] ?></h3>
+                    <p class="lay-calm-voice"><?= $card['price'] ?></p>
                     <input name="color" type="radio" value="grey">
+                    <input name="color" type="radio" value="grey">
+                    <input name="color" type="radio" value="grey">
+                    <a href="#" class="lay-calm-voice"><?= $card['button-text'] ?></a>
                     <!-- or button -->
                 </text-content>
             </article>
