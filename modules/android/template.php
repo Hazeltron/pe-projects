@@ -14,8 +14,8 @@
             
             <forground-card>
                 <text-content>
-                    <h3>Emoji Kitchen stickers</h3>
-                    <a href=""></a> 
+                    <h3 class="lay-calm-voice-bold">Emoji Kitchen stickers</h3>
+                    <a href="#"><svg class="icon-plus"><use xlink:href="#icon-plus"></use></svg></a> 
                     <h2 class="lay-attention-voice">New season, new sticker combinations.</h2>
                 </text-content>
 
@@ -33,7 +33,7 @@
 
 
 <section>
-    <h2>New Android phones dropped.</h2>
+    <h2 class="lay-loud-voice">New Android phones dropped.</h2>
 
     <ul>
     <?php 
