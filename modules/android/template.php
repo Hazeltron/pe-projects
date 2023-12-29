@@ -56,10 +56,19 @@
                     <a href="#" class="lay-calm-voice"><?= $card['button-text'] ?></a>
                     <!-- or button -->
                 </text-content>
+                
             </article>
 
         </li>
     <?php } ?>
+    <button-control>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+    </button-control>
     </ul>
     
 

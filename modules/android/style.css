@@ -235,6 +235,10 @@
             display: none;
         }
 
+        & .middle-section button-control {
+            display: none;
+        }
+
         
     }
 
