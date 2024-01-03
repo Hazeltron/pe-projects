@@ -114,9 +114,9 @@
             
         }
         /* is attempting to control small screen picture size jump when radios are clicked */
-        /* & picture {
-            max-width: 80vw;
-        } */
+        & picture {
+            max-width: 60vw;
+        }
 
         & li {
             width: 100vw;
