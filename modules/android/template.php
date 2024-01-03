@@ -154,5 +154,10 @@ function scrollCards(cardNumber){
 
 }
 
+// function toggleButtons() {
+//     const button = document.querySelect('.middle-section button');
+//     button.classList.toggle('')
+// }
+
 
 </script>
