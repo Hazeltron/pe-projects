@@ -1,36 +1,55 @@
 [
     {
         "img": "android-phone-one.png",
+        "img-alt-one": "assets/android-alt-one.png",
+        "img-alt-two": "assets/android-alt-two.png",
+        "img-alt-three": "assets/android-alt-three.png",
+        "img-alt-four": "",
         "title": "Pixel 8 Pro",
         "price": "From $999.00",
         "button-text": "Shop now",
         "radio-name": "pix-pro",
         "radio-one": "#e5f2fe",
         "radio-two": "#e6e7ee",
-        "radio-three": "#fef9f2"
+        "radio-three": "#fef9f2",
+        "radio-four": ""
     },
     {
         "img": "android-phone-two.png",
+        "img-alt-one": "assets/android-alt-four.png",
+        "img-alt-two": "assets/android-alt-five.png",
+        "img-alt-three": "assets/android-alt-six.png",
+        "img-alt-four": "",
         "title": "Pixel 8",
         "price": "From $699.00",
         "button-text": "Shop now",
         "radio-name": "pix-pro-2",
         "radio-one": "#eef9e7",
         "radio-two": "#d8d9e1",
-        "radio-three": "#fdf5f1"
+        "radio-three": "#fdf5f1",
+        "radio-four": ""
     },
     {
         "img": "android-phone-three.png",
+        "img-alt-one": "assets/android-alt-seven.png",
+        "img-alt-two": "assets/android-alt-eight.png",
+        "img-alt-three": "",
+        "img-alt-four": "",
         "title": "Pixel Fold",
         "price": "From $1,799.00",
         "button-text": "Shop now",
         "radio-name": "pix-pro-3",
         "radio-one": "#fef9f2",
         "radio-two": "#e2e1d9",
-        "radio-three": "green"
+        "radio-three": "green",
+        "radio-four": ""
     },
     {
         "img": "android-phone-four.png",
+        "img-alt-one": "assets/android-alt-nine.png",
+        "img-alt-two": "assets/android-alt-ten.png",
+        "img-alt-three": "assets/android-alt-eleven.png",
+        "img-alt-four": "assets/android-alt-twelve.png",
         "title": "Galaxy Z Flip5",
         "price": "From $999.00",
         "button-text": "Shop now",
@@ -42,22 +61,32 @@
     },
     {
         "img": "android-phone-five.png",
+        "img-alt-one": "assets/android-alt-thirteen.png",
+        "img-alt-two": "assets/android-alt-fourteen.png",
+        "img-alt-three": "assets/android-alt-fifteen.png",
+        "img-alt-four": "",
         "title": "Galaxy Z Fold5",
         "price": "From $1,799.00",
         "button-text": "Shop now",
         "radio-name": "pix-pro-5",
         "radio-one": "#e7eef8",
         "radio-two": "#fef9f0",
-        "radio-three": "#e3e5ec"
+        "radio-three": "#e3e5ec",
+        "radio-four": ""
     },
     {
         "img": "android-phone-six.png",
+        "img-alt-one": "",
+        "img-alt-two": "",
+        "img-alt-three": "",
+        "img-alt-four": "",
         "title": "Find your perfect phone",
         "price": "",
         "button-text": "Help me choose",
         "radio-name": "pix-pro-6",
         "radio-one": "#e6dad9",
         "radio-two": "blue",
-        "radio-three": "green"
+        "radio-three": "green",
+        "radio-four": ""
     }
 ]
