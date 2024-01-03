@@ -78,7 +78,7 @@
 
                     </radio-buttons>
                     
-                    <a href="#" class="lay-calm-voice"><?= $card['button-text'] ?></a>
+                    <a href="#" class="lay-calm-voice"><?= $card['button-text'] ?> <svg class="icon-plus"><use xlink:href="#icon-plus"></use></svg></a>
                     <!-- or button -->
                 </text-content>
                 
