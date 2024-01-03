@@ -6,6 +6,10 @@
         color: #fff;
     }
 
+    section:nth-of-type(n + 2) {
+        margin-top: 10vh;
+    }
+
     & .top-section {
         position: relative;
 
