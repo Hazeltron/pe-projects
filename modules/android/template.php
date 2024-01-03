@@ -51,9 +51,31 @@
                     <h3 class="lay-calm-voice-bold"><?= $card['title'] ?></h3>
                     <p class="lay-calm-voice"><?= $card['price'] ?></p>
                     <radio-buttons>
-                        <input name="<?= $card['radio-name'] ?>" type="radio" value="grey" data-color="<?= $card['radio-one'] ?>">
-                        <input name="<?= $card['radio-name'] ?>" type="radio" value="grey" data-color="<?= $card['radio-two'] ?>">
-                        <input name="<?= $card['radio-name'] ?>" type="radio" value="grey" data-color="<?= $card['radio-three'] ?>">
+                        <input 
+                        name="<?= $card['radio-name'] ?>" 
+                        type="radio" value="grey" 
+                        data-color="<?= $card['radio-one'] ?>"
+                        data-img="<?= $card['img-alt-one'] ?>">
+                        
+
+                        <input 
+                        name="<?= $card['radio-name'] ?>" 
+                        type="radio" value="grey" 
+                        data-color="<?= $card['radio-two'] ?>"
+                        data-img="<?= $card['img-alt-two'] ?>">
+
+                        <input 
+                        name="<?= $card['radio-name'] ?>" 
+                        type="radio" value="grey" 
+                        data-color="<?= $card['radio-three'] ?>"
+                        data-img="<?= $card['img-alt-three'] ?>">
+
+                        <input 
+                        name="<?= $card['radio-name'] ?>" 
+                        type="radio" value="grey" 
+                        data-color="<?= $card['radio-four'] ?>"
+                        data-img="<?= $card['img-alt-four'] ?>">
+
                     </radio-buttons>
                     
                     <a href="#" class="lay-calm-voice"><?= $card['button-text'] ?></a>
@@ -153,6 +175,23 @@ function scrollCards(cardNumber){
     }
 
 }
+
+
+
+function switchImg() {
+    cards.forEach(function(card){
+        const cardImage = card.querySelector('.middle-section img');
+        card.addEventListener('click', function(event){
+            if (event.target.matches('input[data-img]')) {
+            cardImage.src = event.target.getAttribute('data-img');
+        }
+
+        });
+    });
+}
+
+switchImg();
+
 
 // function toggleButtons() {
 //     const button = document.querySelect('.middle-section button');
