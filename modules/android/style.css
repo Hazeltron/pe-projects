@@ -113,6 +113,10 @@
             grid-template-columns: repeat(6, 1fr);
             
         }
+        /* is attempting to control small screen picture size jump when radios are clicked */
+        & picture {
+            max-width: 80vw;
+        }
 
         & li {
             width: 100vw;
@@ -121,6 +125,23 @@
             align-items: center;
             justify-content: center;
             padding: 20px;
+        }
+
+        /* hiding radio buttons based on availible data in json file */
+        & li:nth-of-type(-n+2) input:last-of-type {
+            display: none;
+        }
+
+        & li:nth-of-type(3) input:nth-last-of-type(-n+2) {
+            display: none;
+        }
+
+        & li:nth-of-type(5) input:last-of-type {
+            display: none;
+        }
+        
+        & li:nth-of-type(6) input {
+            display: none;
         }
 
         & article {
@@ -143,6 +164,7 @@
                 background-color: white;
                 border-radius: 20px;
                 border: 1px solid var(--ink);
+                min-width: 150px;
             }
 
             & radio-buttons {
