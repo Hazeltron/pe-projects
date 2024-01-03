@@ -1,5 +1,5 @@
 .android *{
-    border: solid 1px blue;
+    /* border: solid 1px blue; */
 
     & *::selection {
         background-color: #ff6600;
@@ -103,7 +103,7 @@
     }
 
     & .middle-section {
-        overflow: hidden;
+        text-align: center;
         & ul{
             display: grid;
             grid-template-columns: repeat(6, 1fr);
@@ -140,13 +140,21 @@
             }
         }
         & button-control {
-            display: block;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 5px;
 
             & button {
                 min-height: 10px;
                 min-width: 40px;
                 background-color: var(--paper);
                 border: solid black 1px;
+            }
+
+            & button:active{
+                background-color: #737373;
             }
         }
     }
