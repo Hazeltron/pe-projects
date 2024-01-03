@@ -144,6 +144,10 @@
             display: none;
         }
 
+        & li:nth-of-type(6) picture {
+            border-radius: 20px;
+        }
+
         & article {
             display: flex;
             flex-direction: column;
@@ -164,7 +168,15 @@
                 background-color: white;
                 border-radius: 20px;
                 border: 1px solid var(--ink);
-                min-width: 150px;
+                
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                & .icon-plus {
+                    aspect-ratio: 1/1;
+                    width: 20px;
+                }
             }
 
             & radio-buttons {
