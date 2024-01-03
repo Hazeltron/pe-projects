@@ -50,9 +50,12 @@
                 <text-content>
                     <h3 class="lay-calm-voice-bold"><?= $card['title'] ?></h3>
                     <p class="lay-calm-voice"><?= $card['price'] ?></p>
-                    <input name="color" type="radio" value="grey">
-                    <input name="color" type="radio" value="grey">
-                    <input name="color" type="radio" value="grey">
+                    <radio-buttons>
+                        <input name="<?= $card['radio-name'] ?>" type="radio" value="grey" data-color="<?= $card['radio-one'] ?>">
+                        <input name="<?= $card['radio-name'] ?>" type="radio" value="grey" data-color="<?= $card['radio-two'] ?>">
+                        <input name="<?= $card['radio-name'] ?>" type="radio" value="grey" data-color="<?= $card['radio-three'] ?>">
+                    </radio-buttons>
+                    
                     <a href="#" class="lay-calm-voice"><?= $card['button-text'] ?></a>
                     <!-- or button -->
                 </text-content>
@@ -61,15 +64,16 @@
 
         </li>
     <?php } ?>
-    <button-control>
-        <button>button</button>
-        <button>button</button>
-        <button>button</button>
-        <button>button</button>
-        <button>button</button>
-        <button>button</button>
-    </button-control>
     </ul>
+
+    <button-control>
+        <button onclick="scrollCards('one')"></button>
+        <button onclick="scrollCards('two')"></button>
+        <button onclick="scrollCards('three')"></button>
+        <button onclick="scrollCards('four')"></button>
+        <button onclick="scrollCards('five')"></button>
+        <button onclick="scrollCards('six')"></button>
+    </button-control>
     
 
 </section>
@@ -108,4 +112,47 @@
 
 
 </section>
+<script>
+    //click the button 
+    //change the color of the background
+    console.clear();
 
+console.log(window.innerWidth);
+
+const cards = document.querySelectorAll('.middle-section li');
+
+cards.forEach(function(card) {
+    card.addEventListener('click', function(event) {
+        if (event.target.matches('input[data-color]')) {
+            card.style.backgroundColor = event.target.getAttribute('data-color');
+        }
+    });
+});
+
+let currentScrollIndex = 0;
+const scrollBar = document.querySelector('.middle-section ul')
+
+function scrollCards(cardNumber){
+    if (cardNumber === 'one' ) {
+        scrollBar.style.transform = 'translateX(0vw)';
+    }
+    if (cardNumber === 'two' ) {
+        scrollBar.style.transform = 'translateX(-100vw)';
+    }
+    if (cardNumber === 'three') {
+        scrollBar.style.transform = 'translateX(-200vw)';
+    }
+    if (cardNumber === 'four') {
+        scrollBar.style.transform = 'translateX(-300vw)';
+    }
+    if (cardNumber === 'five') {
+        scrollBar.style.transform = 'translateX(-400vw)';
+    }
+    if (cardNumber === 'six') {
+        scrollBar.style.transform = 'translateX(-500vw)';
+    }
+
+}
+
+
+</script>
