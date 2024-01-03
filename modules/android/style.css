@@ -1,5 +1,5 @@
 .android *{
-    /* border: solid 1px blue; */
+    border: solid 1px blue;
 
     & *::selection {
         background-color: #ff6600;
@@ -99,6 +99,55 @@
             padding: 10px;
             /* grid-column: 2/12;
             grid-row: 1/2; */
+        }
+    }
+
+    & .middle-section {
+        overflow: hidden;
+        & ul{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            
+        }
+
+        & li {
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        & article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            /* height: 500px; */
+
+            & text-content {
+                margin-top: 20px;
+                display: grid;
+                text-align: center;
+                gap: 10px;
+            }
+
+            & radio-buttons {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+        & button-control {
+            display: block;
+
+            & button {
+                min-height: 10px;
+                min-width: 40px;
+                background-color: var(--paper);
+                border: solid black 1px;
+            }
         }
     }
 
@@ -202,14 +251,42 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 40px;
+            transform: translateX(0) !important;
         }
+
+        & .middle-section li {
+            /* resets height and color */
+            height: initial;
+            width: initial;
+            background-color: transparent !important;
+        }
+        & .middle-section li:nth-of-type(1) article {
+            background-color: #e5f2fe;
+        }
+        & .middle-section li:nth-of-type(2) article {
+            background-color: #eef9e7;
+        }
+        & .middle-section li:nth-of-type(3) article {
+            background-color: #fdf8eb;
+        }
+        & .middle-section li:nth-of-type(4) article {
+            background-color: #ebf5f0;
+        }
+        & .middle-section li:nth-of-type(5) article {
+            background-color: #e1e5f4;
+        }
+        & .middle-section li:nth-of-type(6) article {
+            background-color: #e6dad9;
+        }
+
         & .middle-section article {
             display: flex;
             flex-direction: column;
             align-items: center; 
             gap: 10px;
             max-width: 300px;
-            background-color: orange;
+            height; initial;
+            /* resets color to standard if you strech the screensize */
             border-radius: 30px;
             padding: 15px;
 
@@ -219,7 +296,6 @@
             }
 
             & text-content {
-                margin-top: 20px;
                 display: grid;
                 gap: 10px;
             }
