@@ -34,7 +34,7 @@
 
 <section class="middle-section">
     <h2 class="lay-loud-voice">New Android phones dropped.</h2>
-
+    <div class="popup-box"></div>
     <ul>
     <?php 
         $json = file_get_contents('../../data-php/android.json');
@@ -42,6 +42,7 @@
 
         foreach ($cards as $card) { ?>
         <li>
+            
             <article>
                 <picture>
                     <img src="assets/<?= $card['img'] ?>" alt="">
@@ -69,7 +70,7 @@
                         type="radio" value="grey" 
                         data-color="<?= $card['radio-three'] ?>"
                         data-img="<?= $card['img-alt-three'] ?>">
-
+                        
                         <input 
                         name="<?= $card['radio-name'] ?>" 
                         type="radio" value="grey" 
@@ -78,7 +79,7 @@
 
                     </radio-buttons>
                     
-                    <a href="#" class="lay-calm-voice"><?= $card['button-text'] ?> <svg class="icon-plus"><use xlink:href="#icon-plus"></use></svg></a>
+                    <button class="lay-calm-voice pop"><?= $card['button-text'] ?> <svg class="icon-plus"><use xlink:href="#icon-plus"></use></svg></button>
                     <!-- or button -->
                 </text-content>
                 
@@ -89,12 +90,12 @@
     </ul>
 
     <button-control>
-        <button onclick="scrollCards('one')"></button>
-        <button onclick="scrollCards('two')"></button>
-        <button onclick="scrollCards('three')"></button>
-        <button onclick="scrollCards('four')"></button>
-        <button onclick="scrollCards('five')"></button>
-        <button onclick="scrollCards('six')"></button>
+        <button onclick="scrollCards(1)"></button>
+        <button onclick="scrollCards(2)"></button>
+        <button onclick="scrollCards(3)"></button>
+        <button onclick="scrollCards(4)"></button>
+        <button onclick="scrollCards(5)"></button>
+        <button onclick="scrollCards(6)"></button>
     </button-control>
     
 
@@ -142,40 +143,52 @@
 console.log(window.innerWidth);
 
 const cards = document.querySelectorAll('.middle-section li');
+const radioButtons = document.querySelectorAll('.middle-section input[type=radio]');
 
 cards.forEach(function(card) {
     card.addEventListener('click', function(event) {
         if (event.target.matches('input[data-color]')) {
             card.style.backgroundColor = event.target.getAttribute('data-color');
+
+            // Loop through each radio button to set the style
+            radioButtons.forEach(function(radioButton) {
+                radioButton.style.accentColor = event.target.getAttribute('data-color');
+            });
         }
     });
 });
 
-let currentScrollIndex = 0;
+
 const scrollBar = document.querySelector('.middle-section ul')
 
+// function scrollCards(cardNumber){
+//     if (cardNumber === 'one' ) {
+//         let number = 1;
+//         let math = (-100 * number) + 100;
+//         scrollBar.style.transform = `translateX(${math}vw`;
+//     }
+//     if (cardNumber === 'two' ) {
+//         scrollBar.style.transform = 'translateX(-100vw)';
+//     }
+//     if (cardNumber === 'three') {
+//         scrollBar.style.transform = 'translateX(-200vw)';
+//     }
+//     if (cardNumber === 'four') {
+//         scrollBar.style.transform = 'translateX(-300vw)';
+//     }
+//     if (cardNumber === 'five') {
+//         scrollBar.style.transform = 'translateX(-400vw)';
+//     }
+//     if (cardNumber === 'six') {
+//         scrollBar.style.transform = 'translateX(-500vw)';
+//     }
+
+// }
+
 function scrollCards(cardNumber){
-    if (cardNumber === 'one' ) {
-        scrollBar.style.transform = 'translateX(0vw)';
-    }
-    if (cardNumber === 'two' ) {
-        scrollBar.style.transform = 'translateX(-100vw)';
-    }
-    if (cardNumber === 'three') {
-        scrollBar.style.transform = 'translateX(-200vw)';
-    }
-    if (cardNumber === 'four') {
-        scrollBar.style.transform = 'translateX(-300vw)';
-    }
-    if (cardNumber === 'five') {
-        scrollBar.style.transform = 'translateX(-400vw)';
-    }
-    if (cardNumber === 'six') {
-        scrollBar.style.transform = 'translateX(-500vw)';
-    }
-
+        const math = (-100 * cardNumber) + 100;
+        scrollBar.style.transform = `translateX(${math}vw`;
 }
-
 
 
 function switchImg() {
@@ -191,6 +204,35 @@ function switchImg() {
 }
 
 switchImg();
+
+
+// function togglePopup() {
+//     cards.forEach(function (card) {
+//         const popup = `<div class="popup">Hello</div>`;
+//         card.addEventListener('click', function (event) {
+//             if (event.target.matches('.pop')) {
+//                 alert('hello');
+//             }
+//         });
+//     });
+// }
+
+// togglePopup();
+
+
+function togglePopup() {
+    cards.forEach(function (card) {
+        const popup = `<div>Popup goes here</div>`;
+        card.addEventListener('click', function (event) {
+            if (event.target.classList.contains('pop')) {
+                alert("you pressed");
+                document.querySelector('.popup-box').innerHTML = popup;
+            }
+        });
+    });
+}
+
+togglePopup();
 
 
 // function toggleButtons() {
