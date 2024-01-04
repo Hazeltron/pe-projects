@@ -111,11 +111,21 @@
         & ul{
             display: grid;
             grid-template-columns: repeat(6, 1fr);
+            transition: 1s;
             
         }
         /* is attempting to control small screen picture size jump when radios are clicked */
         & picture {
-            max-width: 60vw;
+            width: 400px;
+            height: 400px;
+        }
+
+
+        & radio-buttons {
+            & input[type=radio] {
+                width: 20px;
+                height: 20px;
+            }
         }
 
         & li {
@@ -163,12 +173,11 @@
                 gap: 10px;
             }
 
-            & a {
+            & button {
                 padding: 10px;
                 background-color: white;
                 border-radius: 20px;
                 border: 1px solid var(--ink);
-                
                 display: flex;
                 align-items: center;
                 gap: 10px;
@@ -303,9 +312,14 @@
 
         & .middle-section ul {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 40px;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
             transform: translateX(0) !important;
+        }
+
+        & .middle-section picture {
+            height: initial;
+            width: initial;
         }
 
         & .middle-section li {
@@ -389,6 +403,11 @@
 
           & .top-section .title {
             grid-row: 2/-1;
+        }
+
+        & .middle-section ul {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
         }
     }
 
