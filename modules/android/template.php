@@ -34,7 +34,7 @@
 
 <section class="middle-section">
     <h2 class="lay-loud-voice">New Android phones dropped.</h2>
-    <div class="popup-box"></div>
+    
     <ul>
     <?php 
         $json = file_get_contents('../../data-php/android.json');
@@ -98,7 +98,8 @@
         <button onclick="scrollCards(6)"></button>
     </button-control>
     
-
+    <middle-popup class="popup-box">      
+    </middle-popup>
 </section>
 
 <section class="lower-section">
@@ -132,15 +133,13 @@
 
         </article>
     </div>
-
-
 </section>
-<script>
-    //click the button 
-    //change the color of the background
-    console.clear();
 
-console.log(window.innerWidth);
+
+
+
+<script>
+console.clear();
 
 const cards = document.querySelectorAll('.middle-section li');
 const radioButtons = document.querySelectorAll('.middle-section input[type=radio]');
@@ -160,6 +159,10 @@ cards.forEach(function(card) {
 
 
 const scrollBar = document.querySelector('.middle-section ul')
+
+function scrollCards(cardNumber){
+        const math = (-100 * cardNumber) + 100;
+        scrollBar.style.transform = `translateX(${math}vw`;
 
 // function scrollCards(cardNumber){
 //     if (cardNumber === 'one' ) {
@@ -185,9 +188,7 @@ const scrollBar = document.querySelector('.middle-section ul')
 
 // }
 
-function scrollCards(cardNumber){
-        const math = (-100 * cardNumber) + 100;
-        scrollBar.style.transform = `translateX(${math}vw`;
+
 }
 
 
@@ -222,11 +223,27 @@ switchImg();
 
 function togglePopup() {
     cards.forEach(function (card) {
-        const popup = `<div>Popup goes here</div>`;
+        const popup = `<article>
+            
+            <popup-header>
+                <picture>
+                    <img src="#" alt="">
+                </picture>
+                <h3>Pixel 8</h3>
+            </popup-header>
+            <p>Buy now</p>
+            <a href="#">something</a>
+            <a href="#">something</a>
+            <a href="#">something</a>
+            <a href="#">something</a>
+            
+        </article>`;
         card.addEventListener('click', function (event) {
             if (event.target.classList.contains('pop')) {
-                alert("you pressed");
+                console.log("pressed");
                 document.querySelector('.popup-box').innerHTML = popup;
+               
+                // document.body.style.overflow = 'hidden';
             }
         });
     });
