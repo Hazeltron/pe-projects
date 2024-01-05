@@ -1,3 +1,4 @@
+<android-container>
 <section class="top-section">
     <article>
 
@@ -98,8 +99,7 @@
         <button onclick="scrollCards(6)"></button>
     </button-control>
     
-    <middle-popup class="popup-box">      
-    </middle-popup>
+    
 </section>
 
 <section class="lower-section">
@@ -134,6 +134,18 @@
         </article>
     </div>
 </section>
+
+<div data-outlet="modle">
+
+    
+
+</div>
+
+<middle-popup class="popup-box">      
+    </middle-popup>
+
+</android-container>
+
 
 
 
@@ -221,9 +233,28 @@ switchImg();
 // togglePopup();
 
 
+// function createTemplate(){
+//     const popup = `<article>
+            
+//             <popup-header>
+//                 <picture>
+//                     <img src="#" alt="">
+//                 </picture>
+//                 <h3>Pixel 8</h3>
+//             </popup-header>
+//             <p>Buy now</p>
+//             <a href="#">something</a>
+//             <a href="#">something</a>
+//             <a href="#">something</a>
+//             <a href="#">something</a>
+            
+//         </article>`;
+// }
+
+
 function togglePopup() {
     cards.forEach(function (card) {
-        const popup = `<article>
+        const popup = `<article class="popup-content">
             
             <popup-header>
                 <picture>
@@ -238,7 +269,7 @@ function togglePopup() {
             <a href="#">something</a>
             
         </article>`;
-        card.addEventListener('click', function (event) {
+        window.addEventListener('click', function (event) {
             if (event.target.classList.contains('pop')) {
                 console.log("pressed");
                 document.querySelector('.popup-box').innerHTML = popup;
