@@ -82,9 +82,9 @@
 						<li>
 							<a class="calm-nav-voice" href="pages/layout-garden">Layout Garden</a>
 						</li>
-						<li>
+						<!-- <li>
 							<a class="calm-nav-voice" href="pages/form-garden">Form Garden</a>
-						</li>
+						</li> -->
 						<li>
 							<button class="toggle calm-nav-voice">Close</button>
 						</li>
