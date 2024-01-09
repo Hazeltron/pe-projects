@@ -15,14 +15,14 @@ include '../../header.php';
 		</div>
 
 		<nav class="layout-links">
-			<h2 class="strong-voice">Find a Project</h2>
+			<!-- <h2 class="strong-voice">Find a Project</h2>
 			<ul>
 				<li><a href="pages/layout-garden/#starbucks" class="calm-strong-voice">Starbucks</a></li>
 				<li><a href="pages/layout-garden/#cards" class="calm-strong-voice">Cards</a></li>
 				<li><a href="pages/layout-garden/#dis" class="calm-strong-voice">Simple Menu</a></li>
 				<li><a href="pages/layout-garden/#timland" class="calm-strong-voice">Timberland</a></li>
 				<li><a href="pages/layout-garden/#montana" class="calm-strong-voice">Montana Cans</a></li>
-			</ul>
+			</ul> -->
 		</nav>
 		
 	</div>
@@ -155,42 +155,7 @@ include '../../header.php';
 		</section>
 
 
-		<section class="case-study-container">
-			<inner-column>
-				<a class="calm-strong-voice" href="<?=$layout['link']?>">Source</a>
-				<button class="calm-strong-voice button <?=$layout['button']?>">View Case Study</button>
-				
-
-					<div class="case-study-content" data-target="<?=$layout['button']?>">
-
-						<h2 class="strong-voice">Why:</h2>
-						<?php foreach($layout['whyText'] as $whyText){ ?>
-							<?= $whyText ?>
-						<?php } ?>
-						
-
-						<h2 class="strong-voice">Difficulties:</h2>
-						<?php foreach($layout['diffText'] as $diffText){ ?>
-							<?= $diffText ?>
-						<?php } ?>
-						
-
-						<h2 class="strong-voice">How I made it:</h2>
-						<?php foreach($layout['howText'] as $howText){ ?>
-							<?= $howText ?>
-						<?php } ?>
-						
-						
-						<?php foreach ($layout['codeExample'] as $codeExampleFile) { ?>
-							<div class="code-example">
-								<?php include('../../modules/layout-cards/' .$codeExampleFile); ?>
-							</div>
-						<?php } ?>
-
-					</div>
-
-			</inner-column>
-		</section>
+		
 		
 <?php } ?>
 
