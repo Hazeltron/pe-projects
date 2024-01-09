@@ -1,148 +1,151 @@
 <android-container>
-<section class="top-section">
-    <article>
+    <section class="top-section">
+        <article>
 
-        <hero-img>
-            <!-- background img here -->
-        </hero-img>
+            <hero-img>
+                <!-- background img here -->
+            </hero-img>
+            
+            <hero-grid>
+
+                <div class="title">
+                    <h2 class="lay-loud-voice">Android lets you do you.</h2>
+                    <a href="#" class="lay-calm-voice">Get in on what's new</a> 
+                </div>
+                
+                <forground-card>
+                    <text-content>
+                        <h3 class="lay-calm-voice-bold">Emoji Kitchen stickers</h3>
+                        <a href="#"><svg class="icon-plus"><use xlink:href="#icon-plus"></use></svg></a> 
+                        <h2 class="lay-attention-voice">New season, new sticker combinations.</h2>
+                    </text-content>
+
+                    <picture>
+                        <img src="assets/android-girls-on-phone.png" alt="">
+                    </picture>
+                </forground-card>
+
+
+            </hero-grid>
+
+        </article>
+
+    </section>
+
+
+    <section class="middle-section">
+        <h2 class="lay-loud-voice">New Android phones dropped.</h2>
         
-        <hero-grid>
+        <ul>
+        <?php 
+            $json = file_get_contents('../../data-php/android.json');
+            $cards = json_decode($json, true);
 
-            <div class="title">
-                <h2 class="lay-loud-voice">Android lets you do you.</h2>
-                <a href="#" class="lay-calm-voice">Get in on what's new</a> 
-            </div>
-            
-            <forground-card>
-                <text-content>
-                    <h3 class="lay-calm-voice-bold">Emoji Kitchen stickers</h3>
-                    <a href="#"><svg class="icon-plus"><use xlink:href="#icon-plus"></use></svg></a> 
-                    <h2 class="lay-attention-voice">New season, new sticker combinations.</h2>
-                </text-content>
+            foreach ($cards as $card) { ?>
+            <li>
+                
+                <article>
+                    <picture>
+                        <img src="assets/<?= $card['img'] ?>" alt="">
+                    </picture>
 
-                <picture>
-                    <img src="assets/android-girls-on-phone.png" alt="">
-                </picture>
-            </forground-card>
+                    <text-content>
+                        <h3 class="lay-calm-voice-bold"><?= $card['title'] ?></h3>
+                        <p class="lay-calm-voice"><?= $card['price'] ?></p>
+                        <radio-buttons>
+                            <input 
+                            name="<?= $card['radio-name'] ?>" 
+                            type="radio" value="grey" 
+                            data-color="<?= $card['radio-one'] ?>"
+                            data-img="<?= $card['img-alt-one'] ?>">
+                            
 
+                            <input 
+                            name="<?= $card['radio-name'] ?>" 
+                            type="radio" value="grey" 
+                            data-color="<?= $card['radio-two'] ?>"
+                            data-img="<?= $card['img-alt-two'] ?>">
 
-        </hero-grid>
+                            <input 
+                            name="<?= $card['radio-name'] ?>" 
+                            type="radio" value="grey" 
+                            data-color="<?= $card['radio-three'] ?>"
+                            data-img="<?= $card['img-alt-three'] ?>">
+                            
+                            <input 
+                            name="<?= $card['radio-name'] ?>" 
+                            type="radio" value="grey" 
+                            data-color="<?= $card['radio-four'] ?>"
+                            data-img="<?= $card['img-alt-four'] ?>">
 
-    </article>
+                        </radio-buttons>
+                        
+                        <button class="lay-calm-voice pop"><?= $card['button-text'] ?> <svg class="icon-plus"><use xlink:href="#icon-plus"></use></svg></button>
+                        <!-- or button -->
+                    </text-content>
+                    
+                </article>
 
-</section>
+            </li>
+        <?php } ?>
+        </ul>
 
+        <button-control>
+            <button onclick="scrollCards(1)"></button>
+            <button onclick="scrollCards(2)"></button>
+            <button onclick="scrollCards(3)"></button>
+            <button onclick="scrollCards(4)"></button>
+            <button onclick="scrollCards(5)"></button>
+            <button onclick="scrollCards(6)"></button>
+        </button-control>
+        
+        
+    </section>
 
-<section class="middle-section">
-    <h2 class="lay-loud-voice">New Android phones dropped.</h2>
-    
-    <ul>
-    <?php 
-        $json = file_get_contents('../../data-php/android.json');
-        $cards = json_decode($json, true);
+    <section class="lower-section">
+        <div class="lower-section-title">
+            <h2 class="lay-loud-voice">The only connected ecosystem with choice.</h2>
+            <a href="#" class="lay-calm-voice">Connect to a world of devices<svg class="icon-right-arrow"><use xlink:href="#icon-right-arrow"></use></svg></a>
+        </div>
 
-        foreach ($cards as $card) { ?>
-        <li>
-            
+        <div class="grid-wrapper-bottom">
             <article>
                 <picture>
-                    <img src="assets/<?= $card['img'] ?>" alt="">
+                    <img src="assets/android-man-and-woman.png" alt="">
                 </picture>
-
-                <text-content>
-                    <h3 class="lay-calm-voice-bold"><?= $card['title'] ?></h3>
-                    <p class="lay-calm-voice"><?= $card['price'] ?></p>
-                    <radio-buttons>
-                        <input 
-                        name="<?= $card['radio-name'] ?>" 
-                        type="radio" value="grey" 
-                        data-color="<?= $card['radio-one'] ?>"
-                        data-img="<?= $card['img-alt-one'] ?>">
-                        
-
-                        <input 
-                        name="<?= $card['radio-name'] ?>" 
-                        type="radio" value="grey" 
-                        data-color="<?= $card['radio-two'] ?>"
-                        data-img="<?= $card['img-alt-two'] ?>">
-
-                        <input 
-                        name="<?= $card['radio-name'] ?>" 
-                        type="radio" value="grey" 
-                        data-color="<?= $card['radio-three'] ?>"
-                        data-img="<?= $card['img-alt-three'] ?>">
-                        
-                        <input 
-                        name="<?= $card['radio-name'] ?>" 
-                        type="radio" value="grey" 
-                        data-color="<?= $card['radio-four'] ?>"
-                        data-img="<?= $card['img-alt-four'] ?>">
-
-                    </radio-buttons>
-                    
-                    <button class="lay-calm-voice pop"><?= $card['button-text'] ?> <svg class="icon-plus"><use xlink:href="#icon-plus"></use></svg></button>
-                    <!-- or button -->
-                </text-content>
                 
+                <h2 class="lay-attention-voice">Seamlessly share photos, videos and more with Nearby Share.</h2>
+                <a href=""><svg class="icon-plus"><use xlink:href="#icon-plus"></use></svg></a> 
+                <!-- or should this bbe a button? -->
+                
+
             </article>
 
-        </li>
-    <?php } ?>
-    </ul>
+            <article>
+                <picture>
+                    <img src="assets/android-man-with-clicker.png" alt="">
+                </picture>
+                
+                <h2 class="lay-attention-voice">Share your phone screen on a big screen.</h2>
+                <a href=""><svg class="icon-plus"><use xlink:href="#icon-plus"></use></svg></a> 
+                <!-- or should this bbe a button? -->
+                
 
-    <button-control>
-        <button onclick="scrollCards(1)"></button>
-        <button onclick="scrollCards(2)"></button>
-        <button onclick="scrollCards(3)"></button>
-        <button onclick="scrollCards(4)"></button>
-        <button onclick="scrollCards(5)"></button>
-        <button onclick="scrollCards(6)"></button>
-    </button-control>
-    
-    
-</section>
+            </article>
+        </div>
+    </section>
 
-<section class="lower-section">
-    <div class="lower-section-title">
-        <h2 class="lay-loud-voice">The only connected ecosystem with choice.</h2>
-        <a href="#" class="lay-calm-voice">Connect to a world of devices<svg class="icon-right-arrow"><use xlink:href="#icon-right-arrow"></use></svg></a>
+    <div data-outlet="modle">
+
+    <div class="modal-box">
+        <article class="dialog-pane"></article>
     </div>
 
-    <div class="grid-wrapper-bottom">
-        <article>
-            <picture>
-                <img src="assets/android-man-and-woman.png" alt="">
-            </picture>
-            
-            <h2 class="lay-attention-voice">Seamlessly share photos, videos and more with Nearby Share.</h2>
-            <a href=""><svg class="icon-plus"><use xlink:href="#icon-plus"></use></svg></a> 
-            <!-- or should this bbe a button? -->
-            
+        
 
-        </article>
-
-        <article>
-            <picture>
-                <img src="assets/android-man-with-clicker.png" alt="">
-            </picture>
-            
-            <h2 class="lay-attention-voice">Share your phone screen on a big screen.</h2>
-            <a href=""><svg class="icon-plus"><use xlink:href="#icon-plus"></use></svg></a> 
-            <!-- or should this bbe a button? -->
-            
-
-        </article>
     </div>
-</section>
-
-<div data-outlet="modle">
 
     
-
-</div>
-
-<middle-popup class="popup-box">      
-    </middle-popup>
 
 </android-container>
 
@@ -269,18 +272,38 @@ function togglePopup() {
             <a href="#">something</a>
             
         </article>`;
-        window.addEventListener('click', function (event) {
+        card.addEventListener('click', function (event) {
             if (event.target.classList.contains('pop')) {
                 console.log("pressed");
                 document.querySelector('.popup-box').innerHTML = popup;
                
-                // document.body.style.overflow = 'hidden';
+                document.body.style.overflow = 'hidden';
             }
         });
     });
 }
 
 togglePopup();
+
+// const message = `<popup-header>
+// //                 <picture>
+// //                     <img src="#" alt="">
+// //                 </picture>
+// //                 <h3>Pixel 8</h3>
+// //             </popup-header>
+// //             <p>Buy now</p>
+// //             <a href="#">something</a>
+// //             <a href="#">something</a>
+// //             <a href="#">something</a>
+// //             <a href="#">something</a>`;
+
+// function triggerModal (message) {
+//     const modalOutlet = document.querySelector("[data-outlet='modal'] .modal");
+
+//     if (modalOutlet) {
+//         modalOutlet.innerHTML = message;
+//     }
+// }
 
 
 // function toggleButtons() {
