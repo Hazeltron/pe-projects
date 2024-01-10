@@ -50,3 +50,32 @@
         "layout": "hydro-flask",
         "id": "hydro"
     },
+
+	{
+        "name": "disfutar",
+        "link": "https://www.disfrutarbarcelona.com/?lang=en",
+        "class": "disfutar",
+        "button": "dis",
+        "wire-button": "dis-wire",
+        "screen-button": "dis-screen",
+        "range-slide": "dis-range",
+        "whyText": "",
+        "diffText": " ",
+        "howText": " ",
+        "layout": "simple-menu",
+        "id": "dis"
+    },
+    {
+        "name": "montana cans",
+        "link": "https://www.montana-cans.com/",
+        "class": "montana",
+        "button": "cans",
+        "wire-button": "cans-wire",
+        "screen-button": "montana-screen",
+        "range-slide": "cans-range",
+        "whyText": "why though",
+        "diffText": "",
+        "howText": "",
+        "layout": "montana-cans",
+        "id": "montana"
+    }
