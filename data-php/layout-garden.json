@@ -1,7 +1,7 @@
 [
     {
         "name": "android",
-        "link": "",
+        "link": "https://www.android.com/",
         "class": "android",
         "button": "android-button",
         "wire-button": "android-wire",
@@ -16,8 +16,8 @@
         "id": "android-id"
     },
     {
-        "name": "video-cta",
-        "link": "",
+        "name": "Tiffany Video-CTA",
+        "link": "https://www.tiffany.com/",
         "class": "video-cta",
         "button": "video",
         "wire-button": "video-wire",
@@ -33,7 +33,7 @@
     },
     {
         "name": "Shell",
-        "link": "",
+        "link": "https://www.shell.us/",
         "class": "shell",
         "button": "shell-button",
         "wire-button": "shell-wire",
@@ -81,7 +81,7 @@
     },
     {
         "name": "Timberland Product List",
-        "link": "",
+        "link": "https://www.timberland.com/en-us/c/men/footwear/boots-10040",
         "class": "product",
         "button": "product-list",
         "wire-button": "product-wire",
@@ -97,7 +97,7 @@
     },
     {
         "name": "vacation cards",
-        "link": "",
+        "link": "#",
         "class": "cards",
         "button": "vacation",
         "wire-button": "vacation-wire",
@@ -128,7 +128,7 @@
     },
     {
         "name": "cool girls",
-        "link": "",
+        "link": "#",
         "class": "cool-girls",
         "button": "girls",
         "wire-button": "cool-girls-wire",
