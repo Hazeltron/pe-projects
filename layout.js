@@ -71,9 +71,9 @@
 
 const vacationWire = document.querySelector('.layouts[data-wire="vacation"]');
 // const hydroWire = document.querySelector('.layouts[data-wire="hydro"]');
-const disWire = document.querySelector('.layouts[data-wire="dis"]');
+// const disWire = document.querySelector('.layouts[data-wire="dis"]');
 const timlandWire = document.querySelector('.layouts[data-wire="timland"]');
-const montanaWire = document.querySelector('.layouts[data-wire="cans"]');
+// const montanaWire = document.querySelector('.layouts[data-wire="cans"]');
 const starWire = document.querySelector('.layouts[data-wire="starbucks-content"]');
 const productWire = document.querySelector('.layouts[data-wire="product-list"]');
 const coolGirlsWire = document.querySelector('.layouts[data-wire="girls"]');
@@ -82,9 +82,9 @@ const gameSpotWire = document.querySelector('.layouts[data-wire="game-spot-butto
 
 const vacationButtonWire = document.querySelector('.vacation-wire');
 // const hydroButtonWire = document.querySelector('.hydro-wire');
-const disButtonWire = document.querySelector('.dis-wire');
+// const disButtonWire = document.querySelector('.dis-wire');
 const timlandButtonWire = document.querySelector('.timland-wire');
-const montanaButtonWire = document.querySelector('.cans-wire');
+// const montanaButtonWire = document.querySelector('.cans-wire');
 const starbucksButtonWire = document.querySelector('.starbucks-button-wire');
 const productButtonWire = document.querySelector('.product-wire');
 const coolGirlsButtonWire = document.querySelector('.cool-girls-wire');
@@ -103,17 +103,17 @@ vacationButtonWire.addEventListener('click', function() {
 //     toggleBorder(hydroWire);
 // });
 
-disButtonWire.addEventListener('click', function() {
-    toggleBorder(disWire);
-});
+// disButtonWire.addEventListener('click', function() {
+//     toggleBorder(disWire);
+// });
 
 timlandButtonWire.addEventListener('click', function() {
     toggleBorder(timlandWire);
 });
 
-montanaButtonWire.addEventListener('click', function() {
-    toggleBorder(montanaWire);
-});
+// montanaButtonWire.addEventListener('click', function() {
+//     toggleBorder(montanaWire);
+// });
 
 starbucksButtonWire.addEventListener('click', function() {
     toggleBorder(starWire);
@@ -138,9 +138,9 @@ gameSpotButtonWire.addEventListener('click', function() {
 const rangeSliderStar = document.querySelector('#range');
 const rangeSliderCards = document.querySelector('#cards-range');
 // const rangeSliderHydro = document.querySelector('#hydro-range');
-const rangeSliderDis = document.querySelector('#dis-range');
+// const rangeSliderDis = document.querySelector('#dis-range');
 const rangeSliderTimland = document.querySelector('#timland-range');
-const rangeSliderCans = document.querySelector('#cans-range');
+// const rangeSliderCans = document.querySelector('#cans-range');
 const rangeSliderProduct = document.querySelector('#product-range');
 const rangeSliderCoolGirls = document.querySelector('#cool-girls-range');
 const rangeSliderVideoCta = document.querySelector('#video-range');
@@ -149,9 +149,9 @@ const rangeSliderGameSpot = document.querySelector('#game-spot');
 
 const vacationScreen = document.querySelector('.screen[data-screen="vacation"]');
 // const hydroScreen = document.querySelector('.screen[data-screen="hydro"]');
-const disScreen = document.querySelector('.screen[data-screen="dis"]');
+// const disScreen = document.querySelector('.screen[data-screen="dis"]');
 const timlandScreen = document.querySelector('.screen[data-screen="timland"]');
-const montanaScreen = document.querySelector('.screen[data-screen="cans"]');
+// const montanaScreen = document.querySelector('.screen[data-screen="cans"]');
 const starScreen = document.querySelector('.screen[data-screen="starbucks-content"]');
 const productScreen = document.querySelector('.screen[data-screen="product-list"]');
 const coolGirlsScreen = document.querySelector('.screen[data-screen="girls"]');
@@ -180,9 +180,9 @@ function setupSlider(sliderId, screenDataAttr) {
 setupSlider('range', 'starbucks-content');
 setupSlider('cards-range', 'vacation');
 // setupSlider('hydro-range', 'hydro');
-setupSlider('dis-range', 'dis');
+// setupSlider('dis-range', 'dis');
 setupSlider('timland-range', 'timland');
-setupSlider('cans-range', 'cans');
+// setupSlider('cans-range', 'cans');
 setupSlider('product-range', 'product-list');
 setupSlider('cool-girls-range', 'girls');
 setupSlider('video-range', 'video');
