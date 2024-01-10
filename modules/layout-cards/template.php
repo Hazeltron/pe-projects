@@ -16,15 +16,15 @@
 <li>
 <article class='article-card'>
 	<picture>
-		<img src='images/<?=$thumbnail?>' alt='$todo'>
+		<img src='assets/<?=$thumbnail?>' alt='$todo'>
 	</picture>
 
 	<text-content>
-		<h1 class='title strong-voice'><?=$heading?></h1>
+		<h1 class='title lay-attention-voice'><?=$heading?></h1>
 
-		<p class='teaser'><?=$description?></p>
+		<p class='teaser lay-calm-voice'><?=$description?></p>
 
-		<a class='card-button' href='#'>BOOK</a>
+		<a class='card-button lay-calm-voice-bold' href='#'>BOOK</a>
 	</text-content>
 </article>
 </li>
