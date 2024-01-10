@@ -14,26 +14,85 @@ include '../../header.php';
 			Each of these layouts are designed to be highly responsive and fun. So, take a look around!</p>
 		</div>
 
-		<nav class="layout-links">
-			<!-- <h2 class="strong-voice">Find a Project</h2>
+		<!-- <nav class="layout-links">
+			<h2 class="strong-voice">Find a Project</h2>
 			<ul>
 				<li><a href="pages/layout-garden/#starbucks" class="calm-strong-voice">Starbucks</a></li>
 				<li><a href="pages/layout-garden/#cards" class="calm-strong-voice">Cards</a></li>
 				<li><a href="pages/layout-garden/#dis" class="calm-strong-voice">Simple Menu</a></li>
 				<li><a href="pages/layout-garden/#timland" class="calm-strong-voice">Timberland</a></li>
 				<li><a href="pages/layout-garden/#montana" class="calm-strong-voice">Montana Cans</a></li>
-			</ul> -->
-		</nav>
+			</ul>
+		</nav> -->
 		
 	</div>
 </section>
 
- 
 
+
+		<?php 
+	$json = file_get_contents('../../data-php/layout-garden.json');
+	$layouts = json_decode($json, true);
+
+	foreach($layouts as $layout){ ?>
+		<layout-section-wrapper>
+		<section class="case-study">
+			<div class="inner-column">
+
+				<h2 class="attention-voice" id="<?=$layout['id']?>"><?=$layout['name']?></h2>
+
+				<notes>
+					<h2 class="calm-strong-voice">What is it?</h2>
+					<p class="calm-voice"><?=$layout['what']?></p>
+					<h2 class="calm-strong-voice">Why did I make it?</h2>
+					<p class="calm-voice"><?=$layout['why']?></p>
+				</notes>
+				
+
+				<div class="layout-controls">
+
+					<label for="screen-size-slider" class="calm-strong-voice">Screen Size</label>
+					<input type="range" id="<?=$layout['range-slide']?>" min="30" max="100" step="3" value="100">
+					<button class="calm-strong-voice button <?=$layout['wire-button']?>">Toggle wireframe</button>
+
+				</div>
+				
+
+
+			</div>
+		</section>
+
+		<hr>
+			
+
+		<section class="<?=$layout['class']?> layouts screen"  data-wire="<?=$layout['button']?>" data-screen="<?=$layout['button']?>">
+			<div class="inner-column">
+
+				<?php include(getFile("modules/{$layout['layout']}/template.php")); ?>
+
+			</div>
+		</section>
+
+		</layout-section-wrapper>
+		
+
+
+		
+		
+<?php } ?>
+
+<layout-section-wrapper>
 <section class="starbucks-study" id="starbucks">
 	<div class="inner-column">
 
 	<h2 class="attention-voice">Starbucks</h2>
+
+	<notes>
+		<h2 class="calm-strong-voice">What is it?</h2>
+		<p class="calm-voice"><?=$layout['what']?></p>
+		<h2 class="calm-strong-voice">Why did I make it?</h2>
+		<p class="calm-voice"><?=$layout['why']?></p>
+	</notes>
 
 		<div class="layout-controls">
 
@@ -93,7 +152,7 @@ include '../../header.php';
 </section>
 
 
-<section class="case-study-container">
+<!-- <section class="case-study-container">
 			<div class="inner-column">
 			<a class="calm-strong-voice" href="https://www.starbucks.com/">Source</a>
 				<button class="calm-strong-voice button starbucks-button">View Case Study</button>
@@ -115,49 +174,9 @@ include '../../header.php';
 				</div>
 
 			</div>
-		</section>
+		</section> -->
 
-
-
-		<?php 
-	$json = file_get_contents('../../data-php/layout-garden.json');
-	$layouts = json_decode($json, true);
-
-	foreach($layouts as $layout){ ?>
-
-		<section class="case-study">
-			<div class="inner-column">
-
-				<h2 class="attention-voice" id="<?=$layout['id']?>"><?=$layout['name']?></h2>
-
-				<div class="layout-controls">
-
-					<label for="screen-size-slider" class="calm-strong-voice">Screen Size</label>
-					<input type="range" id="<?=$layout['range-slide']?>" min="30" max="100" step="3" value="100">
-					<button class="calm-strong-voice button <?=$layout['wire-button']?>">Toggle wireframe</button>
-
-				</div>
-				
-
-
-			</div>
-		</section>
-
-		<hr>
-			
-
-		<section class="<?=$layout['class']?> layouts screen"  data-wire="<?=$layout['button']?>" data-screen="<?=$layout['button']?>">
-			<div class="inner-column">
-
-				<?php include(getFile("modules/{$layout['layout']}/template.php")); ?>
-
-			</div>
-		</section>
-
-
-		
-		
-<?php } ?>
+</layout-section-wrapper>
 
 
 
