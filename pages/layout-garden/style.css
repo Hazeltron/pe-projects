@@ -45,9 +45,9 @@ layout-section-wrapper:nth-child(odd) {
 
 }
 
-layout-section-wrapper + layout-section-wrapper {
+/* layout-section-wrapper + layout-section-wrapper {
     margin-top: 200px;
-}
+} */
 
 .starbucks-study {
     margin-top: 200px;
