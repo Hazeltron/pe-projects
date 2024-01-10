@@ -8,7 +8,7 @@ include '../../header.php';
 
 		<div class="layout-intro-content">
 			<h1 class="loud-voice">Layout Garden</h1>
-			<p>At it’s core a layout garden is an area designed to showcase layouts. It’s meant to impress people.
+			<p>At it’s core a layout garden is an area designed to showcase layouts. It’s meant to impress people.</p>
 			<p>More than that, however, it’s a testing ground used to experiment and learn. In my case, I’ve been interested in how designers and developers make choices at big name brands when implementing smaller, more modularized layouts such as CTAs and marketing materials.</p> 
 			<p>In other words, this is a school, a playground and a challenge arena rolled up in one.
 			Each of these layouts are designed to be highly responsive and fun. So, take a look around!</p>
@@ -82,16 +82,16 @@ include '../../header.php';
 <?php } ?>
 
 <layout-section-wrapper>
-<section class="starbucks-study" id="starbucks">
+	<section class="starbucks-study" id="starbucks">
 	<div class="inner-column">
 
 	<h2 class="attention-voice">Starbucks</h2>
 
 	<notes>
 		<h2 class="calm-strong-voice">What is it?</h2>
-		<p class="calm-voice"><?=$layout['what']?></p>
+		<p class="calm-voice">This is based on a classic Starbucks layout that they haven’t changed (as far as I can tell) since CSS Flex was introduced in 2009. I’m not a huge fan of Starbucks so I changed it and instead of selling coffee it now sells beer.</p>
 		<h2 class="calm-strong-voice">Why did I make it?</h2>
-		<p class="calm-voice"><?=$layout['why']?></p>
+		<p class="calm-voice">This was the first layout I ever made. It gave me a chance to understand how different image types could be managed in a layout and gave me much-needed experience with flex that would carry on into following projects.</p>
 	</notes>
 
 		<div class="layout-controls">
