@@ -55,8 +55,10 @@ body.small-menu-open .nav-links {
 .nav-links {
 	display: flex;
 	align-items: center;
-	gap: 20px;
-	padding: 20px
+}
+
+.nav-links a {
+	padding: 20px 20px;
 }
 
 .nav-links a:hover {
@@ -134,7 +136,7 @@ body.small-menu-open .nav-links {
 
 
 .about {
-	padding: 50px 0px 100px 0px;
+	padding: 50px 0px 20px 0px;
 }
 
 
@@ -223,62 +225,62 @@ body.small-menu-open .nav-links {
 	
 }
 
-.box1 img:hover{
+/* .box1 img:hover{
 	opacity: .8;
 	
-}
+} */
 
-.box1:hover{
+/* .box1:hover{
 	transform: scale(1.01);
-}
+} */
 
-.box2 img:hover{
+/* .box2 img:hover{
 	opacity: .8;
-}
+} */
 
-.box2:hover{
+/* .box2:hover{
 	transform: scale(1.01);
-}
+} */
 
-.box3 img:hover{
+/* .box3 img:hover{
 	opacity: .8;
-}
+} */
 
-.box3:hover{
+/* .box3:hover{
 	transform: scale(1.01);
-}
+} */
 
-.box4 img:hover{
+/* .box4 img:hover{
 	opacity: .8;
-}
+} */
 
-.box4:hover{
+/* .box4:hover{
 	transform: scale(1.01);
-}
+} */
 
-.box5 img:hover{
+/* .box5 img:hover{
 	opacity: .8;
-}
+} */
 
-.box5:hover{
+/* .box5:hover{
 	transform: scale(1.01);
-}
+} */
 
-.box6 img:hover {
+/* .box6 img:hover {
 	opacity: .8;
-}
+} */
 
-.box6:hover{
+/* .box6:hover{
 	transform: scale(1.01);
-}
+} */
 
-.box7 img:hover {
+/* .box7 img:hover {
 	opacity: .8;
-}
+} */
 
-.box7:hover{
+/* .box7:hover{
 	transform: scale(1.01);
-}
+} */
 
 
 .resume-title {
@@ -288,14 +290,13 @@ body.small-menu-open .nav-links {
 .layout-template-container div {
 	min-width:200px;
 	min-height: 200px;
-	border: 1px solid var(--ink);
 	background-color: grey;
-	animation: cardEntrance 1000ms ease-out;
+	animation: cardEntrance 500ms ease-out;
 	animation-fill-mode: backwards;
 }
 
 .contact-content {
-	padding: 50px 0px 100px 0px;
+	padding: 50px 0px 0px 0px;
 
 }
 
@@ -322,7 +323,11 @@ body.small-menu-open .nav-links {
 	display: none;
 }
 
+
+
 @media(min-width:600px) {
+
+	
 	
 	.resume-title-controller {
 		display: flex;
@@ -347,7 +352,27 @@ body.small-menu-open .nav-links {
 
 }
 
+@media(min-width:900px) {
+	home-container {
+		display: block;
+		margin-top: 20px;
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+	}
+
+}
+
 @media(min-width: 1000px) {
+
+	home-container {
+		display: block;
+		margin-top: 20px;
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+	}
+	
 	.layout-template-container {
 		grid-template-areas:
 		" box7 box1 box1 box2"
