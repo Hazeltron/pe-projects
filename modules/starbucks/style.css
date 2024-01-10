@@ -95,7 +95,7 @@ starbucks-cta .coffee-button:hover {
 }
 
 .starbucks.flip img {
-	content: url("../../assets/beer-choices.png");
+	content: url("../../assets/beer-bottles.png");
 }
 
 .starbucks.pumpkin img {
@@ -121,11 +121,6 @@ starbucks-cta .coffee-button:hover {
 		flex-direction: row;
 	}
 }
-
-/* Tne image is having to shrink with the page because it doesn't have enough space to be tall enough */
-/* s it because I'm asking it to be 50% and it physically cant? */
-
-/* The reason its doing this is I'm cmpressing the width and then expecting the hight to just somehow strech. But the image is thinking "No that's gonna fuck the aspect raatio and I'm gonna look all weird, so instead, I'll taake up as much space as posssible while retaining image quality. because I'm boxed in by this inner column and the screen size." It could do this if the text were smaller/shorter. */
 
 
 

@@ -8,7 +8,7 @@
 <starbucks-cta>
 
 	<picture class="coffee">
-		<img src="assets/brewery.png" alt="Iced coffee with cream.">
+		<img src="assets/beer-pour.png" alt="Iced coffee with cream.">
 	</picture>
 
 	<text-content>
