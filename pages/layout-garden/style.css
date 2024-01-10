@@ -18,6 +18,16 @@
     border: dashed black 1px;
 }
 
+/* .case-study:nth-of-type(1) {
+    margin-top: 0px;
+}
+
+.case-study:nth-of-type(n+2) {
+    margin-top: 200px;
+    padding: 20px 0px;
+} */
+
+
 layout-section-wrapper {
     display: block;
 }
@@ -25,6 +35,13 @@ layout-section-wrapper {
 layout-section-wrapper + layout-section-wrapper {
     margin-top: 200px;
 }
+
+.starbucks-study {
+    margin-top: 200px;
+    padding: 20px 0px 20px 0px;
+}
+
+
 
 .code-example {
 	margin-top: 2em;
