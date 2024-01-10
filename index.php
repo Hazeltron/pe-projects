@@ -1,7 +1,8 @@
 <?php include ('header.php'); ?>
-
+<inner-column>
+<home-container>
+	
 <section class="about">
-	<div class="inner-column">
 
 		<div class="about-container">
 
@@ -17,13 +18,22 @@
 			</section>
 
 		</div>
-		
+
+		<section class="contact-content">
+	<div class="contact-content-container">
+		<h2 class="attention-voice">Contact</h2>
+		<ul>
+			<li class="calm-voice"><i>Cell:</i> (719) 337-0666</li>
+			<li class="calm-voice"><i>Email:</i> paulhazelton.work@gmail.com</li>
+			<li class="calm-voice"><i>GitHub:</i> Hazeltron</li>
+		</ul>
 	</div>
+</section>
+		
 </section>
 
 
 <section class="layout-template">
-    <inner-column>
         <div class="layout-template-container">
             <div class="box1">
                 <picture>
@@ -61,20 +71,13 @@
                 </picture>
             </div>
         </div>
-    </inner-column>
 </section>
 
 
-<section class="contact-content">
-	<div class="inner-column contact-content-container">
-		<h2 class="attention-voice">Contact</h2>
-		<ul>
-			<li class="calm-voice"><i>Cell:</i> (719) 337-0666</li>
-			<li class="calm-voice"><i>Email:</i> <a href="paulhazelton.work@gmail.com">paulhazelton.work@gmail.com</a></li>
-			<li class="calm-voice"><i>GitHub:</i> Hazeltron</li>
-		</ul>
-	</div>
-</section>
+</home-container>
+</inner-column>
+
+
 
 
 <!-- <section class="resume-title">
