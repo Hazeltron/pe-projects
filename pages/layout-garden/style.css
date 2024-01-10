@@ -18,9 +18,12 @@
     border: dashed black 1px;
 }
 
-.case-study {
+layout-section-wrapper {
+    display: block;
+}
+
+layout-section-wrapper + layout-section-wrapper {
     margin-top: 200px;
-    padding: 20px 0px 20px 0px;
 }
 
 .code-example {
@@ -45,6 +48,14 @@
     align-items: flex-start;
 }
 
+notes {
+    display: block;
+    margin-top: 15px;
+}
+
+.layout-controls {
+    margin-top: 30px;
+}
 .layout-controls label,
 .layout-controls input {
     display: none;
