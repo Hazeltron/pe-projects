@@ -12,7 +12,7 @@
 		<meta name="description" content="Frontend developer specializing in design and complex layout problems.">
 		<meta name="keywords" content="HTML, CSS, JavaScript">
 		<meta name="author" content="Paul Hazelton">
-    	<meta property="og:description" content="A place to share and talk about my journy through web design">
+    	<meta property="og:description" content="Frontend developer specializing in design and complex layout problems.">
     	<meta property="og:image" content="assets/cat.png">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<base href="<?=BASE_URL?>">
