@@ -1,7 +1,7 @@
 layout-section-wrapper .android *{
-    /* & .inner-column {
-        padding: 0px;
-    } */
+    & .inner-column {
+        display: none;
+    }
     /* border: solid 1px blue; */
     & android-container {
         display: block;
@@ -159,7 +159,6 @@ layout-section-wrapper .android *{
             display: grid;
             grid-template-columns: repeat(6, 1fr);
             transition: 1s;
-            
         }
         /* is attempting to control small screen picture size jump when radios are clicked */
         & picture {
@@ -182,7 +181,7 @@ layout-section-wrapper .android *{
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 20px;
+            padding: 20px 0 20px 0;
         }
 
         /* hiding radio buttons based on availible data in json file */
@@ -457,7 +456,7 @@ layout-section-wrapper .android *{
 
         & .middle-section ul {
             grid-template-columns: 1fr 1fr 1fr;
-            gap: 40px;
+          
         }
     }
 

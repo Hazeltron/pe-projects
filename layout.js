@@ -68,7 +68,8 @@
 
 
 
-
+const androidWire = document.querySelector('.layouts[data-wire="android-button"]');
+const shellWire = document.querySelector('.layouts[data-wire="shell-button"]');
 const vacationWire = document.querySelector('.layouts[data-wire="vacation"]');
 // const hydroWire = document.querySelector('.layouts[data-wire="hydro"]');
 // const disWire = document.querySelector('.layouts[data-wire="dis"]');
@@ -80,6 +81,8 @@ const coolGirlsWire = document.querySelector('.layouts[data-wire="girls"]');
 const videoCtaWire = document.querySelector('.layouts[data-wire="video"]');
 const gameSpotWire = document.querySelector('.layouts[data-wire="game-spot-button"]');
 
+const androidButtonWire = document.querySelector('.android-wire');
+const shellButtonWire = document.querySelector('.shell-wire');
 const vacationButtonWire = document.querySelector('.vacation-wire');
 // const hydroButtonWire = document.querySelector('.hydro-wire');
 // const disButtonWire = document.querySelector('.dis-wire');
@@ -92,8 +95,20 @@ const videoCtaButtonWire = document.querySelector('.video-wire');
 const gameSpotButtonWire = document.querySelector('.game-wire');
 
 function toggleBorder(layout) {
-    layout.classList.toggle('bordered');
+    if (layout.classList.contains('bordered')) {
+        layout.classList.remove('bordered');
+    } else {
+        layout.classList.add('bordered');
+    }
 }
+
+androidButtonWire.addEventListener('click', function() {
+    toggleBorder(androidWire);
+});
+
+shellButtonWire.addEventListener('click', function() {
+    toggleBorder(shellWire);
+});
 
 vacationButtonWire.addEventListener('click', function() {
     toggleBorder(vacationWire);
@@ -134,7 +149,8 @@ gameSpotButtonWire.addEventListener('click', function() {
 });
 
 
-
+const rangeSliderAndroid = document.querySelector('#android-range');
+const rangeSliderShell = document.querySelector('#shell-range');
 const rangeSliderStar = document.querySelector('#range');
 const rangeSliderCards = document.querySelector('#cards-range');
 // const rangeSliderHydro = document.querySelector('#hydro-range');
@@ -146,7 +162,8 @@ const rangeSliderCoolGirls = document.querySelector('#cool-girls-range');
 const rangeSliderVideoCta = document.querySelector('#video-range');
 const rangeSliderGameSpot = document.querySelector('#game-spot');
 
-
+const androidScreen = document.querySelector('.screen[data-screen="android"]');
+const shellScreen = document.querySelector('.screen[data-screen="shell"]');
 const vacationScreen = document.querySelector('.screen[data-screen="vacation"]');
 // const hydroScreen = document.querySelector('.screen[data-screen="hydro"]');
 // const disScreen = document.querySelector('.screen[data-screen="dis"]');
@@ -176,7 +193,8 @@ function setupSlider(sliderId, screenDataAttr) {
         changeScreenSize(rangeSlider, screen);
     });
 }
-
+setupSlider('android-range', 'android-button');
+setupSlider('shell-range', 'shell-button');
 setupSlider('range', 'starbucks-content');
 setupSlider('cards-range', 'vacation');
 // setupSlider('hydro-range', 'hydro');
