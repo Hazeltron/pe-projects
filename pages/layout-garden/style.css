@@ -11,7 +11,12 @@
 }
 
 .layouts {
-    padding: 60px 0px 0px 0px;
+    padding: 60px 0px 60px 0px;
+    overflow: hidden;
+}
+
+.layouts .inner-column {
+    padding: 5px 0 5px 0;
 }
 
 .layouts.bordered * {
@@ -30,19 +35,59 @@
 
 layout-section-wrapper {
     display: block;
-    padding: 40px;
+   padding: 10px;
 }
 
 layout-section-wrapper:nth-child(even) {
     /* Your styles for every other section go here */
-    background-color: rgb(173, 173, 173); 
+    background-color: rgb(74, 74, 74);
+    padding-top: 40px;
 
+    & .case-study{
+        & notes {
+            color: var(--paper);
+        }
+    
+        & a:hover {
+            color: var(--paper);
+        }
+        & h2:nth-of-type(n+1) {
+            color: var(--paper);
+        }
+
+    }
+
+    
 }
+
+
 
 layout-section-wrapper:nth-child(odd) {
     /* Your styles for every other section go here */
-    background-color: rgb(223, 223, 223); 
+    background-color: rgb(237, 236, 236); 
+    padding-top: 40px;
 
+}
+
+layout-section-wrapper {
+    /* Your styles for every other section go here */
+    background-color: rgb(74, 74, 74);
+
+    & .starbucks-study{
+        & notes {
+            color: aliceblue;
+        }
+    
+        & a:hover {
+            color: aliceblue;
+        }
+        & h2:nth-of-type(n+1) {
+            color: aliceblue;
+        }
+
+    }
+
+    
 }
 
 /* layout-section-wrapper + layout-section-wrapper {
