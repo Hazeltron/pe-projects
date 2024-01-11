@@ -64,8 +64,24 @@ layout-section-wrapper:nth-child(even) {
 
 layout-section-wrapper:nth-child(odd) {
     /* Your styles for every other section go here */
-    background-color: rgb(180, 180, 180); 
+    background-color: rgb(17, 17, 17); 
     padding-top: 40px;
+
+    .case-study{
+        & notes {
+            color: var(--paper);
+        }
+    
+        & a:hover {
+            color: var(--paper);
+        }
+        & h2:nth-of-type(n+1) {
+            color: var(--paper);
+        }
+
+    }
+
+    
 
 }
 
