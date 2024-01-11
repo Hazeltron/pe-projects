@@ -42,9 +42,9 @@ include '../../header.php';
 				<h2 class="attention-voice" id="<?=$layout['id']?>"><?=$layout['name']?></h2>
 
 				<notes>
-					<h2 class="calm-strong-voice">What is it?</h2>
+					<h3 class="calm-strong-voice">What is it?</h3>
 					<p class="calm-voice"><?=$layout['what']?></p>
-					<h2 class="calm-strong-voice">Why did I make it?</h2>
+					<h3 class="calm-strong-voice">Why did I make it?</h3>
 					<p class="calm-voice"><?=$layout['why']?></p>
 					<a href="<?=$layout['link']?>"   class="calm-strong-voice">Link to site</a>
 				</notes>
@@ -79,7 +79,7 @@ include '../../header.php';
 
 				<notes>
 
-				<h2 class="calm-strong-voice">How did I make it?</h2>
+				<h3 class="calm-strong-voice">How did I make it?</h3>
 				<p class="calm-voice"><?=$layout['how']?></p>
 
 				</notes>
