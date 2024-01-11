@@ -64,7 +64,7 @@ layout-section-wrapper:nth-child(even) {
 
 layout-section-wrapper:nth-child(odd) {
     /* Your styles for every other section go here */
-    background-color: rgb(237, 236, 236); 
+    background-color: rgb(180, 180, 180); 
     padding-top: 40px;
 
 }
