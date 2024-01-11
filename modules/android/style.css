@@ -1,7 +1,7 @@
 layout-section-wrapper .android *{
-    & .inner-column {
+    /* & .inner-column {
         padding: 0px;
-    }
+    } */
     /* border: solid 1px blue; */
     & android-container {
         display: block;
