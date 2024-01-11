@@ -54,7 +54,7 @@ include '../../header.php';
 
 					<label for="screen-size-slider" class="calm-strong-voice">Screen Size</label>
 					<input type="range" id="<?=$layout['range-slide']?>" min="30" max="100" step="3" value="100">
-					<button class="calm-strong-voice button <?=$layout['wire-button']?>">Toggle wireframe</button>
+					<button class="calm-strong-voice button <?=$layout['wire-button']?>">Toggle content</button>
 
 				</div>
 				
@@ -66,7 +66,7 @@ include '../../header.php';
 		<hr>
 			
 
-		<section class="<?=$layout['class']?> layouts screen"  data-wire="<?=$layout['button']?>" data-screen="<?=$layout['button']?>">
+		<section class="<?=$layout['class']?> layouts bordered screen"  data-wire="<?=$layout['button']?>" data-screen="<?=$layout['button']?>">
 			<div class="inner-column">
 
 				<?php include(getFile("modules/{$layout['layout']}/template.php")); ?>
@@ -115,7 +115,7 @@ include '../../header.php';
 
 			<label for="screen-size-slider" class="calm-strong-voice">Screen Size</label>
 			<input type="range" id="range" min="30" max="100" step="1" value="50">
-			<button class="calm-strong-voice button starbucks-button-wire">Toggle wireframe</button>
+			<button class="calm-strong-voice button starbucks-button-wire">Toggle content</button>
 
 		</div>
 		<hr>
@@ -124,7 +124,7 @@ include '../../header.php';
 				
 
 			
-<section class="starbucks-container layouts screen" data-wire="starbucks-content" data-screen="starbucks-content">
+<section class="starbucks-container layouts bordered screen" data-wire="starbucks-content" data-screen="starbucks-content">
 <div class="inner-column">
 
 	<section class="starbucks pumpkin">
