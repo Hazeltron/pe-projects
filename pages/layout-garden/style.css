@@ -10,38 +10,54 @@
     margin-top: 2em;
 }
 
-.layouts {
-    padding: 60px 0px 60px 0px;
-    overflow: hidden;
+.android .inner-column {
+    padding: 2px;
 }
 
-.layouts .inner-column {
-    padding: 5px 0 5px 0;
-}
+
+
+
 
 .layouts.bordered * {
-    border: dashed black 1px;
+    border: solid var(--highlight) 1px !important;
+    background-color: var(--paper) !important;
+    color: var(--ink) !important;
+    background: none !important;
+    
+    
 }
 
-/* .case-study:nth-of-type(1) {
-    margin-top: 0px;
+.layouts.bordered *:hover {
+    border: solid var(--highlight) 1px !important;
+    background-color: var(--paper) !important;
+    color: var(--ink) !important;
+    background: none !important;
+    
+    
 }
 
-.case-study:nth-of-type(n+2) {
-    margin-top: 200px;
-    padding: 20px 0px;
-} */
+.layouts.bordered img {
+    opacity: 0 !important;
+}
+
+.layouts.bordered video {
+    opacity: 0 !important;
+}
 
 
 layout-section-wrapper {
     display: block;
-   padding: 10px;
 }
 
-layout-section-wrapper:nth-child(even) {
-    /* Your styles for every other section go here */
+
+layout-section-wrapper:nth-of-type(n+2) {
+    margin-top: 40vh;
+}
+
+/* layout-section-wrapper:nth-child(even) {
     background-color: rgb(74, 74, 74);
     padding-top: 40px;
+    padding-bottom: 40px;
 
     & .case-study{
         & notes {
@@ -63,9 +79,9 @@ layout-section-wrapper:nth-child(even) {
 
 
 layout-section-wrapper:nth-child(odd) {
-    /* Your styles for every other section go here */
     background-color: rgb(17, 17, 17); 
     padding-top: 40px;
+    padding-bottom: 40px;
 
     .case-study{
         & notes {
@@ -83,28 +99,12 @@ layout-section-wrapper:nth-child(odd) {
 
     
 
-}
+} */
 
-layout-section-wrapper {
-    /* Your styles for every other section go here */
-    background-color: rgb(74, 74, 74);
 
-    & .starbucks-study{
-        & notes {
-            color: aliceblue;
-        }
-    
-        & a:hover {
-            color: aliceblue;
-        }
-        & h2:nth-of-type(n+1) {
-            color: aliceblue;
-        }
-
-    }
 
     
-}
+
 
 /* layout-section-wrapper + layout-section-wrapper {
     margin-top: 200px;
