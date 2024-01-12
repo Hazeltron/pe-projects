@@ -2,6 +2,9 @@
 	background-color: white;
 }
 
+timberland-container {
+	display: block;
+}
 
 timberland-container text-content{
 	color: black;
