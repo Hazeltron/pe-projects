@@ -11,8 +11,9 @@
 				<h2 class="medium-voice">Designer & Developer</h2>
 				<p>I believe the web can be a more vibrant and original space through collaboration and empathy. I enjoy creating visual languages, design systems and thinking about how the little boxes that make up the web can work smarter.</p>
 				<p>Currently, I'm interested in building responsive layout modules, which you can view in my Layout Garden.</p>
-				<p>If you want to learn more, check out my <a href="https://substack.com/@hazeltron?utm_source=user-menu" class="calm-strong-voice">SubStack!</a> 
-				</p>
+				<p>Want to learn more? Hover over the grid to find my passions.</p>
+				<!-- <p>If you want to learn more, check out my <a href="https://substack.com/@hazeltron?utm_source=user-menu" class="calm-strong-voice">SubStack!</a> 
+				</p> -->
 
 				
 			</section>
