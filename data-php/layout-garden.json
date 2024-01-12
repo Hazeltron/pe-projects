@@ -8,10 +8,19 @@
         "screen-button": "android-screen",
         "range-slide": "android-range",
         "what": "<p>This layout is the centerpiece of Android’s home page.</p>",
-        "why": "<p>I was excited to make this because there were a few interesting features that piqued my curiosity.</p><p>In the top section, there is a large image overlaid by a grid. I was interested in how that worked.I also wanted to know how they made the screen slider and how the images and background colors seamlessly switched out when the radio buttons were clicked.</p><p>Finally, in Android’s version, the middle grid is lopsided. I thought there might have been a reason. </p><p>There isn’t. It was a design choice and it drove me crazy.</p>",
-        "whyText": "why though",
-        "diffText": "",
-        "howText": "",
+        "whyText": ["<p>I wanted to try to emulate a more complex layout with many moving parts.</p>",
+        "<p>In the top section, there is a large image overlaid by a grid. I had never done that before and was interested in how that worked.",
+        "I also wanted to know how they made the screen slider and how the images and background colors seamlessly switched out when the radio buttons were clicked.",
+        "Finally, in Android’s version, the middle grid is lopsided. I thought there might have been a reason.</p>", 
+        "<p>There isn’t. It was a design choice and it drove me crazy.</p>"
+        ],
+        "diffText": ["<p>On Android’s site, they entirely switch out the HTML in the middle section on differing screen sizes. I decided not to do that because I thought it was lazy.</p>",
+        "<p>I was wrong. It’s smart. The most tedious part about all of this was having to manage one set of HTML and use CSS to entirely reorganize it on different screen sizes.<p>"],
+        "howText": ["<p>The top section was easier than I initially thought. I made a twelve-point grid and used absolute positioning to anchor it to the image section. The bottom section was routine. It was built using some SVG sprites, flex and absolute positioning.<p>",
+        "<p>The middle section was the most difficult by far.</p>",
+        "<p>Past screen sizes of 600px, it’s a simple grid that relies on a PHP loop and a JSON array. However, I still needed to take the base HTML and use CSS to restructure it into a slider on smaller screens.</p>", 
+        "<p>Then I used radio buttons and a bit of JavaScript to switch out the colors and images for each cell. To make the slider, I had to do a couple things. First I made each cell’s width 100vw and targeted the unordered list containing them. Then, when one of the buttons are clicked it moves the unordered list by 100vw times that cell number.<p>"
+        ],
         "layout": "android",
         "id": "android-id"
     },
@@ -23,11 +32,12 @@
         "wire-button": "video-wire",
         "screen-button": "video-screen",
         "range-slide": "video-range",
-        "what": "<p>This layout was inspired by a Tiffany CTA layout they had on their site for Christmas.</p>",
-        "why": "<p>I chose to emulate this layout because I was interested in working with videos. They also had an interesting play/pause functionality that I was curious about.</p> <p>As it turns out, it’s incredibly easy to make this happen with Vanilla JS due to there being play/pause functions already existing.</p> ",
-        "whyText": "why though",
-        "diffText": "",
-        "howText": "",
+        "what": "<p>This layout was inspired by a Tiffany CTA they had on their site for Christmas.</p>",
+        "whyText": ["<p>I chose to emulate this layout because I was interested in working with videos. It also had a play/pause and mute functionality that I was curious about.</p>"
+        ],
+        "diffText": ["<p>This was a straightforward layout. Nothing popped out as overly difficult.</p>"],
+        "howText": ["<p>As it turns out, the play/pause and mute functionality is incredibly easy to make happen within Vanilla JS. They're built in functions.</p>","<p>The rest of this layout was built with flex, SVG sprites and absolute positioning.<p>"
+        ],
         "layout": "video-cta",
         "id": "video-cta"
     },
@@ -40,10 +50,17 @@
         "screen-button": "shell-screen",
         "range-slide": "shell-range",
         "what": "<p>This was a large grid layout on Shell’s home page.</p>",
-        "why": "<p>Disclaimer: I am in no way a fan or friend of Shell oil.</p><p>That being said, the grid was intriguing. It changed drastically over screen sizes and even individual cells. The cards themselves were designed well and as an added bonus, they also had these smooth hover choices.</p>",
-        "whyText": "why though",
-        "diffText": "",
-        "howText": "",
+        "why": "",
+        "whyText": ["<p>Disclaimer: I am in no way a fan or friend of Shell oil.</p>",
+        "<p>That being said, the grid was intriguing. It changed drastically over screen sizes and even individual cells. The cards themselves were designed well and as an added bonus, they also had smooth hover effects.</p>"
+        ],
+        "diffText": ["<p>I had a difficult time getting images and articles to behave in the grid. There were multiple times when they would refuse to span the height of their cells.</p>", 
+        "<p>The fact that individual cells were styled differently also forced me to use nth-of-type more than I’d like to admit.</p>"
+        ],
+        "howText": ["<p>I made this with one JSON file and two separate PHP loops. Each section is divided into a grid that changes based on user screen size.<p>", 
+        "<p>In order to cover the top two cells I utilized absolute positioning.<p>", 
+        "<p>The hover effect on the cards is accomplished with transform: translateY() and the shadows are caused by filter: drop-shadow().<p>"
+        ],
         "layout": "shell",
         "id": "shell"
     },
@@ -56,10 +73,13 @@
         "screen-button": "timland-screen",
         "range-slide": "timland-range",
         "what": "<p>This is an ad template used on the ever-changing Timberland website. It doesn’t exist anymore, but if you visit the site you’ll see many more like it.</p> ",
-        "why": "<p>Timberland’s website is what got me thinking about layouts in the first place. Their designs are this mix of sanitized corporation and hip-hop grunge that speaks to me… which makes sense because my sister works there as a designer.</p><p>I wanted to make this one because it displayed an interesting use of grid and absolute positioning.</p>",
-        "whyText": "why though",
-        "diffText": "",
-        "howText": "",
+        "whyText": ["<p>Timberland’s website is what got me thinking about layouts in the first place. Their designs are this mix of sanitized corporation and hip-hop grunge that speaks to me… which makes sense because my sister works there as a designer.</p>",
+        "<p>I wanted to make this because it displayed an interesting use of grid and absolute positioning.</p>"
+        ],
+        "diffText": ["<p>This was one of the first actual layouts I copied from the web, and one of my favorites. At the time, I was very unfamiliar with grid and positioning. I was constantly breaking the grid and became increasingly frustrated.</p>"
+        ],
+        "howText": ["<p>This was made using grid-template-areas which, while it makes visual sense and is much more friendly to new grid users, it isn't without it's drawbacks. My main gripe with it currently is that they cause a lot of unnecessary typing. The text is controlled with absolute positioning.</p>"
+        ],
         "layout": "timberland",
         "id": "timland"
     },
@@ -72,10 +92,12 @@
         "screen-button": "game-screen",
         "range-slide": "game-range",
         "what": "<p>This layout comes from GameSpot, a video game news and reviews site. It’s the main layout on their home page for pushing their newest articles.</p>",
-        "why": "<p>This was the first large-scale grid I created and I needed the practice. Up until I made this, I was still using grid-template-areas. Another interesting aspect of this layout was the hover effect on the top two cells; something I was very interested in recreating.</p>",
-        "whyText": "why though",
-        "diffText": "",
-        "howText": "",
+        "whyText": ["<p>This was the first large-scale grid I created and I needed the practice. Up until I made this, I was still using grid-template-areas. Another interesting aspect of this layout was the hover effect on the top two cells; something I was very excited to recreate.</p>"
+        ],
+        "diffText": ["<p>I can’t think of anything that was too frustrating on this layout. If I had to point to anything, it was getting used to writing grids without grid-template-areas.</p>"],
+        "howText": ["<p>This, again, was made with a JSON array and a loop. It required a lot of nth-of-type-ing to manage the first two cells and the proceeding eight.</p>", 
+        "<p>The text on the top two cells is controlled with absolute positioning. The hover is accomplished by hiding the paragraph until the pointer-event happens and then specifying display: block.</p>"
+        ],
         "layout": "game-spot",
         "id": "game-spot"
     },
@@ -88,10 +110,15 @@
         "screen-button": "product-screen",
         "range-slide": "product-range",
         "what": "<p>Another layout from Timberland. This is an attempt to make a product list like you might see on any clothing brand's site.</p>",
-        "why": "<p>Disclaimer: This is yet to be finished. But I’m working on that as you read.</p><p>As mentioned before, I love Timberland’s site. This was a chance to understand how products were laid out in an online store. I was also interested in how they were able to switch out the images on hover. I also wanted to understand how the Js was working behind the scenes to change the images when the buttons were clicked (in my case the black circles).</p>",
-        "whyText": "why though",
-        "diffText": "",
-        "howText": "",
+        "whyText": ["<p>Disclaimer: This is yet to be finished. But I’m working on that currently.</p>",
+        "<p>As mentioned before, I love Timberland’s site. This was a chance to understand how products are laid out in an online store. I was also interested in how they were able to switch out the images on hover. I also wanted to understand how the Js was working behind the scenes to change the images when the buttons were clicked (in my case the black circles).</p>"
+        ],
+        "diffText": ["<p>So far, the most difficult aspect of this layout has been switching out the images on over. I likely could have accomplished this with JavaScript but I managed it with CSS.</p>",
+        "<p>I also struggled with the buttons. The names of the products vary slightly in length, which caused the buttons to look offset from each other. Luckily, this was an easy fix once I learned about alig-self: end, which forced them to the bottom of the grid.</p>"
+        ],
+        "howText": ["<p>This is another case of PHP looping through JSON data. The cards are controlled with a simple grid with grid wrap to handle different screen sizes.</p>", 
+        "<p>The images are being switched by overlaying one image with another and then removing the first layer when hovered. The stars are a simple SVG I made in Affinity Designer.</p>"
+        ],
         "layout": "product-list",
         "id": "product"
     },
@@ -103,31 +130,26 @@
         "wire-button": "vacation-wire",
         "range-slide": "cards-range",
         "what": "<p>This was inspired by my love of travel and my constant need to be in a beach resort. I had been researching luxury beach resorts for a website I was working on and decided to design and code some experience package cards.</p>",
-        "why": "<p>This gave me a chance to experiment with taking an idea from research to design to code. It also gave me a lot of practice with making cards and ensuring that the length of text didn’t cause an offset in the uniformity of the overall grid.</p>",
         "screen-button": "vacation-screen",
         "whyText": [
             "<p>Initially, these vacation cards were part of a resort website I was working on. We needed cards for experience packages. I had seen something similar to this when I was performing design research for the project.", "This was my take on the idea, but unfortunately, the rounded corners didn’t match the overall website, so it had to be scrapped.<p>"
 
         ],
         "diffText": [
-            "<p>Making the initial card wasn’t a problem but finding a way to stretch the images across them was. Even when I figured out a way to do this, I was still left with the unfortunate truth that half the image would be obscured by the text box.</p>",
-            "<p>I dealt with this by dropping the opacity, but as you can see with the diver card, it failed to solve the issue.</p>",
-            "<p>Another unexpected problem occurred when I realized that adding more text would send the textbox past the card’s boundaries, causing the grid of cards to become unaligned.</p>",
-            "<p>I could have used ellipsis to solve this but that comes with its own issues.</p>", 
-            "<p>In the end, I left it up to the marketing people to write concise content.<p>"
+            "<p>The difference between the design in my head and what was practical was a learning process here.</p>",
+            "<p>Initially, I wanted the image to take up the entire card and overlay the text on top.</p>", 
+            "<p>After I finished, realized that while it looked cool, you couldn’t actually read anything without a background color. The background color hid half the image and even if you turned down the opacity of the background, it didn’t look great.</p>",
+            "<p>I ended up having to start over.</p>"
         ],
         "howText": [
-            "<p>The cards themselves are being generated by a PHP loop that's pulling from a JSON file. They're being aligned and organized with CSS grid. The background images are being positioned using absolute positioning and object-fit. Like this:</p>"
+            "<p>These cards are accomplished with object-fit, a PHP loop and align-self to control the button position.</p>"
 
-        ],
-        "codeExample": [
-            "code-pen.html"
         ],
         "layout": "layout-cards",
         "id": "cards"
     },
     {
-        "name": "cool girls",
+        "name": "Apparel Navigation Grid",
         "link": "#",
         "class": "cool-girls",
         "button": "girls",
@@ -135,10 +157,11 @@
         "screen-button": "cool-girls-screen",
         "range-slide": "cool-girls-range",
         "what": "<p>Inspired by my time looking at online clothing realtors, I wanted to make my own custom layout. I wanted it to have the same hip-hop streetwear vibe as the Timberland website.</p>",
-        "why": "<p>This gave me another chance to explore the design process from start to finish while practicing coding layouts. Personally, my favorite aspects of this grid are the hover effects and the appearance of the links.</p>",
-        "whyText": "why though",
-        "diffText": "",
-        "howText": "",
+        "whyText": ["<p>This gave me another chance to explore the design process from start to finish while practicing coding layouts.</p>"
+        ],
+        "diffText": ["<p>The hardest part about this grid was sourcing images that matched each other. These come from Unsplash. I tried using AI-generated images but they appeared far too unnatural.</p> "],
+        "howText": ["<p>This layout is being controlled with grid and the text and links are being manipulated with positioning.</p>"
+        ],
         "layout": "custom-grid",
         "id": "cool-girls"
     }
