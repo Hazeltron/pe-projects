@@ -20,7 +20,10 @@
 }
 
 
+.layouts * {
+    transition: 500ms ease-in-out;
 
+}
 
 
 .layouts.bordered *:not(.inner-column) {
@@ -28,7 +31,7 @@
     background-color: var(--paper) !important;
     color: var(--ink) !important;
     background: none !important;
-    
+    transition: 1s ease-in-out;
     
 }
 
@@ -36,7 +39,8 @@
     border: solid var(--highlight) 1px !important;
     background-color: var(--paper) !important;
     color: var(--ink) !important;
-    background: none !important;
+    background: rgba(255, 255, 255, 0)  !important;
+
     
     
 }
