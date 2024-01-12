@@ -107,7 +107,7 @@ h2 + p {
 .lay-attention-voice {
     font-family: var(--primary-font);
     font-size: 1.5rem;
-    line-height: 1.5em;
+    line-height: 1.2em;
     font-weight: 300;
     color: var(--ink-light);
 }
@@ -125,5 +125,13 @@ h2 + p {
     font-size: 1.2rem;
     line-height: 1.3rem;
     font-weight: 300;
+    color: var(--ink-light);
+}
+
+.lay-calm-voice {
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    line-height: 1.3rem;
+    font-weight: 200;
     color: var(--ink-light);
 }
