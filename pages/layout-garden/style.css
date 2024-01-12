@@ -21,7 +21,7 @@
 
 
 .layouts * {
-    transition: 500ms ease-in-out;
+    transition: 300ms ease-in-out;
 
 }
 
@@ -31,7 +31,7 @@
     background-color: var(--paper) !important;
     color: var(--ink) !important;
     background: none !important;
-    transition: 1s ease-in-out;
+    transition: 700ms ease-in-out;
     
 }
 
@@ -124,8 +124,13 @@ layout-section-wrapper:nth-child(odd) {
     padding: 20px 0px 20px 0px;
 } */
 
-
-
+.source {
+    display: block;
+    padding: 5px;
+}
+.source:hover {
+    color: var(--ink);
+}
 
 
 .code-example {
