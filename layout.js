@@ -1,36 +1,48 @@
-// const vacationStudy = document.querySelector('.case-study-content[data-target="vacation"]');
+const androidStudy = document.querySelector('.case-study-content[data-target="android-button"]');
+const shellStudy = document.querySelector('.case-study-content[data-target="shell-button"]');
+const vacationStudy = document.querySelector('.case-study-content[data-target="vacation"]');
 // const hydroStudy = document.querySelector('.case-study-content[data-target="hydro"]');
 // const disStudy = document.querySelector('.case-study-content[data-target="dis"]');
-// const timlandStudy = document.querySelector('.case-study-content[data-target="timland"]');
+const timlandStudy = document.querySelector('.case-study-content[data-target="timland"]');
 // const montanaStudy = document.querySelector('.case-study-content[data-target="cans"]');
-// const starStudy = document.querySelector('.case-study-content[data-target="starbucks-content"]');
-// const productStudy = document.querySelector('.case-study-content[data-target="product-list"]');
-// const coolGirlsStudy = document.querySelector('.case-study-content[data-target="girls"]');
-// const videoCtaStudy = document.querySelector('.case-study-content[data-target="video"]');
-// const gameSpotStudy = document.querySelector('.case-study-content[data-target="game-spot-button"]');
+const starStudy = document.querySelector('.case-study-content[data-target="starbucks-content"]');
+const productStudy = document.querySelector('.case-study-content[data-target="product-list"]');
+const coolGirlsStudy = document.querySelector('.case-study-content[data-target="girls"]');
+const videoCtaStudy = document.querySelector('.case-study-content[data-target="video"]');
+const gameSpotStudy = document.querySelector('.case-study-content[data-target="game-spot-button"]');
 
-// const vacationButton = document.querySelector('.vacation');
+const androidButton = document.querySelector('.android-button');
+const shellButton = document.querySelector('.shell-button');
+const vacationButton = document.querySelector('.vacation');
 // const hydroButton = document.querySelector('.hydro');
 // const disButton = document.querySelector('.dis');
-// const timlandButton = document.querySelector('.timland');
+const timlandButton = document.querySelector('.timland');
 // const montanaButton = document.querySelector('.cans');
-// const starbucksButton = document.querySelector('.starbucks-button');
-// const productButton = document.querySelector('.product-list');
-// const coolGirlsButton = document.querySelector('.girls');
-// const videoCtaButton = document.querySelector('.video');
-// const gameSpotButton = document.querySelector('.game-spot-button');
+const starbucksButton = document.querySelector('.starbucks-button');
+const productButton = document.querySelector('.product-list');
+const coolGirlsButton = document.querySelector('.girls');
+const videoCtaButton = document.querySelector('.video');
+const gameSpotButton = document.querySelector('.game-spot-button');
 
-// function displayContent(content) {
-//     if (content.style.display !== 'block') {
-//         content.style.display = 'block';
-//     } else {
-//         content.style.display = 'none';
-//     }
-// }
+function displayContent(content) {
+    if (content.style.display !== 'block') {
+        content.style.display = 'block';
+    } else {
+        content.style.display = 'none';
+    }
+}
 
-// vacationButton.addEventListener('click', function() {
-//     displayContent(vacationStudy);
-// });
+androidButton.addEventListener('click', function() {
+    displayContent(androidStudy);
+});
+
+shellButton.addEventListener('click', function() {
+    displayContent(shellStudy);
+});
+
+vacationButton.addEventListener('click', function() {
+    displayContent(vacationStudy);
+});
 
 // hydroButton.addEventListener('click', function() {
 //     displayContent(hydroStudy);
@@ -40,30 +52,30 @@
 //     displayContent(disStudy);
 // });
 
-// timlandButton.addEventListener('click', function() {
-//     displayContent(timlandStudy);
-// });
+timlandButton.addEventListener('click', function() {
+    displayContent(timlandStudy);
+});
 
 // montanaButton.addEventListener('click', function() {
 //     displayContent(montanaStudy);
 // });
 
-// starbucksButton.addEventListener('click', function() {
-//     displayContent(starStudy);
-// });
-// //doesnt work below
-// productButton.addEventListener('click', function() {
-//     displayContent(productStudy);
-// });
-// coolGirlsButton.addEventListener('click', function() {
-//     displayContent(coolGirlsStudy);
-// });
-// videoCtaButton.addEventListener('click', function() {
-//     displayContent(videoCtaStudy);
-// });
-// gameSpotButton.addEventListener('click', function() {
-//     displayContent(gameSpotStudy);
-// });
+starbucksButton.addEventListener('click', function() {
+    displayContent(starStudy);
+});
+//doesnt work below
+productButton.addEventListener('click', function() {
+    displayContent(productStudy);
+});
+coolGirlsButton.addEventListener('click', function() {
+    displayContent(coolGirlsStudy);
+});
+videoCtaButton.addEventListener('click', function() {
+    displayContent(videoCtaStudy);
+});
+gameSpotButton.addEventListener('click', function() {
+    displayContent(gameSpotStudy);
+});
 
 
 
