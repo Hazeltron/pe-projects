@@ -38,7 +38,8 @@
 .cards .article-card {
 	position: relative;
 	background-color:transparent;
-	min-height: 500px;
+
+	max-width: 300px;
 	height: 100%;
 }
 
