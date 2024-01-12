@@ -55,12 +55,17 @@
                 <p><?= $product['num-reviews'] ?></p>
             </rating>
 
+       
             <p class="product-calm-voice"><?= $product['price'] ?></p>
-
-            <a class="add-button href="#">
+       
+            
+         
+            <a class="add-button" href="#">
                 <div class="product-button-voice">+</div>
                 <div class="product-button-voice">Add</div>
             </a>
+      
+            
         </article>
 
     <?php } ?>

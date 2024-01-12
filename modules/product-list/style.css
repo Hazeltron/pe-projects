@@ -6,6 +6,14 @@
     padding: 0;
 }
 
+.product module {
+    display: grid;
+}
+
+.product .product-card {
+    display: grid;
+}
+
 .product module .product-calm-voice {
     font-size: 1rem;
     font-weight: 400;
@@ -51,9 +59,8 @@
 /* end of transition */
 
 .product module color-picker {
-    display:block;
     display: flex;
-    flex-directions: row;
+    flex-direction: row;
     justify-content: space-between;
     margin-top: 10px;
     
@@ -89,10 +96,17 @@
     gap: 10px;
 }
 
+
+
+
+
 .product module .add-button {
-    padding: 5px 45% 5px 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     margin-top: 15px;
+   align-self: end;
     border: solid black 1px;
 }
 
