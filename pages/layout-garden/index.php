@@ -8,10 +8,10 @@ include '../../header.php';
 
 		<div class="layout-intro-content">
 			<h1 class="loud-voice">Layout Garden</h1>
-			<p>At it’s core a layout garden is an area designed to showcase layouts. It’s meant to impress people.</p>
-			<p>More than that, however, it’s a testing ground used to experiment and learn. In my case, I’ve been interested in how designers and developers make choices at big name brands when implementing smaller, more modularized layouts such as CTAs and marketing materials.</p> 
+			<p>At its core a layout garden is an area designed to showcase responsive web layouts.</p>
+			<p>It’s a testing ground used to experiment and learn. In my case, I’ve been interested in how designers and developers make choices at big name brands when implementing smaller, more modularized layouts such as calls to action, banners and product galleries.</p> 
 			<p>In other words, this is a school, a playground and a challenge arena rolled up in one.
-			Each of these layouts are designed to be highly responsive and fun. So, take a look around!</p>
+			Each of these layouts is designed to be responsive and fun. So, take a look around!</p>
 		</div>
 
 		<picture>
@@ -48,9 +48,6 @@ include '../../header.php';
 				<notes>
 					<h3 class="calm-strong-voice">What is it?</h3>
 					<p class="calm-voice"><?=$layout['what']?></p>
-					<h3 class="calm-strong-voice">Why did I make it?</h3>
-					<p class="calm-voice"><?=$layout['why']?></p>
-					<a href="<?=$layout['link']?>"   class="calm-strong-voice">Link to site</a>
 				</notes>
 				
 
@@ -77,19 +74,41 @@ include '../../header.php';
 
 			</div>
 		</section>
-
-		<section class="case-study">
-			<div class="inner-column">
-
-				<notes>
-
-				<h3 class="calm-strong-voice">How did I make it?</h3>
-				<p class="calm-voice"><?=$layout['how']?></p>
-
-				</notes>
-			</div>
 		
 
+		</section>
+
+		<section class="case-study-container">
+			<inner-column>
+			<a href="<?=$layout['link']?>"   class="calm-strong-voice source">Source</a>
+			<button class="calm-strong-voice button <?=$layout['button']?>">View notes</button>
+				
+
+					<div class="case-study-content" data-target="<?=$layout['button']?>">
+
+						<h2 class="calm-strong-voice">Why:</h2>
+						<?php foreach($layout['whyText'] as $whyText){ ?>
+							<?= $whyText ?>
+						<?php } ?>
+						
+
+						<h2 class="calm-strong-voice">Difficulties:</h2>
+						<?php foreach($layout['diffText'] as $diffText){ ?>
+							<?= $diffText ?>
+						<?php } ?>
+						
+
+						<h2 class="calm-strong-voice">How I made it:</h2>
+						<?php foreach($layout['howText'] as $howText){ ?>
+							<?= $howText ?>
+						<?php } ?>
+						
+						
+						
+
+					</div>
+
+			</inner-column>
 		</section>
 
 		</layout-section-wrapper>
@@ -110,8 +129,6 @@ include '../../header.php';
 	
 		<h2 class="calm-strong-voice">What is it?</h2>
 		<p class="calm-voice">This is based on a classic Starbucks layout that they haven’t changed (as far as I can tell) since CSS Flex was introduced in 2009. I’m not a huge fan of Starbucks so I changed it and instead of selling coffee it now sells beer.</p>
-		<h2 class="calm-strong-voice">Why did I make it?</h2>
-		<p class="calm-voice">This was the first layout I ever made. It gave me a chance to understand how different image types could be managed in a layout and gave me much-needed experience with flex that would carry on into following projects.</p>
 		<a href="<?=$layout['link']?>"   class="calm-strong-voice">Link to site</a>
 	</notes>
 
@@ -173,9 +190,9 @@ include '../../header.php';
 </section>
 
 
-<!-- <section class="case-study-container">
+<section class="case-study-container">
 			<div class="inner-column">
-			<a class="calm-strong-voice" href="https://www.starbucks.com/">Source</a>
+			<a class="calm-strong-voice source" href="https://www.starbucks.com/">Source</a>
 				<button class="calm-strong-voice button starbucks-button">View Case Study</button>
 
 				<div class="case-study-content" data-target="starbucks-content">
@@ -195,7 +212,7 @@ include '../../header.php';
 				</div>
 
 			</div>
-		</section> -->
+		</section>
 
 </layout-section-wrapper>
 
