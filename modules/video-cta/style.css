@@ -5,6 +5,11 @@
     gap: 20px;
 }
 
+.video-cta .lay-loud-voice{
+    line-height: 1.2em;
+    
+}
+
 
 .video-cta video-cta video-container {
     display: block;
@@ -56,7 +61,7 @@
 
 .video-cta video-cta text-content a{
     border: 1px solid grey;
-    padding: 10px 20px;
+    padding: 15px 30px;
     border-radius: 30px;
     max-width: fit-content;
     margin-top: 40px;;
@@ -64,6 +69,7 @@
 
 .video-cta video-cta text-content a:hover{
    background-color: var(--ink);
+   background-color: #d34743;
    color: var(--paper);
    border-radius: 40px;
 
