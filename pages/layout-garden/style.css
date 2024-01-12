@@ -2,6 +2,11 @@
 	padding: 50px 0px 100px 0px;
 }
 
+.layout-intro picture {
+    width: 100%;
+    margin-top: 40px;
+}
+
 .case-study-content {
     display: none;
 }
@@ -18,7 +23,7 @@
 
 
 
-.layouts.bordered * {
+.layouts.bordered *:not(.inner-column) {
     border: solid var(--highlight) 1px !important;
     background-color: var(--paper) !important;
     color: var(--ink) !important;
@@ -27,7 +32,7 @@
     
 }
 
-.layouts.bordered *:hover {
+.layouts.bordered *:not(.inner-column) {
     border: solid var(--highlight) 1px !important;
     background-color: var(--paper) !important;
     color: var(--ink) !important;
@@ -179,6 +184,19 @@ notes a:hover {
     width: 100%;
   }
 
+@media (min-width: 800px) {
+    .layout-intro-container {
+        display: flex;
+        flex-direction: row;
+        align-items: space-between;
+        gap: 60px;
+    }
+
+    .layout-intro picture {
+        width: 500px;
+        margin-top: 0px;
+    }
+}
 
 @media (min-width: 600px) {
     .layout-controls {
@@ -197,11 +215,6 @@ notes a:hover {
         margin-top: .4em;
     }
 
-    .layout-intro-container {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 50px;
-    }
+    
 
 }
