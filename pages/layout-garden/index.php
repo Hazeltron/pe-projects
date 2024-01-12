@@ -14,6 +14,10 @@ include '../../header.php';
 			Each of these layouts are designed to be highly responsive and fun. So, take a look around!</p>
 		</div>
 
+		<picture>
+			<img src="assets/how-to.gif" alt="">
+		</picture>
+
 		<!-- <nav class="layout-links">
 			<h2 class="strong-voice">Find a Project</h2>
 			<ul>
