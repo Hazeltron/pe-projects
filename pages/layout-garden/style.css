@@ -155,6 +155,11 @@ layout-section-wrapper:nth-child(odd) {
     align-items: flex-start;
 }
 
+
+.layout-controls input{
+    accent-color: #ff8848;
+}
+
 notes {
     display: block;
     margin-top: 15px;
