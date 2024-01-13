@@ -123,6 +123,7 @@ layout-section-wrapper .android *{
             }
 
             & a {
+                display: grid;
                 position: absolute;
                 top: 2%;
                 right: 2%;
@@ -141,6 +142,8 @@ layout-section-wrapper .android *{
         & text-content {
             display: block;
             display: flex;
+            flex-direction: row;
+            padding: 20px;
             flex-direction: column;
             gap: 10px;
             background-color: white;
@@ -221,8 +224,8 @@ layout-section-wrapper .android *{
             }
 
             & button {
-                padding: 10px;
-                background-color: white;
+                padding: 5px 20px;
+                background-color: transparent;
                 border-radius: 20px;
                 border: 1px solid var(--ink);
                 display: flex;
@@ -301,6 +304,7 @@ layout-section-wrapper .android *{
         }
 
         & a {
+            display: grid;
             padding: 15px;
             max-width: 300px;
             background-color: black;
