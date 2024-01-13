@@ -4,7 +4,10 @@
 		<footer>
 			<inner-column>
 				<section>
-				<p>Thanks for coming!</p>
+				<p class="calm-strong-voice">Feel free to contact me!</p>
+				<p>Cell: (719) 337-0666</p>
+				<p>Email: paulhazelton.work@gmail.com</p>
+				<p>GitHub: Hazeltron</p>
 				</section>
 				
 			</inner-column>
