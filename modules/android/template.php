@@ -15,9 +15,9 @@
                 
                 <forground-card>
                     <text-content>
-                        <h3 class="lay-calm-voice-bold">Emoji Kitchen stickers</h3>
-                        <a href="#"><svg class="icon-plus"><use xlink:href="#icon-plus"></use></svg></a> 
+                        <h3 class="lay-calm-voice-bold">Emoji Kitchen stickers</h3> 
                         <h2 class="lay-attention-voice">New season, new sticker combinations.</h2>
+                        <div><a href="#"><svg class="icon-plus"><use xlink:href="#icon-plus"></use></svg></a></div>
                     </text-content>
 
                     <picture>
