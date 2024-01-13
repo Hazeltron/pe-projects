@@ -11,7 +11,7 @@ include '../../header.php';
 			<p>At its core a layout garden is an area designed to showcase responsive web layouts.</p>
 			<p>It’s a testing ground used to experiment and learn. In my case, I’ve been interested in how designers and developers make choices at big name brands when implementing smaller, more modularized layouts such as calls to action, banners and product galleries.</p> 
 			<p>In other words, this is a school, a playground and a challenge arena rolled up in one.
-			Each of these layouts is designed to be responsive and fun. So, take a look around!</p>
+			Each of these layouts is designed to be responsive and fun. So, take a look around! <span class="calm-strong-voice">And please reference the video to see how to use each layout.</span></p> 
 		</div>
 
 		<picture>
