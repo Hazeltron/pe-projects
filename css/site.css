@@ -12,6 +12,11 @@ body {
 	color: var(--ink);
 }
 
+*::selection {
+	background-color: #ff6600;
+	color: #fff;
+}
+
 .logo {
 	display: flex;
 	flex-direction: row;
@@ -19,7 +24,7 @@ body {
 	justify-content: space-between;
 }
 
-.nav-links {
+/* .nav-links {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -43,9 +48,13 @@ body.small-menu-open .nav-links {
     transition: .2s;
 	background-color: var(--ink);
 	opacity: 1;
-  }
+  } */
 
-
+.nav-content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
 .nav-content ul li{
 	color: white;
 	
@@ -86,7 +95,7 @@ body.small-menu-open .nav-links {
     fill: currentColor; 
 }
 
-.open {
+/* .open {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -100,12 +109,9 @@ body.small-menu-open .nav-links {
 
 .icon-menu:hover {
 	color: var(--highlight);
-}
+} */
 
 /*home specific*/
-
-
-
 .about {
 	padding: 50px 0px 20px 0px;
 }
@@ -121,11 +127,13 @@ body.small-menu-open .nav-links {
 	height: 100%;
 	width: 100%;
 	opacity: 0;
+	transition: opacity 500ms ease-in-out;
 }
 
 .layout-template-container img:hover {
 	opacity: 1;
-	transition: 500ms ease;
+	transition: 500ms ease-in-out;
+	transition-delay: 200ms;
 }
 
 layout-template * {
@@ -187,23 +195,6 @@ layout-template * {
 	display: inline-block;
 	color:aqua;
 }
-/* resume sections */
-/* .resume-title {
-	margin-bottom: 100px;
-} */
-/* .resume-button {
-	min-width: 100px;
-}
-
-.resume-button:hover {
-	background-color: var(--highlight);
-	color: var(--paper);
-	border: 0px;
-}
-
-.full-resume {
-	display: none;
-} */
 
 @media(min-width:600px) {
 
@@ -232,25 +223,19 @@ layout-template * {
 
 	home-container {
 		display: block;
-		margin-top: 20px;
 		display: flex;
 		flex-direction: row;
 		gap: 20px;
+		padding-top: 50px;
 	}
 
-	.toggle {
+	.about {
+		padding: 0px 0px 20px 0px;
+	}
+
+	/* .toggle {
 		display: none;
-	}
-
-	/* .resume-title-controller {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		gap: 20px;
-
 	} */
-
-	
 }
 
 
