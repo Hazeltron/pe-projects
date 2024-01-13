@@ -51,7 +51,6 @@
 
 
 		<link rel="stylesheet" href="css/site.css">
-		<!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
 		
 
 
@@ -82,7 +81,7 @@
 							<a class="calm-nav-voice " href="index.php">Home</a>
 						</li>
 						<li>
-							<a class="calm-nav-voice" href="pages/layout-garden">Layout Garden</a>
+							<a class="calm-nav-voice" href="pages/layout-garden">Layouts</a>
 						</li>
 						<!-- <li>
 							<a class="calm-nav-voice" href="pages/form-garden">Form Garden</a>
@@ -99,23 +98,23 @@
 
 		</header>
 
-<script>
-// const body = document.querySelector('body');
+<!-- <script>
+const body = document.querySelector('body');
 
-// document.addEventListener('click', function(event) {
+document.addEventListener('click', function(event) {
 
-//   console.log(event.target);
+  console.log(event.target);
 
-//   if ( event.target.matches('.toggle') ) {
-//     body.classList.toggle('small-menu-open')
+  if ( event.target.matches('.toggle') ) {
+    body.classList.toggle('small-menu-open')
 
-// 	if (window.innerWidth <= 600) {
-// 		body.classList.toggle('small-menu-open');
-// 	}
-//   }
+	if (window.innerWidth <= 600) {
+		body.classList.toggle('small-menu-open');
+	}
+  }
 
-// });
-</script>
+});
+</script> -->
 
 		<main>
 
