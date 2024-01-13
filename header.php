@@ -68,14 +68,14 @@
 				<nav class="nav-content">
 					<ul class="logo">
 						<li class="strong-voice">Haze</li>
-						<li>
+						<!-- <li>
 							<button class="toggle open calm-nav-voice">
 								
 								<svg class="icon-menu toggle"><use class="toggle" xlink:href="#icon-menu"></use></svg>
 								
 								
 							</button>
-						</li>
+						</li> -->
 					</ul>
 					<ul class="nav-links">
 						<li>
@@ -87,9 +87,9 @@
 						<!-- <li>
 							<a class="calm-nav-voice" href="pages/form-garden">Form Garden</a>
 						</li> -->
-						<li>
+						<!-- <li>
 							<button class="toggle calm-nav-voice">Close</button>
-						</li>
+						</li> -->
 					</ul>
 				</nav>
 				
@@ -100,21 +100,21 @@
 		</header>
 
 <script>
-const body = document.querySelector('body');
+// const body = document.querySelector('body');
 
-document.addEventListener('click', function(event) {
+// document.addEventListener('click', function(event) {
 
-  console.log(event.target);
+//   console.log(event.target);
 
-  if ( event.target.matches('.toggle') ) {
-    body.classList.toggle('small-menu-open')
+//   if ( event.target.matches('.toggle') ) {
+//     body.classList.toggle('small-menu-open')
 
-	// if (window.innerWidth <= 600) {
-	// 	body.classList.toggle('small-menu-open');
-	// }
-  }
+// 	if (window.innerWidth <= 600) {
+// 		body.classList.toggle('small-menu-open');
+// 	}
+//   }
 
-});
+// });
 </script>
 
 		<main>
