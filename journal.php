@@ -12,5 +12,13 @@ I'm going to try to finish the product list layout and then hop on with Derek an
         <p>
     This Vue stuff is hard.
         </p>
+
+
+
+        <p>
+        jan 17, 2024:
+        
+        I cleaned my apartment yesterday. I'm moving within a month and today waas the first day I've felt good since everything happened. Am I getting better. Is it finally over? 
+        </p>
     </inner-column>
 </section>
