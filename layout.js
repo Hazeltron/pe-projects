@@ -189,61 +189,69 @@ const gameSpotScreen = document.querySelector('.screen[data-screen="game-spot-bu
 
 
 //I want to make the range slider respond to the screen size
-const innerColumn = document.querySelector(".layouts .inner-column");
+const layouts = document.querySelectorAll("layout-section-wrapper");
 
-const rangeSlider = document.querySelector(".layouts input");
+function resizeAllScreens() {
+    layouts.forEach(function (layout) {
+        const innerColumn = layout.querySelector(".layouts .inner-column");
+        const rangeSlider = layout.querySelector(".layouts input");
+        const screen = layout.querySelector("resizer");
+        const size = layout.querySelector(".size");
+        const label = layout.querySelector(".layout-controls span");
 
-const screen = document.querySelector ("resizer");
+        function getWidth() {
+            const innerColumnWidth = innerColumn.getBoundingClientRect().width;
+            const innerColumnRounded = Math.floor(innerColumnWidth);
+            console.log(innerColumnRounded);
+            return {
+                innerColumnWidth: innerColumnRounded,
+            };
+        }
 
-const size = document.querySelector(".size");
+        function setRange() {
+            size.max = getWidth().innerColumnWidth;
+            console.log(size);
+        }
 
-const label = document.querySelector(".layout-controls span");
+        function resize() {
+            const width = size.value;
+            label.innerHTML = width;
+            screen.style.width = width + "px";
+        }
 
+        function addEventListeners() {
+            window.addEventListener("resize", function () {
+                setRange();
+                resize();
+            });
 
-function getWidth() {
-    const innerColumnWidth = innerColumn.getBoundingClientRect().width;
-    const innerColumnRounded = Math.floor(innerColumnWidth);
-    console.log(innerColumnRounded);
-    return {
-        innerColumnWidth: innerColumnRounded,
-    };
-}
+            size.addEventListener("input", function () {
+                setRange();
+                resize();
+            });
+        }
 
-function setRange() {
-    size.max = getWidth().innerColumnWidth;
-    console.log(size);
-}
+        function initialize() {
+            getWidth();
+            setRange();
+            resize();
+            addEventListeners();
+        }
 
-function resize() {
-    const width = size.value;
-    label.innerHTML = width;
-    screen.style.width = width + "px";
-}
-
-
-function addEventListeners() {
-
-    window.addEventListener("resize", function(){
-        setRange();
-        resize();
+        initialize();
     });
-    
-    size.addEventListener("input", function(){
-        setRange();
-        resize();
-    });
-
 }
 
+resizeAllScreens();
 
-function initialize(){
-    getWidth();
-    setRange();
-    resize();
-    addEventListeners();
-}
 
-initialize();
+
+
+
+
+//It's working for only one because it's grabbing the first instance of all of these things we've query selected
+//I want each of the inputs and each of the layouts to follow the same rules
+
 // function changeScreenSize(slider, screen) {
 //     const screenValue = slider.value;
 //     const windowSize = window.innerWidth;
