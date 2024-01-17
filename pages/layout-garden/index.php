@@ -53,8 +53,8 @@ include '../../header.php';
 
 				<div class="layout-controls">
 
-					<label for="screen-size-slider" class="calm-strong-voice">Screen Size</label>
-					<input type="range" id="<?=$layout['range-slide']?>" min="30" max="100" step="3" value="100">
+					<label for="size" class="calm-strong-voice">Screen Size: <span></span></label>
+					<input type="range" id="size" class="size" min="340" max="1000" step="3" value="1000">
 					<button class="calm-strong-voice button <?=$layout['wire-button']?>">Toggle content</button>
 
 				</div>
@@ -68,9 +68,14 @@ include '../../header.php';
 			
 
 		<section class="<?=$layout['class']?> layouts bordered screen"  data-wire="<?=$layout['button']?>" data-screen="<?=$layout['button']?>">
-			<div class="inner-column">
+		<div class="inner-column">
 
-				<?php include(getFile("modules/{$layout['layout']}/template.php")); ?>
+			<resizer> 
+			
+
+			<?php include(getFile("modules/{$layout['layout']}/template.php")); ?>
+			
+			</resizer>
 
 			</div>
 		</section>
@@ -134,8 +139,8 @@ include '../../header.php';
 
 		<div class="layout-controls">
 
-			<label for="screen-size-slider" class="calm-strong-voice">Screen Size</label>
-			<input type="range" id="range" min="30" max="100" step="1" value="50">
+			<label for="size" class="calm-strong-voice">Screen Size</label>
+			<input id="size" type="range" id="range" min="30" max="100" step="1" value="50">
 			<button class="calm-strong-voice button starbucks-button-wire">Toggle content</button>
 
 		</div>
