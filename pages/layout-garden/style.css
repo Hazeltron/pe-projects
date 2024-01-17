@@ -185,12 +185,21 @@ notes a:hover {
 }
 
 /* class tat controls js artificial screen size */
-.screen {
+resizer {
+    display: block;
     container-type: inline-size;
-    max-width: 100%;
+    max-width: 1000px;
+    
+    background-color: white;
+    
+    
+    
+}
+.screen {
+    
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
+    
   }
 
   .starbucks-container {
