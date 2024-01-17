@@ -139,8 +139,8 @@ include '../../header.php';
 
 		<div class="layout-controls">
 
-			<label for="size" class="calm-strong-voice">Screen Size</label>
-			<input id="size" type="range" id="range" min="30" max="100" step="1" value="50">
+			<label for="size" class="calm-strong-voice">Screen Size: <span></span></label>
+			<input id="size" type="range" class="size" id="size" min="340" max="1000" step="3" value="1000">
 			<button class="calm-strong-voice button starbucks-button-wire">Toggle content</button>
 
 		</div>
@@ -152,6 +152,7 @@ include '../../header.php';
 			
 <section class="starbucks-container layouts bordered screen" data-wire="starbucks-content" data-screen="starbucks-content">
 <div class="inner-column">
+	<resizer>
 
 	<section class="starbucks pumpkin">
 		
@@ -189,6 +190,9 @@ include '../../header.php';
 			
 		
 	</section>
+
+	</resizer>
+	
 
 
 	</div>
