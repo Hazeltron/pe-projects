@@ -194,7 +194,6 @@ const layouts = document.querySelectorAll("layout-section-wrapper");
 function resizeAllScreens() {
     layouts.forEach(function (layout) {
         const innerColumn = layout.querySelector(".layouts .inner-column");
-        const rangeSlider = layout.querySelector(".layouts input");
         const screen = layout.querySelector("resizer");
         const size = layout.querySelector(".size");
         const label = layout.querySelector(".layout-controls span");
@@ -210,7 +209,6 @@ function resizeAllScreens() {
 
         function setRange() {
             size.max = getWidth().innerColumnWidth;
-            console.log(size);
         }
 
         function resize() {

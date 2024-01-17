@@ -52,9 +52,11 @@ include '../../header.php';
 				
 
 				<div class="layout-controls">
-
-					<label for="size" class="calm-strong-voice">Screen Size: <span></span></label>
-					<input type="range" id="size" class="size" min="340" max="1000" step="3" value="1000">
+					<range-slider-container>
+						<label for="size" class="calm-strong-voice">Screen Size: <span></span></label>
+						<input type="range" id="size" class="size" min="340" max="1000" step="3" value="1000">
+					</range-slider-container>
+					
 					<button class="calm-strong-voice button <?=$layout['wire-button']?>">Toggle content</button>
 
 				</div>
@@ -138,9 +140,11 @@ include '../../header.php';
 	</notes>
 
 		<div class="layout-controls">
-
-			<label for="size" class="calm-strong-voice">Screen Size: <span></span></label>
-			<input id="size" type="range" class="size" id="size" min="340" max="1000" step="3" value="1000">
+			<range-slider-container>
+				<label for="size" class="calm-strong-voice">Screen Size: <span></span></label>
+				<input id="size" type="range" class="size" id="size" min="340" max="1000" step="3" value="1000">
+			</range-slider-container>				
+			
 			<button class="calm-strong-voice button starbucks-button-wire">Toggle content</button>
 
 		</div>

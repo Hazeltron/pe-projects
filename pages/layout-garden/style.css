@@ -174,15 +174,17 @@ notes a:hover {
     color: var(--ink);
 }
 
-
+range-slider-container {
+    display: grid;
+}
 
 .layout-controls {
     margin-top: 30px;
 }
-.layout-controls label,
+/* .layout-controls label,
 .layout-controls input {
     display: none;
-}
+} */
 
 /* class tat controls js artificial screen size */
 resizer {
