@@ -189,31 +189,86 @@ const gameSpotScreen = document.querySelector('.screen[data-screen="game-spot-bu
 
 
 //I want to make the range slider respond to the screen size
-function changeScreenSize(slider, screen) {
-    const screenValue = slider.value;
-    const windowSize = window.innerWidth;
-    console.log(windowSize);
-    screen.style.width = screenValue + "%";
-};
+const innerColumn = document.querySelector(".layouts .inner-column");
 
-function setupSlider(sliderId, screenDataAttr) {
-    const rangeSlider = document.querySelector(`#${sliderId}`);
-    const screen = document.querySelector(`.screen[data-screen="${screenDataAttr}"]`);
+const rangeSlider = document.querySelector(".layouts input");
 
-    rangeSlider.addEventListener('input', function() {
-        console.log("test");
-        changeScreenSize(rangeSlider, screen);
-    });
+const screen = document.querySelector ("resizer");
+
+const size = document.querySelector(".size");
+
+const label = document.querySelector(".layout-controls span");
+
+
+function getWidth() {
+    const innerColumnWidth = innerColumn.getBoundingClientRect().width;
+    const innerColumnRounded = Math.floor(innerColumnWidth);
+    console.log(innerColumnRounded);
+    return {
+        innerColumnWidth: innerColumnRounded,
+    };
 }
-setupSlider('android-range', 'android-button');
-setupSlider('shell-range', 'shell-button');
-setupSlider('range', 'starbucks-content');
-setupSlider('cards-range', 'vacation');
-// setupSlider('hydro-range', 'hydro');
-// setupSlider('dis-range', 'dis');
-setupSlider('timland-range', 'timland');
-// setupSlider('cans-range', 'cans');
-setupSlider('product-range', 'product-list');
-setupSlider('cool-girls-range', 'girls');
-setupSlider('video-range', 'video');
-setupSlider('game-range', 'game-spot-button');
+
+function setRange() {
+    size.max = getWidth().innerColumnWidth;
+    console.log(size);
+}
+
+function resize() {
+    const width = size.value;
+    label.innerHTML = width;
+    screen.style.width = width + "px";
+}
+
+
+function addEventListeners() {
+
+    window.addEventListener("resize", function(){
+        setRange();
+        resize();
+    });
+    
+    size.addEventListener("input", function(){
+        setRange();
+        resize();
+    });
+
+}
+
+
+function initialize(){
+    getWidth();
+    setRange();
+    resize();
+    addEventListeners();
+}
+
+initialize();
+// function changeScreenSize(slider, screen) {
+//     const screenValue = slider.value;
+//     const windowSize = window.innerWidth;
+//     console.log(windowSize);
+//     screen.style.width = screenValue + "px";
+// };
+
+// function setupSlider(sliderId, screenDataAttr) {
+//     const rangeSlider = document.querySelector(`#${sliderId}`);
+//     const screen = document.querySelector(`.screen[data-screen="${screenDataAttr}"]`);
+
+//     rangeSlider.addEventListener('input', function() {
+//         console.log("test");
+//         changeScreenSize(rangeSlider, screen);
+//     });
+// }
+// setupSlider('android-range', 'android-button');
+// setupSlider('shell-range', 'shell-button');
+// setupSlider('range', 'starbucks-content');
+// setupSlider('cards-range', 'vacation');
+// // setupSlider('hydro-range', 'hydro');
+// // setupSlider('dis-range', 'dis');
+// setupSlider('timland-range', 'timland');
+// // setupSlider('cans-range', 'cans');
+// setupSlider('product-range', 'product-list');
+// setupSlider('cool-girls-range', 'girls');
+// setupSlider('video-range', 'video');
+// setupSlider('game-range', 'game-spot-button');
