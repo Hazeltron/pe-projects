@@ -191,6 +191,84 @@ const gameSpotScreen = document.querySelector('.screen[data-screen="game-spot-bu
 //I want to make the range slider respond to the screen size
 const layouts = document.querySelectorAll("layout-section-wrapper");
 
+
+//h2 to a different word for every section 
+
+
+// function changeH2(section){
+//     //look in section find h2 
+//     const h2 = section.querySelector("h2");
+//     //change it to something
+//     h2.innerHTML = "something";
+// }
+
+
+
+// function changeAllH2(){
+//     const sections = document.querySelectorAll("section")
+//     Array.from(sections).forEach( functon(section) {
+//         changeH2(section);
+//     });
+// }
+
+// function initialize(){
+//     changeAllH2();
+// }
+
+// initialize();
+
+
+
+function getWidth(innerColumn) {
+    const innerColumnWidth = innerColumn.getBoundingClientRect().width;
+
+    const computedStyle = window.getComputedStyle(innerColumn);
+    const innerColumnPadding = parseFloat(computedStyle.paddingLeft) + parseFloat(computedStyle.paddingRight);
+
+    console.log(innerColumnPadding);
+
+    const innerColumnSize = innerColumnWidth - innerColumnPadding;
+
+
+
+    const innerColumnRounded = Math.floor(innerColumnWidth);
+    console.log(innerColumnRounded);
+    //this is an object, dummy
+    return {
+        innerColumnWidth: innerColumnRounded,
+    };
+}
+
+function setRange(size, innerColumn) {
+    size.max = getWidth(innerColumn).innerColumnWidth;
+//if the inner column gets larger thaan 350 then I want the value of the raange to become the width of the inner column
+    if (window.innerWidth <= 349) {
+        size.min = 0;
+    } else {
+        size.min = 350;
+    }
+}
+
+function resize(size, label, screen) {
+    const width = size.value;
+    label.innerHTML = width;
+    screen.style.width = width + "px";
+
+    
+}
+
+function addEventListeners(innerColumn, screen, label, size) {
+    window.addEventListener("resize", function () {
+        setRange(size, innerColumn);
+        resize(size, label, screen);
+    });
+
+    size.addEventListener("input", function () {
+        setRange(size, innerColumn);
+        resize(size, label, screen);
+    });
+}
+
 function resizeAllScreens() {
     layouts.forEach(function (layout) {
         const innerColumn = layout.querySelector(".layouts .inner-column");
@@ -198,45 +276,31 @@ function resizeAllScreens() {
         const size = layout.querySelector(".size");
         const label = layout.querySelector(".layout-controls span");
 
-        function getWidth() {
-            const innerColumnWidth = innerColumn.getBoundingClientRect().width;
-            const innerColumnRounded = Math.floor(innerColumnWidth);
-            console.log(innerColumnRounded);
-            return {
-                innerColumnWidth: innerColumnRounded,
-            };
-        }
+        
 
-        function setRange() {
-            size.max = getWidth().innerColumnWidth;
-        }
+        
 
-        function resize() {
-            const width = size.value;
-            label.innerHTML = width;
-            screen.style.width = width + "px";
-        }
+        // function removeEventListeners() {
+        //     window.removeEventListener()
+        // }
+        
 
-        function addEventListeners() {
-            window.addEventListener("resize", function () {
-                setRange();
-                resize();
-            });
+            function initialize() {
+                getWidth(innerColumn);
+                setRange(size, innerColumn);
+                resize(size, label, screen);
+                addEventListeners(innerColumn, screen, label, size);
+            }
+            
+            initialize();
 
-            size.addEventListener("input", function () {
-                setRange();
-                resize();
-            });
-        }
 
-        function initialize() {
-            getWidth();
-            setRange();
-            resize();
-            addEventListeners();
-        }
+            
 
-        initialize();
+        
+        
+
+        
     });
 }
 
