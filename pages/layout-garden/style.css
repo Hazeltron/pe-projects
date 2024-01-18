@@ -19,9 +19,13 @@
     padding: 2px;
 }
 
+/* .layouts .inner-column {
+    padding: 0px;
+} */
+
 
 .layouts * {
-    transition: 300ms ease-in-out;
+    transition: 200ms ease-in-out;
 
 }
 
@@ -195,11 +199,7 @@ resizer {
     margin-right: auto;
 }
 
-.screen {
-    
 
-    
-  }
 
   .starbucks-container {
     container-type: inline-size;
