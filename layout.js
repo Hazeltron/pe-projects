@@ -241,7 +241,6 @@ function getWidth(innerColumn) {
 
 function setRange(size, innerColumn) {
     size.max = getWidth(innerColumn).innerColumnWidth;
-//if the inner column gets larger thaan 350 then I want the value of the raange to become the width of the inner column
     if (window.innerWidth <= 349) {
         size.min = 0;
     } else {
@@ -253,8 +252,6 @@ function resize(size, label, screen) {
     const width = size.value;
     label.innerHTML = width;
     screen.style.width = width + "px";
-
-    
 }
 
 function addEventListeners(innerColumn, screen, label, size) {
