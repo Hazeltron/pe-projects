@@ -30,31 +30,31 @@
 }
 
 
-.layouts.bordered *:not(.inner-column) {
-    border: solid var(--highlight) 1px !important;
-    background-color: var(--paper) !important;
-    color: var(--ink) !important;
-    background: none !important;
+body main layout-section-wrapper .layouts.bordered *:not(.inner-column) {
+    border: solid var(--highlight) 1px ;
+    background-color: var(--paper) ;
+    color: var(--ink) ;
+    background: none ;
     transition: 700ms ease-in-out;
     
 }
 
-.layouts.bordered *:not(.inner-column) {
-    border: solid var(--highlight) 1px !important;
-    background-color: var(--paper) !important;
-    color: var(--ink) !important;
-    background: rgba(255, 255, 255, 0)  !important;
+body main layout-section-wrapper .layouts.bordered *:not(.inner-column) {
+    border: solid var(--highlight) 1px ;
+    background-color: var(--paper) ;
+    color: var(--ink) ;
+    background: rgba(255, 255, 255, 0)  ;
 
     
     
 }
 
-.layouts.bordered img {
-    opacity: 0 !important;
+body main layout-section-wrapper .layouts.bordered img {
+    opacity: 0 ;
 }
 
-.layouts.bordered video {
-    opacity: 0 !important;
+body main layout-section-wrapper .layouts.bordered video {
+    opacity: 0 ;
 }
 
 

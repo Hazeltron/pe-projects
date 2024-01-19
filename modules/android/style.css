@@ -1,8 +1,5 @@
-layout-section-wrapper .android *{
-    & .inner-column {
-        display: none;
-    }
-    /* border: solid 1px blue; */
+.android {
+  
     & android-container {
         display: block;
         /* position: relative; */
