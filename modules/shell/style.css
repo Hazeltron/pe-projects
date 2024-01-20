@@ -14,12 +14,7 @@
         z-index: 20;
     }
 
-    & li:nth-of-type(2) {
-        position: relative;
-        & picture {
-            border-radius: 20px;
-            
-        }
+    
 
         & .shell-text {
             position: absolute;
@@ -44,8 +39,25 @@
             text-decoration: underline;
         }
 
+        & li:nth-of-type(2) {
+            position: relative;
+            & picture {
+                border-radius: 20px;
+                
+            }
+        }
+
         & li:nth-of-type(1) {
             border-radius: 20px;
+
+            /* this is fucked. the first card isn't behaving correctly, see wireframe. the grid is fucked up too */
+            & article {
+                border-radius: 20px;
+                height: 100%;
+            }
+        
+
+            
             
             & picture {
                 border-radius: 20px 20px 0 0;
@@ -56,6 +68,8 @@
                 padding: 10px;
             }
         }
+
+        
 
        
 
