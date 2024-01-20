@@ -222,17 +222,17 @@ const layouts = document.querySelectorAll("layout-section-wrapper");
 function getWidth(innerColumn) {
     const innerColumnWidth = innerColumn.getBoundingClientRect().width;
 
-    const computedStyle = window.getComputedStyle(innerColumn);
-    const innerColumnPadding = parseFloat(computedStyle.paddingLeft) + parseFloat(computedStyle.paddingRight);
+    // const computedStyle = window.getComputedStyle(innerColumn);
+    // const innerColumnPadding = parseFloat(computedStyle.paddingLeft) + parseFloat(computedStyle.paddingRight);
 
-    console.log(innerColumnPadding);
+    // console.log(innerColumnPadding);
 
-    const innerColumnSize = innerColumnWidth - innerColumnPadding;
+    // const innerColumnSize = innerColumnWidth - innerColumnPadding;
 
 
 
     const innerColumnRounded = Math.floor(innerColumnWidth);
-    console.log(innerColumnRounded);
+    console.log("innercolumn width: " + innerColumnRounded);
     //this is an object, dummy
     return {
         innerColumnWidth: innerColumnRounded,
@@ -241,7 +241,7 @@ function getWidth(innerColumn) {
 
 function setRange(size, innerColumn) {
     size.max = getWidth(innerColumn).innerColumnWidth;
-    if (window.innerWidth <= 349) {
+    if (window.innerWidth < 350) {
         size.min = 0;
     } else {
         size.min = 350;
@@ -252,6 +252,7 @@ function resize(size, label, screen) {
     const width = size.value;
     label.innerHTML = width;
     screen.style.width = width + "px";
+    console.log("slider value: "  + width);
 }
 
 function addEventListeners(innerColumn, screen, label, size) {
