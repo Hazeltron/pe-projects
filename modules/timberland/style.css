@@ -3,15 +3,17 @@
 }
 
 timberland-container {
-	display: block;
+	display: grid;
+	grid-template-columns: 1fr;
+
 }
 
 timberland-container text-content{
+	display: grid;
 	color: black;
 }
 
 timberland-container ul { 
-	display: block;
 	display: grid;
 	gap: 10px;
 	grid-template-areas:    
@@ -23,10 +25,7 @@ timberland-container ul {
 }
 
 timberland-container li:nth-of-type(1) { 
-
 	grid-area: girl;
-	
-
 }
 
 timberland-container li:nth-of-type(2) {
@@ -59,7 +58,7 @@ timberland-container img {
 	width: 100%;
 }
 
-timberland-container .stairs img {
+timberland-container .stairs {
 	display: none;
 }
 
@@ -93,12 +92,12 @@ timberland-container text-content a:hover {
 		"girl	girl	moody	stairs"
 		"girl	girl	boots	stairs"
 		"girl	girl	legs	stairs"
-		"text	.	.	."
+
 	;
 	}
 
-	timberland-container .stairs img {
-	display: block;
+	timberland-container .stairs {
+		display: block;
 	}
 
 	image-grid {
