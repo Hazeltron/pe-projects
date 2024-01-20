@@ -9,6 +9,11 @@ picture {
     
 }
 
+picture a {
+    height: 100%;
+
+}
+
 img {
     object-fit: cover;
     width: 100%;
@@ -90,7 +95,7 @@ cool-girls .grey-hover:hover {
 }
 
 .cool-girls cool-girls a {
-    display: inline;
+    display: block;
 }
 
 @container(min-width: 800px) {
