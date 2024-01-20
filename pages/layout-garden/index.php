@@ -65,8 +65,6 @@ include '../../header.php';
 
 			</div>
 		</section>
-
-		<hr>
 			
 
 		<section class="<?=$layout['class']?> layouts bordered screen"  data-wire="<?=$layout['button']?>" data-screen="<?=$layout['button']?>">
