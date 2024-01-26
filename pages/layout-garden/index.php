@@ -54,7 +54,7 @@ include '../../header.php';
 				<div class="layout-controls">
 					<range-slider-container>
 						<label for="size" class="calm-strong-voice">Screen Size: <span></span>px</label>
-						<input type="range" id="size" class="size" min="350" max="1000" step="3" value="1000">
+						<input type="range" id="size" class="size" min="340" max="1000" step="3" value="1000">
 					</range-slider-container>
 					
 					<button class="calm-strong-voice button <?=$layout['wire-button']?>">Toggle content</button>

@@ -241,10 +241,11 @@ function getWidth(innerColumn) {
 
 function setRange(size, innerColumn) {
     size.max = getWidth(innerColumn).innerColumnWidth;
-    if (window.innerWidth < 350) {
+    //min sie must be 340 or it breaks?
+    if (window.innerWidth < 340) {
         size.min = 0;
     } else {
-        size.min = 350;
+        size.min = 340;
     }
 }
 
