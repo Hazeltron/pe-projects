@@ -83,6 +83,9 @@
 						<li>
 							<a class="calm-nav-voice" href="pages/layout-garden">Layouts</a>
 						</li>
+						<li>
+							<a class="calm-nav-voice" href="pages/resume">Resume</a>
+						</li>
 						<!-- <li>
 							<a class="calm-nav-voice" href="pages/form-garden">Form Garden</a>
 						</li> -->
