@@ -63,8 +63,14 @@ article-grid {
 
 article-grid ul {
 	display: grid;
+	justify-content: center;
 	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 	grid-gap: 60px 20px;
+}
+
+article-grid li {
+	display: flex;
+	justify-content: center;
 }
 
 .article-list article{
