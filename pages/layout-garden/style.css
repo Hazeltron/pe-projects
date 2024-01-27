@@ -27,11 +27,11 @@
 }
 
 
-body main layout-section-wrapper .layouts.bordered *:not(.inner-column) {
-    border: solid var(--highlight) 1px;
-    /* background-color: var(--paper); */
+body main layout-section-wrapper .layouts.bordered *:not(.inner-column, resizer) {
+    border: solid var(--highlight) .2px;
+    background-color: var(--paper);
     color: var(--ink);
-    background: rgba(0, 0, 0, 0);
+    background: none !important;
     transition: 700ms ease-in-out;
     padding: 4px;
 }
@@ -42,13 +42,8 @@ body main layout-section-wrapper .layouts.bordered img {
     opacity: 0;
 }
 
-body main layout-section-wrapper .layouts.bordered picture {
-    background: rgba(255, 136, 72, 1);
-}
-
 body main layout-section-wrapper .layouts.bordered video {
     opacity: 0;
-
 }
 
 

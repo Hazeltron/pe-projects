@@ -139,7 +139,7 @@ include '../../header.php';
 
 		<div class="layout-controls">
 			<range-slider-container>
-				<label for="size" class="calm-strong-voice">Screen Size: <span></span></label>
+				<label for="size" class="calm-strong-voice">Screen Size: <span></span>px</label>
 				<input id="size" type="range" class="size" id="size" min="350" max="1000" step="3" value="1000">
 			</range-slider-container>				
 			
