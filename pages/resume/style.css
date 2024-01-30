@@ -6,12 +6,34 @@ page-wrapper {
     display: grid;
 }
 
+
 aside {
     display: none;
 }
 
+detail-wrapper {
+    display: block;
+}
+
+job-detail {
+    display: block;
+    margin-top: 20px;
+}
+
+contact {
+    display: block;
+}
+
+skills {
+    display: block;
+}
+
+education {
+    display: block;
+}
+
 .resume-title {
-	padding: 50px 0px 80px 0px;
+	padding: 50px 0px 40px 0px;
 }
 
 .resume-title ul {
@@ -40,13 +62,31 @@ h3 {
     color: var(--highlight);
 }
 
+li + li {
+    margin-top: 10px;
+}
+
 @media (min-width: 600px) {
     page-wrapper {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 70% 30%;
+        gap: 40px;
+        
+    
     }
 
     aside {
-        display: block;
+        display: grid;
+        gap: 20px;
+        padding: 50px 0px 0px 0px;
+    }
+
+    detail-wrapper {
+        display: grid;
+        gap: 20px;
+        position: sticky;
+        top: 80px;
+        left: 0;
+        height: max-content;
     }
 }
