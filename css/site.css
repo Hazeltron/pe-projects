@@ -63,7 +63,7 @@ body.small-menu-open .nav-links {
 
 .nav-links {
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 }
 
 .nav-links a {
@@ -204,7 +204,7 @@ layout-template * {
 		height: auto;
 		display: flex;
 		flex-direction: row;
-		align-items: center;
+		align-items: flex-end;
 		justify-content: flex-end;
 		opacity: 1;
 		transform: translate(0%, 0);
@@ -240,10 +240,7 @@ layout-template * {
 
 
 
-@media(min-width:900px) {
-	
 
-}
 
 @media(min-width: 1000px) {
 
