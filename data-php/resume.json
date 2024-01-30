@@ -1,0 +1,36 @@
+[
+    {
+        "jobTitle":"WEB DEVELOPMENT & DESIGN MENTORSHIP",
+        "role": "— STUDENT",
+        "date":"June 2022 - present",
+        "description":["<li>Studied design and web development 7 days a week, 4-6 hours a day for 9 months.</li>",
+        "<li>Learned how to create static webpages, server- and client-side applications with HTML, CSS, JavaScript, Vue, and PHP.</li>",
+        "<li>Designed and created a content management system and to manage my website using PHP, HTML, CSS, and JS.</li>",
+        "<li>Created a designed a system to manage reusable components and modules, typography and site-wide conventions; programmatically built a screen size adjuster, wireframe toggler and scroll bar.</li>"
+    ]
+    },
+    {
+        "jobTitle":"Apollo English, Hanoi, Vietnam",
+        "role": "— K-12 Teacher",
+        "date":"April 2018 - May 2022",
+        "description":["<li>Seamlessly integrated into a diverse team of marketing staff, teachers, TAs, and parents, addressing challenges with innovative solutions.</li>",
+        "<li>Adeptly navigated complex problems, fostering strong inter-team relationships and serving as a mediator.</li>",
+        "<li>Amidst the pandemic, I assumed the head teacher role, contributing to a 50% increase in enrollment.</li>"
+    ]
+    },
+    {
+        "jobTitle":"The Coloradoan, Fort Collins, Co.",
+        "role": "— Copywriter",
+        "date":"February  2017 - March 2018",
+        "description":["<li>Collaborated seamlessly with both the marketing and editorial departments to craft customized content for businesses and charitable organizations.</li>",
+        "<li>Played a pivotal role in refining client messaging and enhancing their brand narrative, ensuring the delivery of compelling stories that resonated with the intended audience.</li>"
+    ]
+    },
+    {
+        "jobTitle":"Rooster Magazine, Fort Collins, Co.",
+        "role": "— Journalist",
+        "date":"February  2017 - March 2018",
+        "description":["<li>Took on the responsibility of delving into extensive research, crafting compelling story pitches, and producing engaging articles across diverse topics.</li>"
+    ]
+    }
+]
