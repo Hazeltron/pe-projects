@@ -1,6 +1,6 @@
 
 
-<section>
+<section class="password-form">
 	<div class="inner-column">
 
 		
@@ -11,7 +11,7 @@
 				<p class="calm-voice">This form will check how strong a given password is.</p>
 
 				<label for="password" class="calm-voice">Please enter a password</label>
-				<input  id="password" type="text">
+				<input  id="password" type="password">
 
 				<button type="submit" value="submit">Enter</button>
 

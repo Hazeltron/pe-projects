@@ -2,7 +2,7 @@
 
 
 
-<section>
+<section class="bmi-form">
 	<div class="inner-column">
 
 		<form method="Post">
