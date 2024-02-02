@@ -10,6 +10,7 @@ const productStudy = document.querySelector('.case-study-content[data-target="pr
 const coolGirlsStudy = document.querySelector('.case-study-content[data-target="girls"]');
 const videoCtaStudy = document.querySelector('.case-study-content[data-target="video"]');
 const gameSpotStudy = document.querySelector('.case-study-content[data-target="game-spot-button"]');
+const marywoodStudy = document.querySelector('.case-study-content[data-target="marywood-button"]');
 
 const androidButton = document.querySelector('.android-button');
 const shellButton = document.querySelector('.shell-button');
@@ -23,6 +24,7 @@ const productButton = document.querySelector('.product-list');
 const coolGirlsButton = document.querySelector('.girls');
 const videoCtaButton = document.querySelector('.video');
 const gameSpotButton = document.querySelector('.game-spot-button');
+const marywoodButton = document.querySelector('.marywood-button');
 
 function displayContent(content) {
     if (content.style.display !== 'block') {
@@ -31,6 +33,10 @@ function displayContent(content) {
         content.style.display = 'none';
     }
 }
+
+marywoodButton.addEventListener('click', function() {
+    displayContent(marywoodStudy);
+});
 
 androidButton.addEventListener('click', function() {
     displayContent(androidStudy);
@@ -92,6 +98,7 @@ const productWire = document.querySelector('.layouts[data-wire="product-list"]')
 const coolGirlsWire = document.querySelector('.layouts[data-wire="girls"]');
 const videoCtaWire = document.querySelector('.layouts[data-wire="video"]');
 const gameSpotWire = document.querySelector('.layouts[data-wire="game-spot-button"]');
+const marywoodWire = document.querySelector('.layouts[data-wire="marywood-button"]');
 
 const androidButtonWire = document.querySelector('.android-wire');
 const shellButtonWire = document.querySelector('.shell-wire');
@@ -105,6 +112,7 @@ const productButtonWire = document.querySelector('.product-wire');
 const coolGirlsButtonWire = document.querySelector('.cool-girls-wire');
 const videoCtaButtonWire = document.querySelector('.video-wire');
 const gameSpotButtonWire = document.querySelector('.game-wire');
+const marywoodButtonWire = document.querySelector('.marywood-wire');
 
 function toggleBorder(layout) {
     if (layout.classList.contains('bordered')) {
@@ -113,6 +121,10 @@ function toggleBorder(layout) {
         layout.classList.add('bordered');
     }
 }
+
+marywoodButtonWire.addEventListener('click', function() {
+    toggleBorder(marywoodWire);
+});
 
 androidButtonWire.addEventListener('click', function() {
     toggleBorder(androidWire);
@@ -173,6 +185,7 @@ const rangeSliderProduct = document.querySelector('#product-range');
 const rangeSliderCoolGirls = document.querySelector('#cool-girls-range');
 const rangeSliderVideoCta = document.querySelector('#video-range');
 const rangeSliderGameSpot = document.querySelector('#game-spot');
+const rangeSliderMarywood = document.querySelector('#marywood-range');
 
 const androidScreen = document.querySelector('.screen[data-screen="android"]');
 const shellScreen = document.querySelector('.screen[data-screen="shell"]');
@@ -186,6 +199,7 @@ const productScreen = document.querySelector('.screen[data-screen="product-list"
 const coolGirlsScreen = document.querySelector('.screen[data-screen="girls"]');
 const videoCtaScreen = document.querySelector('.screen[data-screen="video"]');
 const gameSpotScreen = document.querySelector('.screen[data-screen="game-spot-button"]');
+const marywoodScreen = document.querySelector('.screen[data-screen="marywood"]');
 
 
 //I want to make the range slider respond to the screen size
