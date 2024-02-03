@@ -62,7 +62,7 @@ h3 {
     color: var(--highlight);
 }
 
-li + li {
+page-wrapper li + li {
     margin-top: 10px;
 }
 
