@@ -6,18 +6,28 @@
 
         foreach($cards as $card) { ?>
         <li>
+
             <a href="<?=$card['link']?>">
+
                 <article class="<?=$card['class']?>">
-                    <header>
-                        <h2><?=$card['header']?></h2>
-                    </header>
-                    <p><?=$card['number']?></p>
-                    <p><?=$card['text']?></p>
+
+
+
+                    <text-content>
+                        <header>
+                            <h2 class="lay-attention-voice"><?=$card['header']?></h2>
+                        </header>
+
+                        <p class="lay-loud-voice-bold"><?=$card['number']?></p>
+                        <p class="lay-calm-voice"><?=$card['text']?></p>
+                    </text-content>
                     
-                    <svg>
-                        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
-                    </svg>
+                    <picture>
+                        <img src="assets/<?=$card['img']?>" alt="">
+                    </picture>
+
                 </article>
+
             </a>
 
         </li>
@@ -28,4 +38,4 @@
     </ul>
 
    
-</marywood-wrapper
+        </marywood-wrapper>
