@@ -4,28 +4,32 @@
         "header":"Educational Attainment",
         "text":"Of Developers have a B.A. in some field.",
         "number":"41.16%",
-        "link":"https://survey.stackoverflow.co/2023/#overview"
+        "link":"https://survey.stackoverflow.co/2023/#overview",
+        "img": "uni.png"
     },
     {
         "class":"learning",
         "header":"Learning to code",
         "text":"Of developers learned to code through online courses or certifications.",
         "number":"49.28%",
-        "link":"https://survey.stackoverflow.co/2023/#overview"
+        "link":"https://survey.stackoverflow.co/2023/#overview",
+        "img": "learning-to-code.png"
     },
     {
         "class":"experience",
         "header":"Years coding experience in general",
         "text":"Of respondents have been coding for less than ten years.",
         "number":"48%",
-        "link":"https://survey.stackoverflow.co/2023/#overview"
+        "link":"https://survey.stackoverflow.co/2023/#overview",
+        "img": "general-xp.png"
     },
     {
         "class":"prof-experience",
         "header":"Years of experience professinally",
         "text":"Have been working for 14 or fewer years as professional developers.",
         "number":"71%",
-        "link":"https://survey.stackoverflow.co/2023/#overview"
+        "link":"https://survey.stackoverflow.co/2023/#overview",
+        "img": "pro-xp.png"
         
     },
     {
@@ -33,133 +37,95 @@
         "header":"Age of Developers",
         "text":"Of Professional Developers are 25-34 years old",
         "number":"43%",
-        "link":"https://survey.stackoverflow.co/2023/#overview"
+        "link":"https://survey.stackoverflow.co/2023/#overview",
+        "img": "birthday-cake.png"
     },
     {
         "class":"lang-pop",
         "header":"The most popular Language",
         "text":"reported using JavaScript, making it the most commonly used language eleven years in a row.",
         "number":"63.61%",
-        "link":"https://survey.stackoverflow.co/2023/#overview"
-    },
-    {
-        "class":"lang-unpop",
-        "header":"The least popular Language",
-        "text":"reported using Raku.",
-        "number":"0.18%",
-        "link": "https://survey.stackoverflow.co/2023/#overview"
+        "link":"https://survey.stackoverflow.co/2023/#overview",
+        "img": "javascript-logo.png"
     },
     {
         "class":"data-pop",
         "header":"Most popular database",
         "text":"Reported using PostgreSQL for their database needs.",
         "number":"45.55%",
-        "link": "https://survey.stackoverflow.co/2023/#overview"
-    },
-    {
-        "class":"data-unpop",
-        "header":"Least popular database",
-        "text":"of developers reported using TiDB.",
-        "number":"0.2%",
-        "link": "https://survey.stackoverflow.co/2023/#overview"
-    },
-    {
-        "class":"framework-unpop",
-        "header":"Least popular frameworks",
-        "text":"repoted using Qwik.",
-        "number":"0.54%",
-        "link": "https://survey.stackoverflow.co/2023/#overview"
+        "link": "https://survey.stackoverflow.co/2023/#overview",
+        "img": "postgresql-logo.png"
     },
     {
         "class":"framework-pop",
         "header":"Most popular frameworks",
         "text":"reported using Node.js, just beating out React for the top spot at 40.58%.",
         "number":"42.65%",
-        "link": "https://survey.stackoverflow.co/2023/#overview"
+        "link": "https://survey.stackoverflow.co/2023/#overview",
+        "img": "nodejs-logo.png"
     },
     {
         "class":"ide-pop",
         "header":"Most popuar Integrated development environment",
         "text":"Of developers use Visual Studio Code. It remains the preferred IDE in the industry.",
         "number":"73.71%",
-        "link": "https://survey.stackoverflow.co/2023/#overview"
-    },
-    {
-        "class":"ide-unpop",
-        "header":"Least popuar Integrated development environment",
-        "text":"developers reported using condo",
-        "number":"0.18%",
-        "link": "https://survey.stackoverflow.co/2023/#overview"
+        "link": "https://survey.stackoverflow.co/2023/#overview",
+        "img": "vscode-logo.png"
     },
     {
         "class":"os-pop",
         "header":"Most popular operating system",
         "text":"of respondants used Windows as their professional operating ststem, while only 33% used MacOS.",
         "number":"46.91%",
-        "link": "https://survey.stackoverflow.co/2023/#overview"
+        "link": "https://survey.stackoverflow.co/2023/#overview",
+        "img": "windows-logo.png"
     },
     {
         "class":"aisearch-pop",
         "header":"Most popular AI search tool",
         "text":"responded they used ChatGPT for queries related to programing.",
         "number":"83.24%",
-        "link": "https://survey.stackoverflow.co/2023/#overview"
+        "link": "https://survey.stackoverflow.co/2023/#overview",
+        "img": "chatgpt-logo.png"
     },
     {
         "class":"aidev-pop",
         "header":"Most popular AI developer tool",
         "text":"Used GitHub Copilot, which suggests code completions as developers type and turns natural language prompts into coding suggestions.",
         "number":"54.77%",
-        "link": "https://survey.stackoverflow.co/2023/#overview"
+        "link": "https://survey.stackoverflow.co/2023/#overview",
+        "img": "github-logo.png"
     },
     {
         "class":"top-pay",
         "header":"Top paying technology",
         "text":"According to respondants Zig, a general-purpose programming language and toolchain for maintaining robust, optimal and reusable software, offered the highest pay.",
         "number":"$103,611",
-        "link": "https://survey.stackoverflow.co/2023/#overview"
+        "link": "https://survey.stackoverflow.co/2023/#overview",
+        "img": "zig-logo.png"
     },
     {
         "class":"employment",
         "header":"Employment status",
         "text":"responded that if they were employed, it was in a full-time role.",
         "number":"69.28%",
-        "link": "https://survey.stackoverflow.co/2023/#overview"
+        "link": "https://survey.stackoverflow.co/2023/#overview",
+        "img": "employment-status.png"
     },
     {
         "class":"salary",
         "header":"Salary",
         "text":"Is what most froont-end developers make in the US.",
         "number":"$140,000",
-        "link": "https://survey.stackoverflow.co/2023/#overview"
+        "link": "https://survey.stackoverflow.co/2023/#overview",
+        "img": "money.png"
     },
     {
         "class":"outside-work",
         "header":"Coding outside of work",
         "text":"Of developers code outside of work as a hobby, with only 36.54% reporting that they code for professional development or self-paced learning from online courses ",
         "number":"70.42%",
-        "link": "https://survey.stackoverflow.co/2023/#overview"
-    },
-    
-    {
-        "class":"questions-answers",
-        "header":"Daily time spent searching for answers/solutions",
-        "text":"of all respondents spend more than 30 minutes a day searching for answers or solutions to problems.",
-        "number":"63%",
-        "link": "https://survey.stackoverflow.co/2023/#overview"
-    },
-    {
-        "class":"answering-questions",
-        "header":"Daily time spent answering questions",
-        "text":"of all respondents spend more than 30 minutes a day answering questions.",
-        "number":"49%",
-        "link": "https://survey.stackoverflow.co/2023/#overview"
-    },
-    {
-        "class":"dev-experience",
-        "header":"Developer Experience: Processes, tools, and programs within an organization",
-        "text":"Most Professional Developers report having CI/CD, automated testing, and DevOps available at their organization.",
-        "number":"DevOps function: 60.45% Automated testing: 60.79%  Continuous integration & continuous delivery: 71.93%",
-        "link": "https://survey.stackoverflow.co/2023/#overview"
+        "link": "https://survey.stackoverflow.co/2023/#overview",
+        "img": "weekend.png"
     }
 ]
