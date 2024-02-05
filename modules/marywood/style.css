@@ -11,11 +11,12 @@ marywood-wrapper {
     }
 
     & ul li:nth-child(even) {
-        background-color: lightskyblue;
+        background-color: whitesmoke
+        ;
     }
 
     & ul li:nth-child(odd) {
-        background-color: lightblue;
+        background-color: whitesmoke;
     }
 
     & li:hover {
