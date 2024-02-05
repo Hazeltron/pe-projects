@@ -233,10 +233,92 @@ const layouts = document.querySelectorAll("layout-section-wrapper");
 
 
 
-function getWidth(innerColumn) {
-    const innerColumnWidth = innerColumn.getBoundingClientRect().width;
+// function getWidth(innerColumn) {
+//     const innerColumnWidth = innerColumn.getBoundingClientRect().width;
 
-    // const computedStyle = window.getComputedStyle(innerColumn);
+    
+
+
+
+//     const innerColumnRounded = Math.floor(innerColumnWidth);
+//     console.log("innercolumn width: " + innerColumnRounded);
+//     //this is an object, dummy
+//     return {
+//         innerColumnWidth: innerColumnRounded,
+//     };
+// }
+
+// function setRange(size, innerColumn) {
+//     size.max = getWidth(innerColumn).innerColumnWidth;
+//     //min sie must be 340 or it breaks?
+//     if (window.innerWidth < 340) {
+//         size.min = 0;
+//     } else {
+//         size.min = 340;
+//     }
+// }
+
+// function resize(size, label, screen) {
+//     const width = size.value;
+//     label.innerHTML = width;
+//     screen.style.width = width + "px";
+//     console.log("slider value: "  + width);
+// }
+
+// function addEventListeners(innerColumn, screen, label, size) {
+//     window.addEventListener("resize", function () {
+//         setRange(size, innerColumn);
+//         resize(size, label, screen);
+//     });
+
+//     size.addEventListener("input", function () {
+//         setRange(size, innerColumn);
+//         resize(size, label, screen);
+//     });
+// }
+
+// function resizeAllScreens() {
+//     layouts.forEach(function (layout) {
+//         const innerColumn = layout.querySelector(".layouts .inner-column");
+//         const screen = layout.querySelector("resizer");
+//         const size = layout.querySelector(".size");
+//         const label = layout.querySelector(".layout-controls span");
+        
+
+//             function initialize() {
+//                 getWidth(innerColumn);
+//                 setRange(size, innerColumn);
+//                 resize(size, label, screen);
+//                 addEventListeners(innerColumn, screen, label, size);
+//             }
+            
+//             initialize();
+
+
+            
+
+        
+        
+
+        
+//     });
+// }
+
+// resizeAllScreens();
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const computedStyle = window.getComputedStyle(innerColumn);
     // const innerColumnPadding = parseFloat(computedStyle.paddingLeft) + parseFloat(computedStyle.paddingRight);
 
     // console.log(innerColumnPadding);
@@ -245,113 +327,4 @@ function getWidth(innerColumn) {
 
 
 
-    const innerColumnRounded = Math.floor(innerColumnWidth);
-    console.log("innercolumn width: " + innerColumnRounded);
-    //this is an object, dummy
-    return {
-        innerColumnWidth: innerColumnRounded,
-    };
-}
 
-function setRange(size, innerColumn) {
-    size.max = getWidth(innerColumn).innerColumnWidth;
-    //min sie must be 340 or it breaks?
-    if (window.innerWidth < 340) {
-        size.min = 0;
-    } else {
-        size.min = 340;
-    }
-}
-
-function resize(size, label, screen) {
-    const width = size.value;
-    label.innerHTML = width;
-    screen.style.width = width + "px";
-    console.log("slider value: "  + width);
-}
-
-function addEventListeners(innerColumn, screen, label, size) {
-    window.addEventListener("resize", function () {
-        setRange(size, innerColumn);
-        resize(size, label, screen);
-    });
-
-    size.addEventListener("input", function () {
-        setRange(size, innerColumn);
-        resize(size, label, screen);
-    });
-}
-
-function resizeAllScreens() {
-    layouts.forEach(function (layout) {
-        const innerColumn = layout.querySelector(".layouts .inner-column");
-        const screen = layout.querySelector("resizer");
-        const size = layout.querySelector(".size");
-        const label = layout.querySelector(".layout-controls span");
-
-        
-
-        
-
-        // function removeEventListeners() {
-        //     window.removeEventListener()
-        // }
-        
-
-            function initialize() {
-                getWidth(innerColumn);
-                setRange(size, innerColumn);
-                resize(size, label, screen);
-                addEventListeners(innerColumn, screen, label, size);
-            }
-            
-            initialize();
-
-
-            
-
-        
-        
-
-        
-    });
-}
-
-resizeAllScreens();
-
-
-
-
-
-
-//It's working for only one because it's grabbing the first instance of all of these things we've query selected
-//I want each of the inputs and each of the layouts to follow the same rules
-
-// function changeScreenSize(slider, screen) {
-//     const screenValue = slider.value;
-//     const windowSize = window.innerWidth;
-//     console.log(windowSize);
-//     screen.style.width = screenValue + "px";
-// };
-
-// function setupSlider(sliderId, screenDataAttr) {
-//     const rangeSlider = document.querySelector(`#${sliderId}`);
-//     const screen = document.querySelector(`.screen[data-screen="${screenDataAttr}"]`);
-
-//     rangeSlider.addEventListener('input', function() {
-//         console.log("test");
-//         changeScreenSize(rangeSlider, screen);
-//     });
-// }
-// setupSlider('android-range', 'android-button');
-// setupSlider('shell-range', 'shell-button');
-// setupSlider('range', 'starbucks-content');
-// setupSlider('cards-range', 'vacation');
-// // setupSlider('hydro-range', 'hydro');
-// // setupSlider('dis-range', 'dis');
-// setupSlider('timland-range', 'timland');
-// // setupSlider('cans-range', 'cans');
-// setupSlider('product-range', 'product-list');
-// setupSlider('cool-girls-range', 'girls');
-// setupSlider('video-range', 'video');
-// setupSlider('game-range', 'game-spot-button');
