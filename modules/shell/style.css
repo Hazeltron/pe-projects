@@ -1,6 +1,12 @@
 .shell {
     /* border: solid 1px blue; */
 
+    & img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
     & li {
         position: relative;
     }
@@ -211,7 +217,7 @@
         
     }
 
-    @container(min-width: 1000px) {
+    @container(min-width: 900px) {
         & .upper-grid {
             grid-template-columns: repeat(12, 1fr);
             /* Without all these height 100s the first card is never as tall as it should be */
