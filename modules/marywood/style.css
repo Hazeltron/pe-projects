@@ -5,19 +5,19 @@ marywood-wrapper {
         border: 1px solid teal;
     } */
 
+
+
     & ul {
         display: grid;
         gap: 20px;
     }
 
-    & ul li:nth-child(even) {
-        background-color: whitesmoke
-        ;
+    & li {
+        background-color: whitesmoke;
+        transition: transform 150ms ease, filter 150ms ease;
     }
 
-    & ul li:nth-child(odd) {
-        background-color: whitesmoke;
-    }
+   
 
     & li:hover {
         transform: translateY(-5px);
@@ -41,6 +41,8 @@ marywood-wrapper {
     & picture {
         aspect-ratio: 16/9;
         order: -1;
+        height: 100%;
+        max-width: 100%;
     }
 
     /* Add missing '@' before 'container' */
