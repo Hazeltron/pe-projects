@@ -10,7 +10,10 @@
     grid-column: span 2;
 }
 
-
+/* .gamespot-container picture {
+    height: 100%;
+    max-width: 100%;
+} */
 
 .gamespot-container .small-card{
     display: grid;
@@ -44,15 +47,7 @@
     display: none;
 }
 
-@container (min-width: 800px) {
-    .gamespot-container {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        
-    }
-
-    .gamespot-container .small-card {
-        grid-column: span 1;
-    }
+@container (min-width: 600px) {
 
     .gamespot-container .large-text {
         background-color: rgba(122, 122, 122, 0.68);    /* full opaque green */ 
@@ -87,7 +82,7 @@
 
     .gamespot-container .large-card {
         position: relative;
-        grid-column: 1/-1;
+        
     }
 
     .gamespot-container .large-text {
@@ -95,6 +90,20 @@
         bottom: 0;
         left: 0;
     }
+
+}
+
+@container (min-width: 800px) {
+    .gamespot-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+    }
+
+    .gamespot-container .small-card {
+        grid-column: span 1;
+    }
+
+    
 
 }
 
@@ -122,6 +131,7 @@
     .gamespot-container .large-card {
         display: grid;
         height: 100%;
+        grid-column: span 1;
     }
 
     .gamespot-container .large-card div:nth-of-type(1){
