@@ -181,6 +181,23 @@
         ],
         "layout": "marywood",
         "id": "marywood-id"
+    },
+    {
+        "name": "Atmosphere Kanifushi Maldives",
+        "link": "https://atmosphere-kanifushi.com/",
+        "class": "atmosphere",
+        "button": "atmosphere-button",
+        "wire-button": "atmosphere-wire",
+        "screen-button": "atmosphere-screen",
+        "range-slide": "atmosphere-range",
+        "what": "<p>This page layout is from a luxury beach resort in the Maldives. It was a cool page layout but due to how it was implimented, there were a lot of areas where it broke on differing screen sizes. I wanted to fix that.</p>",
+        "whyText": ["<p>This gave me another chance to explore the design process from start to finish while practicing coding layouts.</p>"
+        ],
+        "diffText": ["<p>The hardest part about this grid was sourcing images that matched each other. These come from Unsplash. I tried using AI-generated images but they appeared far too unnatural.</p> "],
+        "howText": ["<p>This layout is being controlled with grid and the text and links are being manipulated with positioning.</p>"
+        ],
+        "layout": "atmosphere-resort",
+        "id": "atmosphere-id"
     }
 ]
 

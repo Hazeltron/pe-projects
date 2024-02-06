@@ -11,6 +11,7 @@ const coolGirlsStudy = document.querySelector('.case-study-content[data-target="
 const videoCtaStudy = document.querySelector('.case-study-content[data-target="video"]');
 const gameSpotStudy = document.querySelector('.case-study-content[data-target="game-spot-button"]');
 const marywoodStudy = document.querySelector('.case-study-content[data-target="marywood-button"]');
+const atmosphereStudy = document.querySelector('.case-study-content[data-target="atmosphere-button"]');
 
 const androidButton = document.querySelector('.android-button');
 const shellButton = document.querySelector('.shell-button');
@@ -25,6 +26,7 @@ const coolGirlsButton = document.querySelector('.girls');
 const videoCtaButton = document.querySelector('.video');
 const gameSpotButton = document.querySelector('.game-spot-button');
 const marywoodButton = document.querySelector('.marywood-button');
+const atmosphereButton = document.querySelector('.atmosphere-button');
 
 function displayContent(content) {
     if (content.style.display !== 'block') {
@@ -33,6 +35,10 @@ function displayContent(content) {
         content.style.display = 'none';
     }
 }
+
+atmosphereButton.addEventListener('click', function() {
+    displayContent(atmosphereStudy);
+});
 
 marywoodButton.addEventListener('click', function() {
     displayContent(marywoodStudy);
