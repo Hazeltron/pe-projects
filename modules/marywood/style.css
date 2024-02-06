@@ -45,6 +45,12 @@ marywood-wrapper {
         max-width: 100%;
     }
 
+    & img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
     /* Add missing '@' before 'container' */
     @container (min-width: 500px) {
         & ul li:nth-child(odd) {
