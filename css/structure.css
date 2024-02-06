@@ -15,15 +15,7 @@ main {
 	flex-grow: 1;
 }
 
-picture {
-    display: block;
-}
 
-img {
-	display: block;
-	width: 100%;
-	height:auto;
-}
 
 
 
