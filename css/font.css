@@ -96,7 +96,13 @@ h2 + p {
     margin-top: 0.5em;
 }
 
-
+.lay-louder-voice {
+    font-family: var(--primary-font);
+    font-size: 2.5rem;
+    line-height: 1.5em;
+    font-weight: 500;
+    color: var(--ink-light);
+}
 
 .lay-loud-voice {
     font-family: var(--primary-font);
