@@ -1,0 +1,45 @@
+[
+    {
+        "header": "DINING EXPERIENCES",
+        "img": "atmosphere-two.jpeg",
+        "list": ["<li>Combination of sumptuous buffets, live cooking stations, theme nights, and grill at our main restaurant</li>",
+        "<li>Selection of snacks during the day</li>",
+        "<li>À la carte fine dining experiences</li>",
+        "<li>Selection of refined vegetarian cuisine</li>"
+        ]
+    },
+    {
+        "header": "BEVERAGES",
+        "img": "atmosphere-three.jpeg",
+        "list": ["<li>Premium brands of spirits, beer, and liqueurs</li>",
+        "<li>Unlimited cocktails and mocktails</li>",
+        "<li>A wide selection of premium wines</li>"
+        ]
+    },
+    {
+        "header": "ACTIVITIES & ADVENTURES",
+        "img": "atmosphere-four.jpeg",
+        "list": ["<li>Premium brands of spirits, beer, and liqueurs</li>",
+        "<li>Unlimited cocktails and mocktails</li>",
+        "<li>A wide selection of premium wines</li>"
+        ]
+    },
+    {
+        "header": "AKIRI SPA BY MANDARA",
+        "img": "atmosphere-five.jpeg",
+        "list": ["<li>Included in The Kanifushi Plan: The Akiri Spa by Mandara at Atmosphere Kanifushi offers a range of treatments fusing spa traditions from India, Bali, Hawaii, and Thailand.</li>",
+        "<li>4-7 nights stay: ONE 45 minutes spa treatment</li>",
+        "<li>8-11 nights stay: TWO 45 minutes spa treatment</li>",
+        "<li>12-15 nights stay: THREE 45 minutes spa treatment</li>",
+        "<li>16-19 nights stay: FOUR 45 minutes spa treatment</li>"
+        ]
+    },
+    {
+        "header": "ARRIVAL & DEPARTURE",
+        "img": "atmosphere-six.jpeg",
+        "list": ["<li>Complimentary airport transfer</li>",
+        "<li>4-7 nights stay: ONE 45 minutes spa treatment</li>",
+        "<li>Complimentary Lounge Facilities</li>"
+        ]
+    }
+]
