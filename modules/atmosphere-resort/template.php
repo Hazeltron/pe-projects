@@ -3,7 +3,7 @@
         <section class="title-text">
             <header>
                 <h4 class="lay-calm-voice-bold">PREMIUM ALL INCLUSIVE</h4>
-                <h2 class="lay-loud-voice">THE KANIFUSHI PLAN</h2>
+                <h2 class="lay-louder-voice">THE KANIFUSHI PLAN</h2>
             </header> 
         
             <text-content>
@@ -54,7 +54,7 @@
             
 
                 <ul class="lay-calm-voice">
-
+                <div></div>
                 <?php foreach ($article['list'] as $listItem) { ?>
                     <?= $listItem ?>
                 <?php } ?>

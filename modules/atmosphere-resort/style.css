@@ -1,6 +1,22 @@
 .atmosphere {
     .atmosphere-wrapper {
         display: grid;
+        gap: 40px;
+    }
+    .title-text h2 {
+        color: #562915;
+    }
+    .title-text a {
+        display: block;
+        margin-top: 20px;
+        max-width: 200px;
+        padding: 20px;
+        color: whitesmoke;
+        background-color: #562915; 
+    }
+
+    .title-text a:hover {
+        background-color: #7c3b1f; 
     }
 
     & img {
@@ -8,9 +24,14 @@
         height: 100%;
         width: 100%;
     }
+    & header {
+        background-color: white; 
+    }
+
     & text-content {
         display: block;
-        margin-top: 20px;
+        margin-top: 20
+        background-color: white;
         & header + p {
             margin-top: 20px;
         }
@@ -20,8 +41,23 @@
         margin-top: 20px;
     }
 
+    & picture + text-content {
+        margin-top: 20px;
+    }
+
     & li + li {
         margin-top: 10px;
+    }
+
+
+    & li::before {
+        content: "- ";
+        transition: all 150ms ease-in-out;
+    }
+
+    & li:hover::before {
+        content: "- ";
+        font-weight: 400;
     }
     
     @container (min-width: 650px) {
@@ -38,19 +74,23 @@
 
         }
         
-
+        & article:nth-of-type(-n+4) {
+            & header {
+                padding: 20px;
+                text-align: center;
+                max-width: 100%;
+            }
+        }
         & article:nth-of-type(1) {
             & picture {
                 
                 width: 100%;
                 height: 470px;
-                margin-left: auto;
             }
 
             & text-content {
                 position: relative;
-                background-color: white;
-                padding: 0 10px 0 10px;
+            
          
             }
             & header {
@@ -58,8 +98,8 @@
                 position: absolute;
                 bottom: 100%;
                 left: 0;
-                padding: 20px;
-                background-color: white;
+                
+                
              
             }
            
@@ -75,8 +115,8 @@
 
             & text-content {
                 position: relative;
-                background-color: white;
-                padding: 0 10px 0 10px;
+                
+                
                 margin-left: 100px;
             }
             & header {
@@ -84,12 +124,11 @@
                 position: absolute;
                 bottom: 100%;
                 left: 0;
-                padding: 20px;
-                background-color: white;
+         
                 width: 100%;
        
             }
-        } /* <-- This closing brace was missing */
+        } 
 
         
 
@@ -102,8 +141,6 @@
     
                 & text-content {
                     position: relative;
-                    background-color: white;
-                    padding: 0 10px 0 10px;
                     margin-left: auto;
                     margin-right: auto;
                     max-width: 250px;
@@ -115,40 +152,32 @@
                     position: absolute;
                     bottom: 100%;
                     left: 0;
-                    padding: 20px;
-                    background-color: white;
+                    
                     width: 100%;
            
                 }
             } 
 
             & article:nth-of-type(4) {
-                position: relative;
                 margin-top: 60px;
                 & picture {
-                    width: 60%;
+                    width: 100%;
                     height: 550px;
-                    margin-right: auto;
                     
                 }
     
                 & text-content {
-                    position: absolute;
-                    top: 20px;
-                    right: 0;
-                    background-color: white;
-                    padding: 0 10px 0 10px;
+                    position: relative;
                     margin-left: auto;
-                    max-width: 40%;
-                    margin-top: 0;
+                    margin-right: auto;
+                    max-width: 250px;
                    
                 }
 
                 & header {
                     position: absolute;
-                    right: 100%;
-                    background-color: white;
-                    padding: 20px;
+                    bottom: 100%;
+                    
            
                 }
             } 
@@ -157,35 +186,17 @@
                 grid-column: span 2;
                 display: flex;
                 align-items: center;
-                
-                
+                gap: 40px;
 
                 & picture {
                     width: 345px;
-                    height: 470px;
-                    
+                    height: 470px; 
                 }
     
                 & text-content {
                     postion: relative;
-                   margin-top: 0;
-                    background-color: white;
-                    padding: 0 10px 0 10px;
+                    margin-top: 0;
                     max-width: 60%;
-                    
-                   
-                   
-                }
-
-                & header {
-           
-                /* position: absolute;
-                top: 0;
-                left: 0; */
-                /* padding: 20px; */
-                background-color: white;
-              
-           
                 }
             } 
 
@@ -194,9 +205,8 @@
                 display: flex;
                 flex-direction: row-reverse;
                 align-items: center;
+                gap: 40px;
                 
-                
-
                 & picture {
                     width: 600px;
                     height: 470px;
@@ -205,24 +215,121 @@
     
                 & text-content {
                     postion: relative;
-                   margin-top: 0;
-                    background-color: white;
-                    padding: 0 10px 0 10px;
+                    margin-top: 0;
                     max-width: 60%;
-                   
-                   
+                }
+            } 
+        }
+
+        @container (min-width: 900px) {
+            & .atmosphere-wrapper {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                column-gap: 20px;
+                row-gap: 60px;
+                
+            }
+    
+            & .title-text{
+                grid-column: span 12;
+    
+            }
+            
+            & article:nth-of-type(-n+4) {
+                margin-top: 0;
+
+                & picture {
+                    width: 100%;
+                    height: 470px;
+                    
                 }
 
                 & header {
-           
-                /* position: absolute;
-                left: 38%;
-                padding: 20px; */
-                background-color: white;
-              
-           
+                    position:static;
+                    padding: 0;
+                    text-align: left;
+                }
+
+                & text-content {
+                    position: static;
+                    max-width: 100%;
+                   
+                }
+            }
+            & article:nth-of-type(1) {
+                grid-column: span 12;
+                
+                
+               
+            }
+    
+            & article:nth-of-type(2) {
+                grid-column: span 4;
+                
+    
+                & text-content {
+                    margin-left: 0px;
                 }
             } 
+    
+            
+    
+                & article:nth-of-type(3) {
+                    grid-column: span 4;
+                    
+                } 
+    
+                & article:nth-of-type(4) {
+                    grid-column: span 4;
+                    
+                    & picture {
+                        width: 100%;
+                        height: 470px;
+                        
+                    }
+        
+                    
+                        
+               
+                    
+                } 
+    
+                & article:nth-of-type(5) {
+                    grid-column: span 12;
+                    align-items: flex-start;
+                    
+                    & picture {
+                        width: 100%;
+                        height: 470px;
+                        
+                    }
+                   
+        
+                    & text-content {
+                        postion: static;
+                        margin-top: 0;
+                        max-width: 100%;
+                    }
+                } 
+    
+                & article:nth-of-type(6) {
+                    grid-column: span 12;
+                    align-items: flex-start;
+                    
+             
+                    
+                    & picture {
+                        width: 100%;
+                        height: 470px;
+                        
+                    }
+        
+                    & text-content {
+                        postion: static;
+                        max-width: 100%;
+                    }
+                } 
+
         }
     }
 
