@@ -2,15 +2,227 @@
     .atmosphere-wrapper {
         display: grid;
     }
+
+    & img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
     & text-content {
         display: block;
-    }
-    
-    @container (min-width: 600px) {
-        & .atmosphere-wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+        margin-top: 20px;
+        & header + p {
+            margin-top: 20px;
         }
     }
 
-}
+    & header + ul {
+        margin-top: 20px;
+    }
+
+    & li + li {
+        margin-top: 10px;
+    }
+    
+    @container (min-width: 650px) {
+        & .atmosphere-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-row-gap: 60px;
+            grid-column-gap: 10px;
+            
+        }
+
+        & .title-text{
+            grid-column: span 2;
+
+        }
+        
+
+        & article:nth-of-type(1) {
+            & picture {
+                
+                width: 100%;
+                height: 470px;
+                margin-left: auto;
+            }
+
+            & text-content {
+                position: relative;
+                background-color: white;
+                padding: 0 10px 0 10px;
+         
+            }
+            & header {
+                display: inline-block;
+                position: absolute;
+                bottom: 100%;
+                left: 0;
+                padding: 20px;
+                background-color: white;
+             
+            }
+           
+        }
+
+        & article:nth-of-type(2) {
+            margin-top: 60px;
+            & picture {
+                width: 100%;
+                height: 660px;
+                margin-right: auto;
+            }
+
+            & text-content {
+                position: relative;
+                background-color: white;
+                padding: 0 10px 0 10px;
+                margin-left: 100px;
+            }
+            & header {
+                display: inline-block;
+                position: absolute;
+                bottom: 100%;
+                left: 0;
+                padding: 20px;
+                background-color: white;
+                width: 100%;
+       
+            }
+        } /* <-- This closing brace was missing */
+
+        
+
+            & article:nth-of-type(3) {
+                & picture {
+                    width: 100%;
+                    height: 445px;
+                    
+                }
+    
+                & text-content {
+                    position: relative;
+                    background-color: white;
+                    padding: 0 10px 0 10px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    max-width: 250px;
+                   
+                }
+
+                & header {
+                    display: inline-block;
+                    position: absolute;
+                    bottom: 100%;
+                    left: 0;
+                    padding: 20px;
+                    background-color: white;
+                    width: 100%;
+           
+                }
+            } 
+
+            & article:nth-of-type(4) {
+                position: relative;
+                margin-top: 60px;
+                & picture {
+                    width: 60%;
+                    height: 550px;
+                    margin-right: auto;
+                    
+                }
+    
+                & text-content {
+                    position: absolute;
+                    top: 20px;
+                    right: 0;
+                    background-color: white;
+                    padding: 0 10px 0 10px;
+                    margin-left: auto;
+                    max-width: 40%;
+                    margin-top: 0;
+                   
+                }
+
+                & header {
+                    position: absolute;
+                    right: 100%;
+                    background-color: white;
+                    padding: 20px;
+           
+                }
+            } 
+
+            & article:nth-of-type(5) {
+                grid-column: span 2;
+                display: flex;
+                align-items: center;
+                
+                
+
+                & picture {
+                    width: 345px;
+                    height: 470px;
+                    
+                }
+    
+                & text-content {
+                    postion: relative;
+                   margin-top: 0;
+                    background-color: white;
+                    padding: 0 10px 0 10px;
+                    max-width: 60%;
+                    
+                   
+                   
+                }
+
+                & header {
+           
+                /* position: absolute;
+                top: 0;
+                left: 0; */
+                /* padding: 20px; */
+                background-color: white;
+              
+           
+                }
+            } 
+
+            & article:nth-of-type(6) {
+                grid-column: span 2;
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                
+                
+
+                & picture {
+                    width: 600px;
+                    height: 470px;
+                    
+                }
+    
+                & text-content {
+                    postion: relative;
+                   margin-top: 0;
+                    background-color: white;
+                    padding: 0 10px 0 10px;
+                    max-width: 60%;
+                   
+                   
+                }
+
+                & header {
+           
+                /* position: absolute;
+                left: 38%;
+                padding: 20px; */
+                background-color: white;
+              
+           
+                }
+            } 
+        }
+    }
+
