@@ -122,32 +122,7 @@
         "layout": "product-list",
         "id": "product"
     },
-    {
-        "name": "vacation cards",
-        "link": "#",
-        "class": "cards",
-        "button": "vacation",
-        "wire-button": "vacation-wire",
-        "range-slide": "cards-range",
-        "what": "<p>This was inspired by my love of travel and my constant need to be in a beach resort. I had been researching luxury beach resorts for a website I was working on and decided to design and code some experience package cards.</p>",
-        "screen-button": "vacation-screen",
-        "whyText": [
-            "<p>Initially, these vacation cards were part of a resort website I was working on. We needed cards for experience packages. I had seen something similar to this when I was performing design research for the project.", "This was my take on the idea, but unfortunately, the rounded corners didn’t match the overall website, so it had to be scrapped.<p>"
-
-        ],
-        "diffText": [
-            "<p>The difference between the design in my head and what was practical was a learning process here.</p>",
-            "<p>Initially, I wanted the image to take up the entire card and overlay the text on top.</p>", 
-            "<p>After I finished, realized that while it looked cool, you couldn’t actually read anything without a background color. The background color hid half the image and even if you turned down the opacity of the background, it didn’t look great.</p>",
-            "<p>I ended up having to start over.</p>"
-        ],
-        "howText": [
-            "<p>These cards are accomplished with object-fit, a PHP loop and align-self to control the button position.</p>"
-
-        ],
-        "layout": "layout-cards",
-        "id": "cards"
-    },
+   
     {
         "name": "Apparel Navigation Grid",
         "link": "#",
@@ -198,6 +173,49 @@
         ],
         "layout": "atmosphere-resort",
         "id": "atmosphere-id"
+    },
+    {
+        "name": "vacation cards",
+        "link": "#",
+        "class": "cards",
+        "button": "vacation",
+        "wire-button": "vacation-wire",
+        "range-slide": "cards-range",
+        "what": "<p>This was inspired by my love of travel and my constant need to be in a beach resort. I had been researching luxury beach resorts for a website I was working on and decided to design and code some experience package cards.</p>",
+        "screen-button": "vacation-screen",
+        "whyText": [
+            "<p>Initially, these vacation cards were part of a resort website I was working on. We needed cards for experience packages. I had seen something similar to this when I was performing design research for the project.", "This was my take on the idea, but unfortunately, the rounded corners didn’t match the overall website, so it had to be scrapped.<p>"
+
+        ],
+        "diffText": [
+            "<p>The difference between the design in my head and what was practical was a learning process here.</p>",
+            "<p>Initially, I wanted the image to take up the entire card and overlay the text on top.</p>", 
+            "<p>After I finished, realized that while it looked cool, you couldn’t actually read anything without a background color. The background color hid half the image and even if you turned down the opacity of the background, it didn’t look great.</p>",
+            "<p>I ended up having to start over.</p>"
+        ],
+        "howText": [
+            "<p>These cards are accomplished with object-fit, a PHP loop and align-self to control the button position.</p>"
+
+        ],
+        "layout": "layout-cards",
+        "id": "cards"
+    },
+    {
+        "name": "Montucky Cold Snacks",
+        "link": "https://atmosphere-kanifushi.com/",
+        "class": "montucky",
+        "button": "montucky-button",
+        "wire-button": "montucky-wire",
+        "screen-button": "montucky-screen",
+        "range-slide": "montucky-range",
+        "what": "<p>...</p>",
+        "whyText": ["<p>This gave me another chance to explore the design process from start to finish while practicing coding layouts.</p>"
+        ],
+        "diffText": ["<p>The hardest part about this grid was sourcing images that matched each other. These come from Unsplash. I tried using AI-generated images but they appeared far too unnatural.</p> "],
+        "howText": ["<p>This layout is being controlled with grid and the text and links are being manipulated with positioning.</p>"
+        ],
+        "layout": "montucky",
+        "id": "montucky-id"
     }
 ]
 
