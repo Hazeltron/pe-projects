@@ -140,6 +140,7 @@
 
     .gamespot-container .large-card picture {
         aspect-ratio: unset;
+        height: 100%;
     }
 
     .gamespot-container .small-card {
