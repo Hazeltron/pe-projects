@@ -12,6 +12,7 @@ const videoCtaStudy = document.querySelector('.case-study-content[data-target="v
 const gameSpotStudy = document.querySelector('.case-study-content[data-target="game-spot-button"]');
 const marywoodStudy = document.querySelector('.case-study-content[data-target="marywood-button"]');
 const atmosphereStudy = document.querySelector('.case-study-content[data-target="atmosphere-button"]');
+const montuckyStudy = document.querySelector('.case-study-content[data-target="montucky-button"]');
 
 const androidButton = document.querySelector('.android-button');
 const shellButton = document.querySelector('.shell-button');
@@ -27,6 +28,7 @@ const videoCtaButton = document.querySelector('.video');
 const gameSpotButton = document.querySelector('.game-spot-button');
 const marywoodButton = document.querySelector('.marywood-button');
 const atmosphereButton = document.querySelector('.atmosphere-button');
+const montuckyButton = document.querySelector('.montucky-button')
 
 function displayContent(content) {
     if (content.style.display !== 'block') {
@@ -35,6 +37,10 @@ function displayContent(content) {
         content.style.display = 'none';
     }
 }
+
+montuckyButton.addEventListener('click', function() {
+    displayContent(montuckyStudy);
+});
 
 atmosphereButton.addEventListener('click', function() {
     displayContent(atmosphereStudy);
@@ -107,6 +113,8 @@ const gameSpotWire = document.querySelector('.layouts[data-wire="game-spot-butto
 const marywoodWire = document.querySelector('.layouts[data-wire="marywood-button"]');
 const atmosphereWire = document.querySelector('.layouts[data-wire="atmosphere-button"]');
 
+const montuckyWire = document.querySelector('.layouts[data-wire="montucky-button"]');
+
 const androidButtonWire = document.querySelector('.android-wire');
 const shellButtonWire = document.querySelector('.shell-wire');
 const vacationButtonWire = document.querySelector('.vacation-wire');
@@ -121,6 +129,7 @@ const videoCtaButtonWire = document.querySelector('.video-wire');
 const gameSpotButtonWire = document.querySelector('.game-wire');
 const marywoodButtonWire = document.querySelector('.marywood-wire');
 const atmosphereButtonWire = document.querySelector('.atmosphere-wire');
+const montuckyButtonWire = document.querySelector('.montucky-wire');
 
 function toggleBorder(layout) {
     if (layout.classList.contains('bordered')) {
@@ -129,6 +138,10 @@ function toggleBorder(layout) {
         layout.classList.add('bordered');
     }
 }
+
+montuckyButtonWire.addEventListener('click', function() {
+    toggleBorder(montuckyWire);
+});
 
 atmosphereButtonWire.addEventListener('click', function() {
     toggleBorder(atmosphereWire);
