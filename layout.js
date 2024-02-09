@@ -235,66 +235,66 @@ const layouts = document.querySelectorAll("layout-section-wrapper");
 
 
 
-function getWidth(innerColumn) {
-    const innerColumnWidth = innerColumn.getBoundingClientRect().width;
+// function getWidth(innerColumn) {
+//     const innerColumnWidth = innerColumn.getBoundingClientRect().width;
 
     
 
 
 
-    const innerColumnRounded = Math.floor(innerColumnWidth);
-    console.log("innercolumn width: " + innerColumnRounded);
-    //this is an object, dummy
-    return {
-        innerColumnWidth: innerColumnRounded,
-    };
-}
+//     const innerColumnRounded = Math.floor(innerColumnWidth);
+//     console.log("innercolumn width: " + innerColumnRounded);
+//     //this is an object, dummy
+//     return {
+//         innerColumnWidth: innerColumnRounded,
+//     };
+// }
 
-function setRange(size, innerColumn) {
-    size.max = getWidth(innerColumn).innerColumnWidth;
-    //min sie must be 340 or it breaks?
-    if (window.innerWidth < 340) {
-        size.min = 0;
-    } else {
-        size.min = 340;
-    }
-}
+// function setRange(size, innerColumn) {
+//     size.max = getWidth(innerColumn).innerColumnWidth;
+//     //min sie must be 340 or it breaks?
+//     if (window.innerWidth < 340) {
+//         size.min = 0;
+//     } else {
+//         size.min = 340;
+//     }
+// }
 
-function resize(size, label, screen) {
-    const width = size.value;
-    label.innerHTML = width;
-    screen.style.width = width + "px";
-    console.log("slider value: "  + width);
-}
+// function resize(size, label, screen) {
+//     const width = size.value;
+//     label.innerHTML = width;
+//     screen.style.width = width + "px";
+//     console.log("slider value: "  + width);
+// }
 
-function addEventListeners(innerColumn, screen, label, size) {
-    window.addEventListener("resize", function () {
-        setRange(size, innerColumn);
-        resize(size, label, screen);
-    });
+// function addEventListeners(innerColumn, screen, label, size) {
+//     window.addEventListener("resize", function () {
+//         setRange(size, innerColumn);
+//         resize(size, label, screen);
+//     });
 
-    size.addEventListener("input", function () {
-        setRange(size, innerColumn);
-        resize(size, label, screen);
-    });
-}
+//     size.addEventListener("input", function () {
+//         setRange(size, innerColumn);
+//         resize(size, label, screen);
+//     });
+// }
 
-function resizeAllScreens() {
-    layouts.forEach(function (layout) {
-        const innerColumn = layout.querySelector(".layouts .inner-column");
-        const screen = layout.querySelector("resizer");
-        const size = layout.querySelector(".size");
-        const label = layout.querySelector(".layout-controls span");
+// function resizeAllScreens() {
+//     layouts.forEach(function (layout) {
+//         const innerColumn = layout.querySelector(".layouts .inner-column");
+//         const screen = layout.querySelector("resizer");
+//         const size = layout.querySelector(".size");
+//         const label = layout.querySelector(".layout-controls span");
         
 
-            function initialize() {
-                getWidth(innerColumn);
-                setRange(size, innerColumn);
-                resize(size, label, screen);
-                addEventListeners(innerColumn, screen, label, size);
-            }
+//             function initialize() {
+//                 getWidth(innerColumn);
+//                 setRange(size, innerColumn);
+//                 resize(size, label, screen);
+//                 addEventListeners(innerColumn, screen, label, size);
+//             }
             
-            initialize();
+//             initialize();
 
 
             
@@ -303,10 +303,10 @@ function resizeAllScreens() {
         
 
         
-    });
-}
+//     });
+// }
 
-resizeAllScreens();
+// resizeAllScreens();
 
 
 
