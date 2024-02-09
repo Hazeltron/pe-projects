@@ -1,12 +1,14 @@
 <montucky-wrapper>
 
-    <article>
-        <h2>TOP SWAG</h2>
-        <p>Somebody said to match your snack to your slacks.</p>
-    </article>
+<article>
+                <h2>TOP SWAG</h2>
+                <p>Somebody said to match your snack to your slacks.</p>
+            </article>
 
     <ul>
         <li>
+            
+
             <a href="https://shop.montuckycoldsnacks.com/product-category/apparel/">
                 <picture>
                     <img src="assets/montucky-one.jpeg" alt="">
@@ -35,10 +37,14 @@
                 <h3>DOGGOS 'N Stuff</h3>
             </a>
         </li>
+
+        <li>
+            <a href="https://shop.montuckycoldsnacks.com/">SHOP ALL THE STUFF</a>
+        </li>
     </ul>
 
-    <a href="https://shop.montuckycoldsnacks.com/">SHOP ALL THE STUFF</a>
+    
 
-    <triangle>triangle here</triangle>
+    <polygon></polygon>
 
 </montucky-wrapper>
