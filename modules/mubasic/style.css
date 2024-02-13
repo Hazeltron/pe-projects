@@ -13,6 +13,10 @@
         & h2 {
             margin-top: 20%;
         }
+
+        & span {
+            color: #e4803d;
+        }
     }
 
     & header {
@@ -29,6 +33,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 40px 0 40px 0;
    
 
         & ul {
@@ -61,15 +66,28 @@
             }
         }
 
-
+        & li:nth-of-type(1){
+            
+            background-color: #9cc2cd;
+        }
         & li:nth-of-type(2){
             position: absolute;
             top:40px;
             z-index: 10;
             width: 100%;
             margin-left: 150px;
-            background-color: greenyellow;
+            background-color: #0d0d0d;
         }
+
+        & li:nth-of-type(3){
+            
+            background-color: #f2c87d;
+        }
+        & li:nth-of-type(4){
+            
+            background-color: #f2e2c2;
+        }
+        
 
         & li:nth-of-type(5){
             position: absolute;
@@ -77,7 +95,17 @@
             z-index: 10;
             width: 100%;
             margin-left: 150px;
-            background-color: greenyellow;
+            background-color: #0d0d0d;
+        }
+
+        & li:nth-of-type(6){
+            
+            background-color: #e4803d;
+        }
+
+        & li:nth-of-type(7){
+            
+            background-color: #bca9e2;
         }
 
 
