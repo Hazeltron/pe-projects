@@ -1,0 +1,120 @@
+.mubasic {
+
+    & mubasic-wrapper {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    & article {
+        background-color: #f2c87d;
+        padding: 20px;
+
+        & h2 {
+            margin-top: 20%;
+        }
+    }
+
+    & header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    & svg {
+        max-width: 30px;
+    }
+
+    & aside {
+        background-color: #1b1a19;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+   
+
+        & ul {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            margin-left: 60px;
+            gap:10px;
+        }
+
+        & li {
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 80px;
+            border-radius: 20px 0 0 20px;
+            background-color: aqua;
+
+            & p {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(69, 69, 69, 0.69);
+                color: azure;
+                margin-left: 20px;
+                max-width: 60px;
+                padding: 20px;
+            }
+        }
+
+
+        & li:nth-of-type(2){
+            position: absolute;
+            top:40px;
+            z-index: 10;
+            width: 100%;
+            margin-left: 150px;
+            background-color: greenyellow;
+        }
+
+        & li:nth-of-type(5){
+            position: absolute;
+            top:220px;
+            z-index: 10;
+            width: 100%;
+            margin-left: 150px;
+            background-color: greenyellow;
+        }
+
+
+        & li:hover {
+            transform: translateX(15px);
+        }
+    }
+
+    & footer {
+        background-color: initial;
+        color: var(--ink);
+    }
+
+    @container (min-width: 800px) {
+
+        mubasic-wrapper {
+            flex-direction: row;
+        }
+
+        & article {
+            background-color: #f2c87d;
+            height: 100vh;
+            width: 50vw;
+
+            & h2 {
+                margin-top: 40%;
+            }
+        }
+
+        & aside {
+            background-color: #1b1a19;
+            height: 100vh;
+            width: 50vw;
+        }
+
+    }
+
+}
+
+    
