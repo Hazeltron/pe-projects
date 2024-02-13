@@ -1,14 +1,17 @@
 <montucky-wrapper>
 
-<article>
-                <h2>TOP SWAG</h2>
-                <p>Somebody said to match your snack to your slacks.</p>
-            </article>
-
-    <ul>
-        <li>
             
 
+    <ul>
+
+        <li>
+            <article>
+                <h2 class="lay-loud-voice">TOP SWAG</h2>
+                <p>Somebody said to match your snack to your slacks.</p>
+            </article>
+        </li>
+
+        <li>
             <a href="https://shop.montuckycoldsnacks.com/product-category/apparel/">
                 <picture>
                     <img src="assets/montucky-one.jpeg" alt="">
