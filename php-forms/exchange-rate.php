@@ -1,28 +1,4 @@
-<?php include "../header.php";?>
 
-<style>
-	
-	.field{
-		display: flex;
-		flex-direction: column;
-		margin-top: 20px ;
-	}
-
-	.field, label {
-		margin-top: 10px;
-	}
-	input {
-		max-width: 200px;
-		margin-top: 10px;
-	}
-
-	button {
-		max-width: 100px;
-		margin-top: 20px;
-		background-color: greenyellow;
-		font-size: 16px;
-	}
-</style>
 
 
 <?php
@@ -56,11 +32,10 @@
 	 <form method="post">
 
 	 	<h1 class="loud-voice">Exchange rate calculator</h1>
-	 	<p>This will tell you what dollars mean in terms of euros. That is to say, it'll show you the conversion of a given dollar amount rounded up to the next... euro-penny. <br>
-	 	Does that make sense???</p>
+	 	<p>This will show you the conversion of a given dollar amount rounded up to the next euro-penny.</p>
 
 	 	<div class="field">
-	 		<pre><?php print_r($_POST)?></pre>
+	 		
 	 		
 	 		<label>How many dollars do you have?</label>
 	 		<input type="number" name="dollars" min="0" value="<?=$dollars?>">
