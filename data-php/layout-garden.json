@@ -233,7 +233,25 @@
         ],
         "layout": "mubasic",
         "id": "mubasic-id"
+    },
+    {
+        "name": "decimal studios",
+        "link": "https://mubasic-test.webflow.io/",
+        "class": "decimal",
+        "button": "decimal-button",
+        "wire-button": "decimal-wire",
+        "screen-button": "decimal-screen",
+        "range-slide": "decimal-range",
+        "what": "<p>...</p>",
+        "whyText": ["<p>This gave me another chance to explore the design process from start to finish while practicing coding layouts.</p>"
+        ],
+        "diffText": ["<p>The hardest part about this grid was sourcing images that matched each other. These come from Unsplash. I tried using AI-generated images but they appeared far too unnatural.</p> "],
+        "howText": ["<p>This layout is being controlled with grid and the text and links are being manipulated with positioning.</p>"
+        ],
+        "layout": "decimal",
+        "id": "decimal-id"
     }
+   
 ]
 
 
