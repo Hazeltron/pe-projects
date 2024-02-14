@@ -33,6 +33,12 @@ include '../../header.php';
 </section>
 
 
+<section>
+    <inner-column>
+        <?php include('../../php-forms/password.php')?>
+    </inner-column>
+</section>
+
 
 
 <?php include '../../footer.php'; ?>
