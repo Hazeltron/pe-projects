@@ -51,6 +51,7 @@
 
 
 		<link rel="stylesheet" href="css/site.css">
+		<script src="https://unpkg.com/vue@next"></script>
 		
 
 
