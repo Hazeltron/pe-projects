@@ -1,4 +1,29 @@
-form {
-    margin-top: 40px;
-    background-color: aquamarine;
+
+
+/* span{
+	padding: 5px 12px;
+	border: solid indigo 1px;
+	border-radius: 100px;
+} */
+
+
+.field{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px ;
+}
+
+.field, label {
+    margin-top: 10px;
+}
+input {
+    max-width: 200px;
+    margin-top: 10px;
+}
+
+button {
+    max-width: 100px;
+    margin-top: 20px;
+
+    font-size: 16px;
 }
