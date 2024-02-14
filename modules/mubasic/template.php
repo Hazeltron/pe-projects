@@ -24,14 +24,21 @@
 
     <aside>
         <ul>
-            <li><p>m</p></li>
-            <li><p>u</p></li>
-            <li><p>b</p></li>
-            <li><p>a</p></li>
-            <li><p>s</p></li>
-            <li><p>i</p></li>
-            <li><p>c</p></li>
+            <li onClick="playSound('assets/arcade.mp3')"><p>m</p></li>
+            <li onClick="playSound('assets/arcade-alert.mp3')"><p>u</p></li>
+            <li onClick="playSound('assets/arcade-mission-complete.mp3')"><p>b</p></li>
+            <li onClick="playSound('assets/arcade-bonus.mp3')"><p>a</p></li>
+            <li onClick="playSound('assets/arcade-jump.mp3')"><p>s</p></li>
+            <li onClick="playSound('assets/arcade-new-item.mp3')"><p>i</p></li>
+            <li onClick="playSound('assets/arcade-new-level.mp3')"><p>c</p></li>
         </ul>
     </aside>
 
 </mubasic-wrapper>
+
+<script>
+      function playSound(audioFile) {
+        const audio = new Audio(audioFile);
+        audio.play();
+    }
+</script>
