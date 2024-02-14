@@ -1,0 +1,25 @@
+.decimal {
+    & decimal-wrapper{
+        display: block;
+    }
+    & ul {
+        display: grid;
+        gap: 20px;
+    }
+
+    & picture {
+        height: 100%;
+    }
+
+
+
+
+    @container (min-width: 600px) {
+        & ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+
+        }
+    }
+
+}
