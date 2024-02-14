@@ -1,0 +1,30 @@
+[
+    {
+        "img": "decimal-one.jpeg",
+        "title": "Vazquez + Partners",
+        "text": "Developing the future of fashion entrepreneurship",
+        "label": "Branding, Portfolio",
+        "class": "left-picture"
+    },
+    {
+        "img": "decimal-two.jpeg",
+        "title": "SkyFi",
+        "text": "Satellite photography at everyone’s fingertips",
+        "label": "Start-up",
+        "class": "right-picture"
+    },
+    {
+        "img": "decimal-three.jpeg",
+        "title": "Jacques",
+        "text": "Minimal design, maximum impact",
+        "label": "E-CommerceEditorial",
+        "class": "left-picture"
+    },
+    {
+        "img": "decimal-four.jpeg",
+        "title": "Thomas Prior",
+        "text": "A showcase of life’s cinematic moments",
+        "label": "Portfolio, Editorial",
+        "class": "right-picture"
+    }
+]
