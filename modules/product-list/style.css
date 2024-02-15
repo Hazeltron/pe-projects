@@ -1,7 +1,18 @@
 /* .product * {
     border: black solid 1px;
 } */
+.product.bordered :not(.inner-column, resizer, module, ul, .thumbnail ) {
+    border: solid var(--highlight) .2px;
+    background-color: var(--paper);
+    color: var(--ink);
+    background: none ;
+    transition: 300ms ease-in-out;
+    padding: 4px;
+}
 
+.product.bordered img {
+    opacity: 0;
+}
 .product .inner-column {
     padding: 0;
 }
