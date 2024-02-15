@@ -1,53 +1,45 @@
-.android {
+.android.bordered :not(.inner-column, resizer, android-container, .top-section, li, .dialog-pane, div, .middle-section, .lower-section, ul){
+    border: solid var(--highlight) .2px;
+    background-color: var(--paper);
+    color: var(--ink);
+    background: none ;
+    transition: 300ms ease-in-out;
+    padding: 4px;
+    
+}
+
+.android.bordered svg use {
+    fill: var(--ink);
+}
+
+.android.bordered {
+    & .middle-section {
+        & ul {
+            & li {
+                & article {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}  
+
+.android.bordered img {
+    opacity: 0;
+}
+
   
+.android .inner-column {
+    padding: 2px;
+}
+
+.android {
     & android-container {
         display: block;
         /* position: relative; */
     }
-    /* & .modal-box {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: red;
-        opacity: .5;
-        color: blue;
-        display: grid;
-        place-items: center;
-        padding: 20px;
-        pointer-events: none;
-        z-index: 40;
-    }
 
-    .dialog-pane {
-        z-index: 50;
-        position: sticky;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: grid;
-        place-items: center;
-        padding: 20px;
-        min-height: 100px;
-        width: 100%;
-        max-width: 400px;
-        background-color: white;
-    } */
-
-    
-
-    
-
-   
-
-    & *::selection {
-        background-color: #ff6600;
-        color: #fff;
-    }
-
-    section:nth-of-type(n + 2) {
+    & section:nth-of-type(n + 2) {
         margin-top: 10vh;
     }
 
@@ -68,7 +60,6 @@
             min-height: 990px;
         }
 
-       
         & .title {
             display: block;
             display: flex;
@@ -153,8 +144,6 @@
     & .middle-section {
         text-align: center;
 
-        
-
         & ul{
             display: grid;
             grid-template-columns: repeat(6, 1fr);
@@ -216,6 +205,8 @@
             & text-content {
                 margin-top: 20px;
                 display: grid;
+                justify-content: center;
+                align-items: center;
                 text-align: center;
                 gap: 10px;
             }
@@ -227,8 +218,9 @@
                 border: 1px solid var(--ink);
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: space-evenly;
                 gap: 10px;
+                min-width: 200px;
 
                 & .icon-plus {
                     aspect-ratio: 1/1;
@@ -259,11 +251,7 @@
             & button:active{
                 background-color: #737373;
             }
-
-            
         }
-
-        
     }
 
     & .lower-section{
@@ -355,7 +343,6 @@
         & .top-section forground-card {
             grid-column: 3/12;
             grid-row: 2/-1;
-
         }
 
         & .top-section .title {
@@ -363,11 +350,19 @@
             grid-row: 1/2;
         }
 
+        &.top-section hero-grid {
+            bottom: 34%;
+        }
+
+        & .top-section .title {
+            grid-row: 2/-1;
+        }
+
         & .middle-section ul {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
-            transform: translateX(0) !important;
+            transform: translateX(0);
         }
 
         & .middle-section picture {
@@ -379,7 +374,7 @@
             /* resets height and color */
             height: initial;
             width: initial;
-            background-color: transparent !important;
+            background-color: transparent;
             padding: 0px;
         }
         & .middle-section li:nth-of-type(1) article {
@@ -452,16 +447,18 @@
             bottom: 34%;
         }
 
-          & .top-section .title {
+        & .top-section .title {
             grid-row: 2/-1;
         }
 
         & .middle-section ul {
             grid-template-columns: 1fr 1fr 1fr;
-          
         }
     }
+}
+
+    
+    
 
 
     
-}
