@@ -1,3 +1,16 @@
+.game-spot.bordered :not(.inner-column, resizer, .gamespot-container, a) {
+    border: solid var(--highlight) .2px;
+    background-color: var(--paper);
+    color: var(--ink);
+    background: none ;
+    transition: 300ms ease-in-out;
+    padding: 4px;
+}
+
+.game-spot.bordered img {
+    opacity: 0;
+}
+
 
 .gamespot-container {
     display: grid;
