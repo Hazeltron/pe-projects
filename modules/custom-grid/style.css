@@ -1,3 +1,28 @@
+.cool-girls.bordered :not(.inner-column, resizer, cool-girls, ul, li) {
+    border: solid var(--highlight) .2px;
+    background-color: var(--paper);
+    color: var(--ink);
+    background: none ;
+    transition: 300ms ease-in-out;
+    padding: 4px;
+}
+
+.cool-girls.bordered img {
+    opacity: 0;
+}
+
+.cool-girls.bordered .product-link {
+    opacity: 1;
+    
+}
+
+.cool-girls.bordered .product-link:hover{
+    opacity: 1;
+    color: var(--ink);
+    
+}
+
+
 cool-girls {
     display: block;
 }
@@ -53,7 +78,7 @@ cool-girls .grey-hover:hover {
     position: relative;
 }
 
-.cool-girls cool-girls .main-grid .product-link{
+.cool-girls .product-link{
     position: absolute;
     bottom: 5px;
     right: 0px;
@@ -69,14 +94,14 @@ cool-girls .grey-hover:hover {
     /* border-radius: 0 10px ; */
 }
 
-.cool-girls cool-girls .main-grid .product-link:hover{
+.cool-girls .product-link:hover{
     opacity: 1;
     /* color: indianred; */
     color: #5ac2d2;
     
 }
 
-.cool-girls cool-girls .main-grid .main-link{
+.cool-girls .main-link{
     position: absolute;
     top: 30px;
     left: 10px;
