@@ -1,3 +1,18 @@
+.mubasic.bordered :not(.inner-column, resizer, mubasic-wrapper, ul, header, footer) {
+    border: solid var(--highlight) .2px;
+    background-color: var(--paper);
+    color: var(--ink);
+    background: none ;
+    transition: 300ms ease-in-out;
+    padding: 4px;
+}
+
+.mubasic.bordered img {
+    opacity: 0;
+}
+
+
+
 .mubasic {
 
     & mubasic-wrapper {
