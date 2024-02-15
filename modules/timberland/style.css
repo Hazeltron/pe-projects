@@ -1,3 +1,17 @@
+
+.timberland.bordered :not(.inner-column, resizer, timberland-container, image-grid, ul) {
+    border: solid var(--highlight) .2px;
+    background-color: var(--paper);
+    color: var(--ink);
+    background: none ;
+    transition: 300ms ease-in-out;
+    padding: 4px;
+}
+
+.timberland.bordered img {
+	opacity: 0;
+}
+
 .timberland {
 	background-color: white;
 }
