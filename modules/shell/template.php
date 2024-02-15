@@ -6,7 +6,7 @@
 
         foreach (array_slice($cards, 0, 5) as $card) { ?>
             <li>
-                <a href="#" class="card-link">hello</a>
+                <a href="#" class="card-link"></a>
                 <article class="upper-cards">
                     <picture>
                         <img src="assets/<?= $card['img'] ?>" alt="">
@@ -24,7 +24,7 @@
 </div>
 
 <div class="lower-shell">
-    <h2 class="lay-loud-voice">Featured content</h2>
+    <h2 class="lay-loud-voice lower-title">Featured content</h2>
     <ul class="lower-grid">
         <?php 
         foreach (array_slice($cards, 5) as $card) { ?>
