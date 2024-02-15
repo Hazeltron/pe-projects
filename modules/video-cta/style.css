@@ -1,3 +1,16 @@
+.video-cta.bordered :not(.inner-column, resizer, video-cta){
+    border: solid var(--highlight) .2px;
+    background-color: var(--paper);
+    color: var(--ink);
+    background: none ;
+    transition: 300ms ease-in-out;
+    padding: 4px;
+}
+
+.video-cta.bordered video {
+    opacity: 0;
+}
+
 .video-cta video-cta {
     display: block;
     display: flex;
