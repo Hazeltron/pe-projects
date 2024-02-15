@@ -1,3 +1,16 @@
+.cards.bordered :not(.inner-column, resizer, article-grid, ul, li) {
+    border: solid var(--highlight) .2px;
+    background-color: var(--paper);
+    color: var(--ink);
+    background: none ;
+    transition: 300ms ease-in-out;
+    padding: 4px;
+}
+
+.cards.bordered img {
+    opacity: 0;
+}
+
 .cards text-content {
 	color: black;
 	background-color: rgba(255,255, 255, .7);
