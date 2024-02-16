@@ -34,8 +34,7 @@
             const picRight = document.querySelectorAll('decimal-wrapper .right-picture');
 
             const rect = picture.getBoundingClientRect(); 
-            // Get the bounding rectangle of the picture element
-             // Calculate the center of the picture element
+            
             const centerX = rect.left + rect.width / 2;
 
             // track mouse movment for each picture element
@@ -47,8 +46,9 @@
                 console.log("left");
             }
 
-            //make picture grow as x axis number shrinks for images on left
-            // make picture grow as x axis number increases for images on right
+
+            //0-100% for entire screen 
+            //make picture grow as x axis number changes for one of the gird columns
         });
     });
 </script>
