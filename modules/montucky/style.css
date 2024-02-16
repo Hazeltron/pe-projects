@@ -1,3 +1,20 @@
+.montucky.bordered :not(.inner-column, resizer, montucky-wrapper, li) {
+    border: solid var(--highlight) .2px;
+    background-color: var(--paper);
+    color: var(--ink);
+    background: none ;
+    transition: 300ms ease-in-out;
+    padding: 4px;
+}
+
+.montucky.bordered img {
+    opacity: 0;
+}
+
+.montucky.bordered li:nth-of-type(1) {
+    background-color: transparent;
+}
+
 .montucky {
     & montucky-wrapper {
         display: block;
