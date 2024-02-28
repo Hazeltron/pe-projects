@@ -1,5 +1,5 @@
 
-/* .decimal.bordered :not(.inner-column, resizer, decimal-wrapper, ul, a) {
+.decimal.bordered :not(.inner-column, resizer, decimal-wrapper, ul, a) {
     border: solid var(--highlight) .2px;
     background-color: var(--paper);
     color: var(--ink);
@@ -10,7 +10,7 @@
 
 .decimal.bordered img {
     opacity: 0;
-} */
+}
 
 
 .decimal {
@@ -19,6 +19,8 @@
     }
 
     & ul {
+
+        /* not grid, flex otherwise the images below will follow the same siz rules */
         display: grid;
         gap: 20px;
     }

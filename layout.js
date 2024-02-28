@@ -1,3 +1,6 @@
+
+const decimalStudy = document.querySelector('.case-study-content[data-target="decimal-button"]');
+const mubasicStudy = document.querySelector('.case-study-content[data-target="mubasic-button"]');
 const androidStudy = document.querySelector('.case-study-content[data-target="android-button"]');
 const shellStudy = document.querySelector('.case-study-content[data-target="shell-button"]');
 const vacationStudy = document.querySelector('.case-study-content[data-target="vacation"]');
@@ -14,6 +17,8 @@ const marywoodStudy = document.querySelector('.case-study-content[data-target="m
 const atmosphereStudy = document.querySelector('.case-study-content[data-target="atmosphere-button"]');
 const montuckyStudy = document.querySelector('.case-study-content[data-target="montucky-button"]');
 
+const decimalButton = document.querySelector('.decimal-button');
+const mubasicButton = document.querySelector('.mubasic-button');
 const androidButton = document.querySelector('.android-button');
 const shellButton = document.querySelector('.shell-button');
 const vacationButton = document.querySelector('.vacation');
@@ -37,6 +42,15 @@ function displayContent(content) {
         content.style.display = 'none';
     }
 }
+
+
+decimalButton.addEventListener('click', function() {
+    displayContent(decimalStudy);
+});
+
+mubasicButton.addEventListener('click', function() {
+    displayContent(mubasicStudy);
+});
 
 montuckyButton.addEventListener('click', function() {
     displayContent(montuckyStudy);
@@ -97,7 +111,8 @@ gameSpotButton.addEventListener('click', function() {
 
 
 
-
+const mubasicWire = document.querySelector('.layouts[data-wire="mubasic-button"]');
+const decimalWire = document.querySelector('.layouts[data-wire="decimal-button"]');
 const androidWire = document.querySelector('.layouts[data-wire="android-button"]');
 const shellWire = document.querySelector('.layouts[data-wire="shell-button"]');
 const vacationWire = document.querySelector('.layouts[data-wire="vacation"]');
@@ -112,9 +127,11 @@ const videoCtaWire = document.querySelector('.layouts[data-wire="video"]');
 const gameSpotWire = document.querySelector('.layouts[data-wire="game-spot-button"]');
 const marywoodWire = document.querySelector('.layouts[data-wire="marywood-button"]');
 const atmosphereWire = document.querySelector('.layouts[data-wire="atmosphere-button"]');
-
 const montuckyWire = document.querySelector('.layouts[data-wire="montucky-button"]');
 
+
+const mubasicButtonWire = document.querySelector('.mubasic-wire');
+const decimalButtonWire = document.querySelector('.decimal-wire');
 const androidButtonWire = document.querySelector('.android-wire');
 const shellButtonWire = document.querySelector('.shell-wire');
 const vacationButtonWire = document.querySelector('.vacation-wire');
@@ -138,6 +155,14 @@ function toggleBorder(layout) {
         layout.classList.add('bordered');
     }
 }
+
+mubasicButtonWire.addEventListener('click', function() {
+    toggleBorder(mubasicWire);
+});
+
+decimalButtonWire.addEventListener('click', function() {
+    toggleBorder(decimalWire);
+});
 
 montuckyButtonWire.addEventListener('click', function() {
     toggleBorder(montuckyWire);
@@ -235,66 +260,66 @@ const layouts = document.querySelectorAll("layout-section-wrapper");
 
 
 
-// function getWidth(innerColumn) {
-//     const innerColumnWidth = innerColumn.getBoundingClientRect().width;
+function getWidth(innerColumn) {
+    const innerColumnWidth = innerColumn.getBoundingClientRect().width;
 
     
 
 
 
-//     const innerColumnRounded = Math.floor(innerColumnWidth);
-//     console.log("innercolumn width: " + innerColumnRounded);
-//     //this is an object, dummy
-//     return {
-//         innerColumnWidth: innerColumnRounded,
-//     };
-// }
+    const innerColumnRounded = Math.floor(innerColumnWidth);
+    console.log("innercolumn width: " + innerColumnRounded);
+    //this is an object, dummy
+    return {
+        innerColumnWidth: innerColumnRounded,
+    };
+}
 
-// function setRange(size, innerColumn) {
-//     size.max = getWidth(innerColumn).innerColumnWidth;
-//     //min sie must be 340 or it breaks?
-//     if (window.innerWidth < 340) {
-//         size.min = 0;
-//     } else {
-//         size.min = 340;
-//     }
-// }
+function setRange(size, innerColumn) {
+    size.max = getWidth(innerColumn).innerColumnWidth;
+    //min sie must be 340 or it breaks?
+    if (window.innerWidth < 340) {
+        size.min = 0;
+    } else {
+        size.min = 340;
+    }
+}
 
-// function resize(size, label, screen) {
-//     const width = size.value;
-//     label.innerHTML = width;
-//     screen.style.width = width + "px";
-//     console.log("slider value: "  + width);
-// }
+function resize(size, label, screen) {
+    const width = size.value;
+    label.innerHTML = width;
+    screen.style.width = width + "px";
+    console.log("slider value: "  + width);
+}
 
-// function addEventListeners(innerColumn, screen, label, size) {
-//     window.addEventListener("resize", function () {
-//         setRange(size, innerColumn);
-//         resize(size, label, screen);
-//     });
+function addEventListeners(innerColumn, screen, label, size) {
+    window.addEventListener("resize", function () {
+        setRange(size, innerColumn);
+        resize(size, label, screen);
+    });
 
-//     size.addEventListener("input", function () {
-//         setRange(size, innerColumn);
-//         resize(size, label, screen);
-//     });
-// }
+    size.addEventListener("input", function () {
+        setRange(size, innerColumn);
+        resize(size, label, screen);
+    });
+}
 
-// function resizeAllScreens() {
-//     layouts.forEach(function (layout) {
-//         const innerColumn = layout.querySelector(".layouts .inner-column");
-//         const screen = layout.querySelector("resizer");
-//         const size = layout.querySelector(".size");
-//         const label = layout.querySelector(".layout-controls span");
+function resizeAllScreens() {
+    layouts.forEach(function (layout) {
+        const innerColumn = layout.querySelector(".layouts .inner-column");
+        const screen = layout.querySelector("resizer");
+        const size = layout.querySelector(".size");
+        const label = layout.querySelector(".layout-controls span");
         
 
-//             function initialize() {
-//                 getWidth(innerColumn);
-//                 setRange(size, innerColumn);
-//                 resize(size, label, screen);
-//                 addEventListeners(innerColumn, screen, label, size);
-//             }
+            function initialize() {
+                getWidth(innerColumn);
+                setRange(size, innerColumn);
+                resize(size, label, screen);
+                addEventListeners(innerColumn, screen, label, size);
+            }
             
-//             initialize();
+            initialize();
 
 
             
@@ -303,10 +328,10 @@ const layouts = document.querySelectorAll("layout-section-wrapper");
         
 
         
-//     });
-// }
+    });
+}
 
-// resizeAllScreens();
+resizeAllScreens();
 
 
 
