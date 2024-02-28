@@ -83,6 +83,13 @@ layout-section-wrapper:nth-of-type(n+2) {
     z-index: 20;
 }
 
+.starbucks-study {
+    position: sticky;
+    top: 0;
+    background-color: var(--paper);
+    z-index: 20;
+}
+
 layout-section-wrapper {
     height: 100%;
 }
