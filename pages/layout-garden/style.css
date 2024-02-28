@@ -46,7 +46,7 @@ layout-section-wrapper:nth-of-type(n+2) {
 
 .case-study {
     position: relative;
-    border-bottom: solid 1px var(--ink);
+
     padding-bottom: 20px;
 }
 
@@ -76,19 +76,16 @@ layout-section-wrapper:nth-of-type(n+2) {
     min-width: 40vw;
 }
 
-.case-study {
+.layout-container {
     position: sticky;
-    top: 0;
+    top: 50px;
     background-color: var(--paper);
     z-index: 20;
+    border-bottom: solid 1px var(--ink);
+    padding-bottom: 20px;
 }
 
-.starbucks-study {
-    position: sticky;
-    top: 0;
-    background-color: var(--paper);
-    z-index: 20;
-}
+
 
 layout-section-wrapper {
     height: 100%;
