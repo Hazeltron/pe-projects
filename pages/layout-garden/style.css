@@ -73,6 +73,7 @@ layout-section-wrapper:nth-of-type(n+2) {
 
 .layout-controls input{
     accent-color: #ff8848;
+    min-width: 40vw;
 }
 
 notes {
