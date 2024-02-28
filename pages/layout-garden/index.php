@@ -85,7 +85,6 @@ foreach($layouts as $layout) { ?>
 			<notes>
 				<h2 class="calm-strong-voice">What is it?</h2>
 				<p class="calm-voice">This is based on a classic Starbucks layout that they haven’t changed (as far as I can tell) since CSS Flex was introduced in 2009. I’m not a huge fan of Starbucks so I changed it and instead of selling coffee it now sells beer.</p>
-				<a href="<?=$layout['link']?>" class="calm-strong-voice">Link to site</a>
 			</notes>
 		</div>
 	</section>
