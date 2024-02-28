@@ -27,28 +27,30 @@
 
     const pictures = document.querySelectorAll('decimal-wrapper picture');
 
+    // const picLeft = document.querySelectorAll('decimal-wrapper .left-picture');
+
+    // const picRight = document.querySelectorAll('decimal-wrapper .right-picture');
+
     pictures.forEach(function(picture) {
         picture.addEventListener('mousemove', function(event) {
-
-            const picLeft = document.querySelectorAll('decimal-wrapper .left-picture');
-            const picRight = document.querySelectorAll('decimal-wrapper .right-picture');
-
             const rect = picture.getBoundingClientRect(); 
-            
             const centerX = rect.left + rect.width / 2;
-
-            // track mouse movment for each picture element
-            var mouseX = event.clientX;
+            const left = rect.left;
+            const mouseX = event.clientX;
             
-            console.log("Mouse X: ", mouseX, "Center X: ", centerX);
+            console.log("Mouse X: ", mouseX, "Center X: ", centerX, left);
+            
+            if (mouseX < centerX) {
+                console.log("Mouse is on the left");
+                picture.style.minWidth = "40vw";
 
-            if (picLeft.centerX < picRight.centerX) {
-                console.log("left");
+            } else if (mouseX > centerX) {
+                console.log("Mouse is on the right");
+                picture.style.minWidth = "initial";
+
+            } else {
+                console.log("Mouse is exactly on the center");
             }
-
-
-            //0-100% for entire screen 
-            //make picture grow as x axis number changes for one of the gird columns
         });
     });
 </script>
