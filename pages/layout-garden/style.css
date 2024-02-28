@@ -22,26 +22,6 @@
     transition: 200ms ease-in-out;
 }
 
- /* .layouts.bordered :not(.inner-column, resizer) {
-    border: solid var(--highlight) .2px;
-    background-color: var(--paper);
-    color: var(--ink);
-    background: none ;
-    transition: 700ms ease-in-out;
-    padding: 4px;
-}
-
-
-
- .layouts.bordered img {
-    opacity: 0;
-}
-
- .layouts.bordered video {
-    opacity: 0;
-} */
-
-
 layout-section-wrapper {
     display: block;
 }
