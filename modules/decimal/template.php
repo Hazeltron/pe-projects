@@ -13,7 +13,7 @@
                     </picture>
                     <h2 class="lay-attention-voice"><?= $card['title'] ?></h2>
                     <p><?= $card['text'] ?></p>
-                    <p><?= $card['label'] ?></p>
+                    <p class="lay-calm-voice-bold"><?= $card['label'] ?></p>
                 </a>
             </article>
         </li>
@@ -30,7 +30,7 @@
                     </picture>
                     <h2 class="lay-attention-voice"><?= $card['title'] ?></h2>
                     <p><?= $card['text'] ?></p>
-                    <p><?= $card['label'] ?></p>
+                    <p class="lay-calm-voice-bold"><?= $card['label'] ?></p>
                 </a>
             </article>
         </li>
@@ -44,7 +44,7 @@
     const firstArticleList = document.querySelector('decimal-wrapper ul:nth-of-type(1)');
     const secondArticleList = document.querySelector('decimal-wrapper ul:nth-of-type(2)');
 
-    function resizeRect(listItemOne, listItemTwo, parent) {
+    function resizeRect(listItemOne, listItemTwo, parent, event) {
         // Find the center 
         const rect = parent.getBoundingClientRect();
         const centerX = rect.left + rect.width / 2;
@@ -79,8 +79,10 @@
 
         const listItemOne = firstArticleList.querySelector("decimal-wrapper li:nth-of-type(1)");
         const listItemTwo = firstArticleList.querySelector("decimal-wrapper li:nth-of-type(2)");
-        
-        resizeRect(listItemOne, listItemTwo, firstArticleList);
+
+   
+        resizeRect(listItemOne, listItemTwo, firstArticleList, event);
+
     });
 
     secondArticleList.addEventListener("mousemove", function(event) {
@@ -88,7 +90,39 @@
         const listItemOne = secondArticleList.querySelector("decimal-wrapper li:nth-of-type(1)");
         const listItemTwo = secondArticleList.querySelector("decimal-wrapper li:nth-of-type(2)");
 
-        resizeRect(listItemOne, listItemTwo, secondArticleList);
+ 
+        resizeRect(listItemOne, listItemTwo, secondArticleList, event);
+  
     });
+
+    firstArticleList.addEventListener("mouseleave", function(event) {
+    const listItemOne = firstArticleList.querySelector("decimal-wrapper li:nth-of-type(1)");
+    const listItemTwo = firstArticleList.querySelector("decimal-wrapper li:nth-of-type(2)");
+    const resizerWindow = document.querySelector("resizer");
+
+    if (resizerWindow.innerWidth > 700) {
+        listItemOne.style.width = "50%";
+        listItemTwo.style.width = "50%";
+        console.log("I'm more than 700");
+    } else {
+        listItemOne.style.width = "100%"; 
+        listItemTwo.style.width = "100%"; 
+        console.log("I'm less than 700");
+    }
+});
+
+secondArticleList.addEventListener("mouseleave", function(event) {
+    const listItemOne = secondArticleList.querySelector("decimal-wrapper li:nth-of-type(1)");
+    const listItemTwo = secondArticleList.querySelector("decimal-wrapper li:nth-of-type(2)");
+    const resizerWindow = document.querySelector("resizer");
+
+    if (resizerWindow.innerWidth > 700) {
+        listItemOne.style.width = "50%";
+        listItemTwo.style.width = "50%";
+    } else {
+        listItemOne.style.width = "100%"; 
+        listItemTwo.style.width = "100%"; 
+    }
+});
 
 </script>
