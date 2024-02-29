@@ -28,7 +28,6 @@
         transition: width 0ms ease-in-out;
         width: 100%;
         max-width: 100%;
-        /* min-width: 100%; */
     }
 
     & li + li {
@@ -60,17 +59,22 @@
         }
 
         & ul + ul {
-            margin-top: 100px;
+            margin-top: 50px;
         }
 
         & li {
             max-width: 63%;
             width: 50%;
-            /* min-width: 0%; */
+            transition: width 90ms ease-in-out;
+ 
         }
 
         & li + li {
             margin-top: 0px;
+        }
+
+        & h2, p {
+            margin-left: 5px;
         }
     }
 
