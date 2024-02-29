@@ -62,7 +62,7 @@
         // Δw as the increase/decrease in width per unit distance
         // Equation: w0 − (Δw * x)
         const widthRight = rect.width + (3 * distance);
-        const widthLeft = rect.width - (distance * 3);
+        const widthLeft = rect.width - (3 * distance);
         console.log("new left width:", widthLeft);
         console.log("new right width:", widthRight);
 
@@ -76,14 +76,14 @@
     }
 
     firstArticleList.addEventListener("mousemove", function(event) {
-        const listItemOne = firstArticleList.querySelector("li:nth-of-type(1)");
-        const listItemTwo = firstArticleList.querySelector("li:nth-of-type(2)");
+        const listItemOne = firstArticleList.querySelector("decimal-wrapper li:nth-of-type(1)");
+        const listItemTwo = firstArticleList.querySelector("decimal-wrapper li:nth-of-type(2)");
         resizeRect(listItemOne, listItemTwo, firstArticleList);
     });
 
     secondArticleList.addEventListener("mousemove", function(event) {
-        const listItemOne = secondArticleList.querySelector("li:nth-of-type(1)");
-        const listItemTwo = secondArticleList.querySelector("li:nth-of-type(2)");
+        const listItemOne = secondArticleList.querySelector("decimal-wrapper li:nth-of-type(1)");
+        const listItemTwo = secondArticleList.querySelector("decimal-wrapper li:nth-of-type(2)");
         resizeRect(listItemOne, listItemTwo, secondArticleList);
     });
 
