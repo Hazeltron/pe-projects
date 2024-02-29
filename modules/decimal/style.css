@@ -1,5 +1,5 @@
 
-.decimal.bordered :not(.inner-column, resizer, decimal-wrapper, ul, a) {
+.decimal.bordered :not(.inner-column, resizer, decimal-wrapper, ul, li, a) {
     border: solid var(--highlight) .2px;
     background-color: var(--paper);
     color: var(--ink);
@@ -21,7 +21,7 @@
     & ul {
         display: flex;
         flex-direction: column;
-        transition: width 0ms ease-in-out;
+  
  
     }
 
