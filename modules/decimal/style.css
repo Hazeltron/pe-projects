@@ -21,13 +21,14 @@
     & ul {
         display: flex;
         flex-direction: column;
-        height: 500px;
+  
     }
 
     & li {
         transition: width 0ms ease-in-out;
-        
+        width: 100%;
         max-width: 100%;
+        /* min-width: 100%; */
     }
 
     & li + li {
@@ -37,6 +38,7 @@
     & ul + ul {
         margin-top: 40px;
     }
+
     & picture {
         aspect-ratio: 16/9;
     }
@@ -54,6 +56,7 @@
             flex-direction: row;
             /* display: grid;
             grid-template-columns: 1fr 1fr; */
+            height: 500px;
         }
 
         & ul + ul {
@@ -63,6 +66,7 @@
         & li {
             max-width: 63%;
             width: 50%;
+            /* min-width: 0%; */
         }
 
         & li + li {
