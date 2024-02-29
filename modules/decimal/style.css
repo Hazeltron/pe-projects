@@ -21,19 +21,29 @@
     & ul {
         display: flex;
         flex-direction: column;
+        height: 500px;
     }
 
     & li {
         transition: width 0ms ease-in-out;
-        margin-top: 40px;
+        
         max-width: 100%;
+    }
+
+    & li + li {
+        margin-top: 40px;
+    }
+
+    & ul + ul {
+        margin-top: 40px;
     }
     & picture {
         aspect-ratio: 16/9;
     }
 
     & li:hover h2 {
-        color: lightcoral;
+        color: #428297;
+        text-decoration: underline;
     }
 
 
@@ -51,8 +61,12 @@
         }
 
         & li {
-            max-width: 65%;
+            max-width: 63%;
             width: 50%;
+        }
+
+        & li + li {
+            margin-top: 0px;
         }
     }
 
