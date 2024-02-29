@@ -84,7 +84,7 @@ foreach($layouts as $layout) { ?>
 			<h2 class="attention-voice">Starbucks</h2>
 			<notes>
 				<h2 class="calm-strong-voice">What is it?</h2>
-				<p class="calm-voice">This is based on a classic Starbucks layout that they haven’t changed (as far as I can tell) since CSS Flex was introduced in 2009. I’m not a huge fan of Starbucks so I changed it and instead of selling coffee it now sells beer.</p>
+				<p>This is based on a classic Starbucks layout that they haven’t changed (as far as I can tell) since CSS Flex was introduced in 2009. I’m not a huge fan of Starbucks so I changed it and instead of selling coffee it now sells beer.</p>
 			</notes>
 		</div>
 	</section>
@@ -133,15 +133,15 @@ foreach($layouts as $layout) { ?>
 			<button class="calm-strong-voice button starbucks-button">View Case Study</button>
 			<div class="case-study-content" data-target="starbucks-content">
 				<h2 class="strong-voice">Why:</h2>
-				<p class="calm-voice">Originally I saw a version of this on the Starbucks website. I looked at it as an easy win.</p>
-				<p class="calm-voice">I wanted to experiment with limited space, images and flex-blox.</p>
+				<p>Originally I saw a version of this on the Starbucks website. I looked at it as an easy win.</p>
+				<p>I wanted to experiment with limited space, images and flex-blox.</p>
 				<h2 class="strong-voice">Difficulties:</h2>
-				<p class="calm-voice">Setting the images and text to flex exactly fifty percent of the container was easy, but getting the images to fit perfectly as the screen sized changed wasn’t.</p>
-				<p class="calm-voice">I also wanted to find a way to reuse the same HTML and simply change the CSS. Which again, went fine until I realized I would need different text.</p>
+				<p>Setting the images and text to flex exactly fifty percent of the container was easy, but getting the images to fit perfectly as the screen sized changed wasn’t.</p>
+				<p>I also wanted to find a way to reuse the same HTML and simply change the CSS. Which again, went fine until I realized I would need different text.</p>
 				<h2 class="strong-voice">How I made it:</h2>
-				<p class="calm-voice">As the screen changed sizes, the images would display different behaviors. Some would stay filling their parents and others would fail to do so, sticking to the center as everything grew around them.</p>
-				<p class="calm-voice">At first, I thought, object-fit was the answer. Eventually, I realized that while subtle my images were a mix of landscape and portrait. I normalized them to both be perfect squares as a result.</p>
-				<p class="calm-voice">For the differing text, I set up default text using PHP.</p>
+				<p>As the screen changed sizes, the images would display different behaviors. Some would stay filling their parents and others would fail to do so, sticking to the center as everything grew around them.</p>
+				<p>At first, I thought, object-fit was the answer. Eventually, I realized that while subtle my images were a mix of landscape and portrait. I normalized them to both be perfect squares as a result.</p>
+				<p>For the differing text, I set up default text using PHP.</p>
 			</div>
 		</div>
 	</section>

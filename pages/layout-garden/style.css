@@ -78,7 +78,7 @@ layout-section-wrapper:nth-of-type(n+2) {
 
 .layout-container {
     position: sticky;
-    top: 50px;
+    top: 80px;
     background-color: var(--paper);
     z-index: 20;
     border-bottom: solid 1px var(--ink);
@@ -146,6 +146,15 @@ resizer {
 
     .layout-intro .layout-links {
         margin-top: .4em;
+    }
+
+    .layout-container {
+        position: sticky;
+        top: 50px;
+        background-color: var(--paper);
+        z-index: 20;
+        border-bottom: solid 1px var(--ink);
+        padding-bottom: 20px;
     }
 }
 
