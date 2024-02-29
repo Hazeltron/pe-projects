@@ -19,15 +19,18 @@
     }
 
     & ul {
-
-        /* not grid, flex otherwise the images below will follow the same siz rules */
-        display: grid;
-        gap: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 
-    & picture {
-        height: 100%;
-        transition: min-width .3s ease;
+    & ul + ul {
+        margin-top: 60px;
+    }
+
+    &li {
+        max-width: 50%;
+        transition: min-width 200ms ease-in-out;
     }
 
 
