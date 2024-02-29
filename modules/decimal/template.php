@@ -8,10 +8,10 @@
         <li>
             <article>
                 <a href="#">
-                    <picture class="<?= $card['class'] ?>">
+                    <picture>
                         <img src="assets/<?= $card['img'] ?>" alt="">
                     </picture>
-                    <h2><?= $card['title'] ?></h2>
+                    <h2 class="lay-attention-voice"><?= $card['title'] ?></h2>
                     <p><?= $card['text'] ?></p>
                     <p><?= $card['label'] ?></p>
                 </a>
@@ -25,10 +25,10 @@
         <li>
             <article>
                 <a href="#">
-                    <picture class="<?= $card['class'] ?>">
+                    <picture>
                         <img src="assets/<?= $card['img'] ?>" alt="">
                     </picture>
-                    <h2><?= $card['title'] ?></h2>
+                    <h2 class="lay-attention-voice"><?= $card['title'] ?></h2>
                     <p><?= $card['text'] ?></p>
                     <p><?= $card['label'] ?></p>
                 </a>
@@ -76,14 +76,18 @@
     }
 
     firstArticleList.addEventListener("mousemove", function(event) {
+
         const listItemOne = firstArticleList.querySelector("decimal-wrapper li:nth-of-type(1)");
         const listItemTwo = firstArticleList.querySelector("decimal-wrapper li:nth-of-type(2)");
+        
         resizeRect(listItemOne, listItemTwo, firstArticleList);
     });
 
     secondArticleList.addEventListener("mousemove", function(event) {
+
         const listItemOne = secondArticleList.querySelector("decimal-wrapper li:nth-of-type(1)");
         const listItemTwo = secondArticleList.querySelector("decimal-wrapper li:nth-of-type(2)");
+
         resizeRect(listItemOne, listItemTwo, secondArticleList);
     });
 
