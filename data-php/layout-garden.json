@@ -1,5 +1,58 @@
 [
     {
+        "name": "timberland",
+        "link": "https://web.archive.org/web/20230824060314/https://www.timberland.com/en-us",
+        "class": "timberland",
+        "button": "timland",
+        "wire-button": "timland-wire",
+        "screen-button": "timland-screen",
+        "range-slide": "timland-range",
+        "what": "<p>This is an ad template used on the ever-changing Timberland website. It doesn’t exist anymore, but if you visit the site you’ll see many more like it.</p> ",
+        "whyText": ["<p>Timberland’s website is what got me thinking about layouts in the first place. Their designs are this mix of sanitized corporation and hip-hop grunge that speaks to me… which makes sense because my sister works there as a designer.</p>",
+        "<p>I wanted to make this because it displayed an interesting use of grid and absolute positioning.</p>"
+        ],
+        "diffText": ["<p>This was one of the first actual layouts I copied from the web, and one of my favorites. At the time, I was very unfamiliar with grid and positioning. I was constantly breaking the grid and became increasingly frustrated.</p>"
+        ],
+        "howText": ["<p>This was made using grid-template-areas which, while it makes visual sense and is much more friendly to new grid users, it isn't without it's drawbacks. My main gripe with it currently is that they cause a lot of unnecessary typing. The text is controlled with absolute positioning.</p>"
+        ],
+        "layout": "timberland",
+        "id": "timland"
+    },
+    {
+        "name": "Mubasic",
+        "link": "https://mubasic-test.webflow.io/",
+        "class": "mubasic",
+        "button": "mubasic-button",
+        "wire-button": "mubasic-wire",
+        "screen-button": "mubasic-screen",
+        "range-slide": "mubasic-range",
+        "what": "<p>...</p>",
+        "whyText": ["<p>This gave me another chance to explore the design process from start to finish while practicing coding layouts.</p>"
+        ],
+        "diffText": ["<p>The hardest part about this grid was sourcing images that matched each other. These come from Unsplash. I tried using AI-generated images but they appeared far too unnatural.</p> "],
+        "howText": ["<p>This layout is being controlled with grid and the text and links are being manipulated with positioning.</p>"
+        ],
+        "layout": "mubasic",
+        "id": "mubasic-id"
+    },
+    {
+        "name": "Marywood University Stats",
+        "link": "https://www.marywood.edu/",
+        "class": "marywood",
+        "button": "marywood-button",
+        "wire-button": "marywood-wire",
+        "screen-button": "marywood-screen",
+        "range-slide": "marywood-range",
+        "what": "<p>This is a grid from Marywood University showcasing various statistics.</p>",
+        "whyText": ["<p>This gave me another chance to explore the design process from start to finish while practicing coding layouts.</p>"
+        ],
+        "diffText": ["<p>The hardest part about this grid was sourcing images that matched each other. These come from Unsplash. I tried using AI-generated images but they appeared far too unnatural.</p> "],
+        "howText": ["<p>This layout is being controlled with grid and the text and links are being manipulated with positioning.</p>"
+        ],
+        "layout": "marywood",
+        "id": "marywood-id"
+    },
+    {
         "name": "android",
         "link": "https://www.android.com/",
         "class": "android",
@@ -23,139 +76,6 @@
         ],
         "layout": "android",
         "id": "android-id"
-    },
-    {
-        "name": "Tiffany Video-CTA",
-        "link": "https://www.tiffany.com/",
-        "class": "video-cta",
-        "button": "video",
-        "wire-button": "video-wire",
-        "screen-button": "video-screen",
-        "range-slide": "video-range",
-        "what": "<p>This layout was inspired by a Tiffany CTA they had on their site for Christmas.</p>",
-        "whyText": ["<p>I chose to emulate this layout because I was interested in working with videos. It also had a play/pause and mute functionality that I was curious about.</p>"
-        ],
-        "diffText": ["<p>This was a straightforward layout. Nothing popped out as overly difficult.</p>"],
-        "howText": ["<p>As it turns out, the play/pause and mute functionality is incredibly easy to make happen within Vanilla JS. They're built in functions.</p>","<p>The rest of this layout was built with flex, SVG sprites and absolute positioning.<p>"
-        ],
-        "layout": "video-cta",
-        "id": "video-cta"
-    },
-    {
-        "name": "Shell",
-        "link": "https://www.shell.us/",
-        "class": "shell",
-        "button": "shell-button",
-        "wire-button": "shell-wire",
-        "screen-button": "shell-screen",
-        "range-slide": "shell-range",
-        "what": "<p>This was a large grid layout on Shell’s home page.</p>",
-        "why": "",
-        "whyText": ["<p>Disclaimer: I am in no way a fan or friend of Shell oil.</p>",
-        "<p>That being said, the grid was intriguing. It changed drastically over screen sizes and even individual cells. The cards themselves were designed well and as an added bonus, they also had smooth hover effects.</p>"
-        ],
-        "diffText": ["<p>I had a difficult time getting images and articles to behave in the grid. There were multiple times when they would refuse to span the height of their cells.</p>", 
-        "<p>The fact that individual cells were styled differently also forced me to use nth-of-type more than I’d like to admit.</p>"
-        ],
-        "howText": ["<p>I made this with one JSON file and two separate PHP loops. Each section is divided into a grid that changes based on user screen size.<p>", 
-        "<p>In order to cover the top two cells I utilized absolute positioning.<p>", 
-        "<p>The hover effect on the cards is accomplished with transform: translateY() and the shadows are caused by filter: drop-shadow().<p>"
-        ],
-        "layout": "shell",
-        "id": "shell"
-    },
-    {
-        "name": "timberland",
-        "link": "https://web.archive.org/web/20230824060314/https://www.timberland.com/en-us",
-        "class": "timberland",
-        "button": "timland",
-        "wire-button": "timland-wire",
-        "screen-button": "timland-screen",
-        "range-slide": "timland-range",
-        "what": "<p>This is an ad template used on the ever-changing Timberland website. It doesn’t exist anymore, but if you visit the site you’ll see many more like it.</p> ",
-        "whyText": ["<p>Timberland’s website is what got me thinking about layouts in the first place. Their designs are this mix of sanitized corporation and hip-hop grunge that speaks to me… which makes sense because my sister works there as a designer.</p>",
-        "<p>I wanted to make this because it displayed an interesting use of grid and absolute positioning.</p>"
-        ],
-        "diffText": ["<p>This was one of the first actual layouts I copied from the web, and one of my favorites. At the time, I was very unfamiliar with grid and positioning. I was constantly breaking the grid and became increasingly frustrated.</p>"
-        ],
-        "howText": ["<p>This was made using grid-template-areas which, while it makes visual sense and is much more friendly to new grid users, it isn't without it's drawbacks. My main gripe with it currently is that they cause a lot of unnecessary typing. The text is controlled with absolute positioning.</p>"
-        ],
-        "layout": "timberland",
-        "id": "timland"
-    },
-    {
-        "name": "Game Spot",
-        "link": "https://www.gamespot.com/",
-        "class": "game-spot",
-        "button": "game-spot-button",
-        "wire-button": "game-wire",
-        "screen-button": "game-screen",
-        "range-slide": "game-range",
-        "what": "<p>This layout comes from GameSpot, a video game news and reviews site. It’s the main layout on their home page for pushing their newest articles.</p>",
-        "whyText": ["<p>This was the first large-scale grid I created and I needed the practice. Up until I made this, I was still using grid-template-areas. Another interesting aspect of this layout was the hover effect on the top two cells; something I was very excited to recreate.</p>"
-        ],
-        "diffText": ["<p>I can’t think of anything that was too frustrating on this layout. If I had to point to anything, it was getting used to writing grids without grid-template-areas.</p>"],
-        "howText": ["<p>This, again, was made with a JSON array and a loop. It required a lot of nth-of-type-ing to manage the first two cells and the proceeding eight.</p>", 
-        "<p>The text on the top two cells is controlled with absolute positioning. The hover is accomplished by hiding the paragraph until the pointer-event happens and then specifying display: block.</p>"
-        ],
-        "layout": "game-spot",
-        "id": "game-spot"
-    },
-    {
-        "name": "Timberland Product List",
-        "link": "https://www.timberland.com/en-us/c/men/footwear/boots-10040",
-        "class": "product",
-        "button": "product-list",
-        "wire-button": "product-wire",
-        "screen-button": "product-screen",
-        "range-slide": "product-range",
-        "what": "<p>Another layout from Timberland. This is an attempt to make a product list like you might see on any clothing brand's site.</p>",
-        "whyText": ["<p>Disclaimer: This is yet to be finished. But I’m working on that currently.</p>",
-        "<p>As mentioned before, I love Timberland’s site. This was a chance to understand how products are laid out in an online store. I was also interested in how they were able to switch out the images on hover. I also wanted to understand how the Js was working behind the scenes to change the images when the buttons were clicked (in my case the black circles).</p>"
-        ],
-        "diffText": ["<p>So far, the most difficult aspect of this layout has been switching out the images on over. I likely could have accomplished this with JavaScript but I managed it with CSS.</p>",
-        "<p>I also struggled with the buttons. The names of the products vary slightly in length, which caused the buttons to look offset from each other. Luckily, this was an easy fix once I learned about alig-self: end, which forced them to the bottom of the grid.</p>"
-        ],
-        "howText": ["<p>This is another case of PHP looping through JSON data. The cards are controlled with a simple grid with grid wrap to handle different screen sizes.</p>", 
-        "<p>The images are being switched by overlaying one image with another and then removing the first layer when hovered. The stars are a simple SVG I made in Affinity Designer.</p>"
-        ],
-        "layout": "product-list",
-        "id": "product"
-    },
-   
-    {
-        "name": "Apparel Navigation Grid",
-        "link": "#",
-        "class": "cool-girls",
-        "button": "girls",
-        "wire-button": "cool-girls-wire",
-        "screen-button": "cool-girls-screen",
-        "range-slide": "cool-girls-range",
-        "what": "<p>Inspired by my time looking at online clothing realtors, I wanted to make my own custom layout. I wanted it to have the same hip-hop streetwear vibe as the Timberland website.</p>",
-        "whyText": ["<p>This gave me another chance to explore the design process from start to finish while practicing coding layouts.</p>"
-        ],
-        "diffText": ["<p>The hardest part about this grid was sourcing images that matched each other. These come from Unsplash. I tried using AI-generated images but they appeared far too unnatural.</p> "],
-        "howText": ["<p>This layout is being controlled with grid and the text and links are being manipulated with positioning.</p>"
-        ],
-        "layout": "custom-grid",
-        "id": "cool-girls"
-    },
-    {
-        "name": "Marywood University Stats",
-        "link": "https://www.marywood.edu/",
-        "class": "marywood",
-        "button": "marywood-button",
-        "wire-button": "marywood-wire",
-        "screen-button": "marywood-screen",
-        "range-slide": "marywood-range",
-        "what": "<p>This is a grid from Marywood University showcasing various statistics.</p>",
-        "whyText": ["<p>This gave me another chance to explore the design process from start to finish while practicing coding layouts.</p>"
-        ],
-        "diffText": ["<p>The hardest part about this grid was sourcing images that matched each other. These come from Unsplash. I tried using AI-generated images but they appeared far too unnatural.</p> "],
-        "howText": ["<p>This layout is being controlled with grid and the text and links are being manipulated with positioning.</p>"
-        ],
-        "layout": "marywood",
-        "id": "marywood-id"
     },
     {
         "name": "Atmosphere Kanifushi Maldives",
@@ -201,6 +121,102 @@
         "id": "cards"
     },
     {
+        "name": "Shell",
+        "link": "https://www.shell.us/",
+        "class": "shell",
+        "button": "shell-button",
+        "wire-button": "shell-wire",
+        "screen-button": "shell-screen",
+        "range-slide": "shell-range",
+        "what": "<p>This was a large grid layout on Shell’s home page.</p>",
+        "why": "",
+        "whyText": ["<p>Disclaimer: I am in no way a fan or friend of Shell oil.</p>",
+        "<p>That being said, the grid was intriguing. It changed drastically over screen sizes and even individual cells. The cards themselves were designed well and as an added bonus, they also had smooth hover effects.</p>"
+        ],
+        "diffText": ["<p>I had a difficult time getting images and articles to behave in the grid. There were multiple times when they would refuse to span the height of their cells.</p>", 
+        "<p>The fact that individual cells were styled differently also forced me to use nth-of-type more than I’d like to admit.</p>"
+        ],
+        "howText": ["<p>I made this with one JSON file and two separate PHP loops. Each section is divided into a grid that changes based on user screen size.<p>", 
+        "<p>In order to cover the top two cells I utilized absolute positioning.<p>", 
+        "<p>The hover effect on the cards is accomplished with transform: translateY() and the shadows are caused by filter: drop-shadow().<p>"
+        ],
+        "layout": "shell",
+        "id": "shell"
+    },
+    {
+        "name": "Game Spot",
+        "link": "https://www.gamespot.com/",
+        "class": "game-spot",
+        "button": "game-spot-button",
+        "wire-button": "game-wire",
+        "screen-button": "game-screen",
+        "range-slide": "game-range",
+        "what": "<p>This layout comes from GameSpot, a video game news and reviews site. It’s the main layout on their home page for pushing their newest articles.</p>",
+        "whyText": ["<p>This was the first large-scale grid I created and I needed the practice. Up until I made this, I was still using grid-template-areas. Another interesting aspect of this layout was the hover effect on the top two cells; something I was very excited to recreate.</p>"
+        ],
+        "diffText": ["<p>I can’t think of anything that was too frustrating on this layout. If I had to point to anything, it was getting used to writing grids without grid-template-areas.</p>"],
+        "howText": ["<p>This, again, was made with a JSON array and a loop. It required a lot of nth-of-type-ing to manage the first two cells and the proceeding eight.</p>", 
+        "<p>The text on the top two cells is controlled with absolute positioning. The hover is accomplished by hiding the paragraph until the pointer-event happens and then specifying display: block.</p>"
+        ],
+        "layout": "game-spot",
+        "id": "game-spot"
+    },
+    {
+        "name": "Tiffany Video-CTA",
+        "link": "https://www.tiffany.com/",
+        "class": "video-cta",
+        "button": "video",
+        "wire-button": "video-wire",
+        "screen-button": "video-screen",
+        "range-slide": "video-range",
+        "what": "<p>This layout was inspired by a Tiffany CTA they had on their site for Christmas.</p>",
+        "whyText": ["<p>I chose to emulate this layout because I was interested in working with videos. It also had a play/pause and mute functionality that I was curious about.</p>"
+        ],
+        "diffText": ["<p>This was a straightforward layout. Nothing popped out as overly difficult.</p>"],
+        "howText": ["<p>As it turns out, the play/pause and mute functionality is incredibly easy to make happen within Vanilla JS. They're built in functions.</p>","<p>The rest of this layout was built with flex, SVG sprites and absolute positioning.<p>"
+        ],
+        "layout": "video-cta",
+        "id": "video-cta"
+    },
+    {
+        "name": "Timberland Product List",
+        "link": "https://www.timberland.com/en-us/c/men/footwear/boots-10040",
+        "class": "product",
+        "button": "product-list",
+        "wire-button": "product-wire",
+        "screen-button": "product-screen",
+        "range-slide": "product-range",
+        "what": "<p>Another layout from Timberland. This is an attempt to make a product list like you might see on any clothing brand's site.</p>",
+        "whyText": ["<p>Disclaimer: This is yet to be finished. But I’m working on that currently.</p>",
+        "<p>As mentioned before, I love Timberland’s site. This was a chance to understand how products are laid out in an online store. I was also interested in how they were able to switch out the images on hover. I also wanted to understand how the Js was working behind the scenes to change the images when the buttons were clicked (in my case the black circles).</p>"
+        ],
+        "diffText": ["<p>So far, the most difficult aspect of this layout has been switching out the images on over. I likely could have accomplished this with JavaScript but I managed it with CSS.</p>",
+        "<p>I also struggled with the buttons. The names of the products vary slightly in length, which caused the buttons to look offset from each other. Luckily, this was an easy fix once I learned about alig-self: end, which forced them to the bottom of the grid.</p>"
+        ],
+        "howText": ["<p>This is another case of PHP looping through JSON data. The cards are controlled with a simple grid with grid wrap to handle different screen sizes.</p>", 
+        "<p>The images are being switched by overlaying one image with another and then removing the first layer when hovered. The stars are a simple SVG I made in Affinity Designer.</p>"
+        ],
+        "layout": "product-list",
+        "id": "product"
+    },
+    {
+        "name": "Apparel Navigation Grid",
+        "link": "#",
+        "class": "cool-girls",
+        "button": "girls",
+        "wire-button": "cool-girls-wire",
+        "screen-button": "cool-girls-screen",
+        "range-slide": "cool-girls-range",
+        "what": "<p>Inspired by my time looking at online clothing realtors, I wanted to make my own custom layout. I wanted it to have the same hip-hop streetwear vibe as the Timberland website.</p>",
+        "whyText": ["<p>This gave me another chance to explore the design process from start to finish while practicing coding layouts.</p>"
+        ],
+        "diffText": ["<p>The hardest part about this grid was sourcing images that matched each other. These come from Unsplash. I tried using AI-generated images but they appeared far too unnatural.</p> "],
+        "howText": ["<p>This layout is being controlled with grid and the text and links are being manipulated with positioning.</p>"
+        ],
+        "layout": "custom-grid",
+        "id": "cool-girls"
+    },
+    {
         "name": "Montucky Cold Snacks",
         "link": "https://atmosphere-kanifushi.com/",
         "class": "montucky",
@@ -216,23 +232,6 @@
         ],
         "layout": "montucky",
         "id": "montucky-id"
-    },
-    {
-        "name": "Mubasic",
-        "link": "https://mubasic-test.webflow.io/",
-        "class": "mubasic",
-        "button": "mubasic-button",
-        "wire-button": "mubasic-wire",
-        "screen-button": "mubasic-screen",
-        "range-slide": "mubasic-range",
-        "what": "<p>...</p>",
-        "whyText": ["<p>This gave me another chance to explore the design process from start to finish while practicing coding layouts.</p>"
-        ],
-        "diffText": ["<p>The hardest part about this grid was sourcing images that matched each other. These come from Unsplash. I tried using AI-generated images but they appeared far too unnatural.</p> "],
-        "howText": ["<p>This layout is being controlled with grid and the text and links are being manipulated with positioning.</p>"
-        ],
-        "layout": "mubasic",
-        "id": "mubasic-id"
     },
     {
         "name": "decimal studios",
