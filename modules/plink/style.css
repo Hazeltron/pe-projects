@@ -1,0 +1,51 @@
+.plink{
+    * {
+        border: solid black 1px;
+    }
+
+    cursor: url(//drinkplink.com/cdn/shop/t/28/assets/plink-cursor.svg?v=4305050…), auto;
+
+    & plink-container {
+        padding-top: 20vh;
+        display: flex;
+        flex-direction: column;
+
+        
+    }
+
+    & text-content {
+        display: block;
+
+        & h2 {
+            color: #f26178;
+
+            & span {
+                display: block;
+            }
+        }
+
+        & h3, ul {
+            color: #ebbc00
+        }
+
+        & a {
+            color: #996eff;
+            cursor: url(//drinkplink.com/cdn/shop/t/28/assets/plink-cursor-pointer.svg?v=1609441…), pointer;
+        }
+    }
+
+
+    @container(min-width: 600px) {
+        & plink-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    
+
+    
+
+    }
+
+}

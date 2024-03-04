@@ -121,6 +121,23 @@
         "id": "cards"
     },
     {
+        "name": "PLINK!",
+        "link": "https://drinkplink.com/?ref=webspo.io",
+        "class": "plink",
+        "button": "plink-button",
+        "wire-button": "plink-wire",
+        "screen-button": "plink-screen",
+        "range-slide": "plink-range",
+        "what": "<p>...</p>",
+        "whyText": ["<p>..</p>"
+        ],
+        "diffText": ["<p>..</p> "],
+        "howText": ["<p>...</p>"
+        ],
+        "layout": "plink",
+        "id": "plink-id"
+    },
+    {
         "name": "decimal studios",
         "link": "https://mubasic-test.webflow.io/",
         "class": "decimal",
