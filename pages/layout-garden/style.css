@@ -78,7 +78,7 @@ layout-section-wrapper:nth-of-type(n+2) {
 
 .layout-container {
     position: sticky;
-    top: 80px;
+    top: 78px;
     background-color: var(--paper);
     z-index: 20;
     border-bottom: solid 1px var(--ink);
@@ -124,6 +124,16 @@ resizer {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+  
+}
+
+/* resolves double inner column issue with resizer */
+.layouts .inner-column {
+    padding-left: 0;
+    padding-right: 0;
 }
 
   .starbucks-container {
@@ -150,7 +160,7 @@ resizer {
 
     .layout-container {
         position: sticky;
-        top: 50px;
+        top: 45px;
         background-color: var(--paper);
         z-index: 20;
         border-bottom: solid 1px var(--ink);
