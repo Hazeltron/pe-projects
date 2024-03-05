@@ -5,8 +5,8 @@
 
     <text-content>
         <h2>
-            <span class="loud-voice" data-animate="movable">enjoy</span>
-            <span class="loud-voice" data-animate="movable">water</span>
+            <span data-animate="movable">enjoy</span>
+            <span data-animate="movable">water</span>
         </h2>
 
         <h3 class="lay-attention-voice" data-animate="movable">Drop Plink! into water for a fruity, fizzy drink.</h3>
