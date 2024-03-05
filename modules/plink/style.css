@@ -1,39 +1,41 @@
-.plink{
-    /* * {
-        border: solid black 1px;
-    } */
-
+.plink {
     cursor: url(//drinkplink.com/cdn/shop/t/28/assets/plink-cursor.svg?v=4305050…), auto;
 
     & plink-container {
         display: flex;
         flex-direction: column-reverse;
-
-        
     }
+
+
 
     & text-content {
         display: block;
 
         & h2 {
             color: #f26178;
-            font-size: 6rem;
-            font-family: 'Kanit', serif;
+            font-size: 7rem;
             text-transform: capitalize;
+            position: relative;
+
+            & .droplet-one {
+                position: absolute;
+                top: 0;
+                right: 40px;
+                width: 80px; /* Adjusted width value */
+            }
 
             & span {
                 display: block;
             }
 
             & span:nth-of-type(1) {
-                font-weight: 600;
-                font-style: oblique;
+                font-family: 'Kanit', serif;
+                font-weight: 400;
             }
 
             & span:nth-of-type(2) {
-                font-weight: 500;
                 font-family: Arial, Helvetica, sans-serif;
-                
+                font-weight: 700;
             }
         }
 
@@ -42,16 +44,27 @@
             margin-top: 20px;
         }
 
+        & ul {
+            position: relative;
+
+            & .droplet-two {
+                position: absolute;
+                top: 30px;
+                right: 10%;
+                width: 50px;
+            }
+        }
+
         & li {
             position: relative; /* Position relative to enable positioning of ::before pseudo-element */
         }
         
-        & li::before {
+        & li:not(:nth-of-type(5), picture)::before {
             content: '\2022'; /* Unicode character for bullet (•) */
-            color: #ebbc00; /* Color of the custom bullet */
-            font-size: .9em; /* Adjust the size of the bullet */
-            margin-right: 5px; /* Adjust spacing between bullet and list item */
-            vertical-align: top; /* Align bullet vertically */
+            color: #ebbc00; 
+            font-size: .9em; 
+            margin-right: 5px; 
+            vertical-align: top; 
         }
 
         & li + li {
@@ -64,6 +77,15 @@
             color: #996eff;
             cursor: url(//drinkplink.com/cdn/shop/t/28/assets/plink-cursor-pointer.svg?v=1609441…), pointer;
             width: max-content;
+            text-transform: capitalize;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 4.5px;
+        }
+
+        & .icon-right-arrow-complete use {
+            transform: translateY(8px) scale(0.7);
         }
 
         & a span:nth-of-type(3){
@@ -85,24 +107,70 @@
 
         @media(hover: hover) {
             & a:hover::after {
-                transform:scaleX(1);
-                transform-origin: left center
+                transform: scaleX(1);
+                transform-origin: left center;
             }
         }
     }
 
+    @container(min-width: 397px) {
+        & plink-container {
+            
+            flex-direction: row-reverse;
+            gap: 30px;
+        }
+
+        & text-content {
+            & ul {
+                & .droplet-two {
+                    top: 80px;
+                    right: 0px;
+                    width: 50px;
+                }
+            
+                & .droplet-one{
+                    top: 500px;
+                    right: 0px;
+                    width: 600px;
+            }
+        }
+    }
+}
 
     @container(min-width: 600px) {
-        & plink-container {
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 20px;
+        & picture {
+            margin-top: initial;
+        }
+
+        @container(min-width: 900px) {
+            & plink-container {
+                flex-direction: row;
+                gap: 45px;
+            }
+
+            & text-content {
+                & ul {
+                    & .droplet-two {
+                        display: block; /* should I do this? with both bubbles? Seems lazy. */
+                        position: absolute;
+                        top: 60px;
+                        right: 200px;
+                        width: 50px;
+                    }
+
+                    & h2 {
+                        & .droplet-one {
+                            position: absolute;
+                            top: 0;
+                            left: 45px;
+                            width: 80px; /* Adjusted width value */
+                        }
+                    
+
+                }
+                
+            }
+        }
     }
-
-    
-
-    
-
-    }
-
+}
 }
