@@ -5,25 +5,25 @@
 
     <text-content>
         <h2>
-            <span class="loud-voice">enjoy</span>
-            <span class="loud-voice">water</span>
+            <span class="loud-voice" data-animate="movable">enjoy</span>
+            <span class="loud-voice" data-animate="movable">water</span>
         </h2>
 
-        <h3 class="lay-attention-voice">Drop Plink! into water for a fruity, fizzy drink.</h3>
+        <h3 class="lay-attention-voice" data-animate="movable">Drop Plink! into water for a fruity, fizzy drink.</h3>
 
-        <ul class="lay-attention-voice">
+        <ul class="lay-attention-voice" data-animate="movable">
             <li>Award-winning drink tablets.</li>
             <li>Loaded with Potassium and Sodium electrolytes</li>
             <li>Just 1g of sugar per serving</li>
             <li>A joy for the whole family</li>
             <li>Without the waste of cans and bottles.</li>
-
-            <a href="#" class="lay-attention-voice">
-                <span>shop</span>
-                <span>all</span>
-                <span>flavors</span>
-                <span>-></span>
-            </a>
         </ul>
+
+        <a href="#" class="lay-attention-voice" >
+            <span data-animate="movable">shop</span>
+            <span data-animate="movable">all</span>
+            <span data-animate="movable">flavors</span>
+            <span data-animate="movable">-></span>
+        </a>
     </text-content>
 </plink-container>
