@@ -31,5 +31,6 @@
 
 		<script src="site.js"></script>
 		<script src="layout.js"></script>
+		<script src="modules/plink/controls.js"></script>
 	</body>
 </html>
