@@ -17,9 +17,23 @@
 
         & h2 {
             color: #f26178;
+            font-size: 6rem;
+            font-family: 'Kanit', serif;
+            text-transform: capitalize;
 
             & span {
                 display: block;
+            }
+
+            & span:nth-of-type(1) {
+                font-weight: 600;
+                font-style: oblique;
+            }
+
+            & span:nth-of-type(2) {
+                font-weight: 500;
+                font-family: Arial, Helvetica, sans-serif;
+                
             }
         }
 
@@ -28,11 +42,32 @@
             margin-top: 20px;
         }
 
+        & li {
+            position: relative; /* Position relative to enable positioning of ::before pseudo-element */
+        }
+        
+        & li::before {
+            content: '\2022'; /* Unicode character for bullet (•) */
+            color: #ebbc00; /* Color of the custom bullet */
+            font-size: .9em; /* Adjust the size of the bullet */
+            margin-right: 5px; /* Adjust spacing between bullet and list item */
+            vertical-align: top; /* Align bullet vertically */
+        }
+
+        & li + li {
+            margin-top: 10px;
+        }
+
         & a {
             position: relative;
             margin-top: 20px;
             color: #996eff;
             cursor: url(//drinkplink.com/cdn/shop/t/28/assets/plink-cursor-pointer.svg?v=1609441…), pointer;
+            width: max-content;
+        }
+
+        & a span:nth-of-type(3){
+            font-weight: 700;
         }
 
         & a::after {
