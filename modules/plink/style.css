@@ -1,14 +1,13 @@
 .plink{
-    * {
+    /* * {
         border: solid black 1px;
-    }
+    } */
 
     cursor: url(//drinkplink.com/cdn/shop/t/28/assets/plink-cursor.svg?v=4305050…), auto;
 
     & plink-container {
-        padding-top: 20vh;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
 
         
     }
@@ -25,20 +24,43 @@
         }
 
         & h3, ul {
-            color: #ebbc00
+            color: #ebbc00;
+            margin-top: 20px;
         }
 
         & a {
+            position: relative;
+            margin-top: 20px;
             color: #996eff;
             cursor: url(//drinkplink.com/cdn/shop/t/28/assets/plink-cursor-pointer.svg?v=1609441…), pointer;
+        }
+
+        & a::after {
+            content: "";
+            background-color: #996eff;
+            bottom: 0;
+            height: 2px;
+            left: 0;
+            position: absolute;
+            transition: transform .7s cubic-bezier( 0.43,1.06, 0.66, 0.99);
+            width: 100%;
+            transform: scaleX(0);
+            transform-origin: right center;
+        }
+
+        @media(hover: hover) {
+            & a:hover::after {
+                transform:scaleX(1);
+                transform-origin: left center
+            }
         }
     }
 
 
     @container(min-width: 600px) {
         & plink-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction: row-reverse;
         gap: 20px;
     }
 
