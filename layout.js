@@ -1,5 +1,6 @@
 
-const decimalStudy = document.querySelector('.case-study-content[data-target="decimal-button"]');
+
+const plinkStudy = document.querySelector('.case-study-content[data-target="plink-button"]');
 const mubasicStudy = document.querySelector('.case-study-content[data-target="mubasic-button"]');
 const androidStudy = document.querySelector('.case-study-content[data-target="android-button"]');
 const shellStudy = document.querySelector('.case-study-content[data-target="shell-button"]');
@@ -17,7 +18,8 @@ const marywoodStudy = document.querySelector('.case-study-content[data-target="m
 const atmosphereStudy = document.querySelector('.case-study-content[data-target="atmosphere-button"]');
 const montuckyStudy = document.querySelector('.case-study-content[data-target="montucky-button"]');
 
-const decimalButton = document.querySelector('.decimal-button');
+
+const plinkButton = document.querySelector('.plink-button');
 const mubasicButton = document.querySelector('.mubasic-button');
 const androidButton = document.querySelector('.android-button');
 const shellButton = document.querySelector('.shell-button');
@@ -44,9 +46,10 @@ function displayContent(content) {
 }
 
 
-decimalButton.addEventListener('click', function() {
-    displayContent(decimalStudy);
+plinkButton.addEventListener('click', function() {
+    displayContent(plinkStudy);
 });
+
 
 mubasicButton.addEventListener('click', function() {
     displayContent(mubasicStudy);
@@ -110,7 +113,7 @@ gameSpotButton.addEventListener('click', function() {
 });
 
 
-
+// you havw to add
 const mubasicWire = document.querySelector('.layouts[data-wire="mubasic-button"]');
 const decimalWire = document.querySelector('.layouts[data-wire="decimal-button"]');
 const androidWire = document.querySelector('.layouts[data-wire="android-button"]');

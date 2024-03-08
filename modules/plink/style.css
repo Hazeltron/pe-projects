@@ -49,8 +49,9 @@
 
             & .droplet-two {
                 position: absolute;
-                top: 30px;
-                right: 10%;
+                /* top isn't working */
+                top: 16px;
+                right:100px;
                 width: 50px;
             }
         }

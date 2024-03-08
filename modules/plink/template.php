@@ -34,7 +34,7 @@
             <span>flavors</span>
             <span>
                 <svg class="icon-right-arrow-complete">
-                    <use xlink:href="#icon-right-arrow-complete"></use>
+                    <use xlink:href="#icon-right-arrow-complete"><use>
                 </svg>
             </span>
         </a>
