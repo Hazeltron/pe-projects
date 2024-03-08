@@ -1,5 +1,22 @@
 [
     {
+        "name": "Movable Box",
+        "link": "https://www.marywood.edu/",
+        "class": "box",
+        "button": "box-button",
+        "wire-button": "box-wire",
+        "screen-button": "box-screen",
+        "range-slide": "box-range",
+        "what": "<p>...</p>",
+        "whyText": ["<p>...</p>"
+        ],
+        "diffText": ["<p>...</p> "],
+        "howText": ["<p>...</p>"
+        ],
+        "layout": "movable-box",
+        "id": "box-id"
+    },
+    {
         "name": "timberland",
         "link": "https://web.archive.org/web/20230824060314/https://www.timberland.com/en-us",
         "class": "timberland",
