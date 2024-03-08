@@ -57,7 +57,22 @@
 
 
 		<link rel="stylesheet" href="css/site.css">
-		<script src="https://unpkg.com/vue@next"></script>
+		<!-- <script type="importmap">
+		{
+			"imports": {
+			"three": "https://unpkg.com/three@0.162.0/build/three.module.js",
+			"three/addons/": "https://unpkg.com/three@0.162.0/examples/jsm/"
+			}
+		}
+		</script> -->
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/loaders/GLTFLoader.js"></script>
+
+
+		
 		
 
 

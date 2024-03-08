@@ -29,8 +29,10 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/EasePack.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CustomEase.min.js"></script>
 
-		<script src="site.js"></script>
 		<script src="layout.js"></script>
 		<script src="modules/plink/controls.js"></script>
+		<script type="module" src="modules/movable-box/controls.js"></script>
+		
+
 	</body>
 </html>
