@@ -57,22 +57,27 @@
 
 
 		<link rel="stylesheet" href="css/site.css">
-		<!-- <script type="importmap">
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> -->
+
+		
+		<script type="importmap">
 		{
 			"imports": {
-			"three": "https://unpkg.com/three@0.162.0/build/three.module.js",
-			"three/addons/": "https://unpkg.com/three@0.162.0/examples/jsm/"
+			"three": "https://unpkg.com/three@0.161.0/build/three.module.js",
+			"three/addons/": "https://unpkg.com/three@0.161.0/examples/jsm/"
 			}
 		}
-		</script> -->
+		</script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.161.0/examples/jsm/loaders/GLTFLoader.js"></script>
 
 
 		<!-- Three.js loaders -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+		<!-- <
     
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/loaders/GLTFLoader.js"></script>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> -->
 
 
 		

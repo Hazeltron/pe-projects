@@ -1,72 +1,73 @@
 
-const resizerwidth = document.querySelector(".box resizer");
-const width = window.innerWidth, height = window.innerHeight;
+import * as THREE from 'three';
+import { GLTFLoader } from 'https://unpkg.com/three@0.161.0/examples/jsm/loaders/GLTFLoader.js';
+import { OrbitControls } from 'https://unpkg.com/three@0.161.0/examples/jsm/controls/OrbitControls.js';
 
-// init
+const renderer = new THREE.WebGLRenderer({ antialias: true});
+renderer.outputColorSpace = THREE.SRGBColorSpace;
 
-const camera = new THREE.PerspectiveCamera( 70, width / height, 0.01, 10 );
-camera.position.z = 1;
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setClearColor(0x000000);
+renderer.setPixelRatio(window.devicePixelRatio);
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+
+document.querySelector(".box resizer").appendChild(renderer.domElement);
 
 const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 1000);
+camera.position.set(4, 5, 11);
+;
 
-const geometry = new THREE.BoxGeometry( 0.2, 0.2, 0.2 );
-const material = new THREE.MeshNormalMaterial();
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+controls.enablePan = false;
+controls.minDistance = 5;
+controls.maxDistance = 20;
+controls.minPolarAngle = 0.5;
+controls.maxpolarAngle = 1.5;
+controls.autoRotate = false;
+controls.target = new THREE.Vector3(0,1, 0);
+controls.update();
 
-const mesh = new THREE.Mesh( geometry, material );
-scene.add( mesh );
+// const groundGeometry = new THREE.PlaneGeometry(20, 20, 32, 32);
+// groundGeometry.rotateX (-Math.PI / 2);
+// const groundMaterial = new THREE.MeshStandardMaterial({
+//     color: 0x555555,
+//     side: THREE.DoubleSide
+// });
+// const groundMesh = new THREE.Mesh(groundGeometry, groundMaterial);
+// groundMesh.castShadow = false;
+// groundMesh.receiveShadow = true;
+// scene.add(groundMesh);
 
-const renderer = new THREE.WebGLRenderer( { antialias: true } );
-renderer.setSize( width, height );
-renderer.setAnimationLoop( animation );
-document.querySelector('.box resizer').appendChild( renderer.domElement );
+const spotLight = new THREE.SpotLight(0xffffff, 3, 100, 0.2, 0.5);
+spotLight.position.set(0, 25, 0);
+spotLight.castShadow = true;
+spotLight.shadow.bias = -0.0001;
+scene.add(spotLight);
+// gsap became indefined after this was added 
 
-// animation
+const loader = new GLTFLoader().setPath('assets/trailer/');
+loader.load('scene.gltf', (gltf) => {
+    const mesh = gltf.scene;
+    
+    mesh.traverse((child) => {
+        if(child.isMesh) {
+            child.castShadow = true;
+            child.receiveShadow = true;
+        }
 
-function animation( time ) {
+    })
+        
+    mesh.position.set(0, 0, -1);
+    scene.add(mesh);
+});
 
-	mesh.rotation.x = time / 2000;
-	mesh.rotation.y = time / 1000;
-
-	renderer.render( scene, camera );
-
+function animate() {
+    requestAnimationFrame(animate);
+    controls.update();
+    renderer.render(scene, camera);
 }
 
-// // Create a scene, camera, and renderer as you've already done
-// const scene = new THREE.Scene();
-// const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-// const renderer = new THREE.WebGLRenderer();
-// renderer.setSize(window.innerWidth, window.innerHeight);
-// document.querySelector(".box resizer").appendChild(renderer.domElement);
-
-// Instantiate FBXLoader
-// const loader = new THREE.GLTFLoader(); // Using THREE.GLTFLoader directly
-// console.log(loader); // Logging the instance of FBXLoader
-
-// Load the FBX model
-// loader.load(
-//     'assets/BOX.gltf',
-//     (fbx) => {
-//         scene.add(fbx);
-//     },
-//     (xhr) => {
-//         console.log((xhr.loaded / xhr.total * 100) + '% loaded');
-//     },
-//     (error) => {
-//         console.error('An error happened', error);
-//     }
-// );
-
-// // Add lights, controls, etc. as needed
-// const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
-// scene.add(ambientLight);
-
-// const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
-// directionalLight.position.set(10, 10, 10);
-// scene.add(directionalLight);
-
-// // You may want to update the camera aspect ratio on window resize
-// window.addEventListener('resize', () => {
-//     camera.aspect = window.innerWidth / window.innerHeight;
-//     camera.updateProjectionMatrix();
-//     renderer.setSize(window.innerWidth, window.innerHeight);
-// });
+animate();

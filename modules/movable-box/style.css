@@ -1,5 +1,6 @@
 canvas {
-    max-width: 1000px;
-    height: 100%;
+    display: block;
+    height: auto;
     width: 100%;
+    max-width: 100%;
 }
