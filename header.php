@@ -57,9 +57,8 @@
 
 
 		<link rel="stylesheet" href="css/site.css">
-		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> -->
-
-		
+	
+		<!-- three.js -->
 		<script type="importmap">
 		{
 			"imports": {
@@ -68,22 +67,6 @@
 			}
 		}
 		</script>
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.161.0/examples/jsm/loaders/GLTFLoader.js"></script>
-
-
-		<!-- Three.js loaders -->
-		<!-- <
-    
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/loaders/GLTFLoader.js"></script>
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> -->
-
-
-		
-		
-
-
 
 	</head>
 
