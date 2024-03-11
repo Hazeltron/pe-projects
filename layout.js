@@ -337,6 +337,37 @@ function resizeAllScreens() {
 resizeAllScreens();
 
 
+// lazy loading imgs and video
+
+document.addEventListener("DOMContentLoaded", function() {
+    const lazyElements = document.querySelectorAll('img, video');
+
+    function lazyLoad(target) {
+        const io = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    const element = entry.target;
+                    if (element.tagName === 'IMG') {
+                        const src = element.getAttribute('src');
+                        console.log(src);
+                        element.setAttribute('src', src);
+                    } else if (element.tagName === 'VIDEO') {
+                        element.load();
+                    }
+                    observer.disconnect();
+                }
+            });
+        });
+
+        io.observe(target);
+    }
+
+    lazyElements.forEach(function(element) {
+        lazyLoad(element);
+    });
+});
+
+
 
 
 
