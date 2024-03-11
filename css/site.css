@@ -24,6 +24,10 @@ body {
 	justify-content: space-between;
 }
 
+.logo li:hover {
+	color: var(--highlight);
+}
+
 /* .nav-links {
 	position: fixed;
 	top: 0;
@@ -74,7 +78,31 @@ body.small-menu-open .nav-links {
 	color: var(--highlight);
 
 }
+/* slick underline for nav links */
+.nav-links li{
+	position: relative;
+	width: max-content;
+}
 
+.nav-links li::after {
+	content: "";
+	background-color: var(--paper);
+	bottom: 9px;
+	height: 2px;
+	left: 0;
+	position: absolute;
+	transition: transform .7s cubic-bezier( 0.43,1.06, 0.66, 0.99);
+	width: 100%;
+	transform: scaleX(0);
+	transform-origin: right center;
+}
+
+@media(hover: hover) {
+	& .nav-links li:hover::after {
+		transform: scaleX(1);
+		transform-origin: left center;
+	}
+}
 
 
 
