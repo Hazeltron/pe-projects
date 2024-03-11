@@ -1,5 +1,14 @@
-canvas {
+.box {
+
+    width: 100%;
+
+    & * {
+        border: 1px solid black;
+    }
+
+    & canvas {
     display: block;
     width: 100%;
     max-width: 100%;
+    }
 }
