@@ -7,10 +7,25 @@
 @import "pages.css";
 @import "modules.css";
 
+html {
+	cursor: url('../assets/cursor-two.png'), pointer;
+
+}
+
+a, input, button {
+
+	cursor: url('../assets/cursor-one.png'), pointer;
+
+}
+
 body {
 	background-color:var(--paper);
 	color: var(--ink);
+	
+	
 }
+
+
 
 *::selection {
 	background-color: #ff6600;
@@ -24,7 +39,7 @@ body {
 	justify-content: space-between;
 }
 
-.logo li:hover {
+.logo a:hover {
 	color: var(--highlight);
 }
 
