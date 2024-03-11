@@ -79,7 +79,8 @@
 			<div class="inner-column">
 				<nav class="nav-content">
 					<ul class="logo">
-						<li class="strong-voice">Haze</li>
+						<li class="strong-voice"><a href="#">Haze</a></li>
+						
 						<!-- <li>
 							<button class="toggle open calm-nav-voice">
 								
