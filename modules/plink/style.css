@@ -1,4 +1,19 @@
+.plink.bordered :not(.inner-column, resizer, text-content, a, h2, ul, plink-container, .droplet-two) {
+    border: solid var(--highlight) .2px;
+    background-color: var(--paper);
+    color: var(--ink);
+    background: none ;
+    transition: 300ms ease-in-out;
+    padding: 4px;
+}
+
+.plink.bordered img {
+    opacity: 0;
+}
+
 .plink {
+
+    
     cursor: url(//drinkplink.com/cdn/shop/t/28/assets/plink-cursor.svg?v=4305050…), auto;
 
     & plink-container {
@@ -60,13 +75,15 @@
             position: relative; /* Position relative to enable positioning of ::before pseudo-element */
         }
         
-        & li:not(:nth-of-type(5), picture)::before {
+        & li:not(:nth-of-type(6))::before {
             content: '\2022'; /* Unicode character for bullet (•) */
             color: #ebbc00; 
             font-size: .9em; 
             margin-right: 5px; 
             vertical-align: top; 
         }
+
+       
 
         & li + li {
             margin-top: 10px;
