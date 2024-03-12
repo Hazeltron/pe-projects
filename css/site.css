@@ -7,7 +7,7 @@
 @import "pages.css";
 @import "modules.css";
 
-html {
+body, label {
 	cursor: url('../assets/cursor-two.png'), pointer;
 
 }
