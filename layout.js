@@ -1,5 +1,5 @@
 
-
+const boxStudy = document.querySelector('.case-study-content[data-target="box-button"]');
 const plinkStudy = document.querySelector('.case-study-content[data-target="plink-button"]');
 const mubasicStudy = document.querySelector('.case-study-content[data-target="mubasic-button"]');
 const androidStudy = document.querySelector('.case-study-content[data-target="android-button"]');
@@ -18,7 +18,7 @@ const marywoodStudy = document.querySelector('.case-study-content[data-target="m
 const atmosphereStudy = document.querySelector('.case-study-content[data-target="atmosphere-button"]');
 const montuckyStudy = document.querySelector('.case-study-content[data-target="montucky-button"]');
 
-
+const boxButton = document.querySelector('.box-button');
 const plinkButton = document.querySelector('.plink-button');
 const mubasicButton = document.querySelector('.mubasic-button');
 const androidButton = document.querySelector('.android-button');
@@ -45,6 +45,9 @@ function displayContent(content) {
     }
 }
 
+boxButton.addEventListener('click', function() {
+    displayContent(boxStudy);
+});
 
 plinkButton.addEventListener('click', function() {
     displayContent(plinkStudy);
@@ -114,6 +117,8 @@ gameSpotButton.addEventListener('click', function() {
 
 
 // you havw to add
+const boxWire = document.querySelector('.layouts[data-wire="box-button"]');
+const plinkWire = document.querySelector('.layouts[data-wire="plink-button"]');
 const mubasicWire = document.querySelector('.layouts[data-wire="mubasic-button"]');
 const decimalWire = document.querySelector('.layouts[data-wire="decimal-button"]');
 const androidWire = document.querySelector('.layouts[data-wire="android-button"]');
@@ -132,7 +137,8 @@ const marywoodWire = document.querySelector('.layouts[data-wire="marywood-button
 const atmosphereWire = document.querySelector('.layouts[data-wire="atmosphere-button"]');
 const montuckyWire = document.querySelector('.layouts[data-wire="montucky-button"]');
 
-
+const boxButtonWire = document.querySelector('.box-wire');
+const plinkButtonWire = document.querySelector('.plink-wire');
 const mubasicButtonWire = document.querySelector('.mubasic-wire');
 const decimalButtonWire = document.querySelector('.decimal-wire');
 const androidButtonWire = document.querySelector('.android-wire');
@@ -158,6 +164,14 @@ function toggleBorder(layout) {
         layout.classList.add('bordered');
     }
 }
+
+boxButtonWire.addEventListener('click', function() {
+    toggleBorder(boxWire);
+});
+
+plinkButtonWire.addEventListener('click', function() {
+    toggleBorder(plinkWire);
+});
 
 mubasicButtonWire.addEventListener('click', function() {
     toggleBorder(mubasicWire);
