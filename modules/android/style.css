@@ -1,4 +1,4 @@
-.android.bordered :not(.inner-column, resizer, android-container, .top-section, li, .dialog-pane, div, .middle-section, .lower-section, ul){
+.android.bordered :not(.inner-column, resizer, android-container, .top-section, li, .dialog-pane, div, .middle-section, .lower-section, ul, radio-buttons ){
     border: solid var(--highlight) .2px;
     background-color: var(--paper);
     color: var(--ink);
