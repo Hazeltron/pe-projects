@@ -103,12 +103,10 @@
 						<li>
 							<a class="calm-nav-voice" href="pages/resume">Resume</a>
 						</li>
-						<!-- <li>
-							<a class="calm-nav-voice" href="pages/form-garden">Form Garden</a>
-						</li> -->
+						
 						<!-- <li>
 							<button class="toggle calm-nav-voice">Close</button>
-						</li> .-->
+						</li> -->
 					</ul>
 				</nav>
 				
