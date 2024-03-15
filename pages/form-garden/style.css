@@ -6,24 +6,35 @@
 	border-radius: 100px;
 } */
 
+forms-container {
+    display: block;
 
-.field{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px ;
+    & .field {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px ;
+    }
+    
+    & .field, label {
+        margin-top: 10px;
+    }
+
+    & input {
+        max-width: 200px;
+        margin-top: 10px;
+    }
+
+    & input:focus {
+        background-color: var(--highlight);
+        color: var(--paper);
+    }
+    
+    & button {
+        max-width: 100px;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+
 }
 
-.field, label {
-    margin-top: 10px;
-}
-input {
-    max-width: 200px;
-    margin-top: 10px;
-}
-
-button {
-    max-width: 100px;
-    margin-top: 20px;
-
-    font-size: 16px;
-}
