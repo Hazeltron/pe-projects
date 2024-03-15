@@ -32,6 +32,7 @@
 		<script src="layout.js"></script>
 		<script src="modules/plink/controls.js"></script>
 		<script type="module" src="modules/movable-box/controls.js"></script>
+		<script type="module" src="modules/stickers/controls.js"></script>
 		
 
 	</body>

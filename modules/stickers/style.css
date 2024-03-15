@@ -1,0 +1,44 @@
+
+.stickers {
+    
+    & * {
+        border: 1px solid black;
+        transition: 100ms;
+    }
+
+    & sticker-container {
+        display: block;
+        position: relative;
+    }
+
+    & .fridge-background {
+        min-height: 100%;
+     }
+ 
+     & li picture {
+         width: 50px;
+     }
+ 
+     & ul {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         position: absolute;
+         top: 0;
+         left: 0;
+     }
+
+    @container(min-width: 600px) {
+        & li picture {
+            width: 100px;
+        }
+    }
+
+    @container(min-width: 600px) {
+        & li picture {
+            width: 150px;
+        }
+    }
+    
+}
+

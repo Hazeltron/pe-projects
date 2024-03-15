@@ -21,5 +21,8 @@
 @import "../modules/decimal/style.css";
 @import "../modules/plink/style.css";
 @import "../modules/movable-box/style.css";
+@import "../modules/stickers/style.css";
+
+@import "../php-forms/password/style.css";
  
 

@@ -1,4 +1,22 @@
 [
+
+    {
+        "name": "Fridge w/ Stickers",
+        "link": "https://www.marywood.edu/",
+        "class": "stickers",
+        "button": "stickers-button",
+        "wire-button": "stickers-wire",
+        "screen-button": "stickers-screen",
+        "range-slide": "stickers-range",
+        "what": "<p>...</p>",
+        "whyText": ["<p>...</p>"
+        ],
+        "diffText": ["<p>...</p> "],
+        "howText": ["<p>...</p>"
+        ],
+        "layout": "stickers",
+        "id": "stickers-id"
+    },
     {
         "name": "timberland",
         "link": "https://web.archive.org/web/20230824060314/https://www.timberland.com/en-us",
