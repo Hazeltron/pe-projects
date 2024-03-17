@@ -18,11 +18,28 @@
      & li picture {
          width: 50px;
      }
+
+     & sticky-note {
+        
+        position: absolute;
+        top: 2%;
+        right: 5%;
+        background-color: aqua;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 1/1;
+        height: 13%;
+        padding: 0 10px;
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.3rem;
+     }
  
      & ul {
          display: flex;
-         flex-direction: row;
-         flex-wrap: wrap;
+         flex-direction: column;
+         gap: 4px;
          position: absolute;
          top: 0;
          left: 0;
@@ -30,13 +47,17 @@
 
     @container(min-width: 600px) {
         & li picture {
-            width: 100px;
+            width: 10%;
+        }
+
+        & sticky-note {
+            height: 10%;
         }
     }
 
     @container(min-width: 600px) {
         & li picture {
-            width: 150px;
+            width: 15%;
         }
     }
     

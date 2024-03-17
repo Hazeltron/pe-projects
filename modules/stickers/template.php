@@ -3,6 +3,11 @@
         <img src="assets/fridge-two.jpeg" alt="A close up of a white fridge door.">
     </picture>
 
+    <sticky-note>
+    <h2>Decorate your fridge!</h2>
+    </sticky-note>
+    
+
     <ul>
         <li>
             <picture class="tiger">
