@@ -1,4 +1,5 @@
 <sticker-container>
+
     <picture class="fidge-background">
         <img src="assets/fridge-two.jpeg" alt="A close up of a white fridge door.">
     </picture>
