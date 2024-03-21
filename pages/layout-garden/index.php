@@ -22,10 +22,14 @@ $json = file_get_contents('../../data-php/layout-garden.json');
 $layouts = json_decode($json, true);
 
 foreach($layouts as $layout) { ?>
-	<layout-section-wrapper>
+<!-- add slug to $layout -->
+	<layout-section-wrapper id="<?=$layout['id']?>">
 		<section class="case-study">
 			<div class="inner-column">
-				<h2 class="attention-voice" id="<?=$layout['id']?>"><?=$layout['name']?></h2>
+				<!-- add link to h2 so it links to section so you can use hashlink -->
+				<a href="#<?=$layout['id']?>">
+					<h2 class="attention-voice" ><?=$layout['name']?></h2>
+				</a>
 				<notes>
 					<h3 class="calm-strong-voice">What is it?</h3>
 					<p class="calm-voice"><?=$layout['what']?></p>
