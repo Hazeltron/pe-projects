@@ -1,7 +1,7 @@
 <sticker-container>
 
     <picture class="fidge-background">
-        <img src="assets/fridge-two.jpeg" alt="A close up of a white fridge door.">
+        <img src="assets/fridge-two.jpeg" alt="A close up of a fridge door.">
     </picture>
 
     <sticky-note>
@@ -14,7 +14,7 @@
             <picture class="tiger">
                 <img src="assets/sticker-tiger.png" alt="">
             </picture>
-        </li>
+        </li>x
         <li>
             <picture class="car">
                 <img src="assets/sticker-car.png" alt="">
