@@ -15,26 +15,13 @@ const sumoSticker = document.querySelector("sticker-container .sumo");
 
 const stickyNote = document.querySelector("sticker-container sticky-note");
 
-// gsap.from("sticker-container h2", {
-//     scrollTrigger: {
-//         trigger: "sticker-container",
-//         toggleActions: "play pause resume reset",
-//         start: "30% 85%",
-//         // markers: true   
-//     },
-//     duration: .2, 
-//     y: 25,
-//     opacity: 0
-// });
-
-
 
 Draggable.create(tigerSticker, {
 	bounds: container, 
 	type: "x,y",
 	onDrag: function() {
 		console.log("dragging !");
-		
+		// remember you can add whatever you want here!!!
 	}
 });
 
@@ -76,7 +63,7 @@ Draggable.create(sumoSticker, {
 
 Draggable.create(stickyNote, {
 	bounds: container, 
-	type: "x,y",
+	type: "rotate",
 	onDrag: function() {
 		console.log("dragging !");
 		
