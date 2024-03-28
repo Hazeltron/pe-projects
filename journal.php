@@ -24,7 +24,7 @@ I'm going to try to finish the product list layout and then hop on with Derek an
         <p>
         jan 24, 2024:
         
-        I am in the mist of moving. I'm tired and this sucks, ....
+        I am in the mist of moving. I'm tired and this sucks, .......
         </p>
     </inner-column>
 </section>
