@@ -24,7 +24,14 @@ I'm going to try to finish the product list layout and then hop on with Derek an
         <p>
         jan 24, 2024:
         
-        I am in the mist of moving. I'm tired and this sucks, .......
+        I am in the mist of moving. I'm tired and this sucks,
+        </p>
+
+        <p>
+        Yesterday:
+        Had easter with my family.
+        Today:
+        Looking at this figma file trying to remember how to use it. I might hit Derek up to get a quick refresher.
         </p>
     </inner-column>
 </section>
