@@ -14,7 +14,7 @@
             <picture class="tiger">
                 <img src="assets/sticker-tiger.png" alt="">
             </picture>
-        </li>x
+        </li>
         <li>
             <picture class="car">
                 <img src="assets/sticker-car.png" alt="">

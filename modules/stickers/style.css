@@ -1,4 +1,15 @@
+.stickers.bordered :not(.inner-column, resizer, ul, li, sticker-container) {
+    border: solid var(--highlight) .2px;
+    background-color: var(--paper);
+    color: var(--ink);
+    background: none ;
+    transition: 300ms ease-in-out;
+    padding: 4px;
+}
 
+.stickers.bordered img {
+    opacity: 0;
+}
 .stickers {
     
     & * {
