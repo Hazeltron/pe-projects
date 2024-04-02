@@ -1,4 +1,5 @@
 
+const stickerStudy = document.querySelector('.case-study-content[data-target="stickers-button"]');
 const boxStudy = document.querySelector('.case-study-content[data-target="box-button"]');
 const plinkStudy = document.querySelector('.case-study-content[data-target="plink-button"]');
 const mubasicStudy = document.querySelector('.case-study-content[data-target="mubasic-button"]');
@@ -16,8 +17,10 @@ const videoCtaStudy = document.querySelector('.case-study-content[data-target="v
 const gameSpotStudy = document.querySelector('.case-study-content[data-target="game-spot-button"]');
 const marywoodStudy = document.querySelector('.case-study-content[data-target="marywood-button"]');
 const atmosphereStudy = document.querySelector('.case-study-content[data-target="atmosphere-button"]');
-const montuckyStudy = document.querySelector('.case-study-content[data-target="montucky-button"]');
+// const montuckyStudy = document.querySelector('.case-study-content[data-target="montucky-button"]');
 
+
+const stickerButton = document.querySelector('.stickers-button');
 const boxButton = document.querySelector('.box-button');
 const plinkButton = document.querySelector('.plink-button');
 const mubasicButton = document.querySelector('.mubasic-button');
@@ -35,7 +38,7 @@ const videoCtaButton = document.querySelector('.video');
 const gameSpotButton = document.querySelector('.game-spot-button');
 const marywoodButton = document.querySelector('.marywood-button');
 const atmosphereButton = document.querySelector('.atmosphere-button');
-const montuckyButton = document.querySelector('.montucky-button')
+// const montuckyButton = document.querySelector('.montucky-button');
 
 function displayContent(content) {
     if (content.style.display !== 'block') {
@@ -44,6 +47,10 @@ function displayContent(content) {
         content.style.display = 'none';
     }
 }
+
+stickerButton.addEventListener('click', function() {
+    displayContent(stickerStudy);
+});
 
 boxButton.addEventListener('click', function() {
     displayContent(boxStudy);
@@ -58,9 +65,9 @@ mubasicButton.addEventListener('click', function() {
     displayContent(mubasicStudy);
 });
 
-montuckyButton.addEventListener('click', function() {
-    displayContent(montuckyStudy);
-});
+// montuckyButton.addEventListener('click', function() {
+//     displayContent(montuckyStudy);
+// });
 
 atmosphereButton.addEventListener('click', function() {
     displayContent(atmosphereStudy);
@@ -117,6 +124,7 @@ gameSpotButton.addEventListener('click', function() {
 
 
 // you havw to add
+const stickerWire = document.querySelector('.layouts[data-wire="stickers-button"]');
 const boxWire = document.querySelector('.layouts[data-wire="box-button"]');
 const plinkWire = document.querySelector('.layouts[data-wire="plink-button"]');
 const mubasicWire = document.querySelector('.layouts[data-wire="mubasic-button"]');
@@ -135,8 +143,9 @@ const videoCtaWire = document.querySelector('.layouts[data-wire="video"]');
 const gameSpotWire = document.querySelector('.layouts[data-wire="game-spot-button"]');
 const marywoodWire = document.querySelector('.layouts[data-wire="marywood-button"]');
 const atmosphereWire = document.querySelector('.layouts[data-wire="atmosphere-button"]');
-const montuckyWire = document.querySelector('.layouts[data-wire="montucky-button"]');
+// const montuckyWire = document.querySelector('.layouts[data-wire="montucky-button"]');
 
+const stickerButtonWire = document.querySelector('.stickers-wire');
 const boxButtonWire = document.querySelector('.box-wire');
 const plinkButtonWire = document.querySelector('.plink-wire');
 const mubasicButtonWire = document.querySelector('.mubasic-wire');
@@ -155,7 +164,7 @@ const videoCtaButtonWire = document.querySelector('.video-wire');
 const gameSpotButtonWire = document.querySelector('.game-wire');
 const marywoodButtonWire = document.querySelector('.marywood-wire');
 const atmosphereButtonWire = document.querySelector('.atmosphere-wire');
-const montuckyButtonWire = document.querySelector('.montucky-wire');
+// const montuckyButtonWire = document.querySelector('.montucky-wire');
 
 function toggleBorder(layout) {
     if (layout.classList.contains('bordered')) {
@@ -164,6 +173,10 @@ function toggleBorder(layout) {
         layout.classList.add('bordered');
     }
 }
+
+stickerButtonWire.addEventListener('click', function() {
+    toggleBorder(stickerWire);
+});
 
 boxButtonWire.addEventListener('click', function() {
     toggleBorder(boxWire);
@@ -181,9 +194,9 @@ decimalButtonWire.addEventListener('click', function() {
     toggleBorder(decimalWire);
 });
 
-montuckyButtonWire.addEventListener('click', function() {
-    toggleBorder(montuckyWire);
-});
+// montuckyButtonWire.addEventListener('click', function() {
+//     toggleBorder(montuckyWire);
+// });
 
 atmosphereButtonWire.addEventListener('click', function() {
     toggleBorder(atmosphereWire);
