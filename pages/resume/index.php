@@ -56,7 +56,7 @@ include '../../header.php';
 
                 <skills>
                     <h3 class="calm-strong-voice">Skills & ToolKit</h3>
-                    <p>Figma, Affinity Designer</p>
+                    <p>Figma | Affinity Designer</p>
                     <p>Visual Design | Design Systems</p>
                     <p>User Testing</p>
                     <p>Familiarity with CMS</p>
@@ -65,7 +65,7 @@ include '../../header.php';
 
                 <languages>
                     <h3 class="calm-strong-voice">Languages & Frameworks</h3>
-                    <p>HTML5 | CSS3 | JavaScript | PHP | Vue</p>
+                    <p>HTML5 | CSS3 | JavaScript | PHP | Vue | GSAP</p>
                 </languages>
 
                 <education>
