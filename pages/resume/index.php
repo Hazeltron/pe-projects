@@ -28,8 +28,8 @@ include '../../header.php';
 
                     foreach ($details as $detail) { ?> 
                         <job-detail>
-                            <h3 class="strong-voice"><?= $detail['jobTitle'] ?> <span class="medium-voice"><?= $detail['role'] ?></span></h3>
-                            <h4 class="calm-strong-voice"><?= $detail['date'] ?></h4>
+                            <h3 class="strong-voice"> <?= $detail['jobTitle'] ?> <span class="medium-voice"><?= $detail['role'] ?></span></h3>
+                            <h4 class="calm-strong-voice"> <?= $detail['date'] ?> </h4>
                             <ul class="calm-voice">
                                 <?php foreach ($detail['description'] as $item) { ?>
                                     <?= $item ?>
