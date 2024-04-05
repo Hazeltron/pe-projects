@@ -49,9 +49,9 @@ include '../../header.php';
 
                 <contact>
                     <h3 class="calm-strong-voice">Contact</h3>
-                    <p class="calm-voice">🏔️ Colorado Springs, Co. 80907</p>
-                    <p class="calm-voice">📱 (719)337-0666</p>
-                    <p class="calm-voice">📬 paulhazelton.work@gmail.com</p>
+                    <p>🏔️ Colorado Springs, Co. 80203</p>
+                    <p>📱 (719)337-0666</p>
+                    <p>📬 paulhazelton.work@gmail.com</p>
                 </contact>
 
                 <skills>
