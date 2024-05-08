@@ -33,5 +33,9 @@ I'm going to try to finish the product list layout and then hop on with Derek an
         Today:
         Looking at this figma file trying to remember how to use it. I might hit Derek up to get a quick refresher.
         </p>
+
+        <p>
+            I've been working on a figma for a sushi resturaunt. Which is why I haven't been commiting.
+        </p>
     </inner-column>
 </section>
